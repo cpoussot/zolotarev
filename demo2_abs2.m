@@ -7,7 +7,7 @@ set(groot,'defaultaxesfontsize',18)
 list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter);set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex');end
 %%% 
 CAS = '1b';
-r   = 2;
+r   = 6;
 %%%
 [pts,val,data]  = zol.example(CAS);
 [la,mu,W,V]     = zol.example2data(pts,val,data);
@@ -33,9 +33,3 @@ HNUM            = [0;hnum];
 HDEN            = hden;
 [data.z4{r}{1} HNUM]
 [data.z4{r}{2} HDEN]
-
-% function F = myfun(x,xdata)
-xdata   = x;
-FUN     = @(x) (x(1).*xdata.^3+x(2).*xdata.^1)./(xdata.^2+x(3)) - sign(xdata);
-X0      = [HNUM(1) HNUM(3) HDEN(3)];
-Xopt    = fminunc(@FUN,X0)
