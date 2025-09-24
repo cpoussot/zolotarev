@@ -1,11 +1,15 @@
 clearvars; close all; clc
-%%% Startup
-set(groot,'DefaultFigurePosition', [200 100 1000 700]);
+set(groot,'DefaultFigurePosition', [200 150 1000 600]);
 set(groot,'defaultlinelinewidth',2)
 set(groot,'defaultlinemarkersize',4)
 set(groot,'defaultaxesfontsize',18)
-list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter);set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex');end
-%%% 
+set(groot,'defaultAxesTickLabelInterpreter','latex');  
+list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
+% %%% Zolotorev Loewner package
+% addpath('/Users/charles/Documents/GIT/zolotorev')
+%%% AAA package
+addpath('/Users/charles/Documents/GIT/chebfun')
+%
 CAS = '1b';
 r   = 6;
 %%%
