@@ -17,9 +17,7 @@ spaceCAS    = {'1a' '1b' '1c' '1d' '1e' '1f' ...
                '3a' '3b' '3c' '3d' ...
                '7' 'spiral1' 'pm' 'pm2'};
 lgn         = {'Loewner','AAA','AAA  \texttt{"sign",1}','AAA  \texttt{"sign",1,"damping",.95,"lawson",200}'};
-%lgn{length(lgn)+1} = ['(E) ' num2str(-1,'%+2.0f')];
-%lgn{length(lgn)+1} = ['(F) ' num2str(+1,'%+2.0f')];
-for j = 1%:numel(spaceCAS)%l-1:numel(spaceCAS)
+for j = 1:numel(spaceCAS)
     close all
     clear hsig_ rsig1_ rsig2_ rsig3_ 
     clear timeLOE_ timeAAA1_ timeAAA2_ timeAAA3_ 
@@ -77,7 +75,6 @@ for j = 1%:numel(spaceCAS)%l-1:numel(spaceCAS)
         plot(1:i,abs(rsig2_),'-.','LineWidth',3,'DisplayName',lgn{3})
         plot(1:i,abs(rsig3_),':','LineWidth',3,'DisplayName',lgn{4})
         set(gca,'YScale','log')
-        %legend(lgn,'Interpreter','latex','Location','SouthWest','FontSize',16)
         set(gca,'TickLabelInterpreter','latex','FontSize',16)
         title('\bf{Methods computed Zolotarev ratio $\sigma_r$}','Interpreter','latex','FontSize',18)
         ylabel('$\sigma_r$','Interpreter','latex','FontSize',18)
@@ -105,23 +102,12 @@ for j = 1%:numel(spaceCAS)%l-1:numel(spaceCAS)
         plot(0,0,'--')
         plot(0,0,'-.')
         plot(0,0,':')
-        %plot(0,0,'.','Color',[1 1 1]*.4,'MarkerSize',mw)
-        %plot(0,0,'k.','MarkerSize',mw)
         h4 = gca;
         h4.XAxis.Visible = 'off';
         h4.YAxis.Visible = 'off';
-        %set(gca,'xtick',[],'ytick',[])
         legend(lgn,'Interpreter','latex','Location','South','FontSize',12)
-        % add a bit space to the figure
         drawnow
     end
-    % fig = gcf;
-    % fig.Position(3) = fig.Position(3) + 250;
-    % Lgnd = legend('show');
-    % Lgnd.Position(1) = 0.015;
-    % Lgnd.Position(2) = 0.4;
-    % drawnow
-    lf.figSavePDF(['figures/time_accuracy/cas_' CAS '_zol_time'],.6)
 end
 
 license('inuse')
