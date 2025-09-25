@@ -11,8 +11,8 @@ end
 hsym    = sym(h);
 [n,d]   = numden(hsym);
 tmp_n   = sym2poly(n);
-hnum    = tmp_n.'/tmp_n(1);
 tmp_d   = sym2poly(d);
+hnum    = tmp_n.'/tmp_d(1);
 hden    = tmp_d.'/tmp_d(1);
 syms s
 for i = 1:numel(hden)
