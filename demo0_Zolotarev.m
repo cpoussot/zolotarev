@@ -69,7 +69,7 @@ Lgnd = legend('show');
 Lgnd.Position(1) = 0.015;
 Lgnd.Position(2) = 0.4;
 drawnow
-
+%%
 %%% AAA approximation for different options
 for ii = 1:numel(AAAparam)
     kk              = kk + 1;

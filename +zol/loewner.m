@@ -2,13 +2,19 @@
 % Author: C. Poussot-Vassal [MOR Digital Systems & ONERA]
 % 
 % Syntax
-% [hr,info] = zol.loewner(la,mu,W,V)
+% [hr,info] = zol.loewner(la,mu,W,V,opt)
 %  
 % Input arguments
 %  - la : interpolation points (k x 1, complex)
 %  - mu : interpolation points (q x 1, complex)
 %  - W  : data evaluated at points "la" (1 x k, complex)
 %  - V  : data evaluated at points "mu" (1 x q, complex)
+%  - opt: options
+%    * target: rational order (if integer >=1), 
+%              SVD tolerance (if real <1)
+%              automatic (if Inf or [])
+%    * D     : D-term (ny x nu, complex)
+%              /!\ use with discretion
 % 
 % Output arguments
 %  - hr   : approximation model (handle function)
