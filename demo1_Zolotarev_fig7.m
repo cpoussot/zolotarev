@@ -5,18 +5,15 @@ set(groot,'defaultlinemarkersize',4)
 set(groot,'defaultaxesfontsize',18)
 set(groot,'defaultAxesTickLabelInterpreter','latex');  
 list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
-% %%% Zolotorev Loewner package
-% addpath('/Users/charles/Documents/GIT/zolotorev')
 %%% AAA package
 addpath('/Users/charles/Documents/GIT/chebfun')
 %
-mw = 15;
-warning('off')
 spaceCAS    = {'1a' '1b' '1c' '1d' '1e' '1f' ...
                '2a' '2b' '2c' '2d' ...
                '3a' '3b' '3c' '3d' ...
                '7' 'spiral1' 'pm' 'pm2'};
 lgn         = {'Loewner','AAA','AAA  \texttt{"sign",1}','AAA  \texttt{"sign",1,"damping",.95,"lawson",200}'};
+mw          = 15; % marker width
 for j = 1:numel(spaceCAS)
     close all
     clear hsig_ rsig1_ rsig2_ rsig3_ 
@@ -24,11 +21,11 @@ for j = 1:numel(spaceCAS)
     CAS = spaceCAS{j}
     %%% Define Zolotarev topology
     [pts,val,data]  = zol.example(CAS);
-    %%% Estimate bound
+    %%% Estimate approximation bounds (thanks to Loewner)
     [la,mu,W,V]     = zol.example2data(pts,val,data);
     opt.target      = 1e-16;
     [h4,info]       = zol.loewner(la,mu,W,V,opt);
-    %
+    %%% Now loop for all rational orders
     figure, 
     for i = 1:info.r
         robj = i;
@@ -45,20 +42,22 @@ for j = 1:numel(spaceCAS)
         %%% AAA
         % (Z3-Z4)
         tic
-        [r4,rpoles,~,rzeros,zj,fj,wj] = aaa(val,pts,"degree",robj);
+        r4              = aaa(val,pts,"degree",robj);
         [r3,rp,rsig1]   = zol.pb4_to_pb3(r4,pts,val);
         timeAAA1        = toc;
         % (Z3-Z4)
         tic
-        [r4,rpoles,~,rzeros,zj,fj,wj] = aaa(val,pts,"degree",robj,'sign',1);
+        r4              = aaa(val,pts,"degree",robj,'sign',1);
         [r3,rp,rsig2]   = zol.pb4_to_pb3(r4,pts,val);
         timeAAA2        = toc;
         % (Z3-Z4)
         tic
-        [r4,rpoles,~,rzeros,zj,fj,wj] = aaa(val,pts,"degree",robj,'sign',1,'damping',.95,'lawson',200);
+        r4              = aaa(val,pts,"degree",robj,'sign',1,'damping',.95,'lawson',200);
         [r3,rp,rsig3]   = zol.pb4_to_pb3(r4,pts,val);
         timeAAA3        = toc;
-    
+
+        %%% Results
+        % Time / \sigma collection
         timeLOE_(i)     = timeLOE;
         timeAAA1_(i)    = timeAAA1;
         timeAAA2_(i)    = timeAAA2;
@@ -67,7 +66,7 @@ for j = 1:numel(spaceCAS)
         rsig1_(i)       = rsig1;
         rsig2_(i)       = rsig2;
         rsig3_(i)       = rsig3;
-        %
+        % Plot
         clf
         subplot(2,3,[1 2]), hold on, grid on, axis tight
         plot(1:i,abs(hsig_),'-','LineWidth',3,'DisplayName',lgn{1})

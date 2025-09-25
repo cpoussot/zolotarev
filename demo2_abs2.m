@@ -5,8 +5,6 @@ set(groot,'defaultlinemarkersize',4)
 set(groot,'defaultaxesfontsize',18)
 set(groot,'defaultAxesTickLabelInterpreter','latex');  
 list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
-% %%% Zolotorev Loewner package
-% addpath('/Users/charles/Documents/GIT/zolotorev')
 %%% AAA package
 addpath('/Users/charles/Documents/GIT/chebfun')
 %

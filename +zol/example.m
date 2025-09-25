@@ -1,9 +1,9 @@
 function [pts,val,info] = example(CAS)
 
 % E = -1 (left) and F = +1 (right)
-bnd     = [-1 1]; 
-%bnd     = [0 1]; 
-info.z4 = [];
+bnd         = [-1 1]; 
+info.z4     = [];
+info.z4x    = [];
 switch CAS
     case '1a'
         Xlim    = 2.5*[-1 1];
@@ -13,33 +13,21 @@ switch CAS
         E       = -1+.5*S;
         F       = 1+.5*S;
         % Optimal Zolotarev
-        % info.z4{2}  = {[0 1.71429 0] [1 0 .75]};
-        % info.z4{3}  = {[0 2.59615 0 .649038] [1 0 2.25 0]};
-        % info.z4{4}  = {[0 3.46392 0 2.59794 0] [1 0 4.5 0 .5625]};
-        % % 
-        for i = 1:10
-            [z,pol,zer,sigma] = zol.ZolOpt_1a(1,1/2,i);
-            syms x
-            %zz = zz(x);
-            % DEN = 1;
-            % for ii = 1:length(pol)
-            %     DEN = DEN * (x-pol(ii));
-            % end
-            % NUM = 1; 
-            % for ii = 1:length(zer)
-            %     NUM = NUM * (x-zer(ii));
-            % end
-            % z3          = sigma^(1/2)*NUM/DEN;
-            % z4          = -((1-sigma)/(1+sigma))*((z3-sqrt(sigma))/(z3+sqrt(sigma)));
-            z4          = z(x);
-            [num,den]   = numden(z4);
-            num         = sym2poly(num); 
-            den         = sym2poly(den);
-            den_norm    = den(1);
-            num         = num/den_norm; 
-            den         = den/den_norm;
-            info.z4{i}  = {[0;num(:)] den(:)};
-            info.z4x{i} = z;
+        v = ver;
+        if any(strcmp('Symbolic Math Toolbox', {v.Name}))
+            for i = 1:10
+                syms x
+                z           = zol.ZolOpt_1a(1,1/2,i);
+                z4          = z(x);
+                [num,den]   = numden(z4);
+                num         = sym2poly(num); 
+                den         = sym2poly(den);
+                den_norm    = den(1);
+                num         = num/den_norm; 
+                den         = den/den_norm;
+                info.z4{i}  = {[0;num(:)] den(:)};
+                info.z4x{i} = z;
+            end
         end
     case '1b'
         Xlim    = 2.5*[-1 1];
@@ -47,34 +35,21 @@ switch CAS
         E       = zol.chebspace(-1.5,-.5,200);
         F       = zol.chebspace(.5,1.5,200);
         % Optimal Zolotarev
-        % info.z4{2}  = {[0 1.71429 0] [1 0 .75]};
-        % info.z4{3}  = {[0 2.59615 0 .649038] [1 0 2.25 0]};
-        % info.z4{4}  = {[0 3.46392 0 2.59794 0] [1 0 4.5 0 .5625]};
-        % % 
-        for i = 2:2:10
-            [z,pol,zer,sigma,~] = zol.ZolOpt_1b_improper(1/2,3/2,i);
-            %[z,pol,zer,sigma,~] = zol.ZolOpt_1b(1/5,3/2,i);
-            syms x
-            % DEN = 1;
-            % for ii = 1:length(pol)
-            %     DEN = DEN * (x-pol(ii));
-            % end
-            % NUM = 1; 
-            % for ii = 1:length(zer)
-            %     NUM = NUM * (x-zer(ii));
-            % end
-            % z3          = sigma^(1/2)*NUM/DEN;
-            % z4          = -((1-sigma)/(1+sigma))*((z3-sqrt(sigma))/(z3+sqrt(sigma)));
-            z4          = z(x);
-            [num,den]   = numden(z4);
-            num         = sym2poly(num); 
-            den         = sym2poly(den);
-            den_norm    = den(1);
-            num         = num/den_norm;
-            den         = den/den_norm;
-            %info.z4{i}  = {[0 num] den};
-            info.z4{i}  = {[num(:)] den(:)};
-            info.z4x{i} = z;
+        v = ver;
+        if any(strcmp('Symbolic Math Toolbox', {v.Name}))
+            for i = 2:2:10
+                syms x
+                z           = zol.ZolOpt_1b_improper(1/2,3/2,i);
+                z4          = z(x);
+                [num,den]   = numden(z4);
+                num         = sym2poly(num); 
+                den         = sym2poly(den);
+                den_norm    = den(1);
+                num         = num/den_norm;
+                den         = den/den_norm;
+                info.z4{i}  = {[num(:)] den(:)};
+                info.z4x{i} = z;
+            end
         end
     case '1c'
         Xlim    = 2.5*[-1 1];
