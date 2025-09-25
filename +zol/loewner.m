@@ -1,4 +1,4 @@
-% Loewner algorithm (tangential version)
+% Loewner algorithm (simple version) 
 % Author: C. Poussot-Vassal [MOR Digital Systems & ONERA]
 % 
 % Syntax
