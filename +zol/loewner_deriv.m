@@ -1,27 +1,3 @@
-% Syntax
-% [hr,info] = loewner_simple(val,pts,robj,n1,n2)
-%  
-% Input arguments
-%  - val    : variables to interpolate / approximate (N x 1, complex)
-%  - pts    : interpolation points (N x 1, complex)
-%  - robj   : rational order (integer > 0) or 
-% 
-% Output arguments
-%  - hr     : approximation rational function (handle function)
-%  - info   : structure with a lot of informations about the Loewner world
-%               r      : rational order
-%               la     : lambda's (column interpolation points)
-%               mu     : mu's (row interpolation points)
-%               sv     : normalized singular values of [LL SS]
-%               LL     : Loewner matrix
-%               SS     : shifted Loewner matrix
-%               lar    : compressed column (right) interpolation points
-%               mur    : compressed row (left) interpolation points
-%               E,A,B,C: H(s)=C(sE-A)\B
-% 
-% Description
-% Loewner framework rules.
-% 
 
 function [hr,info] = loewner_deriv(val,pts,ROBJ,D,shift)
     

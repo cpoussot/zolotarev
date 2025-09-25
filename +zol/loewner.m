@@ -1,3 +1,50 @@
+% Loewner algorithm (tangential version)
+% Author: C. Poussot-Vassal [MOR Digital Systems & ONERA]
+% 
+% Syntax
+% [hr,info] = zol.loewner(la,mu,W,V)
+%  
+% Input arguments
+%  - la : interpolation points (k x 1, complex)
+%  - mu : interpolation points (q x 1, complex)
+%  - W  : data evaluated at points "la" (1 x k, complex)
+%  - V  : data evaluated at points "mu" (1 x q, complex)
+% 
+% Output arguments
+%  - hr   : approximation model (handle function)
+%  - info : structure with informations about the Loewner world
+%    * r    : rational order (integer)
+%    * la   : lambda's column interpolation points (k x 1, complex)
+%    * mu   : mu's row interpolation points (q x 1, complex)
+%    * sv   : normalized singular values of [LL SS] (min(q,k), real)
+%    * LL   : Loewner matrix (q x k, complex)
+%    * SS   : shifted Loewner matrix (q x k, complex)
+%    * V,W  : same as input
+%    * LA   : Lambda matrix (k x k, complex)
+%    * MU   : Mu matrix (q x q, complex)
+%    * L,R  : left, right tangential directions, here 1 (data x tangent directions)
+%    * lar  : compressed column (right) interpolation points (r x 1, complex)
+%    * mur  : compressed row (left) interpolation points (r x 1, complex)
+%    * Hr   : compressed Loewner form (state-space, complex)
+%               Hr(s)=Cr(sEr-Ar)\Br+Dr, 
+%             where (Er,Ar,Br,Cr,Dr) are available in info.Er ...
+% 
+% Note 
+% Sylvester equations 
+%   MU*LL-LL*LA = V*R-L*W 
+%   MU*SS-SS*LA = MU*V*R-L*W*LA
+% may be checked as
+%   test1 = info.MU*info.LL - info.LL*info.LA;
+%   test2 = info.V*info.R - info.L*info.W;
+%   norm(test1-test2) % small
+%   test1 = info.MU*info.SS - info.SS*info.LA;
+%   test2 = info.MU*info.V*info.R - info.L*info.W*info.LA;
+%   norm(test1-test2) % small
+% 
+% Description
+% Loewner rules.
+%
+
 function [hr,info] = loewner(la,mu,W,V,opt)
 
 if nargin < 5 || ~isa(opt,'struct')
