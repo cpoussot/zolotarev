@@ -1,9 +1,4 @@
-% clearvars
-% a = 0.5
-% b = 1;
-% r = 4;
-
-function [z,pol,zer,D,intp] = ZolOpt_1b_improper(a,b,r)
+function [z,pol,zer,intp] = ZolOpt_1b_improper(a,b,r)
 
 %   27 March 2019
 %   Author: I.V. Gosea
@@ -43,9 +38,9 @@ zer(2*d+1)=0;
 % Zolotarev optimal approximant as function handle
 z = @(s) feval(@vhandle,s,pol,zer,D); 
 
-[sn2,cn2,dn2] = ellipj((0:4*d)*K/(4*d),1-(a/b)^2);
+[sn2,cn2,dn2] = ellipj((0:4*d+2)*K/(4*d+2),1-(a/b)^2);
 
-%[sn2,cn2,dn2] = util_ellipjc((0:4*d)*K/(4*d),1-(a/b)^2);
+%[sn2,cn2,dn2] = util_ellipjc((0:4*d+2)*K/(4*d+2),1-(a/b)^2);
 
  c2 =sqrt(a^2+(b^2-a^2)*cn2.^2);
  
