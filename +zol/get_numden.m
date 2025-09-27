@@ -27,6 +27,7 @@ end
 if length(hden) < k
     hden = [zeros(k-length(hden),1); hden(:)];
 end
+
 %%%
 if SHOW
     lw  = 4;
