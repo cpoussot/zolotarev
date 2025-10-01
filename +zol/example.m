@@ -15,7 +15,30 @@ switch CAS
         % Optimal Zolotarev
         v = ver;
         if any(strcmp('Symbolic Math Toolbox', {v.Name}))
-            for i = 1:10
+            for i = 1:20
+                syms x
+                z           = zol.ZolOpt_1a(1,1/2,i);
+                z4          = z(x);
+                [num,den]   = numden(z4);
+                num         = sym2poly(num); 
+                den         = sym2poly(den);
+                den_norm    = den(1);
+                num         = num/den_norm; 
+                den         = den/den_norm;
+                info.z4{i}  = {[0;num(:)] den(:)};
+                info.z4x{i} = z;
+            end
+        end
+    case '1a2'
+        Xlim    = 2.5*[-1 1];
+        Ylim    = 1.5*[-1 1];
+        S       = exp(2i*pi*(1:80)'/80);
+        E       = -1.25+S;
+        F       = 1.25+S;
+        % Optimal Zolotarev
+        v = ver;
+        if any(strcmp('Symbolic Math Toolbox', {v.Name}))
+            for i = 1:20
                 syms x
                 z           = zol.ZolOpt_1a(1,1/2,i);
                 z4          = z(x);
