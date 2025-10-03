@@ -15,7 +15,7 @@ switch CAS
         % Optimal Zolotarev
         v = ver;
         if any(strcmp('Symbolic Math Toolbox', {v.Name}))
-            for i = 1:20
+            for i = 1:30
                 syms x
                 z           = zol.ZolOpt_1a(1,1/2,i);
                 z4          = z(x);
@@ -60,7 +60,7 @@ switch CAS
         % Optimal Zolotarev
         v = ver;
         if any(strcmp('Symbolic Math Toolbox', {v.Name}))
-            for i = 2:2:10
+            for i = 2:2:20
                 syms x
                 z           = zol.ZolOpt_1b_improper(1/2,3/2,i);
                 z4          = z(x);
