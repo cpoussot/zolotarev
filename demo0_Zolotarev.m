@@ -6,18 +6,18 @@ set(groot,'defaultaxesfontsize',18)
 set(groot,'defaultAxesTickLabelInterpreter','latex');  
 list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
 %%% AAA package
-addpath('/Users/charles/Documents/GIT/chebfun')
+addpath('/Users/charles/Documents/GIT/_others/chebfun')
 %%% Chose case, order
-CAS     = '1a' % /!\ '1a' and '1b' use "Symbolic Toolbox" 
-robj0   = 1e-14;
-mw      = 15; % marker width
-kk      = 1; % for plot
+CAS         = '1a'     % /!\ '1a' and '1b' use "Symbolic Toolbox" 
+robj0       = 1e-14;   % objective order (either integer > 1 or sigma threshold)
+mw          = 15;      % marker width
+kk          = 1;       % for plot
+lev_contour = -30:1:0; % contour plot
 %%% Chose options for chefun AAA
 AAAparam    = {""; ... 
                ",'sign',1,'damping',.95"; ...
                ",'sign',1,'damping',.95,'lawson',200"};
 K           = ceil((1+numel(AAAparam))/2);
-lev_contour = -30:1:0;
 
 %%% Define Zolotarev topology
 [pts,val,data]  = zol.example(CAS);
@@ -32,7 +32,6 @@ methodName      = '\textbf{LF}';
 [la,mu,W,V]     = zol.example2data(pts,val,data);
 opt             = [];
 opt.target      = robj0;
-opt.D           = 0;
 [h4,info]       = zol.loewner(la,mu,W,V,opt);
 % >> (Z4) poles and zeros
 h4poles         = eig(info.Ar,info.Er);
@@ -69,7 +68,7 @@ Lgnd = legend('show');
 Lgnd.Position(1) = 0.015;
 Lgnd.Position(2) = 0.4;
 drawnow
-%%
+
 %%% AAA approximation for different options
 for ii = 1:numel(AAAparam)
     kk              = kk + 1;

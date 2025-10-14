@@ -203,33 +203,6 @@ switch CAS
         y       = r .* sin(phi);
         E       = x + 1i*y;
         F       = -x - 1i*y;
-    case 'pm'
-        N       = 120;
-        Xlim    = 2.5*[-1 1];
-        Ylim    = 1.5*[-1 1];
-        theta   = linspace(pi/4,2*pi-pi/5,2*N);
-        S       = exp(1i*theta);
-        E       = -1+S;
-        B1      = linspace(-1,real(E(1)),N/2+1)  +1i*linspace(0,imag(E(1)),N/2+1);
-        B2      = linspace(-1,real(E(end)),N/2+2)+1i*linspace(0,imag(E(end)),N/2+2);
-        theta   = linspace(0,2*pi,37);
-        O       = -1+1i*.75+.1*exp(1i*theta-1e-12);
-        E       = [E B1(1:end-1) B2(2:end-1) O];
-        nE      = length(E);
-        %
-        % theta   = linspace(pi/2,-pi/2,N);
-        % T       = .5*exp(1i*theta);
-        % TT      = exp(1i*theta);
-        % T1      = [T-.5+.5i -T-.5-.5i -TT-.5];
-        % F       = -.5*T1*exp(1i*pi/5);
-        A1  = linspace(0,.4,floor(nE/9))+1i*linspace(0,1,floor(numel(E)/9));
-        A2  = linspace(.41,.8,floor(numel(E)/9))+1i*linspace(1,0,floor(numel(E)/9));
-        A3  = linspace(.16,.64,floor(numel(E)/9))+1i*.4;
-        %A3  = linspace(.18,.62,floor(numel(E)/9))+1i*.4;
-        A   = .8*([A1 A2 A3]-1i*.5);
-        F   = .8*[A A+.8 A+1.6]+.5+.5i;
-        %F   = .8*[A exp(-1i*pi/10)*A+.9 exp(-1i*2*pi/10)*A+1.8]+.5;
-        %F   = [.8*A+1i .8*A+.5 .8*A-1i]+.5;
     case 'pm2'
         N       = 120;
         Xlim    = 2.5*[-1 1];
@@ -246,71 +219,6 @@ switch CAS
         theta   = linspace(0,2*pi,numel(E));
         S       = exp(1i*theta);
         F       = 1+S;
-    case 'ts' % aca (triangles and squares)
-        N       = 50;
-        Xlim    = 3*[-1 1];
-        Ylim    = 3*[-1 1];
-        p1=1+1i*1; p2=1+1i*2; p3=2+1i*2; p4=2+1i;
-        p12=linspace(p1,p2,25);p23=linspace(p2,p3,25);
-        p34=linspace(p3,p4,25);p41=linspace(p4,p1,25);
-        P=union(union(union(p12,p23),p34),p41);
-
-        q1=1-1i; q2=2-1i; q3=3/2-1i*2;
-        q12=linspace(q1,q2,N);q23=linspace(q2,q3,N);q31=linspace(q3,q1,N);
-        Q=union(union(q12,q23),q31);
-        
-        r1=q1-3; r2=q2-3; r3=q3-3;
-        r12=linspace(r1,r2,N);r23=linspace(r2,r3,N);r31=linspace(r3,r1,N);
-        R=union(union(r12,r23),r31);
-        
-        m1=-1+1i; m2=-2+1i; m3=-3/2+1i*2;
-        m12=linspace(m1,m2,N);m23=linspace(m2,m3,N);m31=linspace(m3,m1,N);
-        M=union(union(m12,m23),m31);
-        
-        E   = union(P,R); 
-        F   = union(Q,M);
-    case 1
-        N       = 500;
-        Xlim    = 2.5*[-1 1];
-        Ylim    = 1.5*[-1 1];
-        theta   = linspace(0,2*pi-1e-3,100);
-        S       = exp(1i*theta);
-        F       = 1+exp(1i*pi/2)*(.2*real(S)+1i*imag(S))/sqrt(1i);
-        % Polygon random
-        pgon    = polyshape(rand(1,N),1*rand(1,N));
-        E       = pgon.Vertices(:,1)+1i*pgon.Vertices(:,2); E(isnan(E)) = [];
-        k       = boundary([real(E) imag(E)]);
-        E       = E(k,:)*exp(1i*pi/2*rand(1))-1.1*max(real(E));
-        E(1)    = []; % to ensure (la U mu) not repeating
-    case 3  % aca Two line segments
-        Xlim    = .3*[-1 1];
-        Ylim    = .2*[-1 1];
-        F       = 1i*([0.005:0.005:1]/10+0.01);
-        F       = double(F); 
-        syms s;
-        dt = 0.005;
-        z0 = subs(s+.1,s,[0:0.005:1-0.005]);
-        E  = [1:200]/200+i*z0/10+.1;E=double(E);
-        [n1,n2]=size(E);
-        n=n2;
-    case 4 % aca (two circles)
-        Xlim    = 2.5*[-1 1];
-        Ylim    = 1.5*[-1 1];
-        dt=0.005; th=[0:dt:1-dt]*2*pi; [n1,n2]=size(th);n=n2;
-        S=exp(1i*th);
-        F=-.2+.2*1i+S/2;%F +1
-        E=S;            %E -1 or 0
-    case 5
-        Xlim    = 2.5*[-1 1];
-        Ylim    = 3.5*[-1 1];
-        n0=100;
-        E1=linspace(1,2,n0); E2=linspace(-3,3,n0)*1i;
-        E3=E1+1i*3;E7=-E1+1i*3; 
-        E4=E1-1i*3; E8=-E1-1i*3;
-        E5=E2+1;E9=E2-1; E6=E2+2; E10=E2-2;
-        E=union(union(union(E3,E4),E5),E6);
-        F=union(union(union(E7,E8),E9),E10); 
-        [n1,n2]=size(E);n=n2;
     case 'spiral2'
         Xlim    = 55*[-1 1];
         Ylim    = 55*[-1 1];
