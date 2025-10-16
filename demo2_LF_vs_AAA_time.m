@@ -11,11 +11,11 @@ addpath('/Users/charles/Documents/GIT/chebfun')
 spaceCAS    = {'1a' '1b' '1c' '1d' '1e' '1f' ...
                '2a' '2b' '2c' '2d' ...
                '3a' '3b' '3c' '3d' ...
-               '7' 'spiral1' 'pm' 'pm2'};
+               '7' 'spiral1' 'pm2'};
 lgn         = {'Loewner','AAA','AAA  \texttt{"sign",1}','AAA  \texttt{"sign",1,"damping",.95,"lawson",200}'};
 mw          = 15; % marker width
-for j = 1:numel(spaceCAS)
-    close all
+for j = 1%:numel(spaceCAS)
+    %close all
     clear hsig_ rsig1_ rsig2_ rsig3_ 
     clear timeLOE_ timeAAA1_ timeAAA2_ timeAAA3_ 
     CAS = spaceCAS{j}
@@ -57,7 +57,7 @@ for j = 1:numel(spaceCAS)
         timeAAA3        = toc;
 
         %%% Results
-        % Time / \sigma collection
+        % Time / sigma collection
         timeLOE_(i)     = timeLOE;
         timeAAA1_(i)    = timeAAA1;
         timeAAA2_(i)    = timeAAA2;
