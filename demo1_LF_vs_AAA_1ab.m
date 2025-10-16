@@ -5,12 +5,12 @@ set(groot,'defaultlinemarkersize',4)
 set(groot,'defaultaxesfontsize',18)
 set(groot,'defaultAxesTickLabelInterpreter','latex');  
 list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
-%%% Zolotarev Loewner package
-addpath('/Users/charles/Documents/GIT/zolotarev')
+
 %%% AAA package
 addpath('/Users/charles/Documents/GIT/chebfun')
-%
-CAS         = '1b'
+
+%%% Chose case, order
+CAS         = '1a'
 robj        = 6;
 Nplot       = 1;
 interlace   = true;
@@ -22,7 +22,7 @@ xx              = linspace(data.Xlim(1),data.Xlim(2),101);
 yy              = linspace(data.Ylim(1),data.Ylim(2),103);
 [X,Y]           = meshgrid(xx,yy);
 
-%%% Optimal
+%%% Optimal solution
 syms z
 n4_opt              = data.z4{robj}{1};
 d4_opt              = data.z4{robj}{2};
@@ -34,7 +34,6 @@ deg_den             = length(d4_opt)-1;
 %%% Loewner
 [la,mu,W,V]         = zol.example2data(pts,val,data);
 opt.target          = robj;
-%opt.D               = 1;
 [h4_loe,info]       = zol.loewner(la,mu,W,V,opt);
 [n4_loe,d4_loe]     = tfdata(dss(info.Ar,info.Br,info.Cr,info.Dr,info.Er)); n4_loe = n4_loe{1}.'; d4_loe = d4_loe{1}.';
 n4_loe              = [zeros(deg_num-length(n4_loe)+1,1); n4_loe];
@@ -88,14 +87,12 @@ fprintf('Z4: denominator, optimal (left) AAA (right)\n')
 vpa([d4_opt d4_aaa],3)
 fprintf('************************ \n')
 
+%%% All num/den
 SIG = [SIG sig_aaa];
 NUM = [NUM n4_aaa];
 DEN = [DEN d4_aaa];
 
-
-
 %%% Plot
-%
 Bnum    = (z.^(deg_num:-1:0)).';
 Bden    = (z.^(deg_den:-1:0)).';
 %
@@ -131,7 +128,6 @@ switch CAS
         xlabel('Real'); ylabel('Imag.');
         title(['Case ' CAS ': functions evaluation'])
         legend({'Optimal','LF',strcat('AAA ',AAAparam{1}),strcat('AAA ',AAAparam{2})},'location','best')
-        %legend({'Optimal','LF','AAA','AAA-Lawson'},'location','best')
         xlim([min(real(g4_loe_)) max(real(g4_loe_))]); 
         ylim([min(imag(g4_loe_)) max(imag(g4_loe_))]); 
     case '1b'
@@ -144,7 +140,6 @@ switch CAS
         xlabel('$x$'); xlabel('$\mathbf{f}(x)$');
         title(['Case ' CAS ': functions evaluation'])
         legend({'Optimal','LF',strcat('AAA ',AAAparam{1}),strcat('AAA ',AAAparam{2})},'location','best')
-        %legend({'Optimal','LF','AAA','AAA-Lawson'},'location','best')
         subplot(212), hold on, axis tight, grid on
         plot(xx,abs(g4_loe_-g4_opt_),'-','Color',col(2,:))
         plot(xx,abs(g4_aaa_-g4_opt_),'-s','Color',col(3,:))

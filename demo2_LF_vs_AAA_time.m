@@ -5,17 +5,20 @@ set(groot,'defaultlinemarkersize',4)
 set(groot,'defaultaxesfontsize',18)
 set(groot,'defaultAxesTickLabelInterpreter','latex');  
 list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
+
 %%% AAA package
 addpath('/Users/charles/Documents/GIT/chebfun')
-%
+
+%%% Chose case
 spaceCAS    = {'1a' '1b' '1c' '1d' '1e' '1f' ...
                '2a' '2b' '2c' '2d' ...
                '3a' '3b' '3c' '3d' ...
                '7' 'spiral1' 'pm2'};
 lgn         = {'Loewner','AAA','AAA  \texttt{"sign",1}','AAA  \texttt{"sign",1,"damping",.95,"lawson",200}'};
 mw          = 15; % marker width
-for j = 1%:numel(spaceCAS)
-    %close all
+
+%%% Loop over all cases
+for j = 1:numel(spaceCAS)
     clear hsig_ rsig1_ rsig2_ rsig3_ 
     clear timeLOE_ timeAAA1_ timeAAA2_ timeAAA3_ 
     CAS = spaceCAS{j}
@@ -38,8 +41,8 @@ for j = 1%:numel(spaceCAS)
         [h3,hp,hsig]    = zol.pb4_to_pb3(h4,pts,val);
         timeLOE         = toc;
         robj            = info.r;
-    
-        %%% AAA
+
+        %%% AAA with different options
         % (Z3-Z4)
         tic
         r4              = aaa(val,pts,"degree",robj);

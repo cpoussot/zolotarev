@@ -5,8 +5,9 @@ set(groot,'defaultlinemarkersize',4)
 set(groot,'defaultaxesfontsize',18)
 set(groot,'defaultAxesTickLabelInterpreter','latex');  
 list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
+
 %%% Chose case, order
-CAS         = '7';    % /!\ '1a' and '1b' use "Symbolic Toolbox" if available
+CAS         = '1a';    % /!\ '1a' and '1b' use "Symbolic Toolbox" if available
 robj0       = 1e-14;   % objective order (either integer > 1 or sigma threshold)
 
 %%% Plot properties
