@@ -9,11 +9,11 @@ This page provides the necessary numerical tools allowing to reproduce the resul
 ## Contribution claim
 
 The contributions and highlights of this paper, discovered through a comprehensive numerical comparison performed here, are listed below:
-- (i) we show that the LF solves Zolotarev problems by compressing the number of interpolation points. This approach does not need any iterations and yields solutions quite close to the optimal ones;
-- (ii) we conduct an extensive numerical study and comparison of the performance of different methods (w.r.t. to computing time, accuracy of fit and interpretability of the polynomials, for approximating several sign functions defined on various domains showing, among others, the computational advantage of LF;
-- (iii) we emphasize the LF, and demonstrate that this method yields, in most cases, very accurate results in a fast and reliable way, with no user intervention and no iteration. As a matter of fact, we highlight the LF as a valid alternative to these methods;
-- (iv) we show that the rational functions computed with LF come very close to optimal approximants and, in some specific cases (notably the symmetric ones), recovers the structure of the optimal solution as well as the symmetry property, i.e., the eigenvalues and zeros distributions, whereas the other methods tend to add spurious and badly distributed poles and zeros. Such a feature is indeed decisive to discover the property of the topology when only data values are available;
-- (v) we point out that in simplified cases for which the exact solution is known, the LF recovers the polynomial structure (i.e., realness, alternation of coefficients in polynomial representation), whereas AAA adds complex, non-trivial artifacts that can’t be easily explained.
+- we show that the LF solves Zolotarev problems by compressing the number of interpolation points. This approach does not need any iterations and yields solutions quite close to the optimal ones;
+- we conduct an extensive numerical study and comparison of the performance of different methods (w.r.t. to computing time, accuracy of fit and interpretability of the polynomials, for approximating several sign functions defined on various domains showing, among others, the computational advantage of LF;
+- we emphasize the LF, and demonstrate that this method yields, in most cases, very accurate results in a fast and reliable way, with no user intervention and no iteration. As a matter of fact, we highlight the LF as a valid alternative to these methods;
+- we show that the rational functions computed with LF come very close to optimal approximants and, in some specific cases (notably the symmetric ones), recovers the structure of the optimal solution as well as the symmetry property, i.e., the eigenvalues and zeros distributions, whereas the other methods tend to add spurious and badly distributed poles and zeros. Such a feature is indeed decisive to discover the property of the topology when only data values are available;
+- we point out that in simplified cases for which the exact solution is known, the LF recovers the polynomial structure (i.e., realness, alternation of coefficients in polynomial representation), whereas AAA adds complex, non-trivial artifacts that can’t be easily explained.
 
 ## Main reference
 
@@ -34,12 +34,16 @@ The contributions and highlights of this paper, discovered through a comprehensi
 
 # The "zol" MATLAB package 
 
-The code (`+zol` folder)  provided in this GitHub page is given for open science purpose. Its principal objective is to accompany the the readers, and thus aims at being as educative as possible rather than industry-oriented. Evolutions (numerical improvements) may come with time. Please, cite the reference above if used in your work and do not hesitate to contact us in case of bug of problem when using it. Below we present an example of use, then functions list are given.
+The code (`+zol` folder)  provided in this GitHub page is given for open science purpose. Its principal objective is to accompany the readers, and thus aims at being as educative as possible rather than industry-oriented. Evolutions (numerical improvements) may come with time. Please, cite the reference above if used in your work and do not hesitate to contact us in case of bug of problem when using it. Below we present an example of use, then functions list are given.
 It is also meant to allow reproduction of the results in the paper.
 
-## A simple MATLAB code example
+## Simple MATLAB code examples
 
-Here is a simple code that describes how to deploy the LF. Code below is `demo.m`.
+We provide a series of simple codes that describe how to deploy the LF and how to compare with some AAA approaches.  More specifically, we include
+- `demo0_LF.m`:
+- `demo1_LF_vs_AAA_1ab.m`:
+- `demo2_LF_vs_AAA.m`:
+- `demo2_LF_vs_AAA_time.m`:
 
 First add the path where the `+zol` package is located.
 
