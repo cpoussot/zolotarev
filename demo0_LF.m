@@ -6,7 +6,7 @@ set(groot,'defaultaxesfontsize',18)
 set(groot,'defaultAxesTickLabelInterpreter','latex');  
 list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
 %%% Chose case, order
-CAS         = '1a';    % /!\ '1a' and '1b' use "Symbolic Toolbox" if available
+CAS         = '7';    % /!\ '1a' and '1b' use "Symbolic Toolbox" if available
 robj0       = 1e-14;   % objective order (either integer > 1 or sigma threshold)
 
 %%% Plot properties
@@ -60,7 +60,7 @@ plot(real(h3zeros),imag(h3zeros),'bo','MarkerFaceColor','b','DisplayName','(Z3) 
 colormap winter
 axis equal, set(gca,'Xlim',data.Xlim,'YLim',data.Ylim)
 ylabel('Imag(.)'), xlabel('Real(.)')
-title({methodName; ['$r=$' num2str(robj) ', $\sigma_r=$ ' num2str(abs(hsig)) ' in ' num2str(timeLOE) 's' ]})
+title({methodName; ['$r=' num2str(robj) '$, $\sigma_r=$ ' num2str(abs(hsig)) ' in ' num2str(timeLOE) 's' ]})
 Lgnd = legend('show');
 drawnow
 
