@@ -109,7 +109,7 @@ for ii = 1:numel(AAAparam)
     axis equal, set(gca,'Xlim',data.Xlim,'YLim',data.Ylim)
     ylabel('Imag(.)'), xlabel('Real(.)')
     title({['\textbf{AAA} \texttt{opt=' AAAparam_i{1}(2:end) '}']; ...
-           ['$r=' num2str(robj) '$ (' num2str(length(h3poles)) '), $\sigma_r=$ ' num2str(abs(rsig)) ' in ' num2str(timeAAA) 's' ]})
+           ['$r=' num2str(robj) '$ ($' num2str(length(h3poles)) '$), $\sigma_r=$ ' num2str(abs(rsig)) ' in ' num2str(timeAAA) 's' ]})
     drawnow
 end
 license('inuse')
