@@ -1,3 +1,25 @@
+% Convert example data to LF
+% Author: C. Poussot-Vassal [MOR Digital Systems & ONERA]
+% 
+% Syntax
+% [la,mu,W,V] = zol.example2data(pts,val,data,interlace)
+%  
+% Input arguments
+%  - pts       : interpolation points (complex vector)
+%  - val       : data evaluated at points "pts" (complex vector)
+%  - data      : structure of the topology (see zol.example)
+%  - interlace : interlace data (boolean, default true)
+% 
+% Output arguments
+%  - la : interpolation points (k x 1, complex)
+%  - mu : interpolation points (q x 1, complex)
+%  - W  : data evaluated at points "la" (1 x k, complex)
+%  - V  : data evaluated at points "mu" (1 x q, complex)
+% 
+% Description
+% Convert example data to LF
+%
+
 function [la,mu,W,V] = example2data(pts,val,data,interlace)
 
 if nargin < 4
