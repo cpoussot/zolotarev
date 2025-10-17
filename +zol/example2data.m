@@ -6,7 +6,7 @@
 %  
 % Input arguments
 %  - pts       : interpolation points (complex vector)
-%  - val       : data evaluated at points "pts" (complex vector)
+%  - val       : data evaluated at points "pts" (+/- 1 vector)
 %  - data      : structure of the topology (see zol.example)
 %  - interlace : interlace data (boolean, default true)
 % 

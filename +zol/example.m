@@ -1,6 +1,27 @@
+% List of Zolotarev examples 
+% Author: C. Poussot-Vassal [MOR Digital Systems & ONERA]
+% 
+% Syntax
+% [pts,val,data] = zol.example(name)
+%  
+% Input arguments
+%  - name : string name being either
+%           '1a', '1b', '1c', '1d',  1e ,  1f , ...
+%           '2a', '2b', '2c', '2d', ... 
+%           '3a', '3b', '3c', '3d', '7', ...
+%           'spiral1', 'pm2'
+% 
+% Output arguments
+%  - pts  : interpolation points (complex vector)
+%  - val  : data evaluated at points "pts" (+/- 1 vector)
+%  - data : structure of the topology
+% 
+% Description
+% List of exmaples where E = -1 (left) and F = +1 (right)
+% 
+
 function [pts,val,info] = example(CAS)
 
-% E = -1 (left) and F = +1 (right)
 bnd         = [-1 1]; 
 info.z4     = [];
 info.z4x    = [];
