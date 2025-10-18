@@ -12,7 +12,7 @@ addpath('/Users/charles/Documents/GIT/chebfun')
 %%% Chose case, order
 CAS         = '1a'
 robj        = 6;
-Nplot       = 1;
+mw          = 20;
 interlace   = true;
 AAAparam    = {""; ... 
                ",'sign',1,'damping',.95,'lawson',200"};
@@ -172,15 +172,15 @@ p_aaal(abs(p_aaal)>100) = [];
 
 figure, 
 subplot(211), hold on, grid on
-plot(real(z_opt),imag(z_opt),'kx')
-plot(real(z_loe),imag(z_loe),'ro')
-plot(real(z_aaal),imag(z_aaal),'bo')
+plot(real(z_opt),imag(z_opt),'kx','MarkerSize',mw)
+plot(real(z_loe),imag(z_loe),'ro','MarkerSize',mw)
+plot(real(z_aaal),imag(z_aaal),'b.','MarkerSize',2*mw)
 xlabel('Real'); ylabel('Imag.');
 title('Zeros')
 subplot(212), hold on, grid on
-plot(real(p_opt),imag(p_opt),'kx')
-plot(real(p_loe),imag(p_loe),'ro')
-plot(real(p_aaal),imag(p_aaal),'bo')
+plot(real(p_opt),imag(p_opt),'kx','MarkerSize',mw)
+plot(real(p_loe),imag(p_loe),'ro','MarkerSize',mw)
+plot(real(p_aaal),imag(p_aaal),'b.','MarkerSize',2*mw)
 xlabel('Real'); ylabel('Imag.');
 title('Poles')
 legend({'Optimal' 'Loewner' 'AAA-L'})
