@@ -1,7 +1,7 @@
 clearvars; close all; clc
 set(groot,'DefaultFigurePosition', [200 150 1000 600]);
 set(groot,'defaultlinelinewidth',2)
-set(groot,'defaultlinemarkersize',4)
+set(groot,'defaultlinemarkersize',6)
 set(groot,'defaultaxesfontsize',18)
 set(groot,'defaultAxesTickLabelInterpreter','latex');  
 list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
@@ -30,6 +30,9 @@ h4_opt              = matlabFunction(poly2sym(n4_opt,z)/poly2sym(d4_opt,z));
 [h3_opt,~,sig_opt]  = zol.pb4_to_pb3(h4_opt,pts,val);
 deg_num             = length(n4_opt)-1;
 deg_den             = length(d4_opt)-1;
+SIG = sig_opt;
+NUM = n4_opt;
+DEN = d4_opt;
 
 %%% Loewner
 [la,mu,W,V]         = zol.example2data(pts,val,data);
@@ -47,9 +50,9 @@ fprintf('Z4: denominator, optimal (left) LF (right)\n')
 vpa([d4_opt d4_loe],3)
 fprintf('************************ \n')
 %
-SIG = sig_loe;
-NUM = n4_loe;
-DEN = d4_loe;
+SIG = [SIG sig_loe];
+NUM = [NUM n4_loe];
+DEN = [DEN d4_loe];
 
 %%% AAA 
 ii = 1;
@@ -96,10 +99,10 @@ DEN = [DEN d4_aaa];
 Bnum    = (z.^(deg_num:-1:0)).';
 Bden    = (z.^(deg_den:-1:0)).';
 %
-g4_opt  = matlabFunction(sum(n4_opt.*Bnum)/sum(d4_opt.*Bden));
-g4_loe  = matlabFunction(sum(NUM(:,1).*Bnum)/sum(DEN(:,1).*Bden));
-g4_aaa  = matlabFunction(sum(NUM(:,2).*Bnum)/sum(DEN(:,2).*Bden));
-g4_aaaL = matlabFunction(sum(NUM(:,3).*Bnum)/sum(DEN(:,3).*Bden));
+g4_opt  = matlabFunction(sum(NUM(:,1).*Bnum)/sum(DEN(:,1).*Bden));
+g4_loe  = matlabFunction(sum(NUM(:,2).*Bnum)/sum(DEN(:,2).*Bden));
+g4_aaa  = matlabFunction(sum(NUM(:,3).*Bnum)/sum(DEN(:,3).*Bden));
+g4_aaaL = matlabFunction(sum(NUM(:,4).*Bnum)/sum(DEN(:,4).*Bden));
 
 switch CAS
     case '1a'
@@ -148,3 +151,37 @@ switch CAS
         xlabel('$x$'); ylabel('$|\mathbf{f}(x)-\mathbf{f}^\star(x)|$');
         title(['Case ' CAS ': functions error evaluation'])
 end
+
+
+vpa([NUM(:,1).*Bnum, ... % OPT
+     NUM(:,2).*Bnum, ... % LOE
+     NUM(:,4).*Bnum],2) % AAA-L
+vpa(sort(solve(sum(NUM(:,1).*Bnum),z)),2) % OPT
+vpa(sort(solve(sum(NUM(:,2).*Bnum),z)),2) % LOE
+vpa(sort(solve(sum(NUM(:,4).*Bnum),z)),2) % AAA-L
+
+z_opt  = roots(NUM(:,1));
+z_loe  = roots(NUM(:,2));
+z_aaal = roots(NUM(:,4));
+p_opt  = roots(DEN(:,1));
+p_loe  = roots(DEN(:,2));
+p_aaal = roots(DEN(:,4));
+
+z_aaal(abs(z_aaal)>100) = [];
+p_aaal(abs(p_aaal)>100) = [];
+
+figure, 
+subplot(211), hold on, grid on
+plot(real(z_opt),imag(z_opt),'kx')
+plot(real(z_loe),imag(z_loe),'ro')
+plot(real(z_aaal),imag(z_aaal),'bo')
+xlabel('Real'); ylabel('Imag.');
+title('Zeros')
+subplot(212), hold on, grid on
+plot(real(p_opt),imag(p_opt),'kx')
+plot(real(p_loe),imag(p_loe),'ro')
+plot(real(p_aaal),imag(p_aaal),'bo')
+xlabel('Real'); ylabel('Imag.');
+title('Poles')
+legend({'Optimal' 'Loewner' 'AAA-L'})
+sgtitle(['Approximation $r=' num2str(robj) '$'],'Fontsize',20)
