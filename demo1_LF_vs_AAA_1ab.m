@@ -7,7 +7,7 @@ set(groot,'defaultAxesTickLabelInterpreter','latex');
 list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
 
 %%% AAA package
-addpath('/Users/charles/Documents/GIT/chebfun')
+addpath('/Users/charles/Documents/GIT/_others/chebfun')
 
 %%% Chose case, order
 CAS         = '1a'
@@ -175,13 +175,15 @@ subplot(211), hold on, grid on
 plot(real(z_opt),imag(z_opt),'kx','MarkerSize',mw)
 plot(real(z_loe),imag(z_loe),'ro','MarkerSize',mw)
 plot(real(z_aaal),imag(z_aaal),'b.','MarkerSize',2*mw)
+plot(real(p_aaal),imag(p_aaal),'bd','MarkerSize',mw)
 xlabel('Real'); ylabel('Imag.');
 title('Zeros')
 subplot(212), hold on, grid on
 plot(real(p_opt),imag(p_opt),'kx','MarkerSize',mw)
 plot(real(p_loe),imag(p_loe),'ro','MarkerSize',mw)
 plot(real(p_aaal),imag(p_aaal),'b.','MarkerSize',2*mw)
+plot(real(z_aaal),imag(z_aaal),'bd','MarkerSize',mw)
 xlabel('Real'); ylabel('Imag.');
 title('Poles')
-legend({'Optimal' 'Loewner' 'AAA-L'})
+legend({'Optimal' 'Loewner' 'AAA-L' 'AAA-L$^{-1}$'})
 sgtitle(['Approximation $r=' num2str(robj) '$'],'Fontsize',20)

@@ -7,7 +7,7 @@ set(groot,'defaultAxesTickLabelInterpreter','latex');
 list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
 
 %%% AAA package
-addpath('/Users/charles/Documents/GIT/chebfun')
+addpath('/Users/charles/Documents/GIT/others_/chebfun')
 
 %%% Chose case
 spaceCAS    = {'1a' '1b' '1c' '1d' '1e' '1f' ...
