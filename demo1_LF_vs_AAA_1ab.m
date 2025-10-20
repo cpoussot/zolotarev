@@ -171,19 +171,19 @@ z_aaal(abs(z_aaal)>100) = [];
 p_aaal(abs(p_aaal)>100) = [];
 
 figure, 
-subplot(211), hold on, grid on
+subplot(121), hold on, grid on
 plot(real(z_opt),imag(z_opt),'kx','MarkerSize',mw)
 plot(real(z_loe),imag(z_loe),'ro','MarkerSize',mw)
 plot(real(z_aaal),imag(z_aaal),'b.','MarkerSize',2*mw)
 plot(real(p_aaal),imag(p_aaal),'bd','MarkerSize',mw)
 xlabel('Real'); ylabel('Imag.');
+legend({'Optimal' 'Loewner' 'AAA-L' 'AAA-L (inverse)'})
 title('Zeros')
-subplot(212), hold on, grid on
+subplot(122), hold on, grid on
 plot(real(p_opt),imag(p_opt),'kx','MarkerSize',mw)
 plot(real(p_loe),imag(p_loe),'ro','MarkerSize',mw)
 plot(real(p_aaal),imag(p_aaal),'b.','MarkerSize',2*mw)
 plot(real(z_aaal),imag(z_aaal),'bd','MarkerSize',mw)
 xlabel('Real'); ylabel('Imag.');
 title('Poles')
-legend({'Optimal' 'Loewner' 'AAA-L' 'AAA-L$^{-1}$'})
 sgtitle(['Approximation $r=' num2str(robj) '$'],'Fontsize',20)
