@@ -29,7 +29,7 @@ switch CAS
     case '1a'
         Xlim    = 2.5*[-1 1];
         Ylim    = 1.5*[-1 1];
-        theta   = linspace(0,2*pi,201);
+    theta   = linspace(0,2*pi,201); theta=theta(1:end-1);
         S       = exp(1i*theta);
         E       = -1+.5*S;
         F       = 1+.5*S;
