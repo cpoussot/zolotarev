@@ -29,7 +29,7 @@ switch CAS
     case '1a'
         Xlim    = 2.5*[-1 1];
         Ylim    = 1.5*[-1 1];
-    theta   = linspace(0,2*pi,201); theta=theta(1:end-1);
+        theta   = linspace(0,2*pi,201); theta=theta(1:end-1);
         S       = exp(1i*theta);
         E       = -1+.5*S;
         F       = 1+.5*S;
@@ -98,7 +98,7 @@ switch CAS
     case '1c'
         Xlim    = 2.5*[-1 1];
         Ylim    = 1.5*[-1 1];
-        theta   = linspace(0,2*pi-1e-3,200);
+        theta   = linspace(0,2*pi,201); theta=theta(1:end-1);
         S       = exp(1i*theta);
         E       = -1+1i*zol.chebspace(-.75,.75,200);
         F       =  1+(.2*real(S)+1i*imag(S))/sqrt(1i);
@@ -129,7 +129,7 @@ switch CAS
     case '2a'
         Xlim    = 2.5*[-1 1];
         Ylim    = 2*[-1 1];
-        theta   = linspace(0,2*pi,200);
+        theta   = linspace(0,2*pi,201); theta=theta(1:end-1);
         S       = exp(1i*theta);
         E       = -1+.5*S;
         F1      = .8+.3*S+1i*.6;
@@ -169,7 +169,7 @@ switch CAS
         %N       = 1000; 
         Xlim    = 2*[-1 1];
         Ylim    = 1.5*[-1 1];
-        theta   = linspace(0,2*pi,N);
+        theta   = linspace(0,2*pi,N+1); theta=theta(1:end-1);
         %theta   = linspace(0,2*pi,2000);
         S       = exp(1i*theta);
         E       = .2+.5*S;
@@ -177,7 +177,7 @@ switch CAS
     case '3b'
         Xlim    = 2*[-1 1];
         Ylim    = 1.5*[-1 1];
-        theta   = linspace(0,2*pi,200);
+        theta   = linspace(0,2*pi,201); theta=theta(1:end-1);
         S       = exp(1i*theta);
         C1      = zol.chebspace(-.5,.5,100)-1i*.5;
         C2      = zol.chebspace(-.5,.5,100)+1i*.5;
@@ -189,14 +189,14 @@ switch CAS
     case '3c'
         Xlim    = 2*[-1 1];
         Ylim    = 1.5*[-1 1];
-        theta   = linspace(0,2*pi,200);
+        theta   = linspace(0,2*pi,201); theta=theta(1:end-1);
         S       = exp(1i*theta);
         E       = exp(.2i)*(.4*real(S)+.7i*imag(S));
         F       = S;
     case '3d'
         Xlim    = 2*[-1 1];
         Ylim    = 1.5*[-1 1];
-        theta   = linspace(0,2*pi,200);
+        theta   = linspace(0,2*pi,201); theta=theta(1:end-1);
         S       = exp(1i*theta);
         E       = [.1+.5i+.3*S .1-.5i+.3*S];
         F       = S;
@@ -253,6 +253,8 @@ switch CAS
         E = x + 1i*y;
         F = -x - 1i*y;% n = 2000;
 end
+%E = unique(E,'legacy');
+%F = unique(F,'legacy');
 
 %%% Data
 la          = E(:); 
