@@ -45,15 +45,10 @@ We provide a series of simple codes that describe how to deploy the LF and how t
 - `demo2_LF_vs_AAA.m`: compares performances and poles/zeros the LF and AAA to  solve Z3 and Z4 the collection of proposed problems. Here attention is given to the accuracy, poles and zeros and computational time.
 - `demo2_LF_vs_AAA_time.m`: compares performances and poles/zeros the LF and AAA to solve Z3 and Z4 the collection of proposed problems. Here, attention is given to the ratio number and computational time for each methods.
 
-First add the path where the `+zol` package is located.
-
-```Matlab
-%addpath("location_of_zol") % Add the location of the +zol package
-```
 
 ## Functions description
 
-Please check help in the functions below: 
+Please check help in the functions below, where all informations and details are provided: 
 ```Matlab
 help zol.example
 help zol.example2data
