@@ -39,11 +39,11 @@ It is also meant to allow reproduction of the results in the paper.
 
 ## Simple MATLAB code examples
 
-We provide a series of simple codes that describe how to deploy the LF and how to compare with some AAA approaches.  More specifically, we include
-- `demo0_LF.m`:
-- `demo1_LF_vs_AAA_1ab.m`:
-- `demo2_LF_vs_AAA.m`:
-- `demo2_LF_vs_AAA_time.m`:
+We provide a series of simple codes that describe how to deploy the LF and how to compare with some AAA approaches. These demo files are meant to reproduce some results contained in the above mentionned paper. More specifically, we include
+- `demo0_LF.m`: runs the LF to solve Z3 and Z4 problems (line 10 select the case name, line 11 provide the desired order). 
+- `demo1_LF_vs_AAA_1ab.m`: runs the LF and AAA to  solve Z3 and Z4 problems `1a` (two circles) and `1b` (two real lines). Note that here you need to add the `chebfun` package (line 10); the latter may be downloaded at the [Chebfun main page](https://www.chebfun.org/). As for these two cases the optimal solution is known, attention is pushed to the numerators, denominators, poles and zeros obtained by each methods. As pointed in the present paper, we highlight the acurate results in term of monomial and poles/zeros reached by the LF.
+- `demo2_LF_vs_AAA.m`: compares performances and poles/zeros the LF and AAA to  solve Z3 and Z4 the collection of proposed problems. Here attention is given to the accuracy, poles and zeros and computational time.
+- `demo2_LF_vs_AAA_time.m`: compares performances and poles/zeros the LF and AAA to solve Z3 and Z4 the collection of proposed problems. Here, attention is given to the ratio number and computational time for each methods.
 
 First add the path where the `+zol` package is located.
 
@@ -53,7 +53,7 @@ First add the path where the `+zol` package is located.
 
 ## Functions description
 
-Please check help in functions
+Please check help in the functions below: 
 ```Matlab
 help zol.example
 help zol.example2data
