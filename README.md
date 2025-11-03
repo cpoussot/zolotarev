@@ -15,10 +15,6 @@ The contributions and highlights of this paper, discovered through a comprehensi
 - we show that the rational functions computed with LF come very close to optimal approximants and, in some specific cases (notably the symmetric ones), recovers the structure of the optimal solution as well as the symmetry property, i.e., the eigenvalues and zeros distributions, whereas the other methods tend to add spurious and badly distributed poles and zeros. Such a feature is indeed decisive to discover the property of the topology when only data values are available;
 - we point out that in simplified cases for which the exact solution is known, the LF recovers the polynomial structure (i.e., realness, alternation of coefficients in polynomial representation), whereas AAA adds complex, non-trivial artifacts that can’t be easily explained.
 
-![mLF](doc/pm2_2D.png "Z4 for Pac Man")
-
-![mLF](doc/spiral2_3D.png "Z4 for spiral")
-
 
 ## Main reference
 
@@ -72,6 +68,14 @@ Once again, this deposit consitutes a research code that accompany the paper men
 
 Notice also that pathological cases may appear. A more advanced code, to deal with practical and theoretical issues/limitations is currently under developpement by the authors.
 
+
+## Some Zolotarev art
+
+![Pac Mac](doc/pm2_2D.png "Z4 for Pac Man.")
+*Z4 for Pac Man.*
+
+![Spiral](doc/spiral2_3D.png "Z4 for spiral.")
+*Z4 for spiral.*
 
 
 
