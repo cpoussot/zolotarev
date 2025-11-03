@@ -69,19 +69,19 @@ Once again, this deposit consitutes a research code that accompany the paper men
 Notice also that pathological cases may appear. A more advanced code, to deal with practical and theoretical issues/limitations is currently under developpement by the authors.
 
 
-# Zolot'art (Z4)
+# Zolot'art
 
-![Pac Mac](doc/pm2_2D.png "Z4 for Pac Man.")
-*Z4 for Pac Man.*
+![Pac Mac](doc/pm2_2D.png "Z3 for Pac Man.")
+*Z3 for Pac Man.*
 
-![Spiral](doc/spiral2_3D.png "Z4 for spiral.")
-*Z4 for spiral.*
+![Spiral](doc/spiral2_3D.png "Z3 for spiral.")
+*Z3 for spiral.*
 
-![YY](doc/1d_2D.png "Z4 for Ying and Yang.")
-*Z4 for Ying and Yang.*
+![YY](doc/1d_2D.png "Z3 for Ying and Yang.")
+*Z3 for Ying and Yang.*
 
 
-![oIo](doc/1a_2D.png "Z4 two circles.")
-*Z4 two circles.*
+![oIo](doc/1a_2D.png "Z3 two circles.")
+*Z3 two circles.*
 
 
