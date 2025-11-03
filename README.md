@@ -17,6 +17,8 @@ The contributions and highlights of this paper, discovered through a comprehensi
 
 ![mLF](doc/pm2_2D.png "Z4 for Pac Man")
 
+![mLF](doc/spiral2_3D.png "Z4 for spiral")
+
 
 ## Main reference
 
