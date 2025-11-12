@@ -38,14 +38,23 @@ The contributions and highlights of this paper, discovered through a comprehensi
 The code (`+zol` folder)  provided in this GitHub page is given for open science purpose. Its principal objective is to accompany the readers, and thus aims at being as educative as possible rather than industry-oriented. Evolutions (numerical improvements) may come with time. Please, cite the reference above if used in your work and do not hesitate to contact us in case of bug of problem when using it. Below we present an example of use, then functions list are given.
 It is also meant to allow reproduction of the results in the paper.
 
+
+## Dependencies
+
+- MATLAB R2023b or later (tested on this version)
+- Toolboxes: control_toolbox & symbolic_toolbox may be replaced but are preferable to run plug'n'play
+
+
 ## Simple MATLAB code examples
 
 We provide a series of simple codes that describe how to deploy the LF and how to compare with some AAA approaches. These demo files are meant to reproduce some results contained in the above mentionned paper. More specifically, we include
 - `demo0_LF.m`: runs the LF to solve Z3 and Z4 problems (line 10 select the case name, line 11 provide the desired order). 
-- `demo1_LF_vs_AAA_1ab.m`: runs the LF and AAA to  solve Z3 and Z4 problems `1a` (two circles) and `1b` (two real lines). Note that here you need to add the `chebfun` package (line 10); the latter may be downloaded at the [Chebfun main page](https://www.chebfun.org/). As for these two cases the optimal solution is known, attention is pushed to the numerators, denominators, poles and zeros obtained by each methods. As pointed in the present paper, we highlight the acurate results in term of monomial and poles/zeros reached by the LF.
+- `demo1_LF_vs_AAA_1ab.m`: runs the LF and AAA to  solve Z3 and Z4 problems `1a` (two circles) and `1b` (two real lines). Note that here you need to add the `chebfun` package (line 10); the latter may be downloaded at the [Chebfun main page](https://www.chebfun.org/). As for these two cases the optimal solution is known, attention is pushed to the numerators, denominators, poles and zeros obtained by each methods. As pointed in the present paper, we highlight the acurate results in term of monomial and poles/zeros reached by the LF. 
+=> This script can be used to generate tables and figures in Section 3.2.
 - `demo2_LF_vs_AAA.m`: compares performances and poles/zeros the LF and AAA to  solve Z3 and Z4 the collection of proposed problems. Here attention is given to the accuracy, poles and zeros and computational time.
+=> This script can be used to generate figures from Section 4.
 - `demo2_LF_vs_AAA_time.m`: compares performances and poles/zeros the LF and AAA to solve Z3 and Z4 the collection of proposed problems. Here, attention is given to the ratio number and computational time for each methods.
-
+=> This script can be used to generate figures from Section 4.
 
 ## Functions description
 
