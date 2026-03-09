@@ -7,7 +7,7 @@ set(groot,'defaultAxesTickLabelInterpreter','latex');
 list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
 
 %%% AAA package
-addpath('/Users/charles/Documents/GIT/others_/chebfun')
+addpath('/Users/charles/Documents/GIT/_others/chebfun')
 
 %%% Chose case
 spaceCAS    = {'1a' '1b' '1c' '1d' '1e' '1f' ...
@@ -18,7 +18,7 @@ lgn         = {'Loewner','AAA','AAA  \texttt{"sign",1}','AAA  \texttt{"sign",1,"
 mw          = 15; % marker width
 
 %%% Loop over all cases
-for j = 1:numel(spaceCAS)
+for j = 1%:numel(spaceCAS)
     clear hsig_ rsig1_ rsig2_ rsig3_ 
     clear timeLOE_ timeAAA1_ timeAAA2_ timeAAA3_ 
     CAS = spaceCAS{j}
