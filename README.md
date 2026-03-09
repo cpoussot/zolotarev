@@ -1,8 +1,8 @@
-# Loewner Framework for the Zolotarev Z3 and Z4 problems
+# Introduction
 
 ## Overview
 
-This page accompany a the paper entitled "The Loewner Framework applied ro Zolotarev signand ratio problems", by A.C. Antoulas, I.V. Gosea and C. Poussot-Vassal. In this work, we propose a numerical study concerning the (rational) approximation of functions connected to the 3rd and 4th Zolotarev problems. We compare numerical results for various methods, including the Loewner framework (LF), but also the standard AAA algorithm and a recently proposed extensions of AAA (namely sign and Lawson). We show that the Loewner framework is fast and reliable, and provides approximants with a high level of accuracy, sometimes even more accurate than near-optimal ones for higher degrees. Last but not least, the Loewner framework is a direct method, for which the running time is significantly lower than that of the iterative AAA-Lawson method. Moreover, for the latter, the running time increases substantially with the degree of the approximant, whereas for the Loewner method, it does not. We also show that on specific topologies, the LF allows to recover the poles/zeros distriubution with a machine precision.
+This page accompany a the paper entitled "The Loewner Framework applied to Zolotarev sign and ratio problems", by A.C. Antoulas, I.V. Gosea and C. Poussot-Vassal. In this work, we propose a numerical study concerning the (rational) approximation of functions connected to the 3rd and 4th Zolotarev problems. We compare numerical results for various methods, including the Loewner framework (LF), but also the standard AAA algorithm and a recently proposed extensions of AAA (namely sign and Lawson). We show that the Loewner framework is fast and reliable, and provides approximants with a high level of accuracy, sometimes even more accurate than near-optimal ones for higher degrees. Last but not least, the Loewner framework is a direct method, for which the running time is significantly lower than that of the iterative AAA-Lawson method. Moreover, for the latter, the running time increases substantially with the degree of the approximant, whereas for the Loewner method, it does not. We also show that on specific topologies, the LF allows to recover the poles/zeros distriubution with a machine precision.
 
 This page provides the necessary numerical tools allowing to reproduce the results of the paper.
 
@@ -25,7 +25,7 @@ The contributions and highlights of this paper, discovered through a comprehensi
 	Journal = {submitted},
 	Number 	= {},
 	Pages 	= {},
-	Title 	= {{The Loewner Framework applied ro Zolotarev signand ratio problems}},
+	Title 	= {{The Loewner Framework applied to Zolotarev sign and ratio problems}},
 	Volume 	= {},
   	Month   = {},
 	Year 	= {},
@@ -42,14 +42,14 @@ It is also meant to allow reproduction of the results in the paper.
 ## Dependencies
 
 - MATLAB R2023b or later (tested on this version)
-- Toolboxes: control_toolbox & symbolic_toolbox may be replaced but are preferable to run plug'n'play
+- Toolboxes: "Control System Toolbox" and "Symbolic Math Toolbox" may be replaced but are preferable to run plug'n'play
 
 
 ## Simple MATLAB code examples
 
 We provide a series of simple codes that describe how to deploy the LF and how to compare with some AAA approaches. These demo files are meant to reproduce some results contained in the above mentionned paper. More specifically, we include
-- `demo0_LF.m`: runs the LF to solve Z3 and Z4 problems (line 10 select the case name, line 11 provide the desired order). This stript is to start using LF for Z3 and Z4.
-- `demo1_LF_vs_AAA_1ab.m`: runs the LF and AAA to  solve Z3 and Z4 problems `1a` (two circles) and `1b` (two real lines). Note that here you need to add the `chebfun` package (line 10); the latter may be downloaded at the [Chebfun main page](https://www.chebfun.org/). As for these two cases the optimal solution is known, attention is pushed to the numerators, denominators, poles and zeros obtained by each methods. As pointed in the present paper, we highlight the acurate results in term of monomial and poles/zeros reached by the LF. This script can be used to generate tables and figures in Section 3.2.
+- `demo0_LF.m`: runs the LF to solve Z3 and Z4 problems (line 10 selects the case name, line 11 provides the desired order). This stript is to start using LF for Z3 and Z4.
+- `demo1_LF_vs_AAA_1ab.m`: runs the LF and AAA to  solve Z3 and Z4 problems `1a` (two circles) and `1b` (two real lines). Note that here you need to add the `chebfun` package (line 10); the latter may be downloaded at the [Chebfun main page](https://www.chebfun.org/). As for these two cases the optimal solution is known, attention is pushed to the numerators and denominators coefficients, and poles/zeros obtained by each methods. As pointed in the present paper, we highlight the acurate results in term of monomial and poles/zeros reached by the LF. This script can be used to generate tables and figures in Section 3.2.
 - `demo2_LF_vs_AAA.m`: compares performances and poles/zeros the LF and AAA to  solve Z3 and Z4 the collection of proposed problems. Here attention is given to the accuracy, poles and zeros and computational time. This script can be used to generate figures from Section 4.
 - `demo2_LF_vs_AAA_time.m`: compares performances and poles/zeros the LF and AAA to solve Z3 and Z4 the collection of proposed problems. Here, attention is given to the ratio number and computational time for each methods. This script can be used to generate figures from Section 4.
 
@@ -70,9 +70,9 @@ Please send any comment to C. Poussot-Vassal (charles.poussot-vassal@onera.fr) i
 
 ## Disclaimer
 
-Once again, this deposit consitutes a research code that accompany the paper mentionned above. It is not aimed to be included in any third party software without the consent of the authors. Authors decline responsabilities in case of problem when applying the code.
+This deposit consitutes a research code that accompany the paper mentionned above. It is not aimed to be included in any third party software without the consent of the authors. Authors decline responsabilities in case of problem when applying the code.
 
-Notice also that pathological cases may appear. A more advanced code, to deal with practical and theoretical issues/limitations is currently under developpement by the authors.
+Notice also that pathological cases may appear. A more advanced and professional code, to deal with practical and theoretical issues/limitations is currently under development by the authors.
 
 
 # Zolot'art
