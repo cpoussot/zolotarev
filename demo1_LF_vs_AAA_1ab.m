@@ -11,7 +11,7 @@ addpath('/Users/charles/Documents/GIT/_others/chebfun')
 
 %%% Chose case, order
 CAS         = '1a'
-robj        = 6;
+robj        = 8;
 mw          = 20;
 interlace   = true;
 AAAparam    = {""; ... 
