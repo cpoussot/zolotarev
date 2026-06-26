@@ -11,7 +11,7 @@ list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contain
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
 %%% Name folder for save
 fileName    = 'cpv_macos';
-fileData    = ['tex_pdf/data/' fileName '/'];
+fileData    = ['tex_pdf' filesep 'data' filesep fileName filesep];
 if ~exist(fileData); mkdir(fileData); end
 %%% Chose case and order
 CAS         = '1a';
@@ -31,7 +31,7 @@ mark        = {'s' 'o' '<' '>' '^' 'v'};
 %%% Define Zolotarev topology
 [pts,val,data]  = zol.example(CAS);
 %%%
-for robj = 3:4%3:17
+for robj = 3:10
     k = 0;
     close all;
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -80,7 +80,7 @@ for robj = 3:4%3:17
         POL{k}  = sort(h4_aaa_pol);
         name{k} = [AAAname{ii} ', $\sigma_{' num2str(robj) '} =' num2str(SIG{k},2) '$'];
     end
-    save(['tex_pdf/data/cpv_macos/data_r' num2str(robj)], ...
+    save([fileData 'data_r' num2str(robj)], ...
           'AAAparam','AAAname','name','data', ...
           'robj','Z4','SIG','ZER','POL','NUM','DEN', ...
           'zj','fj','wj','errvec')

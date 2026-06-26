@@ -10,7 +10,7 @@ list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contain
 %%% AAA package
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
 %%% Chose case and order
-fileName    = 'cpv_macos';
+fileName    = 'cpv_winos';
 fileData    = ['tex_pdf/data/' fileName '/'];
 fileFig     = [fileData 'figures/'];
 fileTab     = [fileData 'tables/'];
@@ -18,9 +18,10 @@ if ~exist(fileData); mkdir(fileData); end
 if ~exist(fileFig);  mkdir(fileFig);  end
 if ~exist(fileTab);  mkdir(fileTab);  end
 %
-allFiles = dir(fileData);
-allNames = {allFiles.name};
-k = 0;
+allFiles    = dir(fileData);
+allNames    = {allFiles.name};
+fileName    = strrep(fileName,'_',' ')
+k = 0;  
 for i = 1:numel(allNames)
     if length(allNames{i})>6
         if strcmp('data_r',allNames{i}(1:6))
@@ -40,6 +41,7 @@ mark        = {'s' 'o' '<' '>' '^' 'v'};
 %
 syms z
 for i = 1:numel(allNames)
+    [fileData allNames{i}]
     load([fileData allNames{i}])
     N4 = []; D4 = []; ZE4 = []; PO4 = []; 
     close all
@@ -110,7 +112,7 @@ for i = 1:numel(allNames)
     fileID      = fopen(filename, 'w');
     fprintf(fileID, '\\begin{table}[H] \\tiny $$ \n');
     fprintf(fileID, str_coeff);
-    fprintf(fileID, [' \n $$\\normalsize \\caption{Case \\texttt{1a}, $r=' num2str(robj) '$, Z4: numerator (first lines) and denominator (last lines) coefficients.} \\label{tab:sym-1a-r' num2str(robj) '} \\end{table}']);
+    fprintf(fileID, [' \n $$\\normalsize \\caption{Case \\texttt{1a} (' fileName '), $r=' num2str(robj) '$, Z4: numerator (first lines) and denominator (last lines) coefficients.} \\label{tab:sym-1a-r' num2str(robj) '} \\end{table}']);
     fclose(fileID);
     %%% Poles
     filename    = [fileTab '1a_pol_r' num2str(robj) '.tex'];
@@ -119,7 +121,7 @@ for i = 1:numel(allNames)
     str_pz      = zol.latex_tab_pz(PO4,name);
     fprintf(fileID, '\\begin{table}[H] \\tiny $$ \n');
     fprintf(fileID, str_pz);
-    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a}, $r=' num2str(robj) '$, Z4: poles.} \\label{tab:pol-1a-r' num2str(robj) '} \\end{table}']);
+    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a} (' fileName '), $r=' num2str(robj) '$, Z4: poles.} \\label{tab:pol-1a-r' num2str(robj) '} \\end{table}']);
     fclose(fileID);
     %%% Zeros
     filename    = [fileTab '1a_zer_r' num2str(robj) '.tex'];
@@ -127,7 +129,7 @@ for i = 1:numel(allNames)
     str_pz      = zol.latex_tab_pz(ZE4,name);
     fprintf(fileID, '\\begin{table}[H] \\tiny $$ \n');
     fprintf(fileID, str_pz);
-    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a}, $r=' num2str(robj) '$, Z4: zeros.} \\label{tab:zer-1a-r' num2str(robj) '} \\end{table}']);
+    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a} (' fileName '), $r=' num2str(robj) '$, Z4: zeros.} \\label{tab:zer-1a-r' num2str(robj) '} \\end{table}']);
     fclose(fileID);
 end
 license('inuse')
