@@ -1,8 +1,26 @@
 \global \c@tocdepth 2\relax 
-\contentsline {section}{\numberline {1}Detailed examples exposition and results}{2}{section.1}%
-\contentsline {section}{\numberline {2}$r=3$}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Numerator, denominator, poles and zeros}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Plots}{4}{subsection.2.2}%
-\contentsline {section}{\numberline {3}$r=4$}{5}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Numerator, denominator, poles and zeros}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Plots}{6}{subsection.3.2}%
+\contentsline {section}{\numberline {1}Detailed examples exposition and results}{3}{section.1}%
+\contentsline {section}{\numberline {2}$r=3$}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Numerator, denominator, poles and zeros}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Plots}{5}{subsection.2.2}%
+\contentsline {section}{\numberline {3}$r=4$}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Numerator, denominator, poles and zeros}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Plots}{7}{subsection.3.2}%
+\contentsline {section}{\numberline {4}$r=5$}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Numerator, denominator, poles and zeros}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Plots}{10}{subsection.4.2}%
+\contentsline {section}{\numberline {5}$r=6$}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Numerator, denominator, poles and zeros}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Plots}{13}{subsection.5.2}%
+\contentsline {section}{\numberline {6}$r=7$}{15}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Numerator, denominator, poles and zeros}{15}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Plots}{16}{subsection.6.2}%
+\contentsline {section}{\numberline {7}$r=8$}{18}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Numerator, denominator, poles and zeros}{18}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Plots}{19}{subsection.7.2}%
+\contentsline {section}{\numberline {8}$r=9$}{21}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Numerator, denominator, poles and zeros}{21}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Plots}{22}{subsection.8.2}%
+\contentsline {section}{\numberline {9}$r=10$}{24}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Numerator, denominator, poles and zeros}{24}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Plots}{26}{subsection.9.2}%

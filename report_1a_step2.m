@@ -20,7 +20,7 @@ if ~exist(fileTab);  mkdir(fileTab);  end
 %
 allFiles    = dir(fileData);
 allNames    = {allFiles.name};
-fileName    = strrep(fileName,'_',' ')
+fileName    = strrep(fileName,'_',' ');
 k = 0;  
 for i = 1:numel(allNames)
     if length(allNames{i})>6
@@ -112,7 +112,7 @@ for i = 1:numel(allNames)
     fileID      = fopen(filename, 'w');
     fprintf(fileID, '\\begin{table}[H] \\tiny $$ \n');
     fprintf(fileID, str_coeff);
-    fprintf(fileID, [' \n $$\\normalsize \\caption{Case \\texttt{1a} (' fileName '), $r=' num2str(robj) '$, Z4: numerator (first lines) and denominator (last lines) coefficients.} \\label{tab:sym-1a-r' num2str(robj) '} \\end{table}']);
+    fprintf(fileID, [' \n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileName '}), $r=' num2str(robj) '$, Z4: numerator (first lines) and denominator (last lines) coefficients.} \\label{tab:sym-1a-r' num2str(robj) '} \\end{table}']);
     fclose(fileID);
     %%% Poles
     filename    = [fileTab '1a_pol_r' num2str(robj) '.tex'];
@@ -121,7 +121,7 @@ for i = 1:numel(allNames)
     str_pz      = zol.latex_tab_pz(PO4,name);
     fprintf(fileID, '\\begin{table}[H] \\tiny $$ \n');
     fprintf(fileID, str_pz);
-    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a} (' fileName '), $r=' num2str(robj) '$, Z4: poles.} \\label{tab:pol-1a-r' num2str(robj) '} \\end{table}']);
+    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileName '}), $r=' num2str(robj) '$, Z4: poles.} \\label{tab:pol-1a-r' num2str(robj) '} \\end{table}']);
     fclose(fileID);
     %%% Zeros
     filename    = [fileTab '1a_zer_r' num2str(robj) '.tex'];
@@ -129,21 +129,21 @@ for i = 1:numel(allNames)
     str_pz      = zol.latex_tab_pz(ZE4,name);
     fprintf(fileID, '\\begin{table}[H] \\tiny $$ \n');
     fprintf(fileID, str_pz);
-    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a} (' fileName '), $r=' num2str(robj) '$, Z4: zeros.} \\label{tab:zer-1a-r' num2str(robj) '} \\end{table}']);
+    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileName '}), $r=' num2str(robj) '$, Z4: zeros.} \\label{tab:zer-1a-r' num2str(robj) '} \\end{table}']);
     fclose(fileID);
 end
 license('inuse')
 
 
 % % Data AAA
-    % for ii = 1:numel(AAAparam)
-    %     filename    = ['tex_pdf/tables/1a_aaa_r' num2str(robj) '_' num2str(ii) '.tex'];
-    %     str_aaa     = latex(vpa(sym([zj,fj,wj,errvec]),5));
-    %     str_aaa     = strrep(str_aaa,'\','\\');
-    %     str_aaa     = strrep(str_aaa,'\mathrm{i}','\imath');
-    %     fileID      = fopen(filename, 'w');
-    %     fprintf(fileID, ' $$ \n');
-    %     fprintf(fileID, str_aaa);
-    %     fprintf(fileID, ' $$ \n');
-    %     fclose(fileID);
-    % end
+% for ii = 1:numel(AAAparam)
+%     filename    = ['tex_pdf/tables/1a_aaa_r' num2str(robj) '_' num2str(ii) '.tex'];
+%     str_aaa     = latex(vpa(sym([zj,fj,wj,errvec]),5));
+%     str_aaa     = strrep(str_aaa,'\','\\');
+%     str_aaa     = strrep(str_aaa,'\mathrm{i}','\imath');
+%     fileID      = fopen(filename, 'w');
+%     fprintf(fileID, ' $$ \n');
+%     fprintf(fileID, str_aaa);
+%     fprintf(fileID, ' $$ \n');
+%     fclose(fileID);
+% end
