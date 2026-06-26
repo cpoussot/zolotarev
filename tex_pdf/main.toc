@@ -1,0 +1,8 @@
+\global \c@tocdepth 2\relax 
+\contentsline {section}{\numberline {1}Detailed examples exposition and results}{2}{section.1}%
+\contentsline {section}{\numberline {2}$r=3$}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Numerator, denominator, poles and zeros}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Plots}{3}{subsection.2.2}%
+\contentsline {section}{\numberline {3}$r=4$}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Numerator, denominator, poles and zeros}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Plots}{5}{subsection.3.2}%

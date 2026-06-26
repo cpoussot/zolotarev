@@ -6,7 +6,7 @@
 %  
 % Input arguments
 %  - name : string name being either
-%           '1a', '1b', '1c', '1d',  1e ,  1f , ...
+%           '1a', '1b', '1c', '1d', '1e' , '1f', ...
 %           '2a', '2b', '2c', '2d', ... 
 %           '3a', '3b', '3c', '3d', '7', ...
 %           'spiral1', 'pm2'
@@ -34,21 +34,31 @@ switch CAS
         E       = -1+.5*S;
         F       = 1+.5*S;
         % Optimal Zolotarev
-        v = ver;
-        if any(strcmp('Symbolic Math Toolbox', {v.Name}))
-            for i = 1:30
-                syms x
-                z           = zol.ZolOpt_1a(1,1/2,i);
-                z4          = z(x);
-                [num,den]   = numden(z4);
-                num         = sym2poly(num); 
-                den         = sym2poly(den);
-                den_norm    = den(1);
-                num         = num/den_norm; 
-                den         = den/den_norm;
-                info.z4{i}  = {[0;num(:)] den(:)};
-                info.z4x{i} = z;
-            end
+        %v = ver;
+        for i = 1:30
+            [Z4,z4,sigma]   = zol.ZolOpt_1a(1,1/2,i);
+            info.sig_opt{i} = sigma;
+            info.Z4_opt{i}  = Z4;
+            info.z4_opt{i}  = @(x) evalfr(z4,x);
+            [n4_opt,d4_opt] = tfdata(z4);
+            info.zer_opt{i} = roots(n4_opt{1});
+            info.pol_opt{i} = roots(d4_opt{1});
+            normalize       = d4_opt{1}(1);
+            info.num_opt{i} = n4_opt{1}.'/normalize;
+            info.den_opt{i} = d4_opt{1}.'/normalize;
+            % if any(strcmp('Symbolic Math Toolbox', {v.Name}))
+            %     syms x
+            %     z           = zol.ZolOpt_1a(1,1/2,i);
+            %     z4          = z(x);
+            %     [num,den]   = numden(z4);
+            %     num         = sym2poly(num); 
+            %     den         = sym2poly(den);
+            %     den_norm    = den(1);
+            %     num         = num/den_norm; 
+            %     den         = den/den_norm;
+            %     info.z4{i}  = {[0;num(:)] den(:)};
+            %     info.z4x{i} = z;
+            %end
         end
     case '1a2'
         Xlim    = 2.5*[-1 1];

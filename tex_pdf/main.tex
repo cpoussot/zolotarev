@@ -1,0 +1,157 @@
+\documentclass{article}
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{longtable}
+\usepackage{lscape}
+\usepackage{a4wide}
+\usepackage{tabularray}
+\usepackage{xcolor}
+\usepackage{here}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{natbib}
+\usepackage{pgffor}
+\usepackage{color}
+\definecolor{darkblue}{rgb}{0.,0.,0.4}
+\definecolor{darkred}{rgb}{0.5,0.,0.}
+\usepackage[pdftex,colorlinks=true,linkcolor=darkblue,citecolor=darkred,urlcolor=blue]{hyperref}
+\usepackage{cleveref}
+\usepackage{authblk}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{arydshln}
+\usepackage{graphbox}
+\usepackage{color}
+\usepackage{colortbl}
+
+%%%% 
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{comment}
+\usepackage{mathdots}
+\usepackage{mathrsfs}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{makeidx} 
+\usepackage{ifpdf}
+%\usepackage{pbox}
+%\usepackage{cleveref}
+\usepackage{arydshln}
+%\usepackage{mathtools}
+\usepackage{multirow}
+\usepackage{here}
+\usepackage{graphbox}
+
+%%%%
+\usepackage{tikz,tikz-3dplot}
+\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,fit,positioning,shapes.symbols,chains,mindmap,trees,calc}
+%%%%
+\usepackage{matlab-prettifier}
+
+\definecolor{blue}{RGB}{16,97,169} % bleu onera
+\definecolor{grey}{RGB}{88, 102, 110} % gris onera 
+\definecolor{green}{RGB}{65,209,204} % turquoise
+\definecolor{orange}{RGB}{224, 131, 0} % corail
+\definecolor{pink}{RGB}{255,105,180} % rose
+\definecolor{colhl}{RGB}{152,251,152}
+\definecolor{colhl}{RGB}{211,211,211}
+
+
+%%%%
+\input{ex_math}
+\newtheorem{theorem}{Theorem}
+\newtheorem{remark}{Remark}
+\newtheorem{corr}{Corrolary}
+
+\def\CAS{4}
+
+%%%%
+\title{Zolotarev 1a}
+%\author{A.C. Antoulas, I-V. Gosea, C. Poussot-Vassal and P. Vuillemin}
+
+\author[1]{A.C. Antoulas}
+\author[2]{I-V. Gosea}
+\author[3]{C. Poussot-Vassal\thanks{Corresponding author: \texttt{charles.poussot-vassal@onera.fr}}}
+%\author[3]{P. Vuillemin}
+\affil[1]{Department of Electrical and Computer Engineering, Rice University, Houston (\texttt{aca@rice.edu})}
+\affil[2]{Max Planck Institute, CSC Group, Magdeburg, Germany (\texttt{gosea@mpi-magdeburg.mpg.de})}
+\affil[3]{ONERA, DTIS, Universit\'e de Toulouse, France (\texttt{charles.poussot-vassal@onera.fr})}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Zolotarev
+\end{abstract}
+
+%(e.g. the approximation, the numerical analysis, the scientific computing, the dynamical systems and the neural network fields)
+
+%%%%%%%%%%%%%%%%
+\addtocontents{toc}{\setcounter{tocdepth}{2}} 
+\tableofcontents
+\newpage 
+
+
+%%%%%%%%%%%%%%%%
+\section{Detailed examples exposition and results}
+\label{sec:ex_details}
+
+%\begin{landscape}
+\foreach \n in {3,...,\CAS}{
+\newpage
+\section{$r=\n$}
+\subsection{Numerator, denominator, poles and zeros}
+\tiny
+\input{data/cpv_macos/tables/1a_nd_r\n}
+\input{data/cpv_macos/tables/1a_pol_r\n}
+\input{data/cpv_macos/tables/1a_zer_r\n}
+\normalsize
+
+%\subsection{AAA data: (\texttt{[zj,fj,wj,errvec]})}
+%\foreach \j in {1,...,2}{
+%\input{tables/1a_aaa_r\n_\j}
+%}
+
+
+\subsection{Plots}
+
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=.45\textwidth]{data/cpv_macos/figures/pz_r\n.pdf}
+    \includegraphics[width=.45\textwidth]{data/cpv_macos/figures/pz_r\n_zoom.pdf}
+    \caption{Case \texttt{'1a'}, $r=\n$. Left: zeros (left) and poles (right). Right: discarding the large values.}
+    \label{fig:pz_\n}
+\end{figure}
+\begin{figure}[H]
+\centering
+    \includegraphics[width=.7\textwidth]{data/cpv_macos/figures/eval_r\n.pdf}
+    \caption{Case \texttt{'1a'}, $r=\n$. $E$ and $F$ evaluations.}
+    \label{fig:eval_\n}
+\end{figure}
+
+}
+%\end{landscape}
+
+%\input{tables/1a_r6}
+
+
+%\small
+%\input{tables/table}
+%\input{tables/table_small}
+%\caption{All best model per methods}}
+
+
+%\section{All data}
+%\small \input{tables/table} \normalsize
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

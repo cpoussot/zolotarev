@@ -1,0 +1,31 @@
+function str = latex_tab(Bnum,Bden,approxN,approxD,name)
+
+format shortE
+name = regexprep(name, 'e\+?(-?\d+)', ' \\cdot 10^{$1}');
+n_num = length(Bnum)-1;
+n_den = length(Bden)-1;
+str_top_add1 = [];
+for i = 1:numel(name)
+    str_top_add1 = [str_top_add1 [' & \multicolumn{2}{c}{\text{' name{i} '}} ']];
+end        
+%str_top_add1 = repmat(' & \multicolumn{2}{c}{\text{Approx.}} ',1,size(approx,2));
+str_top_add2 = repmat(' & \text{real} & \text{imag.} ',1,size(approxN,2)-1);
+%str_top1 = [' & \multicolumn{2}{c}{\text{Optimal}} ' str_top_add1 '  \\ \hline '];
+str_top1 = [ str_top_add1 '  \\ \hline '];
+str_top2 = ['\text{Basis} & \text{real} & \text{imag.} ' str_top_add2 ' \\ '];
+APPROX = [];
+for i = 1:size(approxN,2)
+    APPROX = [APPROX [real(approxN(:,i)); real(approxD(:,i))] [imag(approxN(:,i)); imag(approxD(:,i))]];
+    %APPROX = [APPROX [real(approxN(:,i)); real(approxD(:,i))] [imag(approxN(:,i)); imag(approxD(:,i))]];
+end
+str = latex(vpa([[Bnum;Bden] APPROX],2));
+str = regexprep(str, 'e\+?(-?\d+)', ' \\cdot 10^{$1}');
+str = strrep(str,['z^' num2str(n_num)],[' \hline z^' num2str(n_num)]);
+str = strrep(str,['z^' num2str(n_den)],[' \hline z^' num2str(n_den)]);
+str = strrep(str,'\left(','');
+str = strrep(str,'\right)','');
+str = strrep(str,'\begin{array}{ccc','\begin{array}{c||c>{\columncolor{colhl}}c|');
+str = strrep(str,'\end{array}',' \\ \hline \end{array}');
+str = strrep(str,'cc','c>{\columncolor{colhl}}c|');
+str = strrep(str,'c>{\columncolor{colhl}}c|}',['c>{\columncolor{colhl}}c|} ' str_top1  str_top2]);
+%str = strrep(str,'c|c>','c||c>');
