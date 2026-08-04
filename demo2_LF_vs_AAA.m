@@ -1,28 +1,33 @@
 clearvars; close all; clc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% BEGIN: TO ADAPT BY USER
+% Add Zolotarev Loewner package
+addpath('/Users/charles/Documents/GIT/zolotarev')
+% Add AAA package
+addpath('/Users/charles/Documents/GIT/_others/chebfun')
+%%% Choose case, order
+CAS         = '1b';    % /!\ '1a' and '1b' use "Symbolic Toolbox" if available
+robj0       = 1e-14;   % objective order (either integer > 1 or sigma threshold)
+%%% Chose options for chefun AAA
+AAAparam    = {",'sign',0,'lawson',0"; ... 
+               ",'sign',1,'damping',.95"; ...
+               ",'sign',1,'damping',.95,'lawson',200"};
+%%% END: TO ADAPT BY USER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Plot properties
 set(groot,'DefaultFigurePosition', [200 150 1000 600]);
 set(groot,'defaultlinelinewidth',2)
 set(groot,'defaultlinemarkersize',4)
 set(groot,'defaultaxesfontsize',18)
 set(groot,'defaultAxesTickLabelInterpreter','latex');  
-list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
-%%% AAA package
-addpath('/Users/charles/Documents/GIT/_others/chebfun')
-%%% Chose case, order
-CAS         = '1a';    % /!\ '1a' and '1b' use "Symbolic Toolbox" if available
-robj0       = 1e-14;   % objective order (either integer > 1 or sigma threshold)
-
-%%% Plot properties
+list_facto  = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_facto,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_facto{index_interpreter(i)},'factory','default'),'latex'); end
 mw          = 15;         % marker width
 kk          = 1;          % for plot
 lev_contour = -30:1:0;    % contour plot
 col         = parula(10); % 
 col1        = col(5,:);   % Z4 poles
 col2        = col(9,:);   % Z4 zeros
-
-%%% Chose options for chefun AAA
-AAAparam    = {""; ... 
-               ",'sign',1,'damping',.95"; ...
-               ",'sign',1,'damping',.95,'lawson',200"};
 K           = ceil((1+numel(AAAparam))/2);
 
 %%% Define Zolotarev topology

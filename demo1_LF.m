@@ -1,16 +1,23 @@
 clearvars; close all; clc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% BEGIN: TO ADAPT BY USER
+% Add Zolotarev Loewner package
+addpath('/Users/charles/Documents/GIT/zolotarev')
+% Add AAA package
+addpath('/Users/charles/Documents/GIT/_others/chebfun')
+%%% Choose case, order
+CAS     = '1a';    % /!\ '1a' and '1b' may use "Symbolic Toolbox" if available
+robj0   = 1e-14;   % objective order (either integer > 1 or sigma threshold)
+%%% END: TO ADAPT BY USER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Plot properties
 set(groot,'DefaultFigurePosition', [200 150 1000 600]);
 set(groot,'defaultlinelinewidth',2)
 set(groot,'defaultlinemarkersize',4)
 set(groot,'defaultaxesfontsize',18)
 set(groot,'defaultAxesTickLabelInterpreter','latex');  
-list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
-
-%%% Chose case, order
-CAS         = '1a';    % /!\ '1a' and '1b' may use "Symbolic Toolbox" if available
-robj0       = 1e-14;   % objective order (either integer > 1 or sigma threshold)
-
-%%% Plot properties
+list_facto  = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_facto,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_facto{index_interpreter(i)},'factory','default'),'latex'); end
 mw          = 15;         % marker width
 kk          = 1;          % for plot
 lev_contour = -30:1:0;    % contour plot
@@ -49,7 +56,7 @@ for i = 1:numel(xx)
         Zr3_loe(j,i) = h3(xx(i)+1i*yy(j));
     end
 end 
-%
+% >> Show Z3 and Z4 results
 figure, hold on
 contour(X,Y,log10(abs(Zr3_loe)),lev_contour,'LineWidth',1,'DisplayName','$\mathbf{h}_3$')%,'ShowText','on')
 plot(real(data.E),imag(data.E),'.','Color',[1 1 1]*.4,'MarkerSize',mw,'DisplayName',['(E) ' num2str(min(data.bnd),'%+2.0f')])

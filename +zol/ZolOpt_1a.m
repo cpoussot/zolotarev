@@ -22,7 +22,6 @@ function Z4 = vhandle(s,pol,zer,sigma)
 end
 
 function z4 = z4_nd(pol,zer,sigma)
-
     num = 1;
     for jj = 1:length(zer)
         num = conv(num,[1 -zer(jj)]);

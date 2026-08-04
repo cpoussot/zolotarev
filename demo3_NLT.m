@@ -1,21 +1,31 @@
 clearvars; close all; clc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% BEGIN: TO ADAPT BY USER
+% Add Zolotarev Loewner package
+addpath('/Users/charles/Documents/GIT/zolotarev')
+% Add AAA package
+addpath('/Users/charles/Documents/GIT/_others/chebfun')
+%%% Cases
+spaceCAS    = {'1a' '1b' '1c' '1d' '1e' '1f' ...
+               '2a' '2b' '2c' '2d' ...
+               '3a' '3b' '3c' '3d' ...
+               '7' 'spiral1' 'pm2'};
+SHOW_ADVANC = false;
+%%% END: TO ADAPT BY USER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Plot properties
 set(groot,'DefaultFigurePosition', [200 150 1000 600]);
 set(groot,'defaultlinelinewidth',2)
 set(groot,'defaultlinemarkersize',4)
 set(groot,'defaultaxesfontsize',18)
 set(groot,'defaultAxesTickLabelInterpreter','latex');  
-list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
-
-%%% AAA package
-addpath('/Users/charles/Documents/GIT/_others/chebfun')
-
-%%% Chose case
-spaceCAS    = {'1a' '1b' '1c' '1d' '1e' '1f' ...
-               '2a' '2b' '2c' '2d' ...
-               '3a' '3b' '3c' '3d' ...
-               '7' 'spiral1' 'pm2'};
-lgn         = {'Loewner','AAA  \texttt{"sign",1,"damping",.95,"lawson",200}'};
+list_facto  = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_facto,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_facto{index_interpreter(i)},'factory','default'),'latex'); end
 mw          = 15; % marker width
+lgn         = {'Loewner', ... 
+               'AAA', ...
+               'AAA  \texttt{"sign",1}', ...
+               'AAA  \texttt{"sign",1,"damping",.95,"lawson",200}'};
 
 %%% Loop over all cases
 hsig_ = Inf*ones(numel(spaceCAS),100);
@@ -53,31 +63,33 @@ for j = 1:10%numel(spaceCAS)
         [r3,rp,rsig]    = zol.pb4_to_pb3(r4,pts,val);
         rsig_(j,i)      = rsig;
         timeAAA         = timeAAA + toc;
-        % % Plot
-        % subplot(211), hold on, grid on, axis tight
-        % imagesc(real(log10(abs(hsig_.'))))
-        % c = colormap('parula'); c(end,:) = [1 1 1]; colormap(c)
-        % colorbar; c2 = clim;
-        % stairs((1:j)-.5,rmax,'r:','LineWidth',3)
-        % set(gca,'TickLabelInterpreter','latex','FontSize',16)
-        % title(['\bf{' lgn{1} '}'],'Interpreter','latex','FontSize',18)
-        % xlabel('Case','Interpreter','latex','FontSize',18)
-        % ylabel('Degree $r$','Interpreter','latex','FontSize',18)
-        % xticks(1:numel(spaceCAS)), xticklabels(spaceCAS)
-        % %
-        % subplot(212), hold on, grid on, axis tight
-        % imagesc(real(log10(abs(rsig_.'))))
-        % colorbar; c1 = clim; c3 = [min([c1 c2]), max([c1 c2])]; clim(c3)
-        % set(gca,'TickLabelInterpreter','latex','FontSize',16)
-        % title(['\bf{' lgn{2} '}'],'Interpreter','latex','FontSize',18)
-        % xlabel('Case','Interpreter','latex','FontSize',18)
-        % ylabel('Degree $r$','Interpreter','latex','FontSize',18)
-        % xticks(1:numel(spaceCAS)), xticklabels(spaceCAS)
-        % %
-        % subplot(211), colorbar off
-        % sgtitle('$\log_{10}(\sigma_r)$ for different cases and orders','FontSize',24)
-        % %
-        % drawnow
+        % Show advancement
+        if SHOW_ADVANC
+            subplot(211), hold on, grid on, axis tight
+            imagesc(real(log10(abs(hsig_.'))))
+            c = colormap('parula'); c(end,:) = [1 1 1]; colormap(c)
+            colorbar; c2 = clim;
+            stairs((1:j)-.5,rmax,'r:','LineWidth',3)
+            set(gca,'TickLabelInterpreter','latex','FontSize',16)
+            title(['\bf{' lgn{1} '}'],'Interpreter','latex','FontSize',18)
+            xlabel('Case','Interpreter','latex','FontSize',18)
+            ylabel('Degree $r$','Interpreter','latex','FontSize',18)
+            xticks(1:numel(spaceCAS)), xticklabels(spaceCAS)
+            %
+            subplot(212), hold on, grid on, axis tight
+            imagesc(real(log10(abs(rsig_.'))))
+            colorbar; c1 = clim; c3 = [min([c1 c2]), max([c1 c2])]; clim(c3)
+            set(gca,'TickLabelInterpreter','latex','FontSize',16)
+            title(['\bf{' lgn{2} '}'],'Interpreter','latex','FontSize',18)
+            xlabel('Case','Interpreter','latex','FontSize',18)
+            ylabel('Degree $r$','Interpreter','latex','FontSize',18)
+            xticks(1:numel(spaceCAS)), xticklabels(spaceCAS)
+        end
+        %
+        subplot(211), colorbar off
+        sgtitle('$\log_{10}(\sigma_r)$ for different cases and orders','FontSize',24)
+        %
+        drawnow
     end
     [timeLoewner timeAAA]
 end
