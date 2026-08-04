@@ -69,7 +69,7 @@
 \def\CAS{10}
 
 %%%%
-\title{Zolotarev 1a}
+\title{Zolotarev problem case \texttt{1a}}
 %\author{A.C. Antoulas, I-V. Gosea, C. Poussot-Vassal and P. Vuillemin}
 
 \author[1]{C. Poussot-Vassal\thanks{Corresponding author: \texttt{charles.poussot-vassal@onera.fr}}}
@@ -98,21 +98,36 @@ Zolotarev
 
 
 %%%%%%%%%%%%%%%%
-\section{Detailed examples exposition and results}
+\section{Description of the report and overview of the results}
 \label{sec:ex_details}
+
+\subsection{Methodology}
+
+
+
+\subsection{Overview of the results}
+
+
+\subsection{Preliminary conclusions}
 
 %\begin{landscape}
 \foreach \n in {3,...,\CAS}{
 \newpage
-\section{$r=\n$}
-\subsection{Numerator, denominator, poles and zeros}
+\section{Approximation objective $r=\n$}
+\subsection{Numerator and denominator coefficients}
 \tiny
 \input{data/cpv_macos/tables/1a_nd_r\n}
 \input{data/cpv_winos/tables/1a_nd_r\n}
+\normalsize
 
+\subsection{Poles}
+\tiny
 \input{data/cpv_macos/tables/1a_pol_r\n}
 \input{data/cpv_winos/tables/1a_pol_r\n}
+\normalsize
 
+\subsection{Zeros}
+\tiny
 \input{data/cpv_macos/tables/1a_zer_r\n}
 \input{data/cpv_winos/tables/1a_zer_r\n}
 \normalsize
@@ -123,16 +138,18 @@ Zolotarev
 %}
 
 
-\subsection{Plots}
-
+\subsection{Poles and zeros visualisation}
 
 \begin{figure}[H]
 \centering
     \includegraphics[width=.45\textwidth]{data/cpv_macos/figures/pz_r\n.pdf}
     \includegraphics[width=.45\textwidth]{data/cpv_macos/figures/pz_r\n_zoom.pdf}
-    \caption{Case \texttt{'1a'}, $r=\n$. Left: zeros (left) and poles (right). Right: discarding the large values.}
+    \caption{Case \texttt{'1a'}, $r=\n$. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.}
     \label{fig:pz_\n}
 \end{figure}
+
+\subsection{Approximation visualization}
+
 \begin{figure}[H]
 \centering
     \includegraphics[width=.7\textwidth]{data/cpv_macos/figures/eval_r\n.pdf}

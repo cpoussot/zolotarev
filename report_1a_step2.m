@@ -1,49 +1,46 @@
 clearvars; close all; clc; format shortEng
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% BEGIN: TO ADAPT BY USER
+% Add Zolotarev Loewner package
+addpath('/Users/charles/Documents/GIT/zolotarev')
+% Add AAA package
+addpath('/Users/charles/Documents/GIT/_others/chebfun')
+% Name the folder for save as follows: 'YourName_os', 
+% e.g. for Charles Poussot-Vassal on MACOS: 'cpv_macos'
+fileDir    = 'cpv_macos';
+%%% END: TO ADAPT BY USER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Create folders
+fileData    = ['tex_pdf' filesep 'data' filesep fileDir filesep];
+fileFig     = [fileData 'figures' filesep];
+fileTab     = [fileData 'tables' filesep];
+allFiles    = zol.getFileData(fileData);
+if ~exist(fileData); mkdir(fileData); end
+if ~exist(fileFig);  mkdir(fileFig);  end
+if ~exist(fileTab);  mkdir(fileTab);  end
+
+%%% Style & slack variables
 set(groot,'DefaultFigurePosition', [200 150 1000 600]);
 set(groot,'defaultlinelinewidth',2)
 set(groot,'defaultlinemarkersize',6)
 set(groot,'defaultaxesfontsize',20)
 set(groot,'defaultAxesTickLabelInterpreter','latex');  
-list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
-%%% Zolotarev Loewner package
-%addpath('/Users/charles/Documents/GIT/zolotarev')
-%%% AAA package
-addpath('/Users/charles/Documents/GIT/_others/chebfun')
-%%% Chose case and order
-fileName    = 'cpv_winos';
-fileData    = ['tex_pdf/data/' fileName '/'];
-fileFig     = [fileData 'figures/'];
-fileTab     = [fileData 'tables/'];
-if ~exist(fileData); mkdir(fileData); end
-if ~exist(fileFig);  mkdir(fileFig);  end
-if ~exist(fileTab);  mkdir(fileTab);  end
-%
-allFiles    = dir(fileData);
-allNames    = {allFiles.name};
-fileName    = strrep(fileName,'_',' ');
-k = 0;  
-for i = 1:numel(allNames)
-    if length(allNames{i})>6
-        if strcmp('data_r',allNames{i}(1:6))
-            k       = k+1;
-            tmp{k}  = allNames{i};
-        end
-    end
-end
-allNames    = tmp;
-%%%
+list_facto  = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_facto,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_facto{index_interpreter(i)},'factory','default'),'latex'); end
 mw          = 20;
 lw          = 4;
 col         = parula(10);
 col(1,:)    = [0 0 0];
 col(2,:)    = [1 0 0];
 mark        = {'s' 'o' '<' '>' '^' 'v'};
-%
+%%% Start loop
 syms z
-for i = 1:numel(allNames)
-    [fileData allNames{i}]
-    load([fileData allNames{i}])
+for i = 1:numel(allFiles)
+    %%% Load file
+    [fileData allFiles{i}]
+    load([fileData allFiles{i}])
     N4 = []; D4 = []; ZE4 = []; PO4 = []; 
+    %%% NUM/DEN ZER/POL EVAL
     close all
     for j = 1:numel(Z4)
         if isempty(NUM{j})
@@ -100,10 +97,11 @@ for i = 1:numel(allNames)
         title('$F$')
         xlabel('Real'); ylabel('Imag.');
     end
-    legend(name,'Location','Best')
+    legend(name,'Location','South')
     sgtitle('Case 1a functions evaluation','Fontsize',20)
     zol.figSavePDF([fileFig 'eval_r' num2str(robj)]), drawnow, pause(.5)
-    %%% Num/Den
+    %%% LATEX
+    % Num/Den
     Bnum        = (z.^(numel(n4)-1:-1:0)).';
     Bden        = (z.^(numel(d4)-1:-1:0)).';
     filename    = [fileTab '1a_nd_r' num2str(robj) '.tex'];
@@ -112,38 +110,23 @@ for i = 1:numel(allNames)
     fileID      = fopen(filename, 'w');
     fprintf(fileID, '\\begin{table}[H] \\tiny $$ \n');
     fprintf(fileID, str_coeff);
-    fprintf(fileID, [' \n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileName '}), $r=' num2str(robj) '$, Z4: numerator (first lines) and denominator (last lines) coefficients.} \\label{tab:sym-1a-r' num2str(robj) '} \\end{table}']);
+    fprintf(fileID, [' \n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileDir '}), $r=' num2str(robj) '$, Z4: numerator (first lines) and denominator (last lines) coefficients.} \\label{tab:sym-1a-r' num2str(robj) '} \\end{table}']);
     fclose(fileID);
-    %%% Poles
+    % Poles
     filename    = [fileTab '1a_pol_r' num2str(robj) '.tex'];
     fileID      = fopen(filename, 'w');
-    %str_pz      = zol.latex_tab_pz(ZE4,PO4,name);
     str_pz      = zol.latex_tab_pz(PO4,name);
     fprintf(fileID, '\\begin{table}[H] \\tiny $$ \n');
     fprintf(fileID, str_pz);
-    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileName '}), $r=' num2str(robj) '$, Z4: poles.} \\label{tab:pol-1a-r' num2str(robj) '} \\end{table}']);
+    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileDir '}), $r=' num2str(robj) '$, Z4: poles.} \\label{tab:pol-1a-r' num2str(robj) '} \\end{table}']);
     fclose(fileID);
-    %%% Zeros
+    % Zeros
     filename    = [fileTab '1a_zer_r' num2str(robj) '.tex'];
     fileID      = fopen(filename, 'w');
     str_pz      = zol.latex_tab_pz(ZE4,name);
     fprintf(fileID, '\\begin{table}[H] \\tiny $$ \n');
     fprintf(fileID, str_pz);
-    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileName '}), $r=' num2str(robj) '$, Z4: zeros.} \\label{tab:zer-1a-r' num2str(robj) '} \\end{table}']);
+    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileDir '}), $r=' num2str(robj) '$, Z4: zeros.} \\label{tab:zer-1a-r' num2str(robj) '} \\end{table}']);
     fclose(fileID);
 end
 license('inuse')
-
-
-% % Data AAA
-% for ii = 1:numel(AAAparam)
-%     filename    = ['tex_pdf/tables/1a_aaa_r' num2str(robj) '_' num2str(ii) '.tex'];
-%     str_aaa     = latex(vpa(sym([zj,fj,wj,errvec]),5));
-%     str_aaa     = strrep(str_aaa,'\','\\');
-%     str_aaa     = strrep(str_aaa,'\mathrm{i}','\imath');
-%     fileID      = fopen(filename, 'w');
-%     fprintf(fileID, ' $$ \n');
-%     fprintf(fileID, str_aaa);
-%     fprintf(fileID, ' $$ \n');
-%     fclose(fileID);
-% end

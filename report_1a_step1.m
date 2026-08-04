@@ -1,20 +1,20 @@
 clearvars; close all; clc; format shorte
-set(groot,'DefaultFigurePosition', [200 150 1000 600]);
-set(groot,'defaultlinelinewidth',2)
-set(groot,'defaultlinemarkersize',6)
-set(groot,'defaultaxesfontsize',20)
-set(groot,'defaultAxesTickLabelInterpreter','latex');  
-list_factory = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_factory,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_factory{index_interpreter(i)},'factory','default'),'latex'); end
-%%% Zolotarev Loewner package
-%addpath('/Users/charles/Documents/GIT/zolotarev')
-%%% AAA package
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% BEGIN: TO ADAPT BY USER
+% Add Zolotarev Loewner package
+addpath('/Users/charles/Documents/GIT/zolotarev')
+% Add AAA package
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
-%%% Name folder for save
-fileName    = 'cpv_macos';
-fileData    = ['tex_pdf' filesep 'data' filesep fileName filesep];
+% Name the folder for save as follows: 'YourName_os', 
+% e.g. for Charles Poussot-Vassal: 'cpv_macos'
+fileDir     = 'cpv_macos';
+%%% END: TO ADAPT BY USER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Create folder
+fileData    = ['tex_pdf' filesep 'data' filesep fileDir filesep];
 if ~exist(fileData); mkdir(fileData); end
-%%% Chose case and order
-CAS         = '1a';
+%%% Choose case and paramters for AAA
 AAAparam    = {... % ",'sign',1,'lawson',0"; ... 
                ",'sign',1,'damping',.95,'lawson',200"; ...
                ",'sign',1,'damping',.95,'lawson',1000"};
@@ -29,11 +29,10 @@ col(1,:)    = [0 0 0];
 col(2,:)    = [1 0 0];
 mark        = {'s' 'o' '<' '>' '^' 'v'};
 %%% Define Zolotarev topology
-[pts,val,data]  = zol.example(CAS);
-%%%
+[pts,val,data]  = zol.example('1a');
 for robj = 3:10
-    k = 0;
-    close all;
+    k       = 0;
+
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%% Optimal solution
     k       = k+1;
@@ -54,14 +53,13 @@ for robj = 3:10
     % [n4_loe,d4_loe,M]   = zol.get_numden(h4_loe); 
     [h3_loe,~,sig_loe]  = zol.pb4_to_pb3(h4_loe,pts,val);
     H_loe               = dss(info.Ar,info.Br,info.Cr,0,info.Er,0);
-    %
-    Z4{k}   = h4_loe;
-    SIG{k}  = sig_loe;
-    NUM{k}  = [];%n4_loe
-    DEN{k}  = [];%d4_loe
-    ZER{k}  = sort(zero(H_loe));%eig([info.Ar info.Br;info.Cr 0],blkdiag(info.Er,0));
-    POL{k}  = sort(eig(H_loe)); %eig(info.Ar,info.Er);
-    name{k} = ['LF, $\sigma_{' num2str(robj)  '}=' num2str(SIG{k},2) '$'];
+    Z4{k}               = h4_loe;
+    SIG{k}              = sig_loe;
+    NUM{k}              = [];%n4_loe
+    DEN{k}              = [];%d4_loe
+    ZER{k}              = sort(zero(H_loe)); %eig([info.Ar info.Br;info.Cr 0],blkdiag(info.Er,0));
+    POL{k}              = sort(eig(H_loe));  %eig(info.Ar,info.Er);
+    name{k}             = ['LF, $\sigma_{' num2str(robj)  '}=' num2str(SIG{k},2) '$'];
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%% AAA
@@ -72,13 +70,13 @@ for robj = 3:10
         % [n4_aaa,d4_aaa,M]   = zol.get_numden(h4_aaa); 
         [h3_aaa,~,sig_aaa]  = zol.pb4_to_pb3(h4_aaa,pts,val);
         %
-        Z4{k}   = h4_aaa;
-        SIG{k}  = sig_aaa;
-        NUM{k}  = [];%n4_aaa;
-        DEN{k}  = [];%d4_aaa;
-        ZER{k}  = sort(h4_aaa_zer);
-        POL{k}  = sort(h4_aaa_pol);
-        name{k} = [AAAname{ii} ', $\sigma_{' num2str(robj) '} =' num2str(SIG{k},2) '$'];
+        Z4{k}               = h4_aaa;
+        SIG{k}              = sig_aaa;
+        NUM{k}              = [];%n4_aaa;
+        DEN{k}              = [];%d4_aaa;
+        ZER{k}              = sort(h4_aaa_zer);
+        POL{k}              = sort(h4_aaa_pol);
+        name{k}             = [AAAname{ii} ', $\sigma_{' num2str(robj) '} =' num2str(SIG{k},2) '$'];
     end
     save([fileData 'data_r' num2str(robj)], ...
           'AAAparam','AAAname','name','data', ...

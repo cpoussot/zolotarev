@@ -1,26 +1,50 @@
 \global \c@tocdepth 2\relax 
 \contentsline {section}{\numberline {1}Detailed examples exposition and results}{3}{section.1}%
-\contentsline {section}{\numberline {2}$r=3$}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Numerator, denominator, poles and zeros}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Plots}{5}{subsection.2.2}%
-\contentsline {section}{\numberline {3}$r=4$}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Numerator, denominator, poles and zeros}{6}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Plots}{7}{subsection.3.2}%
-\contentsline {section}{\numberline {4}$r=5$}{9}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Numerator, denominator, poles and zeros}{9}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Plots}{10}{subsection.4.2}%
-\contentsline {section}{\numberline {5}$r=6$}{12}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Numerator, denominator, poles and zeros}{12}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Plots}{13}{subsection.5.2}%
-\contentsline {section}{\numberline {6}$r=7$}{15}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Numerator, denominator, poles and zeros}{15}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Plots}{16}{subsection.6.2}%
-\contentsline {section}{\numberline {7}$r=8$}{18}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Numerator, denominator, poles and zeros}{18}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Plots}{19}{subsection.7.2}%
-\contentsline {section}{\numberline {8}$r=9$}{21}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Numerator, denominator, poles and zeros}{21}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Plots}{22}{subsection.8.2}%
-\contentsline {section}{\numberline {9}$r=10$}{24}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Numerator, denominator, poles and zeros}{24}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Plots}{26}{subsection.9.2}%
+\contentsline {section}{\numberline {2}Approximation objective $r=3$}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Numerator and denominator coefficients}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Poles}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Zeros}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Poles and zeros visualisation}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Approximation visualization}{5}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Approximation objective $r=4$}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Numerator and denominator coefficients}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Poles}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Zeros}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Poles and zeros visualisation}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Approximation visualization}{8}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Approximation objective $r=5$}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Numerator and denominator coefficients}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Poles}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Zeros}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Poles and zeros visualisation}{10}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Approximation visualization}{11}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Approximation objective $r=6$}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Numerator and denominator coefficients}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Poles}{12}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Zeros}{13}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Poles and zeros visualisation}{13}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Approximation visualization}{14}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Approximation objective $r=7$}{15}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Numerator and denominator coefficients}{15}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Poles}{15}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Zeros}{16}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Poles and zeros visualisation}{16}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Approximation visualization}{17}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Approximation objective $r=8$}{18}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Numerator and denominator coefficients}{18}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Poles}{18}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Zeros}{19}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Poles and zeros visualisation}{19}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Approximation visualization}{20}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Approximation objective $r=9$}{21}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Numerator and denominator coefficients}{21}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Poles}{22}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Zeros}{22}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Poles and zeros visualisation}{23}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Approximation visualization}{23}{subsection.8.5}%
+\contentsline {section}{\numberline {9}Approximation objective $r=10$}{24}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Numerator and denominator coefficients}{24}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Poles}{25}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Zeros}{25}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Poles and zeros visualisation}{26}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Approximation visualization}{26}{subsection.9.5}%
