@@ -6,7 +6,10 @@ addpath('/Users/charles/Documents/GIT/zolotarev')
 % Add AAA package
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
 % Directory name list
-fileDir = {'cpv_MACA64' 'cpv_PCWIN64'};% 'AlexReis_PCWIN64'};
+fileDir = {'cpv_MACA64_MR2023b' ...
+           'cpv_MACA64_MR2022b' ... 
+           'cpv_PCWIN64_MR2025b' ...
+           'AlexReis_PCWIN64_MR2025b'};
 %%% END: TO ADAPT BY USER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -25,7 +28,7 @@ col(2,:)    = [1 0 0];
 mark        = {'s' 'o' '<' '>' '^' 'v'};
 
 %dataFiles   = zol.getFileData(['tex_pdf' filesep 'data' filesep fileDir{1} filesep]);
-for i = 5%1:numel(dataFiles)
+for i = 2%1:numel(dataFiles)
     for ifile = 1:numel(fileDir)
         N4 = []; D4 = []; ZE4 = []; PO4 = []; 
         %
