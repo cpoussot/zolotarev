@@ -7,13 +7,18 @@ end
 if nargin < 3
     OPT     = [];
 end
-
-hsym    = sym(h);
-[n,d]   = numden(hsym);
-tmp_n   = sym2poly(n);
-tmp_d   = sym2poly(d);
-hnum    = tmp_n.'/tmp_d(1);
-hden    = tmp_d.'/tmp_d(1);
+% if isa(h,'tf')
+%     [hnum,hden] = tfdata(h);
+%     hnum        = hnum{1};
+%     hden        = hden{1};
+% else
+    hsym    = (sym(h));
+    [n,d]   = numden(hsym);
+    tmp_n   = sym2poly(n);
+    tmp_d   = sym2poly(d);
+    hnum    = tmp_n.'/tmp_d(1);
+    hden    = tmp_d.'/tmp_d(1);
+% end
 syms s
 for i = 1:numel(hden)
     M(i,1) = s^(numel(hden)-i);

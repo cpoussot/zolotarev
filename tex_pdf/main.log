@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.6.11)  4 AUG 2026 15:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.6.11)  4 AUG 2026 17:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1195,109 +1195,68 @@ LaTeX Warning: Label `tab:zer-1a-r4' multiply defined.
 LaTeX Warning: Label `tab:zer-1a-r4@cref' multiply defined.
 
 
-LaTeX Warning: Label `tab:sym-1a-r5' multiply defined.
-
-
-LaTeX Warning: Label `tab:sym-1a-r5@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:sym-1a-r5' multiply defined.
-
-
-LaTeX Warning: Label `tab:sym-1a-r5@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:sym-1a-r5' multiply defined.
-
-
-LaTeX Warning: Label `tab:sym-1a-r5@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r5' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r5@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r5' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r5@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r5' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r5@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r5' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r5@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r5' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r5@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r5' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r5@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:sym-1a-r6' multiply defined.
-
-
-LaTeX Warning: Label `tab:sym-1a-r6@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:sym-1a-r6' multiply defined.
-
-
-LaTeX Warning: Label `tab:sym-1a-r6@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:sym-1a-r6' multiply defined.
-
-
-LaTeX Warning: Label `tab:sym-1a-r6@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r6' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r6@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r6' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r6@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r6' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r6@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r6' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r6@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r6' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r6@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r6' multiply defined.
+LaTeX Warning: Labcount377
+LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
+
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 86
+.
+
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/jkn
+appen/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+) (main.toc)
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+ [1
+
+{/Users/charles/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex
+/pdftex.map}] [2]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 172.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 172.
+
+(data/cpv_MACA64_MR2023b/tables/1a_nd_r3.tex)
+
+! LaTeX Error: File `data/cpv_MACA64_MR2022b/tables/1a_nd_r3.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+main.tex:172: Emergency stop.
+<read *> 
+         
+l.172 }
+       
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 30419 strings out of 480549
+ 610075 string characters out of 2893596
+ 849812 words of memory out of 3000000
+ 47800 multiletter control sequences out of 15000+600000
+ 481173 words of font info for 78 fonts, out of 8000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 79i,14n,80p,1370b,511s stack positions out of 5000i,500n,10000p,200000b,80000s
+main.tex:172:  ==> Fatal error occurred, no output PDF file produced!
+i,14n,80p,1545b,511s stack positions out of 5000i,500n,10000p,200000b,80000s
+main.tex:172:  ==> Fatal error occurred, no output PDF file produced!
+zer-1a-r6' multiply defined.
 
 
 LaTeX Warning: Label `tab:zer-1a-r6@cref' multiply defined.
@@ -1952,20 +1911,20 @@ Overfull \hbox (1.26672pt too wide) detected at line 3
  []
 
 )
-<data/cpv_MACA64_MR2023b/figures/pz_r8.pdf, id=889, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r8.pdf, id=883, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r8.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r8.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r8.pdf  used on inp
 ut line 172.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf, id=890, 1015.795pt x 761.84625
+<data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf, id=884, 1015.795pt x 761.84625
 pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf  used o
 n input line 172.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r8.pdf, id=891, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/eval_r8.pdf, id=885, 1015.795pt x 761.84625pt>
 
 File: data/cpv_MACA64_MR2023b/figures/eval_r8.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r8.pdf>
@@ -1983,7 +1942,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 172.
 
 (data/cpv_MACA64_MR2023b/tables/1a_nd_r9.tex
-Overfull \hbox (9.13239pt too wide) detected at line 3
+Overfull \hbox (3.71565pt too wide) detected at line 3
 []
  []
 
@@ -2026,20 +1985,20 @@ Overfull \hbox (6.68346pt too wide) detected at line 3
 (data/cpv_MACA64_MR2022b/tables/1a_zer_r9.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_zer_r9.tex [31])
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r9.tex)
-<data/cpv_MACA64_MR2023b/figures/pz_r9.pdf, id=995, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r9.pdf, id=989, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r9.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r9.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r9.pdf  used on inp
 ut line 172.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf, id=996, 1015.795pt x 761.84625
+<data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf, id=990, 1015.795pt x 761.84625
 pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf  used o
 n input line 172.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r9.pdf, id=997, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/eval_r9.pdf, id=991, 1015.795pt x 761.84625pt>
 
 File: data/cpv_MACA64_MR2023b/figures/eval_r9.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r9.pdf>
@@ -2057,8 +2016,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 172.
 
-(data/cpv_MACA64_MR2023b/tables/1a_nd_r10.tex)
-(data/cpv_MACA64_MR2022b/tables/1a_nd_r10.tex
+(data/cpv_MACA64_MR2023b/tables/1a_nd_r10.tex
+Overfull \hbox (13.92415pt too wide) detected at line 3
+[]
+ []
+
+) (data/cpv_MACA64_MR2022b/tables/1a_nd_r10.tex
 Overfull \hbox (19.34088pt too wide) detected at line 3
 []
  []
@@ -2090,14 +2053,14 @@ Overfull \hbox (19.00957pt too wide) detected at line 3
  []
 
 )
-<data/cpv_MACA64_MR2023b/figures/pz_r10.pdf, id=1110, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r10.pdf, id=1104, 1015.795pt x 761.84625pt>
 
 File: data/cpv_MACA64_MR2023b/figures/pz_r10.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r10.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r10.pdf  used on in
 put line 172.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf, id=1111, 1015.795pt x 761.846
+<data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf, id=1105, 1015.795pt x 761.846
 25pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf>
@@ -2105,7 +2068,7 @@ Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf  used
 on input line 172.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
  [37]
-<data/cpv_MACA64_MR2023b/figures/eval_r10.pdf, id=1121, 1015.795pt x 761.84625p
+<data/cpv_MACA64_MR2023b/figures/eval_r10.pdf, id=1115, 1015.795pt x 761.84625p
 t>
 File: data/cpv_MACA64_MR2023b/figures/eval_r10.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r10.pdf>
@@ -2126,7 +2089,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  31423 strings out of 480549
  651257 string characters out of 2893596
- 977091 words of memory out of 3000000
+ 978143 words of memory out of 3000000
  48361 multiletter control sequences out of 15000+600000
  481481 words of font info for 79 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
@@ -2153,9 +2116,9 @@ m/cmsy5.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pub
 lic/amsfonts/cm/cmtt10.pfb></Library/Application Support/MiKTeX/texmfs/install/
 fonts/type1/public/amsfonts/cm/cmtt12.pfb></Library/Application Support/MiKTeX/
 texmfs/install/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (38 pages, 2631976 bytes).
+Output written on main.pdf (38 pages, 2655059 bytes).
 PDF statistics:
- 1327 PDF objects out of 1440 (max. 8388607)
+ 1321 PDF objects out of 1440 (max. 8388607)
  204 named destinations out of 1000 (max. 500000)
  549 words of extra memory for PDF output out of 10000 (max. 10000000)
 

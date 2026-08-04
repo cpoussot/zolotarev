@@ -26,9 +26,10 @@ col         = parula(10);
 col(1,:)    = [0 0 0];
 col(2,:)    = [1 0 0];
 mark        = {'s' 'o' '<' '>' '^' 'v'};
+dataFiles   = zol.getFileData(['tex_pdf' filesep 'data' filesep fileDir{1} filesep]);
 
-%dataFiles   = zol.getFileData(['tex_pdf' filesep 'data' filesep fileDir{1} filesep]);
-for i = 2%1:numel(dataFiles)
+for i = 1:numel(dataFiles)
+    N4_ = []; D4_ = [];
     for ifile = 1:numel(fileDir)
         N4 = []; D4 = []; ZE4 = []; PO4 = []; 
         %
@@ -47,8 +48,8 @@ for i = 2%1:numel(dataFiles)
             %ZE4 = [ZE4 [NaN*ones(robj-numel(ZER{j}),1); ZER{j}]];
             %PO4 = [PO4 [NaN*ones(robj-numel(POL{j}),1); POL{j}]];
         end
-        N4_(:,:,i) = N4;
-        D4_(:,:,i) = D4;
+        N4_(:,:,ifile) = N4;
+        D4_(:,:,ifile) = D4;
     end
     %
     degree = robj:-1:0;
@@ -62,26 +63,30 @@ for i = 2%1:numel(dataFiles)
             %
             subplot(221), hold on, grid on, axis tight
             zol.boxplot(degree(li)+offset,abs(squeeze(real(N4_(li,co,:)))),width,col(co,:));
-            %set(gca,'YScale','log')
+            set(gca,'YScale','log')
             ylabel('Real part'), xlabel('Power degree')
             title('Numerator','FontSize',24)
             subplot(223), hold on, grid on, axis tight
             zol.boxplot(degree(li)+offset,abs(squeeze(imag(N4_(li,co,:)))),width,col(co,:));
-            %set(gca,'YScale','log')
+            set(gca,'YScale','log')
             ylabel('Imaginary part'), xlabel('Power degree')
             %
             subplot(222), hold on, grid on, axis tight
             zol.boxplot(degree(li)+offset,abs(squeeze(real(D4_(li,co,:)))),width,col(co,:));
-            %set(gca,'YScale','log')
+            set(gca,'YScale','log')
             ylabel('Real part'), xlabel('Power degree')
             title('Denominator','FontSize',24)
             subplot(224), hold on, grid on, axis tight
             zol.boxplot(degree(li)+offset,abs(squeeze(imag(D4_(li,co,:)))),width,col(co,:));
-            %set(gca,'YScale','log')
+            set(gca,'YScale','log')
             ylabel('Imaginary part'), xlabel('Power degree')
+            %
+            sgtitle(['Approximation $r=' num2str(sz(1)-1) '$'],'FontSize',28)
         end
     end
     legend(name)
+    zol.figSa
+    drawnow
 
     % %
     % figure

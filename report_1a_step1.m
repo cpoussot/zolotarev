@@ -54,10 +54,11 @@ for robj = 3:10
     % [n4_loe,d4_loe,M]   = zol.get_numden(h4_loe); 
     [h3_loe,~,sig_loe]  = zol.pb4_to_pb3(h4_loe,pts,val);
     H_loe               = dss(info.Ar,info.Br,info.Cr,0,info.Er,0);
+    [nn,dd]             = tfdata(tf(H_loe)); n4_loe=nn{1}.'; d4_loe=dd{1}.';
     Z4{k}               = h4_loe;
     SIG{k}              = sig_loe;
-    NUM{k}              = [];%n4_loe
-    DEN{k}              = [];%d4_loe
+    NUM{k}              = n4_loe;
+    DEN{k}              = d4_loe;
     ZER{k}              = sort(zero(H_loe)); %eig([info.Ar info.Br;info.Cr 0],blkdiag(info.Er,0));
     POL{k}              = sort(eig(H_loe));  %eig(info.Ar,info.Er);
     name{k}             = ['LF, $\sigma_{' num2str(robj)  '}=' num2str(SIG{k},2) '$'];
