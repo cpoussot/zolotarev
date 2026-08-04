@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.6.11)  19 JUL 2026 09:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.6.11)  4 AUG 2026 08:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1195,73 +1195,67 @@ LaTeX Warning: Label `tab:zer-1a-r8' multiply defined.
 LaTeX Warning: Label `tab:zer-1a-r8@cref' multiply defined.
 
 
-LaTeX Warning: Label `tab:sym-1a-r9' multiply defined.
+LaTeX Warning: Labcount377
+LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
 
 
-LaTeX Warning: Label `tab:sym-1a-r9@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r9' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r9@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r9' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r9@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:sym-1a-r10' multiply defined.
-
-
-LaTeX Warning: Label `tab:sym-1a-r10@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r10' multiply defined.
-
-
-LaTeX Warning: Label `tab:pol-1a-r10@cref' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r10' multiply defined.
-
-
-LaTeX Warning: Label `tab:zer-1a-r10@cref' multiply defined.
-
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-\openout1 = `main.aux'.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 86
+.
 
-(/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-
-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count371
-\scratchdimen=\dimen345
-\scratchbox=\box105
-\nofMPsegments=\count372
-\nofMParguments=\count373
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count374
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/jkn
+appen/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+) (main.toc)
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+ [1
+
+{/Users/charles/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex
+/pdftex.map}] [2]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 160.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 160.
+
+(data/cpv_macos/tables/1a_nd_r3.tex
+data/cpv_macos/tables/1a_nd_r3.tex:3: Missing $ inserted.
+<inserted text> 
+                $
+l.3 ...and denominator (last lines) coefficients.}
+                                                   \label{tab:sym-1a-r3} \en...
+
+? 
+data/cpv_macos/tables/1a_nd_r3.tex:3: Emergency stop.
+<inserted text> 
+                $
+l.3 ...and denominator (last lines) coefficients.}
+                                                   \label{tab:sym-1a-r3} \en...
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 30409 strings out of 480549
+ 609793 string characters out of 2893596
+ 849645 words of memory out of 3000000
+ 47791 multiletter control sequences out of 15000+600000
+ 481173 words of font info for 78 fonts, out of 8000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 79i,13n,80p,1370b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+data/cpv_macos/tables/1a_nd_r3.tex:3:  ==> Fatal error occurred, no output PDF 
+file produced!
+t=\count374
 \MPscratchDim=\dimen346
 \MPnumerator=\count375
 \makeMPintoPDFobject=\count376
@@ -1312,372 +1306,380 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
  [2] [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
-(data/cpv_macos/tables/1a_nd_r3.tex) (data/cpv_winos/tables/1a_nd_r3.tex)
-(data/cpv_macos/tables/1a_pol_r3.tex) (data/cpv_winos/tables/1a_pol_r3.tex)
-(data/cpv_macos/tables/1a_zer_r3.tex) (data/cpv_winos/tables/1a_zer_r3.tex)
-[4]
-<data/cpv_macos/figures/pz_r3.pdf, id=292, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r3.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r3.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r3.pdf  used on input line 1
-51.
-(pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_macos/figures/pz_r3_zoom.pdf, id=293, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r3_zoom.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r3_zoom.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r3_zoom.pdf  used on input l
-ine 151.
-(pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_macos/figures/eval_r3.pdf, id=294, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/eval_r3.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/eval_r3.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/eval_r3.pdf  used on input line
- 151.
+(data/cpv_MACA64/tables/1a_nd_r3.tex) (data/cpv_PCWIN64/tables/1a_nd_r3.tex)
+(data/cpv_MACA64/tables/1a_pol_r3.tex) (data/cpv_PCWIN64...and denominator (last lines) coefficients.}
+                                                   \label{tab:sym-1a-r3} \en...
+
+? 
+data/cpv_macos/tables/1a_nd_r3.tex:3: Emergency stop.
+<inserted text> 
+                $
+l.3 ...and denominator (last lines) coefficients.}
+                                                   \label{tab:sym-1a-r3} \en...
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 30592 strings out of 480549
+ 612512 string characters out of 2893596
+ 863273 words of memory out of 3000000
+ 47924 multiletter control sequences out of 15000+600000
+ 481481 words of font info for 79 fonts, out of 8000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 79i,13n,80p,1370b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+data/cpv_macos/tables/1a_nd_r3.tex:3:  ==> Fatal error occurred, no output PDF 
+file produced!
+4/figures/eval_r3.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/eval_r3.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/eval_r3.pdf  used on input lin
+e 166.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [5 <./data/cpv_macos/figures/pz_r3.pdf> <./data/cpv_macos/figures/pz_r3_zoom.p
-df> <./data/cpv_macos/figures/eval_r3.pdf>]
+ [5 <./data/cpv_MACA64/figures/pz_r3.pdf> <./data/cpv_MACA64/figures/pz_r3_zoom
+.pdf>] [6 <./data/cpv_MACA64/figures/eval_r3.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
-(data/cpv_macos/tables/1a_nd_r4.tex
+(data/cpv_MACA64/tables/1a_nd_r4.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_winos/tables/1a_nd_r4.tex
+) (data/cpv_PCWIN64/tables/1a_nd_r4.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_macos/tables/1a_pol_r4.tex) (data/cpv_winos/tables/1a_pol_r4.tex)
-(data/cpv_macos/tables/1a_zer_r4.tex) (data/cpv_winos/tables/1a_zer_r4.tex
-[6])
-<data/cpv_macos/figures/pz_r4.pdf, id=391, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r4.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r4.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r4.pdf  used on input line 1
-51.
+) (data/cpv_MACA64/tables/1a_pol_r4.tex) (data/cpv_PCWIN64/tables/1a_pol_r4.tex
+) (data/cpv_MACA64/tables/1a_zer_r4.tex [7])
+(data/cpv_PCWIN64/tables/1a_zer_r4.tex)
+<data/cpv_MACA64/figures/pz_r4.pdf, id=411, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/pz_r4.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/pz_r4.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/pz_r4.pdf  used on input line 
+166.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_macos/figures/pz_r4_zoom.pdf, id=392, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r4_zoom.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r4_zoom.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r4_zoom.pdf  used on input l
-ine 151.
+<data/cpv_MACA64/figures/pz_r4_zoom.pdf, id=412, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/pz_r4_zoom.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/pz_r4_zoom.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/pz_r4_zoom.pdf  used on input 
+line 166.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_macos/figures/eval_r4.pdf, id=393, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/eval_r4.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/eval_r4.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/eval_r4.pdf  used on input line
- 151.
+<data/cpv_MACA64/figures/eval_r4.pdf, id=413, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/eval_r4.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/eval_r4.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/eval_r4.pdf  used on input lin
+e 166.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [7 <./data/cpv_macos/figures/pz_r4.pdf> <./data/cpv_macos/figures/pz_r4_zoom.p
-df>] [8 <./data/cpv_macos/figures/eval_r4.pdf>]
+ [8 <./data/cpv_MACA64/figures/pz_r4.pdf> <./data/cpv_MACA64/figures/pz_r4_zoom
+.pdf>] [9 <./data/cpv_MACA64/figures/eval_r4.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
-(data/cpv_macos/tables/1a_nd_r5.tex
+(data/cpv_MACA64/tables/1a_nd_r5.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_winos/tables/1a_nd_r5.tex
+) (data/cpv_PCWIN64/tables/1a_nd_r5.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_macos/tables/1a_pol_r5.tex
+) (data/cpv_MACA64/tables/1a_pol_r5.tex
 Overfull \hbox (0.98897pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_winos/tables/1a_pol_r5.tex
+) (data/cpv_PCWIN64/tables/1a_pol_r5.tex
 Overfull \hbox (1.26672pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_macos/tables/1a_zer_r5.tex) (data/cpv_winos/tables/1a_zer_r5.tex
-[9])
-<data/cpv_macos/figures/pz_r5.pdf, id=487, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r5.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r5.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r5.pdf  used on input line 1
-51.
+) [10] (data/cpv_MACA64/tables/1a_zer_r5.tex)
+(data/cpv_PCWIN64/tables/1a_zer_r5.tex)
+<data/cpv_MACA64/figures/pz_r5.pdf, id=505, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/pz_r5.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/pz_r5.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/pz_r5.pdf  used on input line 
+166.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_macos/figures/pz_r5_zoom.pdf, id=488, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r5_zoom.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r5_zoom.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r5_zoom.pdf  used on input l
-ine 151.
+<data/cpv_MACA64/figures/pz_r5_zoom.pdf, id=506, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/pz_r5_zoom.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/pz_r5_zoom.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/pz_r5_zoom.pdf  used on input 
+line 166.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_macos/figures/eval_r5.pdf, id=489, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/eval_r5.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/eval_r5.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/eval_r5.pdf  used on input line
- 151.
+<data/cpv_MACA64/figures/eval_r5.pdf, id=507, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/eval_r5.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/eval_r5.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/eval_r5.pdf  used on input lin
+e 166.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [10 <./data/cpv_macos/figures/pz_r5.pdf> <./data/cpv_macos/figures/pz_r5_zoom.
-pdf>] [11 <./data/cpv_macos/figures/eval_r5.pdf>]
+ [11 <./data/cpv_MACA64/figures/pz_r5.pdf> <./data/cpv_MACA64/figures/pz_r5_zoo
+m.pdf>] [12 <./data/cpv_MACA64/figures/eval_r5.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
-(data/cpv_macos/tables/1a_nd_r6.tex
+(data/cpv_MACA64/tables/1a_nd_r6.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_winos/tables/1a_nd_r6.tex
+) (data/cpv_PCWIN64/tables/1a_nd_r6.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_macos/tables/1a_pol_r6.tex) (data/cpv_winos/tables/1a_pol_r6.tex)
-[12] (data/cpv_macos/tables/1a_zer_r6.tex) (data/cpv_winos/tables/1a_zer_r6.tex
-)
-<data/cpv_macos/figures/pz_r6.pdf, id=587, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r6.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r6.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r6.pdf  used on input line 1
-51.
+) (data/cpv_MACA64/tables/1a_pol_r6.tex) (data/cpv_PCWIN64/tables/1a_pol_r6.tex
+) [13] (data/cpv_MACA64/tables/1a_zer_r6.tex)
+(data/cpv_PCWIN64/tables/1a_zer_r6.tex)
+<data/cpv_MACA64/figures/pz_r6.pdf, id=607, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/pz_r6.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/pz_r6.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/pz_r6.pdf  used on input line 
+166.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_macos/figures/pz_r6_zoom.pdf, id=588, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r6_zoom.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r6_zoom.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r6_zoom.pdf  used on input l
-ine 151.
+<data/cpv_MACA64/figures/pz_r6_zoom.pdf, id=608, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/pz_r6_zoom.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/pz_r6_zoom.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/pz_r6_zoom.pdf  used on input 
+line 166.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_macos/figures/eval_r6.pdf, id=589, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/eval_r6.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/eval_r6.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/eval_r6.pdf  used on input line
- 151.
+<data/cpv_MACA64/figures/eval_r6.pdf, id=609, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/eval_r6.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/eval_r6.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/eval_r6.pdf  used on input lin
+e 166.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [13 <./data/cpv_macos/figures/pz_r6.pdf> <./data/cpv_macos/figures/pz_r6_zoom.
-pdf>] [14 <./data/cpv_macos/figures/eval_r6.pdf>]
+ [14 <./data/cpv_MACA64/figures/pz_r6.pdf> <./data/cpv_MACA64/figures/pz_r6_zoo
+m.pdf>] [15 <./data/cpv_MACA64/figures/eval_r6.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
-(data/cpv_macos/tables/1a_nd_r7.tex
+(data/cpv_MACA64/tables/1a_nd_r7.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_winos/tables/1a_nd_r7.tex
+) (data/cpv_PCWIN64/tables/1a_nd_r7.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_macos/tables/1a_pol_r7.tex) (data/cpv_winos/tables/1a_pol_r7.tex
+) (data/cpv_MACA64/tables/1a_pol_r7.tex) (data/cpv_PCWIN64/tables/1a_pol_r7.tex
+
 Overfull \hbox (5.39824pt too wide) detected at line 3
 []
  []
 
-) [15] (data/cpv_macos/tables/1a_zer_r7.tex)
-(data/cpv_winos/tables/1a_zer_r7.tex)
-<data/cpv_macos/figures/pz_r7.pdf, id=690, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r7.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r7.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r7.pdf  used on input line 1
-51.
+) [16] (data/cpv_MACA64/tables/1a_zer_r7.tex)
+(data/cpv_PCWIN64/tables/1a_zer_r7.tex)
+<data/cpv_MACA64/figures/pz_r7.pdf, id=709, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/pz_r7.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/pz_r7.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/pz_r7.pdf  used on input line 
+166.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_macos/figures/pz_r7_zoom.pdf, id=691, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r7_zoom.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r7_zoom.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r7_zoom.pdf  used on input l
-ine 151.
+<data/cpv_MACA64/figures/pz_r7_zoom.pdf, id=710, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/pz_r7_zoom.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/pz_r7_zoom.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/pz_r7_zoom.pdf  used on input 
+line 166.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_macos/figures/eval_r7.pdf, id=692, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/eval_r7.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/eval_r7.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/eval_r7.pdf  used on input line
- 151.
+<data/cpv_MACA64/figures/eval_r7.pdf, id=711, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/eval_r7.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/eval_r7.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/eval_r7.pdf  used on input lin
+e 166.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [16 <./data/cpv_macos/figures/pz_r7.pdf> <./data/cpv_macos/figures/pz_r7_zoom.
-pdf>] [17 <./data/cpv_macos/figures/eval_r7.pdf>]
+ [17 <./data/cpv_MACA64/figures/pz_r7.pdf> <./data/cpv_MACA64/figures/pz_r7_zoo
+m.pdf>] [18 <./data/cpv_MACA64/figures/eval_r7.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
-(data/cpv_macos/tables/1a_nd_r8.tex
+(data/cpv_MACA64/tables/1a_nd_r8.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_winos/tables/1a_nd_r8.tex
+) (data/cpv_PCWIN64/tables/1a_nd_r8.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_macos/tables/1a_pol_r8.tex) (data/cpv_winos/tables/1a_pol_r8.tex)
-[18] (data/cpv_macos/tables/1a_zer_r8.tex
+) (data/cpv_MACA64/tables/1a_pol_r8.tex) (data/cpv_PCWIN64/tables/1a_pol_r8.tex
+[19]) (data/cpv_MACA64/tables/1a_zer_r8.tex
 Overfull \hbox (6.68346pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_winos/tables/1a_zer_r8.tex
+) (data/cpv_PCWIN64/tables/1a_zer_r8.tex
 Overfull \hbox (1.26672pt too wide) detected at line 3
 []
  []
 
 )
-<data/cpv_macos/figures/pz_r8.pdf, id=798, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r8.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r8.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r8.pdf  used on input line 1
-51.
+<data/cpv_MACA64/figures/pz_r8.pdf, id=817, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/pz_r8.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/pz_r8.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/pz_r8.pdf  used on input line 
+166.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_macos/figures/pz_r8_zoom.pdf, id=799, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r8_zoom.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r8_zoom.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r8_zoom.pdf  used on input l
-ine 151.
+<data/cpv_MACA64/figures/pz_r8_zoom.pdf, id=818, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/pz_r8_zoom.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/pz_r8_zoom.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/pz_r8_zoom.pdf  used on input 
+line 166.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_macos/figures/eval_r8.pdf, id=800, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/eval_r8.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/eval_r8.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/eval_r8.pdf  used on input line
- 151.
+ [20]
+<data/cpv_MACA64/figures/eval_r8.pdf, id=827, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/eval_r8.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/eval_r8.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/eval_r8.pdf  used on input lin
+e 166.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [19 <./data/cpv_macos/figures/pz_r8.pdf> <./data/cpv_macos/figures/pz_r8_zoom.
-pdf>] [20 <./data/cpv_macos/figures/eval_r8.pdf>]
+ [21 <./data/cpv_MACA64/figures/pz_r8.pdf> <./data/cpv_MACA64/figures/pz_r8_zoo
+m.pdf> <./data/cpv_MACA64/figures/eval_r8.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
-(data/cpv_macos/tables/1a_nd_r9.tex
+(data/cpv_MACA64/tables/1a_nd_r9.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_winos/tables/1a_nd_r9.tex
+) (data/cpv_PCWIN64/tables/1a_nd_r9.tex
 Overfull \hbox (3.71565pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_macos/tables/1a_pol_r9.tex
+) (data/cpv_MACA64/tables/1a_pol_r9.tex
 Overfull \hbox (1.26672pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_winos/tables/1a_pol_r9.tex
+) (data/cpv_PCWIN64/tables/1a_pol_r9.tex
 Overfull \hbox (6.68346pt too wide) detected at line 3
 []
  []
 
-[21]) (data/cpv_macos/tables/1a_zer_r9.tex)
-(data/cpv_winos/tables/1a_zer_r9.tex)
-<data/cpv_macos/figures/pz_r9.pdf, id=889, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r9.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r9.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r9.pdf  used on input line 1
-51.
+[22]) (data/cpv_MACA64/tables/1a_zer_r9.tex)
+(data/cpv_PCWIN64/tables/1a_zer_r9.tex)
+<data/cpv_MACA64/figures/pz_r9.pdf, id=908, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/pz_r9.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/pz_r9.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/pz_r9.pdf  used on input line 
+166.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_macos/figures/pz_r9_zoom.pdf, id=890, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r9_zoom.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r9_zoom.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r9_zoom.pdf  used on input l
-ine 151.
+<data/cpv_MACA64/figures/pz_r9_zoom.pdf, id=909, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/pz_r9_zoom.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/pz_r9_zoom.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/pz_r9_zoom.pdf  used on input 
+line 166.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
- [22]
-<data/cpv_macos/figures/eval_r9.pdf, id=899, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/eval_r9.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/eval_r9.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/eval_r9.pdf  used on input line
- 151.
+ [23]
+<data/cpv_MACA64/figures/eval_r9.pdf, id=918, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/eval_r9.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/eval_r9.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/eval_r9.pdf  used on input lin
+e 166.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [23 <./data/cpv_macos/figures/pz_r9.pdf> <./data/cpv_macos/figures/pz_r9_zoom.
-pdf> <./data/cpv_macos/figures/eval_r9.pdf>]
+ [24 <./data/cpv_MACA64/figures/pz_r9.pdf> <./data/cpv_MACA64/figures/pz_r9_zoo
+m.pdf> <./data/cpv_MACA64/figures/eval_r9.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+(hyperref)                removing `math shift' on input line 166.
 
-(data/cpv_macos/tables/1a_nd_r10.tex) (data/cpv_winos/tables/1a_nd_r10.tex)
-(data/cpv_macos/tables/1a_pol_r10.tex) (data/cpv_winos/tables/1a_pol_r10.tex
-[24]) (data/cpv_macos/tables/1a_zer_r10.tex
+(data/cpv_MACA64/tables/1a_nd_r10.tex) (data/cpv_PCWIN64/tables/1a_nd_r10.tex)
+(data/cpv_MACA64/tables/1a_pol_r10.tex) (data/cpv_PCWIN64/tables/1a_pol_r10.tex
+[25]) (data/cpv_MACA64/tables/1a_zer_r10.tex
 Overfull \hbox (13.59283pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_winos/tables/1a_zer_r10.tex
+) (data/cpv_PCWIN64/tables/1a_zer_r10.tex
 Overfull \hbox (19.00957pt too wide) detected at line 3
 []
  []
 
 )
-<data/cpv_macos/figures/pz_r10.pdf, id=991, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r10.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r10.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r10.pdf  used on input line 
-151.
+<data/cpv_MACA64/figures/pz_r10.pdf, id=1011, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/pz_r10.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/pz_r10.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/pz_r10.pdf  used on input line
+ 166.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_macos/figures/pz_r10_zoom.pdf, id=992, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/pz_r10_zoom.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/pz_r10_zoom.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/pz_r10_zoom.pdf  used on input 
-line 151.
+<data/cpv_MACA64/figures/pz_r10_zoom.pdf, id=1012, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/pz_r10_zoom.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/pz_r10_zoom.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/pz_r10_zoom.pdf  used on input
+ line 166.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
- [25]
-<data/cpv_macos/figures/eval_r10.pdf, id=1002, 1015.795pt x 761.84625pt>
-File: data/cpv_macos/figures/eval_r10.pdf Graphic file (type pdf)
-<use data/cpv_macos/figures/eval_r10.pdf>
-Package pdftex.def Info: data/cpv_macos/figures/eval_r10.pdf  used on input lin
-e 151.
+ [26]
+<data/cpv_MACA64/figures/eval_r10.pdf, id=1021, 1015.795pt x 761.84625pt>
+File: data/cpv_MACA64/figures/eval_r10.pdf Graphic file (type pdf)
+<use data/cpv_MACA64/figures/eval_r10.pdf>
+Package pdftex.def Info: data/cpv_MACA64/figures/eval_r10.pdf  used on input li
+ne 166.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
 
 No file main.bbl.
-[26 <./data/cpv_macos/figures/pz_r10.pdf> <./data/cpv_macos/figures/pz_r10_zoom
-.pdf> <./data/cpv_macos/figures/eval_r10.pdf>] (main.aux)
+[27 <./data/cpv_MACA64/figures/pz_r10.pdf> <./data/cpv_MACA64/figures/pz_r10_zo
+om.pdf> <./data/cpv_MACA64/figures/eval_r10.pdf>] (main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1FA2204DA82F3B803790E0CE75B47C89;8380.
+(rerunfilecheck)             Checksum: F8A0FC5B37CDF33A69167BA284B310D2;8928.
  ) 
 Here is how much of TeX's memory you used:
- 31113 strings out of 480549
- 632002 string characters out of 2893596
- 944057 words of memory out of 3000000
- 48214 multiletter control sequences out of 15000+600000
+ 31120 strings out of 480549
+ 632610 string characters out of 2893596
+ 945632 words of memory out of 3000000
+ 48217 multiletter control sequences out of 15000+600000
  481481 words of font info for 79 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 79i,13n,80p,3008b,529s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,14n,80p,3008b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/charles/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfo
 ur/jknappen/ec/dpi600/tcrm0600.pk> </Users/charles/Library/Application Support/
 MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk></Library/App
@@ -1700,9 +1702,9 @@ m/cmsy5.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pub
 lic/amsfonts/cm/cmtt10.pfb></Library/Application Support/MiKTeX/texmfs/install/
 fonts/type1/public/amsfonts/cm/cmtt12.pfb></Library/Application Support/MiKTeX/
 texmfs/install/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (26 pages, 2561778 bytes).
+Output written on main.pdf (27 pages, 2573175 bytes).
 PDF statistics:
- 1194 PDF objects out of 1200 (max. 8388607)
- 141 named destinations out of 1000 (max. 500000)
- 525 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1215 PDF objects out of 1440 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
+ 549 words of extra memory for PDF output out of 10000 (max. 10000000)
 

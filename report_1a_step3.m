@@ -5,14 +5,13 @@ clearvars; close all; clc; format shorte
 addpath('/Users/charles/Documents/GIT/zolotarev')
 % Add AAA package
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
-% Name the folder list
-fileDir = {'cpv_macos' 'cpv_winos'};
+% Directory name list
+fileDir = {'cpv_MACA64' 'cpv_winos'};
 %%% END: TO ADAPT BY USER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%
 %dataFiles   = zol.getFileData(['tex_pdf' filesep 'data' filesep fileDir{1} filesep]);
-
 %syms z
 for i = 2%:3%1:numel(dataFiles)
     for ii = 1:numel(fileDir)

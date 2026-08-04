@@ -5,19 +5,21 @@ clearvars; close all; clc; format shorte
 addpath('/Users/charles/Documents/GIT/zolotarev')
 % Add AAA package
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
-% Name the folder for save as follows: 'YourName_os', 
-% e.g. for Charles Poussot-Vassal: 'cpv_macos'
-fileDir     = 'cpv_macos';
+% Your name: e.g. for Charles Poussot-Vassal: 'cpv'
+nameUsr = 'cpv';
 %%% END: TO ADAPT BY USER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%% Create folder
+fileDir     = [nameUsr '_' computer];
 fileData    = ['tex_pdf' filesep 'data' filesep fileDir filesep];
 if ~exist(fileData); mkdir(fileData); end
+
 %%% Choose case and paramters for AAA
 AAAparam    = {... % ",'sign',1,'lawson',0"; ... 
                ",'sign',1,'damping',.95,'lawson',200"; ...
                ",'sign',1,'damping',.95,'lawson',1000"};
+
 %%% Style & slack variables
 AAAname     = {... %'AAA-sign-L0'; ...
                'AAA-sign-L200'; ...
@@ -28,11 +30,11 @@ col         = parula(10);
 col(1,:)    = [0 0 0];
 col(2,:)    = [1 0 0];
 mark        = {'s' 'o' '<' '>' '^' 'v'};
+
 %%% Define Zolotarev topology
 [pts,val,data]  = zol.example('1a');
 for robj = 3:10
     k       = 0;
-
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%% Optimal solution
     k       = k+1;
@@ -43,7 +45,6 @@ for robj = 3:10
     ZER{k}  = data.zer_opt{robj};
     POL{k}  = data.pol_opt{robj};
     name{k} = ['Opt., $\sigma_{' num2str(robj) '}=' num2str(SIG{k},2) '$'];
-    
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%% Loewner
     k                   = k+1;
@@ -60,7 +61,6 @@ for robj = 3:10
     ZER{k}              = sort(zero(H_loe)); %eig([info.Ar info.Br;info.Cr 0],blkdiag(info.Er,0));
     POL{k}              = sort(eig(H_loe));  %eig(info.Ar,info.Er);
     name{k}             = ['LF, $\sigma_{' num2str(robj)  '}=' num2str(SIG{k},2) '$'];
-    
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%% AAA
     for ii = 1:length(AAAparam)
@@ -78,6 +78,7 @@ for robj = 3:10
         POL{k}              = sort(h4_aaa_pol);
         name{k}             = [AAAname{ii} ', $\sigma_{' num2str(robj) '} =' num2str(SIG{k},2) '$'];
     end
+    %%% Save all
     save([fileData 'data_r' num2str(robj)], ...
           'AAAparam','AAAname','name','data', ...
           'robj','Z4','SIG','ZER','POL','NUM','DEN', ...

@@ -1,13 +1,12 @@
-clearvars; close all; clc; format shortEng
+clearvars; close all; clc; format shorte %shortEng
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% BEGIN: TO ADAPT BY USER
 % Add Zolotarev Loewner package
 addpath('/Users/charles/Documents/GIT/zolotarev')
 % Add AAA package
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
-% Name the folder for save as follows: 'YourName_os', 
-% e.g. for Charles Poussot-Vassal on MACOS: 'cpv_macos'
-fileDir    = 'cpv_macos';
+% Directory name
+fileDir = 'cpv_MACA64';
 %%% END: TO ADAPT BY USER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -33,6 +32,8 @@ col         = parula(10);
 col(1,:)    = [0 0 0];
 col(2,:)    = [1 0 0];
 mark        = {'s' 'o' '<' '>' '^' 'v'};
+fileDirName = strrep(fileDir,'_',' ');
+
 %%% Start loop
 syms z
 for i = 1:numel(allFiles)
@@ -110,7 +111,7 @@ for i = 1:numel(allFiles)
     fileID      = fopen(filename, 'w');
     fprintf(fileID, '\\begin{table}[H] \\tiny $$ \n');
     fprintf(fileID, str_coeff);
-    fprintf(fileID, [' \n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileDir '}), $r=' num2str(robj) '$, Z4: numerator (first lines) and denominator (last lines) coefficients.} \\label{tab:sym-1a-r' num2str(robj) '} \\end{table}']);
+    fprintf(fileID, [' \n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileDirName '}), $r=' num2str(robj) '$, Z4: numerator (first lines) and denominator (last lines) coefficients.} \\label{tab:sym-1a-r' num2str(robj) '} \\end{table}']);
     fclose(fileID);
     % Poles
     filename    = [fileTab '1a_pol_r' num2str(robj) '.tex'];
@@ -118,7 +119,7 @@ for i = 1:numel(allFiles)
     str_pz      = zol.latex_tab_pz(PO4,name);
     fprintf(fileID, '\\begin{table}[H] \\tiny $$ \n');
     fprintf(fileID, str_pz);
-    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileDir '}), $r=' num2str(robj) '$, Z4: poles.} \\label{tab:pol-1a-r' num2str(robj) '} \\end{table}']);
+    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileDirName '}), $r=' num2str(robj) '$, Z4: poles.} \\label{tab:pol-1a-r' num2str(robj) '} \\end{table}']);
     fclose(fileID);
     % Zeros
     filename    = [fileTab '1a_zer_r' num2str(robj) '.tex'];
@@ -126,7 +127,7 @@ for i = 1:numel(allFiles)
     str_pz      = zol.latex_tab_pz(ZE4,name);
     fprintf(fileID, '\\begin{table}[H] \\tiny $$ \n');
     fprintf(fileID, str_pz);
-    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileDir '}), $r=' num2str(robj) '$, Z4: zeros.} \\label{tab:zer-1a-r' num2str(robj) '} \\end{table}']);
+    fprintf(fileID, ['\n $$\\normalsize \\caption{Case \\texttt{1a} (\\texttt{' fileDirName '}), $r=' num2str(robj) '$, Z4: zeros.} \\label{tab:zer-1a-r' num2str(robj) '} \\end{table}']);
     fclose(fileID);
 end
 license('inuse')
