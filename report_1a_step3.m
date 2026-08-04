@@ -54,7 +54,8 @@ for i = 1:numel(dataFiles)
     %
     degree = robj:-1:0;
     %
-    sz = size(N4_);
+    sz  = size(N4_);
+    r   = sz(1)-1;
     figure
     for li = 1:sz(1)
         for co = 1:sz(2)
@@ -81,11 +82,11 @@ for i = 1:numel(dataFiles)
             set(gca,'YScale','log')
             ylabel('Imaginary part'), xlabel('Power degree')
             %
-            sgtitle(['Approximation $r=' num2str(sz(1)-1) '$'],'FontSize',28)
+            sgtitle(['Approximation $r=' num2str(r) '$'],'FontSize',28)
         end
     end
     legend(name)
-    zol.figSa
+    zol.figSavePDF(['tex_pdf/data/num_den_r' num2str(r)])
     drawnow
 
     % %
