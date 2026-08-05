@@ -26,31 +26,23 @@
 
 %%%% 
 \usepackage{amsfonts}
-\usepackage{amssymb}
 \usepackage{epsfig}
-\usepackage{color}
 \usepackage{colortbl}
 \usepackage{comment}
 \usepackage{mathdots}
 \usepackage{mathrsfs}
 \usepackage{epstopdf}
-\usepackage{graphicx}
 \usepackage{makeidx} 
 \usepackage{ifpdf}
-%\usepackage{pbox}
-%\usepackage{cleveref}
 \usepackage{arydshln}
-%\usepackage{mathtools}
-\usepackage{multirow}
-\usepackage{here}
-\usepackage{graphbox}
-
-%%%%
+%\usepackage{multirow}
+%\usepackage{here}
+%\usepackage{graphbox}
 \usepackage{tikz,tikz-3dplot}
 \usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,fit,positioning,shapes.symbols,chains,mindmap,trees,calc}
-%%%%
 \usepackage{matlab-prettifier}
 
+%%%%%%
 \definecolor{blue}{RGB}{16,97,169} % bleu onera
 \definecolor{grey}{RGB}{88, 102, 110} % gris onera 
 \definecolor{green}{RGB}{65,209,204} % turquoise
@@ -59,18 +51,18 @@
 \definecolor{colhl}{RGB}{152,251,152}
 \definecolor{colhl}{RGB}{211,211,211}
 
-
 %%%%
 \input{ex_math}
 \newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
 \newtheorem{remark}{Remark}
-\newtheorem{corr}{Corrolary}
+\newtheorem{corr}{Corollary}
+\newtheorem{problem}{Problem}
 
 \def\CAS{10}
 
 %%%%
-\title{Zolotarev problem case \texttt{1a}}
-%\author{A.C. Antoulas, I-V. Gosea, C. Poussot-Vassal and P. Vuillemin}
+\title{Rational approximation for Zolotarev sign and ratio problems}
 
 \author[1]{C. Poussot-Vassal\thanks{Corresponding author: \texttt{charles.poussot-vassal@onera.fr}}}
 \author[2]{I-V. Gosea}
@@ -86,18 +78,399 @@
 \maketitle
 
 \begin{abstract}
-Zolotarev
+We study algorithms to compute Zolotarev (3rd and 4th) problems rational approximation. First, we show that the Loewner framework (LF) is appropriate to rapidly and with no iterations, approximate the Zolotarev problems by compressing the (numerous) interpolation conditions. Second, we compare the approximation properties (e.g. coefficients and poles) of LF with the standard AAA, AAA-sign and its AAA-Lawson variants. We concentrate the study on a canonical example, namely the symmetric two-circles, for which the optimal solution is well documented. We show the numerical robustness of LF and its ability to recover the structure of the optimal solution. Additional geometries are also presented, emphasizing that LF is fast, reliable, and yields accurate approximants with no user intervention. %Furthermore, in cases displaying symmetries, the Loewner approximants recover these symmetries. The running time of the Loewner approach is typically lower than that of the iterative AAA-Lawson variants and does not depend on the degree of the approximant. All previous claims are supported by an extensive numerical treatment.
 \end{abstract}
 
-%(e.g. the approximation, the numerical analysis, the scientific computing, the dynamical systems and the neural network fields)
 
-%%%%%%%%%%%%%%%%
+%\begin{keywords}
+%Rational approximation, Loewner framework, Loewner matrix, Zolotarev problems.
+%\end{keywords}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \addtocontents{toc}{\setcounter{tocdepth}{2}} 
 \tableofcontents
-\newpage 
+%\newpage 
+
+\section{Introduction and contributions}
+\label{sec:intro}
+
+\paragraph{About rational approximation.}
+
+Approximation theory is a classic,  well-established field of mathematics, split into a wide variety of sub-fields, out of which we are particularly interested in approximation by rational functions. This has a multitude of applications in areas of applied sciences. Some examples include computational fluid dynamics, solution and control of partial differential equations, data compression, electronic structure computation, systems and control theory (model order reduction of dynamical systems).  For more details of the many aspects of approximation theory, we refer the reader to the classical books in \cite{Da75,Po81}, and to the more recent books \cite{Tr13,Is18} that also put emphasis on practical issues such as software implementation of the methods and applications, i.e., on data analysis for the latter.
+
+Since rational functions are ratios of two polynomials, they have proven to be more versatile in approximating complex functions than simple polynomials. Furthermore, rational functions are extensively used in signal processing, systems, and control theory since the input-output behavior of linear dynamical systems is described in the frequency domain by the so-called transfer function (which is a rational function). Finally, the location of the poles of transfer functions determines important system properties such as asymptotic stability, transient behavior, damping, and harmonics.
+
+\paragraph{Preliminaries on the Zoloratev 3rd and 4th problems.}
+
+We are concerned with rational approximation, i.e.,  approximation of any type of functions, by means of rational ones. Here, we consider sign and ratio Zolotarev functions whose solution is intertwined. More precisely, the original function to be approximated falls into the category of a special sign function, defined on the complex domain, i.e., one that is defined on a reunion of two domains $E$ and $F$, for which the value is constant on each, e.g., equal to $\pm 1$ (hence the name Zolotarev sign problem, Z4, \cref{pb:z4}). To find the solution to the Zolotarev ratio function, one may appropriately transform the previously obtained solution. What is obtained is a function that is large on one domain ($F$), and small on the other ($E$), and thus, their ratio is minimized (hence the name Zolotarev ratio problem, Z3, \cref{pb:z3}). 
+
+Moreover, the methods we use to solve Zolotarev sign problems do not require access to the exact closed-form of the original function, but only to evaluations of it on a particular domain. Hence, these methods are \emph{data-driven}.
+
+In this work, we apply two established data-driven rational approximation methods: the Loewner Framework (LF) introduced in \cite{ajm07}, and the Adaptive Antoulas Anderson (AAA) algorithm introduced in \cite{nst18}, and further developed in \cite{nakatsukasa2020algorithm,trefethen2024computation}. 
+The methods mentioned above have some things in common: they both compute approximants in the form of rational functions, they exclusively use measurements of the original function (and not the function itself), and they involve, in one way or another, Loewner matrices.
+
+\subsection{Contributions}
+We summarize below the main contributions of this paper, which were confirmed through a series of comprehensive numerical experiments.
+\begin{itemize}
+    \item[(i)] we show that the LF solves Zolotarev problems by compressing the number of  interpolation points. This approach does not need neither any iterations nor user intervention, and yields solutions quite close to the optimal ones in a very low computational time. Consequently, the LF constitutes a valid alternative for addressing these problems;
+    \item[(ii)] we show that the rational functions computed with LF come very close to optimal approximants and, in some specific cases (notably the symmetric ones), recover the structure of the optimal solution as well as its symmetry property (e.g., the distribution of eigenvalues and zeros, the alternance of polynomials coefficients, realness, etc.), whereas the other methods tend to add spurious and oddly distributed poles and zeros non-trivial artifacts that can't be easily explained. Such a feature is crucial for discovering the properties of the topology when only data values are available\footnote{Up to the author's knowledge, this property has not been highlighted in previous works.};
+    \item[(iii)] we conduct an extensive numerical study\footnote{Results can be re-computed using the code available at \url{https://github.com/cpoussot/zolotarev}.} and comparison of the performance of different methods\footnote{Other methods are computed by means of the numerical tools proposed in \cite{trefethen2024computation}.} w.r.t. to computing time, accuracy of fit and interpretability, for approximating several sign functions defined on various domains showing, among others, the computational advantage of LF;
+\end{itemize}
+
+\subsection{Paper structure}
+This paper is organized as follows: after the introduction in \cref{sec:intro}, in \cref{sec:zolo}, the Zolotarev sign and ratio problems are introduced. Then, \cref{sec:ratapp} describes the main rational approximation tools to be used later on, e.g., the Loewner Framework in \cref{sec:Loew} and the AAA algorithm in \cref{sec:AAA}. We keep the exposition brief, since both are established methods, and we refer to the original manuscripts for details. Then, in \cref{sec:1a} together with exact solutions for a special topology treated also in the work of \cite{trefethen2024computation}, i.e., for which the $E$ and $F$ domains are two symmetric circles. Furthermore, a numerical treatment is also performed to expose the format of the numerators and denominators for low approximation orders. These numerical experiments are performed for various test cases (including the ones in \cite{trefethen2024computation}), and a detailed analysis is carried out in \cref{sec:num}. Conclusions are presented in \cref{sec:conclusion}.
 
 
-%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Zolotarev problems}\label{sec:zolo}
+
+In \cite{trefethen2024computation}, a detailed historical account is presented, which is summarized next. Additionally, we refer the reader to the review paper \cite{nakatsukasa2016computing} for further considerations.
+
+\subsection{Reminder and general procedure}
+
+For integers $m,n\ge 0$, let $R_{m,n}$ (or simply $R_n$ if $m=n$) be the set of rational functions with numerator degree $m$ and denominator of degree $n$, which means that any rational function $r\in R_{m,n}$ can be written as $p(\varIC)/q(\varIC)$ for some polynomials $p(\varIC)$ and $q(\varIC)$ of degrees at most $m$ and $n$, respectively. The problem  studied here is to find $r_{m,n}^*\in R_{m,n}$ such that
+\begin{equation}
+r_{m,n}^* := \arg \min_{r\in R_{m,n}} {\max_{\varIC\in E} |r(\varIC)| \over \min_{\varIC\in F} |r(\varIC)|}.
+\label{unscaled}
+\end{equation}
+%Since multiplying $r$ by a constant does not change the ratio, we may normalize the problem by fixing
+Through normalization, i.e., assuming that $\min_{\varIC\in F} |r(\varIC)| = 1$, we end up with the problem of minimizing $|r(\varIC)|$ solely over set $E$. This is known in the literature as the third Zolotarev problem, or sometimes, also the {\em Zolotarev ratio problem}.
+
+\begin{problem}[Zolotarev ratio problem - Z3]\label{pb:z3}
+Find $r_{m,n}^*\in R_{m,n}$, satisfying condition $\min_{\varIC\in F} |r_{m,n}^*(\varIC)| = 1$, and that attains the minimum (where $\|\cdot\|_E^{}$ denotes the supremum norm over $E$)
+\begin{equation}
+\sigma_n = \min_{r \in R_{m,n}} \|r\|_E^{}.
+\label{Z3}
+\end{equation}
+\end{problem}
+
+As mentioned in \cite{trefethen2024computation}, it is known that a solution $r_{m,n}^*$ to (\ref{Z3}) exists, though it need
+not be unique, and that $\sigma_n$ satisfies $0 < \sigma_n \le 1$.
+
+Then, the {\em sign function} relative to $E$ and $F$ is of relevance in what follows, and is defined as follows:
+\begin{equation}
+\signEF(\varIC) =
+\begin{cases}
+-1 & \varIC\in E, \\ +1 & \varIC\in F.
+\end{cases}
+\end{equation}
+It is to be noted that for $z\in\IC\backslash \{E\cup F\}$, $\signEF(\varIC)$ remains undefined.
+
+Next, we introduce the problem of rational minimax approximation of $\signEF$ over $E$ and $F$, or problem Z4: 
+
+\begin{problem}[Zolotarev sign problem - Z4]\label{pb:z4}
+Find $\hat r_{m,n}\in R_{m,n}$ that attains the minimum (where $\|\cdot\|_{E\cup F}$ denotes the supremum norm over $E\cup F$)
+\begin{equation}
+\tau_n = \min_{r\in R_{m,n}} \|r-\signEF\|_{E\cup F}^{}.
+\label{Z4}
+\end{equation}
+\end{problem}
+
+As mentioned in \cite{trefethen2024computation}, the proof showing that the problems Z3 and Z4 are equivalent in the case for which $E$ and $F$ are real intervals is due to the work of \cite{akhiezer1990elements}. Then, in \cite{istace1995third}, it was shown that the equivalence generalizes to the complex case.  We reproduce (with appropriate notation changes) in what follows their theorem.
+
+\begin{theorem}
+\label{thm1}
+Every solution $r_{m,n}^*$ of Problem Z3 is related to a solution 
+$\hat r_{m,n}$ of Problem Z4 by
+\vspace{-2mm}
+\begin{equation*}
+\hat r_{m,n} (\varIC) = {1-\sigma_n\over 1+\sigma_n} \,{r_{m,n}^*(\varIC) - \sqrt{\sigma_n}
+\over r_{m,n}^*(\varIC) + \sqrt{\sigma_n}}, \quad
+r_{m,n}^*(\varIC) = \sqrt{\sigma_n} \,
+{(1-\sigma_n)/(1+\sigma_n) + \hat r_{m,n}(\varIC) \over
+(1-\sigma_n)/(1+\sigma_n) - \hat r_{m,n}(\varIC)}.
+\label{relation}
+\end{equation*}
+The minimal values of the two problems satisfy
+\vspace{-2mm}
+\begin{equation*}
+\tau_n = {2\sqrt\sigma_n\over 1 + \sigma_n}, \quad
+\sigma_n = \left({\tau_n\over 1 + \sqrt{1-\tau_n^2}\kern .7pt} \right)^2,
+\label{minvals}
+\end{equation*}
+and the set of extremal points $M = \{z\in E\cup F, ~|\hat r_{m,n}(\varIC) - \signEF(\varIC)| = \tau_n\}$ is the union of  $M_1 = \{z\in E, ~|r_{m,n}^*(\varIC)| = \sigma_n\}$ and $M_2 = \{z\in F, ~|r_{m,n}^*(\varIC)| = 1\}$.
+\end{theorem}
+
+% \charles{USEFULL?
+% In the standard case for which $\tau_n, \sigma_n\ll 1$, \eqref{relation} and \eqref{minvals}, it follows that the approximate values below hold true:
+% \begin{equation}
+% \hat r_n^{} (\varIC) \approx {r_n^*(\varIC) - \sqrt{\sigma_n}
+% \over r_n^*(\varIC) + \sqrt{\sigma_n}}, \quad
+% r_n^*(\varIC) \approx {\tau_n\over 2} \,
+% {1+ \hat r_n^{}(\varIC) \over 1- \hat r_n^{}(\varIC)}
+% \label{relation2}
+% \end{equation}
+% and also that $\tau_n \approx 2\sqrt\sigma_n$, $\sigma_n \approx {\tau_n^2\over 4}$.
+% }
+
+
+The proposed algorithms for solving \cref{pb:z3} (Z3) actually consist of solving \cref{pb:z4} (Z4) first, and then transforming from $\hat r_{m,n}$ and $\tau_n$ to $r_{m,n}^*$ and $\sigma_n$. Following \cref{thm1}, the authors of \cite{trefethen2024computation} approach Problem Z3 in the following two-step procedure: (i) solve Problem Z4 using a rational approximation method; then (ii) convert to a solution of Problem Z3 using \cref{relation} and \cref{minvals}.
+
+The main challenge of the algorithm proposed in \cite{trefethen2024computation} is given by step (i), i.e., the computation of the degrees $(m,n)$ rational best approximation $\hat r_{m,n}$ to the sign function $\signEF$ defined by the sets $E$ and $F$.  In \cite{trefethen2024computation}, the proposed procedure is to find $\hat r_{m,n}$ by means of the AAA approximation technique.  However, this has proven quite challenging. The first difficulty reported in \cite{trefethen2024computation} is that AAA encounters particular challenges when applied to sign functions. The second is the importance of having not just good rational approximations but nearly optimal ones, requiring the use of the AAA-sign and AAA-Lawson algorithm \cite{nakatsukasa2020algorithm}, which had a known problem of non-convergence in certain cases. These difficulties and their proposed solutions are discussed in \cite[\S 3.1 and \S 3.2]{trefethen2024computation}. Basically, the Lawson iteration "drives" the standard AAA approximant close to the optimal approximation value by performing several least squares steps involving  the weights. Although seemingly effective, this approach has proven to be quite costly, mostly in terms of running time, but also in terms of the structure of the resulting polynomials, as will become evident in the next sections. This is particularly relevant when choosing a high degree $(m,n)$ for the approximant.
+
+\subsection{Applications of the Z3 and Z4 problems}
+
+\paragraph{Zolotarev ration problems (Z3).}
+
+\paragraph{Zolotarev sign problems (Z4).}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The main approximation methods}\label{sec:ratapp}
+
+\subsection{The Loewner framework}\label{sec:Loew}
+
+
+The Loewner Framework (LF) is a data-driven model identification, approximation, and reduction tool introduced in \cite{ajm07}. It provides a simple solution through rational approximation by means of interpolation. For more details, we refer the reader to the extensive tutorial/handbook papers in \cite{morKarGA19a,morGosPA22,ali17}, the review paper \cite{morAntGP24}, to the papers \cite{morIonA14,morAntGI16,morKarGGetal25} that address extensions of the LF to some special classes of parametric, nonlinear or hybrid dynamical systems, and to chapter 4 in the recent book of interpolation and model reduction \cite{abg_book}. 
+
+%Recently, an extension of LF for approximating the absolute value function was presented in \cite{LoewAbsVal}.
+
+%For more details, we refer the reader to the extensive tutorial paper \cite{ali17}, the Ph.D. dissertation in \cite{Io13} that addresses connections of the LF to Lagrange rational interpolation, the Ph.D. dissertations in \cite{Go17,morKar23} that address extensions of the LF to some special classes of nonlinear and hybrid dynamical systems, the tutorial/handbooks papers in \cite{morKarGA19a,morGosPA22}, and to chapter 4 in the recent book \cite{abg_book}.
+
+
+Given $N>0$ distinct sampling points $\cT = \{\tau_1, \tau_2, \ldots,\tau_N\}$ together with $N$ function evaluations at these points denoted with $\{f_1, f_2, \ldots,f_N\}$, let $\mathfrak{D} = \{(\tau_\ell; \  f_\ell) \vert \ell =1,\cdots,N\}$ to be the problem data. Assume that $N=k+q$, where $k$ and $q$ are positive integers. The given data $\mathfrak{D}$ is first partitioned into the following two disjoint subsets,
+\vspace{-2mm}
+\begin{equation}\label{data_Loew}
+\mathfrak{D} = \mathfrak{L} \cup \mathfrak{R}, \ \text{where} \ \begin{cases} {\rm right \ data}: \mathfrak{R} = \{(\lambda_i; \  w_i) \vert i=1,\cdots,q
+\}, \\
+ {\rm left \ data}: \ \ \mathfrak{L} =
+\{(\mu_j; \ v_j) \vert j=1,\cdots,k\}. \end{cases}
+\end{equation} 
+%(for simplicity all points are assumed distinct).
+The elements of the subsets $\mathfrak{L}$ and $\mathfrak{R}$ are as follows (for $1 \leq i \leq q$ and $1 \leq j \leq k$):
+\begin{enumerate}
+    \item  $\lambda_i$, $\mu_j$ $\in\IC$ are the right, and, respectively, left \emph{sample/interpolation points}.
+	\item  $w_i$, $v_j$ $\in\IC$ are the right, and, respectively, left \emph{sample values}.
+\end{enumerate}
+The problem can be formulated as follows: find a rational function $\rloe(\varIC)$ of order $r \ll k$, such that the following interpolation conditions are (approximately) fulfilled:
+\begin{equation} \label{interp_cond}
+\rloe(\lambda_i)=w_i,~~~\rloe(\mu_j)=v_j.
+\end{equation}
+%The first step is to partition the data in two disjoint categories, i.e the \textit{right data}
+%\vspace*{-2mm}
+%\begin{equation}
+%\Lambda=\rm{diag}(\lambda_1,\lambda_2,\ldots,\lambda_k)\in\IC^{k\times k},~ \bW=[\bw_1~~\bw_2~~\cdots~~\bw_k]\in\IC^{1\times k}.
+%\end{equation}
+%and the the \textit{left data}
+%\vspace*{-2mm}
+%\begin{equation}
+%\bM=\rm{diag}(\mu_1,\mu_2,\ldots,\mu_k)\in\IC^{k\times k},~
+%\bV=\left[\!\begin{array}{cccc} \bv_1^*&\bv_2^*&\ldots&\bv_q^*
+%\end{array}\!\right]^*\in\IC^{k \times 1}. 
+%\end{equation}
+
+%\charles{NOT SURE IS NEEDED
+%\begin{remark}
+%Note that in a typical data-driven MOR setup, it is considered that the sample values  $w_i$, $v_j$ $\in\IC$ represent evaluations of the function $H(\varIC)$. More precisely, one would assume that $H(\lambda_i)  =w_i$ and $H(\mu_j)  =v_j$ for all $1 \leq i,j \leq k$.
+%\end{remark}
+%}
+
+The next step is to arrange data (\ref{data_Loew}) into matrix format. The \textbf{Loewner matrix} $\IL \in\IC^{k\times q}$ and the \textbf{shifted Loewner matrix} $\sIL \in\IC^{k\times q}$ are defined as
+\begin{equation} \label{Loew_mat}
+\IL=\left[\begin{array}{ccc}
+\frac{v_1-w_1}{\mu_1-\lambda_1} & \cdots &
+\frac{v_1-w_q}{\mu_1-\lambda_q} \\
+\vdots & \ddots & \vdots \\
+\frac{v_k-w_1}{\mu_k-\lambda_1} & \cdots &
+\frac{v_k-w_q}{\mu_k-\lambda_q} \\
+\end{array}\right], \ \ 
+\sIL=\left[\begin{array}{ccc}
+\frac{\mu_1v_1-w_1\lambda_1}{\mu_1-\lambda_1} & \cdots &
+\frac{\mu_1v_1-w_q \lambda_q}{\mu_1-\lambda_q} \\
+\vdots & \ddots & \vdots \\
+\frac{\mu_kv_k-w_1 \lambda_1}{\mu_k-\lambda_1} & \cdots &
+\frac{\mu_kv_k-w_q\lambda_q}{\mu_k-\lambda_q} \\
+\end{array}\right],
+\end{equation}
+while the data vectors $\bV, \bW^\top \in \IR^k$ are introduced as
+\begin{equation} \label{VW_vec}
+\bV=\left[\!\begin{array}{cccc} v_1 \  \ v_2 \  \ \ldots \  \ v_k \end{array}\!\right]^\top \in \IC^k, \ \ \ \bW=[w_1~~w_2~~\cdots~~w_q] \in \IC^q.
+\end{equation}
+
+\begin{lemma}
+	If $k=q$ the matrix pencil $(\sIL,\,\IL)$ is regular, then one can directly compute the  interpolation function as below:
+	\begin{equation}
+	\rloe(\varIC)=\bW(\sIL-\varIC \IL)^{-1}\bV.
+	\end{equation}
+   % \charles{NOT USEFULL? together with the Loewner model composed of $\bE=-\IL,~~ \bA=-\sIL,~~ \bB=\bV,~~ \bC=\bW$.}
+\end{lemma}
+
+In applications (see, e.g., \cite{morGosPA22}), the pencil $(\sIL,\,\IL)$ is often singular. In these cases, one needs to perform an SVD of the Loewner pencil, constructed from the row- and column-wise concatenation of matrices $\IL$ and $\sIL$.
+
+By choosing a truncation value $r$, we can write the truncated SVDs as follows (with $\bX_r = \bX_r^{(1)} \in \IC^{k \times r}$, $\bY_r = \bY_r^{(2)} \in \IC^{q \times r}$)
+\begin{equation}
+%\begin{cases} 
+\begin{bmatrix} \IL & \sIL \end{bmatrix} \approx \bX_r^{(1)} \bS_r^{(1)} {\bY_r^{(1)}}^* ,~
+\begin{bmatrix} \IL \\ \sIL \end{bmatrix}  \approx \bX_r^{(2)} \bS_r^{(2)} {\bY_r^{(2)}}^* %\end{cases}
+.
+\end{equation}	
+\begin{lemma}			
+	The rational function corresponding to the reduced-order Loewner model is derived as:
+	%\begin{align}\label{loew_fct}
+	%\begin{array}{rcl}
+    \begin{align*}
+	\rloe(\varIC) = \hat{\bC}_{\rm Loew} (\varIC \hat{\bE}_{\rm Loew}-\hat{\bA}_{\rm Loew})^{-1} \hat{\bB}_{\rm Loew} 
+    =  \bW \bY_r \Big{(} \bX_r^* (\sIL- \varIC \IL) \bY_r \Big{)}^{-1} \bX_r^* \bV,
+    %\end{array}
+	\end{align*}
+    where the system matrices corresponding to a reduced Loewner model are:
+    	\begin{equation} \label{Loew_red_mat}
+	\hat{\bE}_{\rm Loew} = -\bX_r^*\IL \bY_r, \ \  \hat{\bA}_{\rm Loew} = -\bX_r^*\sIL \bY_r, \ \
+	\hat{\bB}_{\rm Loew} = \bX_r^*\bV, \ \  \hat{\bC}_{\rm Loew} = \bW \bY_r.
+	\end{equation}
+\end{lemma}
+
+
+\subsection{The AAA algorithm}\label{sec:AAA}
+
+
+The AAA (Adaptive Antoulas-Anderson) algorithm proposed in \cite{nst18} represents an adaptive extension of the method originally introduced by A.C. Antoulas and B.D.O. Anderson in \cite{aa86}. The AAA algorithm is a rational approximation data-based method that makes use of the barycentric form of rational functions and uses an iteration to add more interpolation points (in a greedy fashion) until a certain level of approximation is attained. As exposed in \cref{sec:Loew}, it only requires as input evaluations of the function on a set of points denoted with $\cT$. We refer to \cite{AAAreview} for a recent review paper on applications of AAA.
+
+%\subsubsection{Original version}\label{sec:aaa_original}
+
+Consider $N>0$ distinct sampling points in the set $\cT = \{\tau_1, \tau_2, \ldots,\tau_N\}$ together with $N$ function evaluations at these points, denoted with $\{f_1, f_2, \ldots,f_N\}$.
+The AAA algorithm is based on an iteration. 
+Let the order of the rational approximant $\raaa(\varIC)$ that is constructed through the algorithm in \cite{nst18} at step $\ell \geq 1$ be $(\ell,\ell)$ (degree of numerator and denominator), which is written in the following barycentric format: 
+\begin{equation}\label{AAA_approx}
+\raaa(\varIC) = \frac{ \sum_{k=0}^\ell \frac{ \alpha_k w_k }{\varIC - \lambda_k }}{ \sum_{k=0}^\ell \frac{\alpha_k }{\varIC- \lambda_k}},
+\end{equation}
+where $\{\lambda_0,\ldots,\lambda_\ell\}$ are the interpolation points (selected from the set $\cT$), $\{w_0,\ldots,w_\ell\}$ are the corresponding function evaluations, and $\{\alpha_0,\ldots,\alpha_\ell\}$ are the weights. The method enforces interpolation at the $\ell$ points $\{\lambda_0,\ldots,\lambda_\ell\}$, i.e. $\raaa(\lambda_k) = w_k = F(\lambda_k), \, \forall \, 0 \leqslant k \leqslant \ell$. Then, at each step, one needs to determine suitable weights $\alpha_0,\alpha_2,\ldots,\alpha_\ell$ by formulating an approximation problem. Instead of solving the more general problem above (which is nonlinear in variables $\alpha_1, \alpha_2, \ldots, \alpha_\ell$), one solves a relaxed problem by means of linearization. This procedure leads to a least squares minimization problem that involves a (rectangular) Loewner matrix of dimension $(N-\ell) \times \ell$. The solution relies on computing the SVD of the latter, and selecting the weights as the entries of the (normalized) last right singular vector.
+At the end of the iteration, the rational approximant is of order $(r,r)$; one can also explicitly write the AAA function as $\raaa(\varIC) = \hat{\bC}_{\rm AAA} (\varIC \hat{\bE}_{\rm AAA}-\hat{\bA}_{\rm AAA})^{-1} \hat{\bB}_{\rm AAA}$,
+where the matrices are of dimension $r=\ell+1$, given explicitly in terms of the selected support points  $\{\lambda_0,\ldots,\lambda_r\}$, the function evaluations $\{w_0,\ldots,w_r\}$ and the weights $\{\alpha_0,\ldots,\alpha_r\}$. Note that for the numerical examples presented in what follows, we will be using the AAA implementation available in the \chebfun~ tool \cite{chebfun}\footnote{Also available at \url{https://github.com/chebfun/chebfun}.}.
+
+\subsubsection{Minimax algorithms and Lawson step extensions}\label{sec:minimax}
+
+
+% The problem that is addressed in the contribution \cite{fntb18} is to approximate functions $f \in \cC([a,b])$ using type $(m,n)$ rational approximations with real coefficients from the set $\cR_{m,n}$.
+
+
+% Given the function $f$ and integers $m,n$, the problem is formulated as follows: find $r \in \cR_{m,n}$ so that the infinity norm $\Vert f - r \Vert_\infty = \max_{x \in [a,b]} \vert f(\varIC) - r(\varIC) \vert$ is minimized.
+% It is known that such a minimizer exists and is unique (Chapter 24 in  \cite{Tr13}).
+
+% Denote with $\overline{r} \in \cR_{m,n}$ the best (minimax) approximation of the function $f$ (the solution to the above problem). It follows that there exists a sequence of ordered nodes where the function $f-r^*$ takes its global extreme value over the interval $[a,b]$ (with alternating signs). This sequence is denoted with $(x_0,x_1,\ldots,x_{m+n+1})$ with  $a \leqslant x_0 < x_1 < \cdots < x_{m+n+1} \leqslant b$, hence
+% \begin{equation}
+% f(x_k)-\overline{r}(x_k) = (-1)^{k+1} \Vert f - \overline{r} \Vert_{\infty}, \ \ \ k \in \{0,1,\ldots,m+n+1\}.
+% \end{equation}
+
+Computing rational minimax approximations is a challenging task, especially when there are singularities on or near the interval of approximation. In the recent contribution \cite{fntb18}, the authors propose different combinations of robust algorithms that are based on rational barycentric representations. One key feature is that the support points are chosen adaptively as the approximant is computed. The \chebfun~ minimax implementation is available in  \cite{chebfun}. The  AAA-Lawson algorithm in \cite{nakatsukasa2020algorithm} uses an iteratively re-weighted least-squares method followed by a classical Remez algorithm to enforce  quadratic convergence. Minimax approximants can be recognized by their equioscillatory error curves in real cases and nearly circular error curves in complex problems.
+
+%In \cite{trefethen2024computation}, the general idea is to improve rational approximations from near-best (AAA) to best (minimax) through the AAA-Lawson iteration.  As described in Section 3 of \cite{nakatsukasa2020algorithm}, this is a nonlinear variant of iteratively reweighted least-squares, which often converges to minimax approximations.  The centerpiece of the Lawson iteration is an adjustment of the weights in a least-squares problem (linear) according to the errors at the same points in the current rational approximation (nonlinear). 
+
+In the recent note \cite{trefethen2024computation}, the authors present an algorithm based on AAA-Lawson approximation~\cite{nakatsukasa2020algorithm}, enhanced by various modifications that make it suitable for dealing with functions of the flavor of $f(\varIC) = \hbox{sign}(\varIC)$ and for ensuring convergence of the Lawson phase. This variant/improvement of the standard AAA algorithm in \cite{nst18} is meant as a reliable tool for numerical computations of solutions for the third and fourth Zolotarev problems, i.e., classical problems in approximation theory.
+
+%Hence, these developments presented in \cite{trefethen2024computation} are deemed a "breakthrough", since, we quote, "a reliable method for computing these functions has not been available before". 
+
+An attentive reader may realize that in \cite{trefethen2024computation}, these developments are deemed a "breakthrough" since "a reliable method for computing these functions has not been available before". However, the LF is known since 1986 in its one-sided version \cite{aa86} and since 2007 in its two-sided version \cite{ajm07} (which was used in this work).
+
+%However, one point we would like to make in this work is that the LF has been around for almost two decades, and can be used as a reliable and direct surrogate to methods based on iteration and optimization steps, such as AAA-Lawson in \cite{trefethen2024computation}. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The two symmetric circles case}
+\label{sec:1a}
+
+We start the numerical exposition with a rather simplified configuration, e.g., for which the true optimal rational approximation solution for the Zolotarev problem Z4 is explicitly known (this configuration is denoted \texttt{'1a'} in \cite{trefethen2024computation}). Let us consider two symmetric circles (with respect to the imaginary axis), centered along the horizontal axis, with radius $\rho$ and centered at $\pm \alpha$. In this case, the optimal rational $r$-th order approximant $r_r^*(\varIC)$ derived in \cite{starke1992near} is given by:
+\vspace{-2mm}
+\begin{equation}
+r_r^*(\varIC) = \left(\dfrac{\varIC-\sqrt{\alpha^2-\rho^2}}{\varIC+\sqrt{\alpha^2-\rho^2}}\right)^r
+\text{ and }
+\sigma_r = \left(\dfrac{1-\sqrt{\alpha^2-\rho^2}}{1+\sqrt{\alpha^2-\rho^2}}\right)^r.
+\label{eq:case_1b_opt}
+\end{equation}
+
+
+\subsection{Experimental setup and results} 
+
+
+The case considered in what follows corresponds to the one in \cite[Figure 1(a)]{trefethen2024computation},  for which $\rho = 1/2$ and $\alpha = 1$. We now compare the rational approximation obtained for problem Z4 when using (i) the LF, (ii) the AAA-Lawson (with 200 iterations) and (iii) the AAA-Lawson (with 1000 iterations)\footnote{The AAA-Lawson is obtained with optional arguments  \texttt{'sign',1,'damping',.95,'lawson',200} and \texttt{'sign',1,'damping',.95,'lawson',1000}, using the AAA code in \chebfun, available at \url{https://github.com/chebfun/chebfun.git}.}. In \cref{tab:sym-1a-r2} we report the coefficients of both numerator and denominator of the rational approximation obtained with each different method, and compare to the optimal Z4 approximant of the same order, obtained with \cref{eq:case_1b_opt} ($r=2$). The maximum approximation errors $\sigma_2$ are displayed for all approximants. 
+
+\subsection{Comments}
+
+The first comment for this $r=2$ case and \cref{tab:sym-1a-r2} is that the optimal rational approximation \cref{eq:case_1b_opt} is attained with a real-valued function first columns) and a rational complexity of degree $(1,2)$. One notices that:
+\begin{itemize}
+    \item LF provides a solution with real-valued coefficients (up to machine precision), while both AAA-Lawson end up with non-negligible imaginary coefficients;
+    \item by inspecting the numerator (first row), both AAA-Lawson suggest a non-null coefficient in $s^2$, resulting in a rational complexity of $R_{2,2}$ while the LF indicates a null term, leading to a complexity $R_{1,2}$ (as the optimal one);
+    \item by inspecting the numerator of degree 0 and denominator of degree 1, it appears that the optimal are real with null coefficients. Again, only LF recovers this property.
+    \item by inspecting the $\sigma_2$ values for each method, AAA-Lawson provides a better approximant (i.e., with a lower $\sigma_2$) than LF (which is better than standard AAA); moreover, AAA-Lawson actually provides the near-optimal $\sigma_2$.
+\end{itemize}
+
+By choosing higher order values as $r=3,4,\dots$, one may observe that the previous remarks still hold\footnote{We refer to the \url{https://github.com/cpoussot/zolotarev} page for an in-depth analysis.}. In addition, inspecting the coefficients of the denominator of the AAA and AAA-Lawson, the magnitude of the imaginary terms is even larger. In each case, this is quite unexpected and difficult to justify.
+
+
+As an illustration, we pursue the investigation with $r=6$ and $r=8$, and obtain the coefficients displayed in \cref{tab:sym-1a-r6} and  \cref{tab:sym-1a-r8}. These two cases are of interest since, while for \cref{tab:sym-1a-r6} the above comment does not stand (indeed, both AAA-Lawson lead to almost null imaginary parts), they hold true again for \cref{tab:sym-1a-r8}. In addition, for the latter case ($r=8$), computing the poles and zeros (only for the optimal LF and AAA-Lawson approximants), we obtain \cref{fig:intro1_pol_zer}, emphasizing that both the poles and zeros obtained with AAA-Lawson are quite far from the optimal ones, while the LF ones are very close. In addition, inspecting the right frame (poles), only seven values are visible. Indeed, the last one has the value: $3.53 \cdot 10^{7} - \imath 5.44\cdot 10^{9}$. In this case, by inverting the numerator and denominator of the AAA-Lawson approximant, poles and zeros are more aligned (at least in the imaginary part) and coherent, which is again difficult to justify.
+
+\input{data/cpv_MACA64_MR2023b/tables/1a_nd_r3}
+\input{data/cpv_MACA64_MR2023b/tables/1a_nd_r6}
+\input{data/cpv_MACA64_MR2023b/tables/1a_nd_r8}
+
+%\input{tables/1a_r2}
+%\input{tables/1a_r6}
+%\input{tables/1a_r8}
+%
+%\begin{figure}[ht!]
+%    \centering
+%    %\includegraphics[width=.45\textwidth]{figures/pz/pz_r6_zoom.pdf}
+%    \includegraphics[width=.75\textwidth]{figures/pz/pz_r8_zoom.pdf}
+%    \caption{Case \texttt{'1a'}, $r=8$: zoom on zeros (left) and poles (right) of the approximants.}
+%    %optimal, LF, and AAA-Lawson approximants.}
+%    \label{fig:intro1_pol_zer}
+%\end{figure}
+
+
+\subsection{Preliminary conclusions} 
+
+As highlighted in this simple case (of two circles), both AAA and AAA-Lawson variants produce \textbf{complex-valued approximants}, whereas the optimal result suggests a solution with real coefficients only. Alternatively, LF always produces  real-valued approximants (up to machine precision), without explicitly enforcing such a property\footnote{Notice that it is also possible to enforce parameters' realness, as explained in \cite[\S 2.4.5]{ali17}.}. Second, only the LF seems to be able to recover the structure of the solution, i.e., the real coefficients and the alternate null and non-null coefficients in the numerator and denominator monomial coefficients, thus discovering the exact complexity and structure of the optimal approximant. Moreover, in AAA and AAA-Lawson, as $r$ increases, the spurious imaginary part of the coefficients becomes no longer negligible and even predominant. Finally, inspecting the quality of the approximation evaluated through the lens of $\sigma_r$, it appears that AAA is not accurate. Its conjunction with the Lawson iteration, however, seems to lead to significantly better results, i.e., close to the Zolotarev optimal, and better (in optimal value) than those obtained with LF. The analysis of the poles and zeros of the Z4 approximations (and comparing with the optimal ones) showed, however, an inaccurate restitution of the AAA-Lawson, while the LF provides an accurate matching.
+
+\subsection{Some (open) questions}  
+
+Along with these first comments, we believe it is legitimate to seek the significance in how spurious these complex terms are, and how they can provide a better $\sigma_r$ approximation. Indeed, while from a practical point of view, a better approximation (lower $\sigma_r$) may be satisfactory, from a theoretical point of view, improving accuracy by adding spurious coefficients is not.
+
+
+Finally, it is to be mentioned that all experiments were run on four different computational environments (consisting of various operating systems and different versions of MATLAB). While the LF led to the same results (on each machine), the AAA consistently led to significantly different results, both concerning the distribution of poles and zeros and the magnitude of the monomial coefficients appearing in the numerator and denominator. We report here only the results obtained using the computational environment of the third author of this work, for reasons of brevity.
+
+\subsection{More complete and accurate approximations}  
+
+
+By continuing with this two-circle case, let us now compare the approximation features for significantly higher orders. In \cref{fig:intro1} we display the rational approximation for Z3 with contours. Then, both the poles and the zeros for Z3 and Z4 are displayed. Each frame illustrates the rational approximation reached by each method. In \cref{fig:intro1}, the approximation order $r$ has been selected such that the normalized singular values of the LF are below $10^{-14}$, and then the same objective is used for the three other methods.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/cas_1a_r1e-14.pdf}
+    \caption{Case \texttt{'1a'}, with $r=26$: different approximation methods: LF (top left), AAA (top right), AAA with damping (bottom left), and AAA-Lawson with damping and  200 iterations (bottom right). Each frame shows: the Zolotarev rational functions of degree $r$ for Z3 ($\bh_3$) and Z4 ($\bh_4$) defined by connected sets $E$ (on the left) and $F$ (on the right); the Z3 function approximate contours levels $\log_{10} |\bh_3(\varIC)|= 0,-1,-2,\cdots,-30$ between the two domains; black circles and dots respectively mark zeros and poles of the sign function $\bh_4$; blue and red dots respectively denote the zeros and poles of $\bh_3$. The minimum values $\sigma_r$ and computation time are given in the title, as well as the options of each AAA method, and give the number of singularities targeted (and obtained).}
+    \label{fig:intro1}
+\end{figure}
+
+What is remarkable in \cref{fig:intro1}, for the LF case, is the clean distribution of the poles and zeros of both Z3 and Z4 problems along the $\pm 1$ circles and vertical axis, with a perfect symmetry. This feature is guaranteed by the almost perfect alternate null and non-null coefficients and the null (machine precision) imaginary part. All other methods provide a slightly irregular distribution with imaginary part in the monomial coefficients. Moreover, in this setup, the optimal $\sigma_r\approx1.8144\cdot 10^{-30}$ \cref{eq:case_1b_opt} while the LF reaches the best approximation with $\sigma_n\approx 7.2866\cdot 10^{-30}$, very close to the optimal one. Notice also that the computation time is much lower for the LF with respect to the AAA versions (and even more with respect to the AAA-Lawson). 
+
+For this very same topology, let us now evaluate the Zolotarev ratio and computation time for different  rational approximation orders. They are reported in \cref{fig:intro1_time}.  By inspecting the latter, one observes that the LF requires a constant computation time while the AAA variants are dependent on the approximation order $r$. Indeed, LF benefits from the fact that it is not iterative. 
+
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/cas_1a_zol_time.pdf}
+    \caption{Case \texttt{'1a'}: computation time and accuracy comparison for different approximation settings; we compare the standard LF with different AAA and AAA-Lawson settings.}
+    \label{fig:intro_time}
+\end{figure}
+
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/num_den_r3.pdf}
+    \caption{Case \texttt{1a}, $r=3$, Z4. Numerator and denominator dispersion over  the different platforms.}
+    \label{fig:intro_numden}
+\end{figure}
+
+\subsection{More experiments}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/case_oder}
+    \caption{.}
+    \label{fig:case_order}
+\end{figure}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Description of the report and overview of the results}
 \label{sec:ex_details}
 
@@ -107,25 +480,35 @@ Zolotarev
 
 \subsection{Overview of the results}
 
-%\foreach \n in {3,...,\CAS}{
-%
-%\begin{figure}[H]
-%\centering
-%    \includegraphics[width=.8\textwidth]{data/num_den_r\n.pdf}
-%    \caption{Case \texttt{1a}, $r=\n$, Z4. Numerator and denominator dispersion over different platforms.}
-%    \label{fig:numden_\n}
-%\end{figure}
-%
-%}
-
-
 \subsection{Preliminary conclusions}
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+\label{sec:conclusion}
+
+In this paper, we have shown that the Loewner framework is a viable candidate for approximating the Z3 and Z4 Zolotarev problems. In particular, we have shown that the LF (i) is fast and accurate, (ii) approximates by compression with controlled complexity and accuracy, without either user intervention or iteration, and (iii) is able to discover the structure of the optimal solution (in symmetric cases). We have also provided a comprehensive comparison study of LF with different versions of the AAA algorithm. In all configurations tested, the standard AAA variant was not able to accurately approximate the Z3 and Z4 problems. This pitfall was corrected thanks to the use of the sign constraint and the Lawson iteration (as in \cite{trefethen2024computation}). However, this was achieved at the price of a dedicated data treatment, leading to a higher computational cost. In addition, we observed that the Lawson iteration is not monotonically converging, which may result in a worse approximation than for AAA with sign only option (and without any iteration). Finally, we showed that in all configurations, AAA (and variants) do not capture the inherent {\bf symmetries} present in the topology of the configuration. Indeed, this indicates (i) an addition of poles and zeros and/or (ii) polynomial coefficients' imaginary parts, hard to interpret and not in the correct optimal solution space.
+%This element is also visible when inspecting the location (not always separated) of the poles and zeros. 
+The code used for generating all results reported here (figures and tables) is made available at the following address:
+\begin{center}
+\url{https://github.com/cpoussot/zolotarev}
+\end{center}
+
+\subsection*{Acknowledgments}
+
+We acknowledge A. dos Reis de Souza for running experiments.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+
 %\begin{landscape}
+\section{Detailed results on the \texttt{1a} case}
+
 \foreach \n in {3,...,\CAS}{
 \newpage
-\section{Approximation objective $r=\n$}
-\subsection{Numerator and denominator coefficients}
+\subsection{Approximation objective $r=\n$}
+\subsubsection{Numerator and denominator coefficients}
 
 The numerator and denominator coefficients (both real and complex parts) are given in the following tables. Each table gives the results obtained on different platform.
 \tiny
@@ -133,16 +516,17 @@ The numerator and denominator coefficients (both real and complex parts) are giv
 \input{data/cpv_MACA64_MR2022b/tables/1a_nd_r\n}
 \input{data/cpv_PCWIN64_MR2025b/tables/1a_nd_r\n}
 \input{data/AlexReis_PCWIN64_MR2025b/tables/1a_nd_r\n}
+\input{data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r\n}
 \normalsize
 
 \begin{figure}[H]
 \centering
-    \includegraphics[width=.8\textwidth]{data/num_den_r\n.pdf}
+    \includegraphics[width=.8\textwidth]{figures/num_den_r\n.pdf}
     \caption{Case \texttt{1a}, $r=\n$, Z4. Numerator and denominator dispersion over  the different platforms.}
     \label{fig:numden_\n}
 \end{figure}
 
-\subsection{Poles}
+\subsubsection{Poles}
 
 The poles are given in the following tables. Each table gives the results obtained on different platform.
 \tiny
@@ -150,9 +534,10 @@ The poles are given in the following tables. Each table gives the results obtain
 \input{data/cpv_MACA64_MR2022b/tables/1a_pol_r\n}
 \input{data/cpv_PCWIN64_MR2025b/tables/1a_pol_r\n}
 \input{data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r\n}
+\input{data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r\n}
 \normalsize
 
-\subsection{Zeros}
+\subsubsection{Zeros}
 The zeros are given in the following tables. Each table gives the results obtained on different platform.
 
 \tiny
@@ -160,6 +545,7 @@ The zeros are given in the following tables. Each table gives the results obtain
 \input{data/cpv_MACA64_MR2022b/tables/1a_zer_r\n}
 \input{data/cpv_PCWIN64_MR2025b/tables/1a_zer_r\n}
 \input{data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r\n}
+\input{data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r\n}
 \normalsize
 
 %\subsection{AAA data: (\texttt{[zj,fj,wj,errvec]})}
@@ -168,7 +554,7 @@ The zeros are given in the following tables. Each table gives the results obtain
 %}
 
 
-\subsection{Poles and zeros visualisation}
+\subsubsection{Poles and zeros visualisation (case \texttt{cpv MACA64 MR2023b})}
 
 \begin{figure}[H]
 \centering
@@ -178,7 +564,7 @@ The zeros are given in the following tables. Each table gives the results obtain
     \label{fig:pz_\n}
 \end{figure}
 
-\subsection{Approximation visualization}
+\subsubsection{Approximation visualization}
 
 \begin{figure}[H]
 \centering
@@ -186,22 +572,10 @@ The zeros are given in the following tables. Each table gives the results obtain
     \caption{Case \texttt{1a} (\texttt{cpv MACA64 MR2023b}), $r=\n$, Z4. $E$ and $F$ evaluations.}
     \label{fig:eval_\n}
 \end{figure}
-
 }
-%\end{landscape}
-
-%\input{tables/1a_r6}
 
 
-%\small
-%\input{tables/table}
-%\input{tables/table_small}
-%\caption{All best model per methods}}
-
-
-%\section{All data}
-%\small \input{tables/table} \normalsize
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliographystyle{plain}
 \bibliography{references}
 

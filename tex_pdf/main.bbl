@@ -1,0 +1,138 @@
+\begin{thebibliography}{10}
+
+\bibitem{akhiezer1990elements}
+N.~I. Akhiezer.
+\newblock {\em Elements of the theory of elliptic functions}, volume~79.
+\newblock American Mathematical Society, 1990.
+
+\bibitem{aa86}
+A.~C. Antoulas and B.~D.~0. Anderson.
+\newblock On the scalar rational interpolation problem.
+\newblock {\em IMA Journal of Mathematical Control and Information},
+  3(2-3):61--88, 1986.
+
+\bibitem{abg_book}
+A~C. Antoulas, C~A. Beattie, and S.~Gugercin.
+\newblock {\em Interpolatory Methods for Model Reduction}.
+\newblock Series in Computational Science and Engineering, SIAM, Philadelphia,
+  2020.
+
+\bibitem{morAntGI16}
+A.~C. Antoulas, I.~V. Gosea, and A.~C. Ionita.
+\newblock Model reduction of bilinear systems in the {L}oewner framework.
+\newblock {\em SIAM Journal on Scientific Computing}, 38(5):B889--B916, 2016.
+
+\bibitem{morAntGP24}
+A.~C. Antoulas, I.~V. Gosea, and C.~Poussot-Vassal.
+\newblock The {L}oewner framework for parametric systems: Taming the curse of
+  dimensionality.
+\newblock e-print 2405.00495, arXiv, 2024.
+\newblock To appear in {SIAM} Review.
+
+\bibitem{ali17}
+A~C. Antoulas, S.~Lefteriu, and A~C. Ionita.
+\newblock {\em A Tutorial Introduction to the {Loewner} Framework for Model
+  Reduction}, pages 335--376.
+\newblock Model Reduction and Approximation for Complex Systems, Computational
+  Science $\&$ Engineering. SIAM, 2017.
+
+\bibitem{Da75}
+P.~D. Davis.
+\newblock {\em Interpolation and approximation}.
+\newblock Dover Publications, 1975.
+
+\bibitem{chebfun}
+T.~A. Driscoll, N.~Hale, and L.~N. Trefethen.
+\newblock Chebfun {G}uide.
+\newblock \url{https://www.chebfun.org/docs/guide/}, 2014.
+
+\bibitem{fntb18}
+S~I. Filip, Y.~Nakatsukasa, L.~Trefethen, and B.~Beckermann.
+\newblock Rational minimax approximation via adaptive barycentric
+  interpolation.
+\newblock {\em SIAM Journal on Scientific Computing}, 40(4):A2427--A2455, 2018.
+
+\bibitem{morGosPA22}
+I.~V. Gosea, C.~Poussot-Vassal, and A.~C. Antoulas.
+\newblock Data-driven modeling and control of large-scale dynamical systems in
+  the {L}oewner framework: methodology and applications.
+\newblock In E.~Zuazua and E.~Trelat, editors, {\em Numerical Control: Part A},
+  volume~23 of {\em Handbook on Numerical Analysis}, chapter~15, pages
+  499--530. Elsevier, 2022.
+
+\bibitem{morIonA14}
+A.~C. Ionita and A.~C. Antoulas.
+\newblock Data-driven parametrized model reduction in the {L}oewner framework.
+\newblock {\em SIAM Journal on Scientific Computing}, 36(3):A984--A1007, 2014.
+
+\bibitem{Is18}
+A.~Iske.
+\newblock {\em Approximation Theory and Algorithms for Data Analysis}.
+\newblock Texts in Applied Mathematics. Springer, 2018.
+
+\bibitem{istace1995third}
+M-P Istace and J-P Thiran.
+\newblock On the third and fourth {Z}olotarev problems in the complex plane.
+\newblock {\em SIAM Journal on Numerical Analysis}, 32(1):249--259, 1995.
+
+\bibitem{morKarGA19a}
+D.~S. Karachalios, I.~V. Gosea, and A.~C. Antoulas.
+\newblock The {L}oewner framework for system identification and reduction.
+\newblock In {\em Model Reduction Handbook, Volume I: System- and Data-Driven
+  Methods and Algorithms}, pages 181--228. De Gruyter, 2021.
+
+\bibitem{morKarGGetal25}
+D.~S. Karachalios, I.~V. Gosea, L.~Gkimisis, and A.~C. Antoulas.
+\newblock Data-driven quadratic modeling in the {L}oewner framework from
+  input-output time-domain measurements.
+\newblock {\em SIAM Journal on Applied Dynamical Systems}, 24(1):457--500,
+  2025.
+
+\bibitem{ajm07}
+A~J. Mayo and A~C. Antoulas.
+\newblock A framework for the generalized realization problem.
+\newblock {\em Linear Algebra and Its Applications}, 426:634--662, 2007.
+
+\bibitem{nakatsukasa2016computing}
+Y.~Nakatsukasa and R.~W. Freund.
+\newblock Computing fundamental matrix decompositions accurately via the matrix
+  sign function in two iterations: The power of {Z}olotarev's functions.
+\newblock {\em {SIAM} Review}, 58(3):461--493, 2016.
+
+\bibitem{nst18}
+Y.~Nakatsukasa, O.~S\'ete, and L~N. Trefethen.
+\newblock The {AAA} algorithm for rational approximation.
+\newblock {\em SIAM Journal on Scientific Computing}, 40(3):A1494--A1522, 2018.
+
+\bibitem{nakatsukasa2020algorithm}
+Y.~Nakatsukasa and L.~N. Trefethen.
+\newblock An algorithm for real and complex rational minimax approximation.
+\newblock {\em SIAM Journal on Scientific Computing}, 42(5):A3157--A3179, 2020.
+
+\bibitem{AAAreview}
+Y.~Nakatsukasa and L.~N. Trefethen.
+\newblock Applications of {AAA} rational approximation.
+\newblock Technical report, arXiv preprint, arXiv:2510.16237, 2020.
+
+\bibitem{Po81}
+M.~J.~D. Powell.
+\newblock {\em Approximation theory and methods}.
+\newblock Cambridge University Press, 1981.
+
+\bibitem{starke1992near}
+Gerhard Starke.
+\newblock Near-circularity for the rational {Z}olotarev problem in the complex
+  plane.
+\newblock {\em Journal of Approximation Theory}, 70(1):115--130, 1992.
+
+\bibitem{Tr13}
+L~N. Trefethen.
+\newblock {\em Approximation Theory and Approximation Practice}.
+\newblock SIAM, 2013.
+
+\bibitem{trefethen2024computation}
+L.~N. Trefethen and H.~Wilber.
+\newblock Computation of {Z}olotarev rational functions.
+\newblock {\em SIAM Journal on Scientific Computing}, 47(4):A2205--A2220, 2025.
+
+\end{thebibliography}

@@ -84,12 +84,12 @@ for j = 1:10%numel(spaceCAS)
             xlabel('Case','Interpreter','latex','FontSize',18)
             ylabel('Degree $r$','Interpreter','latex','FontSize',18)
             xticks(1:numel(spaceCAS)), xticklabels(spaceCAS)
-        end
-        %
-        subplot(211), colorbar off
-        sgtitle('$\log_{10}(\sigma_r)$ for different cases and orders','FontSize',24)
-        %
-        drawnow
+            %
+            subplot(211), colorbar off
+            sgtitle('$\log_{10}(\sigma_r)$ for different cases and orders','FontSize',24)
+            %
+            drawnow
+        end    
     end
     [timeLoewner timeAAA]
 end
@@ -126,4 +126,4 @@ legend('show')
 subplot(121), colorbar off
 sgtitle('\bf{$\log_{10}(\sigma_r)$ for different cases and orders}','FontSize',24)
 drawnow
-zol.figSavePDF('doc/case_oder')
+zol.figSavePDF('tex_pdf/data/case_oder')

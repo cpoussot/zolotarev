@@ -9,7 +9,8 @@ addpath('/Users/charles/Documents/GIT/_others/chebfun')
 fileDir = {'cpv_MACA64_MR2023b' ...
            'cpv_MACA64_MR2022b' ... 
            'cpv_PCWIN64_MR2025b' ...
-           'AlexReis_PCWIN64_MR2025b'};
+           'AlexReis_PCWIN64_MR2025b' ...
+           'AlexReis_PCWIN64perso_MR2017a'};
 %%% END: TO ADAPT BY USER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -86,7 +87,7 @@ for i = 1:numel(dataFiles)
         end
     end
     legend(name)
-    zol.figSavePDF(['tex_pdf/data/num_den_r' num2str(r)])
+    zol.figSavePDF(['tex_pdf/figures/num_den_r' num2str(r)])
     drawnow
 
     % %

@@ -71,5 +71,6 @@ ylabel('Imag(.)'), xlabel('Real(.)')
 title({methodName; ['$r=' num2str(robj) '$, $\sigma_r=$ ' num2str(abs(hsig)) ' in ' num2str(timeLOE) 's' ]})
 Lgnd = legend('show');
 drawnow
+zol.figSavePDF(['tex_pdf/figures/cas_1a_r' num2str(robj0)])
 
 license('inuse')

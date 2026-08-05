@@ -119,6 +119,7 @@ for j = 1:numel(spaceCAS)
         legend(lgn,'Interpreter','latex','Location','South','FontSize',12)
         drawnow
     end
+    zol.figSavePDF(['tex_pdf/figures/cas_' spaceCAS{j} '_zol_time'])
 end
 
 license('inuse')

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.6.11)  4 AUG 2026 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.6.11)  5 AUG 2026 17:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1083,8 +1083,10 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 \toks@mlpr=\toks41
 ) (ex_math.tex)
 \c@theorem=\count368
-\c@remark=\count369
-\c@corr=\count370
+\c@lemma=\count369
+\c@remark=\count370
+\c@corr=\count371
+\c@problem=\count372
  (main.aux
 
 LaTeX Warning: Label `tab:sym-1a-r3' multiply defined.
@@ -1105,6 +1107,18 @@ LaTeX Warning: Label `tab:sym-1a-r3' multiply defined.
 LaTeX Warning: Label `tab:sym-1a-r3@cref' multiply defined.
 
 
+LaTeX Warning: Label `tab:sym-1a-r3' multiply defined.
+
+
+LaTeX Warning: Label `tab:sym-1a-r3@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:sym-1a-r3' multiply defined.
+
+
+LaTeX Warning: Label `tab:sym-1a-r3@cref' multiply defined.
+
+
 LaTeX Warning: Label `tab:pol-1a-r3' multiply defined.
 
 
@@ -1121,6 +1135,18 @@ LaTeX Warning: Label `tab:pol-1a-r3' multiply defined.
 
 
 LaTeX Warning: Label `tab:pol-1a-r3@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r3' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r3@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r3' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r3@cref' multiply defined.
 
 
 LaTeX Warning: Label `tab:zer-1a-r3' multiply defined.
@@ -1159,6 +1185,18 @@ LaTeX Warning: Label `tab:sym-1a-r4' multiply defined.
 LaTeX Warning: Label `tab:sym-1a-r4@cref' multiply defined.
 
 
+LaTeX Warning: Label `tab:sym-1a-r4' multiply defined.
+
+
+LaTeX Warning: Label `tab:sym-1a-r4@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r4' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r4@cref' multiply defined.
+
+
 LaTeX Warning: Label `tab:pol-1a-r4' multiply defined.
 
 
@@ -1175,6 +1213,12 @@ LaTeX Warning: Label `tab:pol-1a-r4' multiply defined.
 
 
 LaTeX Warning: Label `tab:pol-1a-r4@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r4' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r4@cref' multiply defined.
 
 
 LaTeX Warning: Label `tab:zer-1a-r4' multiply defined.
@@ -1213,6 +1257,18 @@ LaTeX Warning: Label `tab:sym-1a-r5' multiply defined.
 LaTeX Warning: Label `tab:sym-1a-r5@cref' multiply defined.
 
 
+LaTeX Warning: Label `tab:sym-1a-r5' multiply defined.
+
+
+LaTeX Warning: Label `tab:sym-1a-r5@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r5' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r5@cref' multiply defined.
+
+
 LaTeX Warning: Label `tab:pol-1a-r5' multiply defined.
 
 
@@ -1229,6 +1285,12 @@ LaTeX Warning: Label `tab:pol-1a-r5' multiply defined.
 
 
 LaTeX Warning: Label `tab:pol-1a-r5@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r5' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r5@cref' multiply defined.
 
 
 LaTeX Warning: Label `tab:zer-1a-r5' multiply defined.
@@ -1267,6 +1329,18 @@ LaTeX Warning: Label `tab:sym-1a-r6' multiply defined.
 LaTeX Warning: Label `tab:sym-1a-r6@cref' multiply defined.
 
 
+LaTeX Warning: Label `tab:sym-1a-r6' multiply defined.
+
+
+LaTeX Warning: Label `tab:sym-1a-r6@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:sym-1a-r6' multiply defined.
+
+
+LaTeX Warning: Label `tab:sym-1a-r6@cref' multiply defined.
+
+
 LaTeX Warning: Label `tab:pol-1a-r6' multiply defined.
 
 
@@ -1283,6 +1357,18 @@ LaTeX Warning: Label `tab:pol-1a-r6' multiply defined.
 
 
 LaTeX Warning: Label `tab:pol-1a-r6@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r6' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r6@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r6' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r6@cref' multiply defined.
 
 
 LaTeX Warning: Label `tab:zer-1a-r6' multiply defined.
@@ -1321,6 +1407,18 @@ LaTeX Warning: Label `tab:sym-1a-r7' multiply defined.
 LaTeX Warning: Label `tab:sym-1a-r7@cref' multiply defined.
 
 
+LaTeX Warning: Label `tab:sym-1a-r7' multiply defined.
+
+
+LaTeX Warning: Label `tab:sym-1a-r7@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r7' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r7@cref' multiply defined.
+
+
 LaTeX Warning: Label `tab:pol-1a-r7' multiply defined.
 
 
@@ -1337,6 +1435,12 @@ LaTeX Warning: Label `tab:pol-1a-r7' multiply defined.
 
 
 LaTeX Warning: Label `tab:pol-1a-r7@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r7' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r7@cref' multiply defined.
 
 
 LaTeX Warning: Label `tab:zer-1a-r7' multiply defined.
@@ -1375,6 +1479,18 @@ LaTeX Warning: Label `tab:sym-1a-r8' multiply defined.
 LaTeX Warning: Label `tab:sym-1a-r8@cref' multiply defined.
 
 
+LaTeX Warning: Label `tab:sym-1a-r8' multiply defined.
+
+
+LaTeX Warning: Label `tab:sym-1a-r8@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:sym-1a-r8' multiply defined.
+
+
+LaTeX Warning: Label `tab:sym-1a-r8@cref' multiply defined.
+
+
 LaTeX Warning: Label `tab:pol-1a-r8' multiply defined.
 
 
@@ -1391,6 +1507,18 @@ LaTeX Warning: Label `tab:pol-1a-r8' multiply defined.
 
 
 LaTeX Warning: Label `tab:pol-1a-r8@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r8' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r8@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r8' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r8@cref' multiply defined.
 
 
 LaTeX Warning: Label `tab:zer-1a-r8' multiply defined.
@@ -1429,6 +1557,18 @@ LaTeX Warning: Label `tab:sym-1a-r9' multiply defined.
 LaTeX Warning: Label `tab:sym-1a-r9@cref' multiply defined.
 
 
+LaTeX Warning: Label `tab:sym-1a-r9' multiply defined.
+
+
+LaTeX Warning: Label `tab:sym-1a-r9@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r9' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r9@cref' multiply defined.
+
+
 LaTeX Warning: Label `tab:pol-1a-r9' multiply defined.
 
 
@@ -1445,6 +1585,12 @@ LaTeX Warning: Label `tab:pol-1a-r9' multiply defined.
 
 
 LaTeX Warning: Label `tab:pol-1a-r9@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r9' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r9@cref' multiply defined.
 
 
 LaTeX Warning: Label `tab:zer-1a-r9' multiply defined.
@@ -1483,6 +1629,18 @@ LaTeX Warning: Label `tab:sym-1a-r10' multiply defined.
 LaTeX Warning: Label `tab:sym-1a-r10@cref' multiply defined.
 
 
+LaTeX Warning: Label `tab:sym-1a-r10' multiply defined.
+
+
+LaTeX Warning: Label `tab:sym-1a-r10@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r10' multiply defined.
+
+
+LaTeX Warning: Label `tab:pol-1a-r10@cref' multiply defined.
+
+
 LaTeX Warning: Label `tab:pol-1a-r10' multiply defined.
 
 
@@ -1499,6 +1657,12 @@ LaTeX Warning: Label `tab:pol-1a-r10' multiply defined.
 
 
 LaTeX Warning: Label `tab:pol-1a-r10@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r10' multiply defined.
+
+
+LaTeX Warning: Label `tab:zer-1a-r10@cref' multiply defined.
 
 
 LaTeX Warning: Label `tab:zer-1a-r10' multiply defined.
@@ -1521,38 +1685,38 @@ LaTeX Warning: Label `tab:zer-1a-r10@cref' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-
 pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count371
+\scratchcounter=\count373
 \scratchdimen=\dimen345
 \scratchbox=\box105
-\nofMPsegments=\count372
-\nofMParguments=\count373
+\nofMPsegments=\count374
+\nofMParguments=\count375
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count374
+\MPscratchCnt=\count376
 \MPscratchDim=\dimen346
-\MPnumerator=\count375
-\makeMPintoPDFobject=\count376
+\MPnumerator=\count377
+\makeMPintoPDFobject=\count378
 \everyMPtoPDFconversion=\toks43
 )
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/nin
@@ -1564,7 +1728,7 @@ Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
 /xparse.sty
 Package: xparse 2022-01-12 L3 Experimental document command parser
 ))
-Package hyperref Info: Link coloring ON on input line 84.
+Package hyperref Info: Link coloring ON on input line 76.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1572,19 +1736,19 @@ Package hyperref Info: Link coloring ON on input line 84.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count377
-LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
+\c@lstlisting=\count379
+LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
 
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 86
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 78
 .
 
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/jkn
@@ -1593,67 +1757,213 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) (main.toc [1
 
 {/Users/charles/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex
-/pdftex.map}])
+/pdftex.map}]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 28.
+)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [2] [3]
+
+Overfull \hbox (4.52353pt too wide) in paragraph at lines 109--111
+\OT1/cmr/m/n/10 Loewner Framework (LF) introduced in [[]], and the Adaptive Ant
+oulas Anderson (AAA) algorithm
+ []
+
+[2]
+Overfull \hbox (8.219pt too wide) in paragraph at lines 116--117
+[]\OT1/cmr/m/n/10 we show that the rational functions computed with LF come ver
+y close to optimal approximants
+ []
+
+
+LaTeX Warning: Reference `sec:num' on page 1 undefined on input line 121.
+
+
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 133.
+
+[3]
+Overfull \hbox (42.28969pt too wide) in paragraph at lines 140--141
+[]\OT1/cmr/m/it/10 Find $\OML/cmm/m/it/10 r[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/
+10 R[]$\OT1/cmr/m/it/10 , satisfying condition $[][] \OMS/cmsy/m/n/10 j\OML/cmm
+/m/it/10 r[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/1
+0 j \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (6.31155pt too wide) in paragraph at lines 162--163
+[]\OT1/cmr/m/it/10 Find $[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 R[]$ \OT1/cmr/m
+/it/10 that attains the minimum (where
+ []
+
+[4]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 231
+.
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+Overfull \hbox (1.08748pt too wide) in paragraph at lines 231--233
+[]\OT1/cmr/m/n/10 Given $\OML/cmm/m/it/10 N > \OT1/cmr/m/n/10 0$ distinct sampl
+ing points $\OMS/cmsy/m/n/10 T \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OML/cmm/m/i
+t/10 []; []; [] ; []\OMS/cmsy/m/n/10 g$ \OT1/cmr/m/n/10 together with $\OML/
+cmm/m/it/10 N$ \OT1/cmr/m/n/10 function evaluations
+ []
+
+
+Overfull \hbox (10.3648pt too wide) in paragraph at lines 291--292
+[]\OT1/cmr/m/it/10 If $\OML/cmm/m/it/10 k \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 q$
+ \OT1/cmr/m/it/10 the matrix pencil $\OT1/cmr/m/n/10 (\U/msb/m/n/10 S\OML/cmm/m
+/it/10 ;  \U/msb/m/n/10 L\OT1/cmr/m/n/10 )$ \OT1/cmr/m/it/10 is regular, then o
+ne can directly compute the interpolation
+ []
+
+[5]
+Overfull \hbox (8.66347pt too wide) in paragraph at lines 327--328
+\OT1/cmr/m/n/10 The AAA (Adaptive Antoulas-Anderson) algorithm proposed in [[]]
+ represents an adaptive extension
+ []
+
+
+Overfull \hbox (29.97017pt too wide) in paragraph at lines 355--356
+\OT1/cmr/m/n/10 propose different combinations of robust algorithms that are ba
+sed on rational barycentric representations.
+ []
+
+[6]
+Overfull \hbox (14.74786pt too wide) in paragraph at lines 359--360
+[]\OT1/cmr/m/n/10 In the recent note [[]], the authors present an algorithm bas
+ed on AAA-Lawson approximation [[]],
+ []
+
+
+Underfull \hbox (badness 3386) in paragraph at lines 384--384
+[][][]\OT1/cmr/m/n/8 The AAA-Lawson is obtained with optional arguments \OT1/cm
+tt/m/n/8 'sign',1,'damping',.95,'lawson',200 \OT1/cmr/m/n/8 and
+ []
+
+
+LaTeX Warning: Reference `tab:sym-1a-r2' on page 1 undefined on input line 384.
+
+
+
+LaTeX Warning: Reference `tab:sym-1a-r2' on page 1 undefined on input line 388.
+
+
+[7]
+
+LaTeX Warning: Reference `fig:intro1_pol_zer' on page 1 undefined on input line
+ 399.
+
+(data/cpv_MACA64_MR2023b/tables/1a_nd_r3.tex)
+(data/cpv_MACA64_MR2023b/tables/1a_nd_r6.tex
+Overfull \hbox (9.13239pt too wide) detected at line 3
+[]
+ []
+
+) (data/cpv_MACA64_MR2023b/tables/1a_nd_r8.tex
+Overfull \hbox (9.13239pt too wide) detected at line 3
+[]
+ []
+
+) [8]
+Overfull \hbox (13.06752pt too wide) in paragraph at lines 421--422
+\OT1/cmr/bx/n/10 complex-valued approximants\OT1/cmr/m/n/10 , whereas the optim
+al result suggests a solution with real coefficients
+ []
+
+[9]
+<figures/cas_1a_r1e-14.pdf, id=373, 1015.795pt x 761.84625pt>
+File: figures/cas_1a_r1e-14.pdf Graphic file (type pdf)
+<use figures/cas_1a_r1e-14.pdf>
+Package pdftex.def Info: figures/cas_1a_r1e-14.pdf  used on input line 437.
+(pdftex.def)             Requested size: 424.58624pt x 318.43877pt.
+
+
+LaTeX Warning: Reference `fig:intro1_time' on page 1 undefined on input line 44
+4.
+
+<figures/cas_1a_zol_time.pdf, id=376, 1015.795pt x 761.84625pt>
+File: figures/cas_1a_zol_time.pdf Graphic file (type pdf)
+<use figures/cas_1a_zol_time.pdf>
+Package pdftex.def Info: figures/cas_1a_zol_time.pdf  used on input line 449.
+(pdftex.def)             Requested size: 424.58624pt x 318.43877pt.
+[10 <./figures/cas_1a_r1e-14.pdf>]
+<figures/num_den_r3.pdf, id=382, 1015.795pt x 761.84625pt>
+File: figures/num_den_r3.pdf Graphic file (type pdf)
+<use figures/num_den_r3.pdf>
+Package pdftex.def Info: figures/num_den_r3.pdf  used on input line 457.
+(pdftex.def)             Requested size: 424.58624pt x 318.43877pt.
+<figures/case_oder.pdf, id=383, 1015.795pt x 761.84625pt>
+File: figures/case_oder.pdf Graphic file (type pdf)
+<use figures/case_oder.pdf>
+Package pdftex.def Info: figures/case_oder.pdf  used on input line 466.
+(pdftex.def)             Requested size: 424.58624pt x 318.43877pt.
+ [11 <./figures/cas_1a_zol_time.pdf>]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 506.
+
+[12 <./figures/num_den_r3.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 (data/cpv_MACA64_MR2023b/tables/1a_nd_r3.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_nd_r3.tex)
-(data/cpv_PCWIN64_MR2025b/tables/1a_nd_r3.tex)
+(data/cpv_PCWIN64_MR2025b/tables/1a_nd_r3.tex [13 <./figures/case_oder.pdf>])
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_nd_r3.tex)
-<data/num_den_r3.pdf, id=293, 1015.795pt x 761.84625pt>
-File: data/num_den_r3.pdf Graphic file (type pdf)
-<use data/num_den_r3.pdf>
-Package pdftex.def Info: data/num_den_r3.pdf  used on input line 190.
+(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r3.tex)
+File: figures/num_den_r3.pdf Graphic file (type pdf)
+<use figures/num_den_r3.pdf>
+Package pdftex.def Info: figures/num_den_r3.pdf  used on input line 575.
 (pdftex.def)             Requested size: 339.67029pt x 254.74635pt.
- [4]
+ [14]
 (data/cpv_MACA64_MR2023b/tables/1a_pol_r3.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_pol_r3.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_pol_r3.tex)
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r3.tex)
-(data/cpv_MACA64_MR2023b/tables/1a_zer_r3.tex [5 <./data/num_den_r3.pdf>])
+(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r3.tex) [15]
+(data/cpv_MACA64_MR2023b/tables/1a_zer_r3.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_zer_r3.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_zer_r3.tex)
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r3.tex)
-<data/cpv_MACA64_MR2023b/figures/pz_r3.pdf, id=388, 1015.795pt x 761.84625pt>
+(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r3.tex)
+<data/cpv_MACA64_MR2023b/figures/pz_r3.pdf, id=589, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r3.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r3.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r3.pdf  used on inp
-ut line 190.
+ut line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf, id=389, 1015.795pt x 761.84625
+<data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf, id=590, 1015.795pt x 761.84625
 pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf  used o
-n input line 190.
+n input line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r3.pdf, id=390, 1015.795pt x 761.84625pt>
+ [16]
+<data/cpv_MACA64_MR2023b/figures/eval_r3.pdf, id=602, 1015.795pt x 761.84625pt>
 
 File: data/cpv_MACA64_MR2023b/figures/eval_r3.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r3.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/eval_r3.pdf  used on i
-nput line 190.
+nput line 575.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [6 <./data/cpv_MACA64_MR2023b/figures/pz_r3.pdf> <./data/cpv_MACA64_MR2023b/fi
-gures/pz_r3_zoom.pdf>]
-[7 <./data/cpv_MACA64_MR2023b/figures/eval_r3.pdf>]
+ [17 <./data/cpv_MACA64_MR2023b/figures/pz_r3.pdf> <./data/cpv_MACA64_MR2023b/f
+igures/pz_r3_zoom.pdf> <./data/cpv_MACA64_MR2023b/figures/eval_r3.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 (data/cpv_MACA64_MR2023b/tables/1a_nd_r4.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
@@ -1675,49 +1985,57 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) [8]
-<data/num_den_r4.pdf, id=494, 1015.795pt x 761.84625pt>
-File: data/num_den_r4.pdf Graphic file (type pdf)
-<use data/num_den_r4.pdf>
-Package pdftex.def Info: data/num_den_r4.pdf  used on input line 190.
+) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r4.tex
+Overfull \hbox (9.13239pt too wide) detected at line 3
+[]
+ []
+
+[18])
+<figures/num_den_r4.pdf, id=700, 1015.795pt x 761.84625pt>
+File: figures/num_den_r4.pdf Graphic file (type pdf)
+<use figures/num_den_r4.pdf>
+Package pdftex.def Info: figures/num_den_r4.pdf  used on input line 575.
 (pdftex.def)             Requested size: 339.67029pt x 254.74635pt.
- (data/cpv_MACA64_MR2023b/tables/1a_pol_r4.tex)
-(data/cpv_MACA64_MR2022b/tables/1a_pol_r4.tex)
-(data/cpv_PCWIN64_MR2025b/tables/1a_pol_r4.tex [9 <./data/num_den_r4.pdf>])
+ (data/cpv_MACA64_MR2023b/tables/1a_pol_r4.tex [19 <./figures/num_den_r4.pdf>])
+ (data/cpv_MACA64_MR2022b/tables/1a_pol_r4.tex)
+(data/cpv_PCWIN64_MR2025b/tables/1a_pol_r4.tex)
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r4.tex)
+(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r4.tex)
 (data/cpv_MACA64_MR2023b/tables/1a_zer_r4.tex)
-(data/cpv_MACA64_MR2022b/tables/1a_zer_r4.tex)
+(data/cpv_MACA64_MR2022b/tables/1a_zer_r4.tex [20])
 (data/cpv_PCWIN64_MR2025b/tables/1a_zer_r4.tex)
-(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r4.tex) [10]
-<data/cpv_MACA64_MR2023b/figures/pz_r4.pdf, id=600, 1015.795pt x 761.84625pt>
+(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r4.tex)
+(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r4.tex)
+<data/cpv_MACA64_MR2023b/figures/pz_r4.pdf, id=817, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r4.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r4.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r4.pdf  used on inp
-ut line 190.
+ut line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf, id=601, 1015.795pt x 761.84625
+<data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf, id=818, 1015.795pt x 761.84625
 pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf  used o
-n input line 190.
+n input line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r4.pdf, id=602, 1015.795pt x 761.84625pt>
+ [21]
+<data/cpv_MACA64_MR2023b/figures/eval_r4.pdf, id=828, 1015.795pt x 761.84625pt>
 
 File: data/cpv_MACA64_MR2023b/figures/eval_r4.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r4.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/eval_r4.pdf  used on i
-nput line 190.
+nput line 575.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [11 <./data/cpv_MACA64_MR2023b/figures/pz_r4.pdf> <./data/cpv_MACA64_MR2023b/f
+ [22 <./data/cpv_MACA64_MR2023b/figures/pz_r4.pdf> <./data/cpv_MACA64_MR2023b/f
 igures/pz_r4_zoom.pdf> <./data/cpv_MACA64_MR2023b/figures/eval_r4.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 (data/cpv_MACA64_MR2023b/tables/1a_nd_r5.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
@@ -1739,18 +2057,23 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) [12]
-<data/num_den_r5.pdf, id=689, 1015.795pt x 761.84625pt>
-File: data/num_den_r5.pdf Graphic file (type pdf)
-<use data/num_den_r5.pdf>
-Package pdftex.def Info: data/num_den_r5.pdf  used on input line 190.
+) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r5.tex
+Overfull \hbox (9.13239pt too wide) detected at line 3
+[]
+ []
+
+[23])
+<figures/num_den_r5.pdf, id=917, 1015.795pt x 761.84625pt>
+File: figures/num_den_r5.pdf Graphic file (type pdf)
+<use figures/num_den_r5.pdf>
+Package pdftex.def Info: figures/num_den_r5.pdf  used on input line 575.
 (pdftex.def)             Requested size: 339.67029pt x 254.74635pt.
  (data/cpv_MACA64_MR2023b/tables/1a_pol_r5.tex
 Overfull \hbox (0.98897pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_MACA64_MR2022b/tables/1a_pol_r5.tex
+[24 <./figures/num_den_r5.pdf>]) (data/cpv_MACA64_MR2022b/tables/1a_pol_r5.tex
 Overfull \hbox (1.26672pt too wide) detected at line 3
 []
  []
@@ -1760,45 +2083,51 @@ Overfull \hbox (1.26672pt too wide) detected at line 3
 []
  []
 
-[13 <./data/num_den_r5.pdf>])
-(data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r5.tex
+) (data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r5.tex
 Overfull \hbox (1.26672pt too wide) detected at line 3
 []
  []
 
+) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r5.tex
+Overfull \hbox (0.98897pt too wide) detected at line 3
+[]
+ []
+
 ) (data/cpv_MACA64_MR2023b/tables/1a_zer_r5.tex)
-(data/cpv_MACA64_MR2022b/tables/1a_zer_r5.tex)
+(data/cpv_MACA64_MR2022b/tables/1a_zer_r5.tex [25])
 (data/cpv_PCWIN64_MR2025b/tables/1a_zer_r5.tex)
-(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r5.tex [14])
-<data/cpv_MACA64_MR2023b/figures/pz_r5.pdf, id=810, 1015.795pt x 761.84625pt>
+(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r5.tex)
+(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r5.tex)
+<data/cpv_MACA64_MR2023b/figures/pz_r5.pdf, id=1040, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r5.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r5.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r5.pdf  used on inp
-ut line 190.
+ut line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf, id=811, 1015.795pt x 761.84625
-pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf, id=1041, 1015.795pt x 761.8462
+5pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf  used o
-n input line 190.
+n input line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r5.pdf, id=812, 1015.795pt x 761.84625pt>
-
+ [26]
+<data/cpv_MACA64_MR2023b/figures/eval_r5.pdf, id=1051, 1015.795pt x 761.84625pt
+>
 File: data/cpv_MACA64_MR2023b/figures/eval_r5.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r5.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/eval_r5.pdf  used on i
-nput line 190.
+nput line 575.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [15 <./data/cpv_MACA64_MR2023b/figures/pz_r5.pdf> <./data/cpv_MACA64_MR2023b/f
-igures/pz_r5_zoom.pdf>] [16 <./data/cpv_MACA64_MR2023b/figures/eval_r5.pdf>]
+ [27 <./data/cpv_MACA64_MR2023b/figures/pz_r5.pdf> <./data/cpv_MACA64_MR2023b/f
+igures/pz_r5_zoom.pdf> <./data/cpv_MACA64_MR2023b/figures/eval_r5.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 (data/cpv_MACA64_MR2023b/tables/1a_nd_r6.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
@@ -1820,49 +2149,61 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) [17]
-<data/num_den_r6.pdf, id=910, 1015.795pt x 761.84625pt>
-File: data/num_den_r6.pdf Graphic file (type pdf)
-<use data/num_den_r6.pdf>
-Package pdftex.def Info: data/num_den_r6.pdf  used on input line 190.
+) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r6.tex
+Overfull \hbox (9.13239pt too wide) detected at line 3
+[]
+ []
+
+[28])
+<figures/num_den_r6.pdf, id=1146, 1015.795pt x 761.84625pt>
+File: figures/num_den_r6.pdf Graphic file (type pdf)
+<use figures/num_den_r6.pdf>
+Package pdftex.def Info: figures/num_den_r6.pdf  used on input line 575.
 (pdftex.def)             Requested size: 339.67029pt x 254.74635pt.
- (data/cpv_MACA64_MR2023b/tables/1a_pol_r6.tex)
+ [29] (data/cpv_MACA64_MR2023b/tables/1a_pol_r6.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_pol_r6.tex)
-(data/cpv_PCWIN64_MR2025b/tables/1a_pol_r6.tex [18 <./data/num_den_r6.pdf>])
-(data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r6.tex)
+(data/cpv_PCWIN64_MR2025b/tables/1a_pol_r6.tex)
+(data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r6.tex [30 <./figures/num_den_r6.p
+df>]) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r6.tex)
 (data/cpv_MACA64_MR2023b/tables/1a_zer_r6.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_zer_r6.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_zer_r6.tex)
-(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r6.tex [19])
-<data/cpv_MACA64_MR2023b/figures/pz_r6.pdf, id=1041, 1015.795pt x 761.84625pt>
+(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r6.tex [31])
+(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r6.tex
+Overfull \hbox (1.9954pt too wide) detected at line 3
+[]
+ []
+
+)
+<data/cpv_MACA64_MR2023b/figures/pz_r6.pdf, id=1284, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r6.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r6.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r6.pdf  used on inp
-ut line 190.
+ut line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf, id=1042, 1015.795pt x 761.8462
+<data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf, id=1285, 1015.795pt x 761.8462
 5pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf  used o
-n input line 190.
+n input line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r6.pdf, id=1043, 1015.795pt x 761.84625pt
+<data/cpv_MACA64_MR2023b/figures/eval_r6.pdf, id=1286, 1015.795pt x 761.84625pt
 >
 File: data/cpv_MACA64_MR2023b/figures/eval_r6.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r6.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/eval_r6.pdf  used on i
-nput line 190.
+nput line 575.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [20 <./data/cpv_MACA64_MR2023b/figures/pz_r6.pdf> <./data/cpv_MACA64_MR2023b/f
-igures/pz_r6_zoom.pdf>] [21 <./data/cpv_MACA64_MR2023b/figures/eval_r6.pdf>]
+ [32 <./data/cpv_MACA64_MR2023b/figures/pz_r6.pdf> <./data/cpv_MACA64_MR2023b/f
+igures/pz_r6_zoom.pdf>] [33 <./data/cpv_MACA64_MR2023b/figures/eval_r6.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 (data/cpv_MACA64_MR2023b/tables/1a_nd_r7.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
@@ -1884,13 +2225,18 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-[22])
-<data/num_den_r7.pdf, id=1141, 1015.795pt x 761.84625pt>
-File: data/num_den_r7.pdf Graphic file (type pdf)
-<use data/num_den_r7.pdf>
-Package pdftex.def Info: data/num_den_r7.pdf  used on input line 190.
+[34]) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r7.tex
+Overfull \hbox (9.13239pt too wide) detected at line 3
+[]
+ []
+
+)
+<figures/num_den_r7.pdf, id=1388, 1015.795pt x 761.84625pt>
+File: figures/num_den_r7.pdf Graphic file (type pdf)
+<use figures/num_den_r7.pdf>
+Package pdftex.def Info: figures/num_den_r7.pdf  used on input line 575.
 (pdftex.def)             Requested size: 339.67029pt x 254.74635pt.
- [23] (data/cpv_MACA64_MR2023b/tables/1a_pol_r7.tex)
+ [35] (data/cpv_MACA64_MR2023b/tables/1a_pol_r7.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_pol_r7.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_pol_r7.tex
 Overfull \hbox (5.39824pt too wide) detected at line 3
@@ -1902,39 +2248,42 @@ Overfull \hbox (5.39824pt too wide) detected at line 3
 []
  []
 
-[24 <./data/num_den_r7.pdf>]) (data/cpv_MACA64_MR2023b/tables/1a_zer_r7.tex)
+[36 <./figures/num_den_r7.pdf>])
+(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r7.tex)
+(data/cpv_MACA64_MR2023b/tables/1a_zer_r7.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_zer_r7.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_zer_r7.tex)
-(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r7.tex) [25]
-<data/cpv_MACA64_MR2023b/figures/pz_r7.pdf, id=1176, 1015.795pt x 761.84625pt>
+(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r7.tex [37])
+(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r7.tex)
+<data/cpv_MACA64_MR2023b/figures/pz_r7.pdf, id=1426, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r7.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r7.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r7.pdf  used on inp
-ut line 190.
+ut line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf, id=1177, 1015.795pt x 761.8462
+<data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf, id=1427, 1015.795pt x 761.8462
 5pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf  used o
-n input line 190.
+n input line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r7.pdf, id=1178, 1015.795pt x 761.84625pt
+<data/cpv_MACA64_MR2023b/figures/eval_r7.pdf, id=1428, 1015.795pt x 761.84625pt
 >
 File: data/cpv_MACA64_MR2023b/figures/eval_r7.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r7.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/eval_r7.pdf  used on i
-nput line 190.
+nput line 575.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [26 <./data/cpv_MACA64_MR2023b/figures/pz_r7.pdf> <./data/cpv_MACA64_MR2023b/f
-igures/pz_r7_zoom.pdf> <./data/cpv_MACA64_MR2023b/figures/eval_r7.pdf>]
+ [38 <./data/cpv_MACA64_MR2023b/figures/pz_r7.pdf> <./data/cpv_MACA64_MR2023b/f
+igures/pz_r7_zoom.pdf>] [39 <./data/cpv_MACA64_MR2023b/figures/eval_r7.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 (data/cpv_MACA64_MR2023b/tables/1a_nd_r8.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
@@ -1956,22 +2305,28 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-[27])
-<data/num_den_r8.pdf, id=1277, 1015.795pt x 761.84625pt>
-File: data/num_den_r8.pdf Graphic file (type pdf)
-<use data/num_den_r8.pdf>
-Package pdftex.def Info: data/num_den_r8.pdf  used on input line 190.
+[40]) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r8.tex
+Overfull \hbox (9.13239pt too wide) detected at line 3
+[]
+ []
+
+) [41]
+<figures/num_den_r8.pdf, id=1542, 1015.795pt x 761.84625pt>
+File: figures/num_den_r8.pdf Graphic file (type pdf)
+<use figures/num_den_r8.pdf>
+Package pdftex.def Info: figures/num_den_r8.pdf  used on input line 575.
 (pdftex.def)             Requested size: 339.67029pt x 254.74635pt.
- [28] (data/cpv_MACA64_MR2023b/tables/1a_pol_r8.tex)
-(data/cpv_MACA64_MR2022b/tables/1a_pol_r8.tex)
+ (data/cpv_MACA64_MR2023b/tables/1a_pol_r8.tex)
+(data/cpv_MACA64_MR2022b/tables/1a_pol_r8.tex [42 <./figures/num_den_r8.pdf>])
 (data/cpv_PCWIN64_MR2025b/tables/1a_pol_r8.tex)
-(data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r8.tex [29 <./data/num_den_r8.pdf>
-]) (data/cpv_MACA64_MR2023b/tables/1a_zer_r8.tex
+(data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r8.tex)
+(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r8.tex)
+(data/cpv_MACA64_MR2023b/tables/1a_zer_r8.tex
 Overfull \hbox (6.68346pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_MACA64_MR2022b/tables/1a_zer_r8.tex
+[43]) (data/cpv_MACA64_MR2022b/tables/1a_zer_r8.tex
 Overfull \hbox (6.4057pt too wide) detected at line 3
 []
  []
@@ -1986,36 +2341,41 @@ Overfull \hbox (1.26672pt too wide) detected at line 3
 []
  []
 
-[30])
-<data/cpv_MACA64_MR2023b/figures/pz_r8.pdf, id=1310, 1015.795pt x 761.84625pt>
+) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r8.tex
+Overfull \hbox (6.4057pt too wide) detected at line 3
+[]
+ []
+
+) [44]
+<data/cpv_MACA64_MR2023b/figures/pz_r8.pdf, id=1579, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r8.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r8.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r8.pdf  used on inp
-ut line 190.
+ut line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf, id=1311, 1015.795pt x 761.8462
+<data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf, id=1580, 1015.795pt x 761.8462
 5pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf  used o
-n input line 190.
+n input line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r8.pdf, id=1312, 1015.795pt x 761.84625pt
+<data/cpv_MACA64_MR2023b/figures/eval_r8.pdf, id=1581, 1015.795pt x 761.84625pt
 >
 File: data/cpv_MACA64_MR2023b/figures/eval_r8.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r8.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/eval_r8.pdf  used on i
-nput line 190.
+nput line 575.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [31 <./data/cpv_MACA64_MR2023b/figures/pz_r8.pdf> <./data/cpv_MACA64_MR2023b/f
-igures/pz_r8_zoom.pdf>] [32 <./data/cpv_MACA64_MR2023b/figures/eval_r8.pdf>]
+ [45 <./data/cpv_MACA64_MR2023b/figures/pz_r8.pdf> <./data/cpv_MACA64_MR2023b/f
+igures/pz_r8_zoom.pdf> <./data/cpv_MACA64_MR2023b/figures/eval_r8.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 (data/cpv_MACA64_MR2023b/tables/1a_nd_r9.tex
 Overfull \hbox (3.71565pt too wide) detected at line 3
@@ -2037,13 +2397,18 @@ Overfull \hbox (3.71565pt too wide) detected at line 3
 []
  []
 
-[33])
-<data/num_den_r9.pdf, id=1400, 1015.795pt x 761.84625pt>
-File: data/num_den_r9.pdf Graphic file (type pdf)
-<use data/num_den_r9.pdf>
-Package pdftex.def Info: data/num_den_r9.pdf  used on input line 190.
+[46]) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r9.tex
+Overfull \hbox (9.13239pt too wide) detected at line 3
+[]
+ []
+
+) [47]
+<figures/num_den_r9.pdf, id=1672, 1015.795pt x 761.84625pt>
+File: figures/num_den_r9.pdf Graphic file (type pdf)
+<use figures/num_den_r9.pdf>
+Package pdftex.def Info: figures/num_den_r9.pdf  used on input line 575.
 (pdftex.def)             Requested size: 339.67029pt x 254.74635pt.
- [34] (data/cpv_MACA64_MR2023b/tables/1a_pol_r9.tex
+ (data/cpv_MACA64_MR2023b/tables/1a_pol_r9.tex
 Overfull \hbox (1.26672pt too wide) detected at line 3
 []
  []
@@ -2053,7 +2418,8 @@ Overfull \hbox (5.39824pt too wide) detected at line 3
 []
  []
 
-) (data/cpv_PCWIN64_MR2025b/tables/1a_pol_r9.tex
+[48 <./figures/num_den_r9.pdf>]) (data/cpv_PCWIN64_MR2025b/tables/1a_pol_r9.tex
+
 Overfull \hbox (6.68346pt too wide) detected at line 3
 []
  []
@@ -2063,39 +2429,41 @@ Overfull \hbox (6.68346pt too wide) detected at line 3
 []
  []
 
-[35 <./data/num_den_r9.pdf>]) (data/cpv_MACA64_MR2023b/tables/1a_zer_r9.tex)
+) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r9.tex) [49]
+(data/cpv_MACA64_MR2023b/tables/1a_zer_r9.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_zer_r9.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_zer_r9.tex)
-(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r9.tex [36])
-<data/cpv_MACA64_MR2023b/figures/pz_r9.pdf, id=1433, 1015.795pt x 761.84625pt>
+(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r9.tex)
+(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r9.tex [50])
+<data/cpv_MACA64_MR2023b/figures/pz_r9.pdf, id=1709, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r9.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r9.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r9.pdf  used on inp
-ut line 190.
+ut line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf, id=1434, 1015.795pt x 761.8462
+<data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf, id=1710, 1015.795pt x 761.8462
 5pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf  used o
-n input line 190.
+n input line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r9.pdf, id=1435, 1015.795pt x 761.84625pt
+<data/cpv_MACA64_MR2023b/figures/eval_r9.pdf, id=1711, 1015.795pt x 761.84625pt
 >
 File: data/cpv_MACA64_MR2023b/figures/eval_r9.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r9.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/eval_r9.pdf  used on i
-nput line 190.
+nput line 575.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [37 <./data/cpv_MACA64_MR2023b/figures/pz_r9.pdf> <./data/cpv_MACA64_MR2023b/f
-igures/pz_r9_zoom.pdf>] [38 <./data/cpv_MACA64_MR2023b/figures/eval_r9.pdf>]
+ [51 <./data/cpv_MACA64_MR2023b/figures/pz_r9.pdf> <./data/cpv_MACA64_MR2023b/f
+igures/pz_r9_zoom.pdf>] [52 <./data/cpv_MACA64_MR2023b/figures/eval_r9.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 575.
 
 (data/cpv_MACA64_MR2023b/tables/1a_nd_r10.tex
 Overfull \hbox (13.92415pt too wide) detected at line 3
@@ -2112,18 +2480,28 @@ Overfull \hbox (13.92415pt too wide) detected at line 3
 []
  []
 
-) (data/AlexReis_PCWIN64_MR2025b/tables/1a_nd_r10.tex [39])
-<data/num_den_r10.pdf, id=1534, 1015.795pt x 761.84625pt>
-File: data/num_den_r10.pdf Graphic file (type pdf)
-<use data/num_den_r10.pdf>
-Package pdftex.def Info: data/num_den_r10.pdf  used on input line 190.
+) (data/AlexReis_PCWIN64_MR2025b/tables/1a_nd_r10.tex
+Overfull \hbox (13.92415pt too wide) detected at line 3
+[]
+ []
+
+[53]) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r10.tex
+Overfull \hbox (13.92415pt too wide) detected at line 3
+[]
+ []
+
+) [54]
+<figures/num_den_r10.pdf, id=1818, 1015.795pt x 761.84625pt>
+File: figures/num_den_r10.pdf Graphic file (type pdf)
+<use figures/num_den_r10.pdf>
+Package pdftex.def Info: figures/num_den_r10.pdf  used on input line 575.
 (pdftex.def)             Requested size: 339.67029pt x 254.74635pt.
- [40]
-(data/cpv_MACA64_MR2023b/tables/1a_pol_r10.tex)
-(data/cpv_MACA64_MR2022b/tables/1a_pol_r10.tex)
-(data/cpv_PCWIN64_MR2025b/tables/1a_pol_r10.tex)
-(data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r10.tex [41 <./data/num_den_r10.pd
-f>]) (data/cpv_MACA64_MR2023b/tables/1a_zer_r10.tex
+ (data/cpv_MACA64_MR2023b/tables/1a_pol_r10.tex)
+(data/cpv_MACA64_MR2022b/tables/1a_pol_r10.tex [55 <./figures/num_den_r10.pdf>]
+) (data/cpv_PCWIN64_MR2025b/tables/1a_pol_r10.tex)
+(data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r10.tex)
+(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r10.tex) [56]
+(data/cpv_MACA64_MR2023b/tables/1a_zer_r10.tex
 Overfull \hbox (13.59283pt too wide) detected at line 3
 []
  []
@@ -2143,71 +2521,97 @@ Overfull \hbox (19.00957pt too wide) detected at line 3
 []
  []
 
-[42])
-<data/cpv_MACA64_MR2023b/figures/pz_r10.pdf, id=1567, 1015.795pt x 761.84625pt>
+) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r10.tex
+Overfull \hbox (18.73181pt too wide) detected at line 3
+[]
+ []
+
+[57])
+<data/cpv_MACA64_MR2023b/figures/pz_r10.pdf, id=1855, 1015.795pt x 761.84625pt>
 
 File: data/cpv_MACA64_MR2023b/figures/pz_r10.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r10.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r10.pdf  used on in
-put line 190.
+put line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf, id=1568, 1015.795pt x 761.846
+<data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf, id=1856, 1015.795pt x 761.846
 25pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf  used 
-on input line 190.
+on input line 575.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r10.pdf, id=1569, 1015.795pt x 761.84625p
+<data/cpv_MACA64_MR2023b/figures/eval_r10.pdf, id=1857, 1015.795pt x 761.84625p
 t>
 File: data/cpv_MACA64_MR2023b/figures/eval_r10.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r10.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/eval_r10.pdf  used on 
-input line 190.
+input line 575.
 (pdftex.def)             Requested size: 297.20906pt x 222.90598pt.
- [43 <./data/cpv_MACA64_MR2023b/figures/pz_r10.pdf> <./data/cpv_MACA64_MR2023b/
-figures/pz_r10_zoom.pdf>]
-No file main.bbl.
-[44 <./data/cpv_MACA64_MR2023b/figures/eval_r10.pdf>] (main.aux)
+ [58 <./data/cpv_MACA64_MR2023b/figures/pz_r10.pdf> <./data/cpv_MACA64_MR2023b/
+figures/pz_r10_zoom.pdf>] (main.bbl
+Underfull \hbox (badness 1215) in paragraph at lines 50--54
+[]\OT1/cmr/m/n/10 S I. Filip, Y. Nakatsukasa, L. Trefethen, and B. Beckermann. 
+ Rational minimax
+ []
+
+[59 <./data/cpv_MACA64_MR2023b/figures/eval_r10.pdf>]) [60] (main.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F8A0FC5B37CDF33A69167BA284B310D2;8928.
+(rerunfilecheck)             Checksum: 74A51E3A7C7120251B9627331A13BE76;5620.
  ) 
 Here is how much of TeX's memory you used:
- 31510 strings out of 480549
- 653185 string characters out of 2893596
- 980212 words of memory out of 3000000
- 48425 multiletter control sequences out of 15000+600000
- 481481 words of font info for 79 fonts, out of 8000000 for 9000
+ 31955 strings out of 480549
+ 667289 string characters out of 2893596
+ 986953 words of memory out of 3000000
+ 48674 multiletter control sequences out of 15000+600000
+ 483406 words of font info for 85 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 79i,14n,80p,3225b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,14n,80p,3225b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/charles/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfo
-ur/jknappen/ec/dpi600/tcrm0600.pk> </Users/charles/Library/Application Support/
-MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk></Library/App
-lication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pf
-b></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type
-1/public/amsfonts/cm/cmbx9.pfb></Library/Application Support/MiKTeX/texmfs/inst
-all/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Library/Application Support/MiK
-TeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Library/Applicat
-ion Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></Li
-brary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></Library/Application Support/MiKTeX/texmfs/install/fon
-ts/type1/public/amsfonts/cm/cmr17.pfb></Library/Application Support/MiKTeX/texm
-fs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></Library/Application Suppor
-t/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Library/Appli
-cation Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></
-Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/c
-m/cmsy5.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pub
-lic/amsfonts/cm/cmtt10.pfb></Library/Application Support/MiKTeX/texmfs/install/
-fonts/type1/public/amsfonts/cm/cmtt12.pfb></Library/Application Support/MiKTeX/
-texmfs/install/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (44 pages, 3852971 bytes).
+ur/jknappen/ec/dpi600/tcrm1000.pk> </Users/charles/Library/Application Support/
+MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk> </Users/char
+les/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/
+dpi600/tcrm0800.pk></Library/Application Support/MiKTeX/texmfs/install/fonts/ty
+pe1/public/amsfonts/cm/cmbx10.pfb></Library/Application Support/MiKTeX/texmfs/i
+nstall/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Library/Application Support/
+MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Library/Applic
+ation Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb></Library/Application Support/MiKTeX/texmfs/instal
+l/fonts/type1/public/amsfonts/cm/cmmi5.pfb></Library/Application Support/MiKTeX
+/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Library/Application 
+Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Librar
+y/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/am
+sfonts/cm/cmr17.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/t
+ype1/public/amsfonts/cm/cmr5.pfb></Library/Application Support/MiKTeX/texmfs/in
+stall/fonts/type1/public/amsfonts/cm/cmr6.pfb></Library/Application Support/MiK
+TeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Library/Applicatio
+n Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Libra
+ry/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr
+9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/
+type1/public/amsfonts/cm/cmsy5.pfb></Library/Application Support/MiKTeX/texmfs/
+install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Library/Application Support/
+MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Library/Appli
+cation Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+</Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts
+/cm/cmtt12.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/
+public/amsfonts/cm/cmtt8.pfb></Library/Application Support/MiKTeX/texmfs/instal
+l/fonts/type1/public/amsfonts/euler/eufm10.pfb></Library/Application Support/Mi
+KTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb></Library/Ap
+plication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb>
+Output written on main.pdf (60 pages, 4643558 bytes).
 PDF statistics:
- 1788 PDF objects out of 2073 (max. 8388607)
- 218 named destinations out of 1000 (max. 500000)
- 589 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2153 PDF objects out of 2487 (max. 8388607)
+ 341 named destinations out of 1000 (max. 500000)
+ 428 words of extra memory for PDF output out of 10000 (max. 10000000)
 

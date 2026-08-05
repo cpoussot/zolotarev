@@ -14,421 +14,653 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \@writefile{toc}{\global \c@tocdepth 2\relax }
-\@writefile{toc}{\contentsline {section}{\numberline {1}Description of the report and overview of the results}{3}{section.1}\protected@file@percent }
-\newlabel{sec:ex_details}{{1}{3}{Description of the report and overview of the results}{section.1}{}}
-\newlabel{sec:ex_details@cref}{{[section][1][]1}{[1][3][]3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Methodology}{3}{subsection.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Overview of the results}{3}{subsection.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Preliminary conclusions}{3}{subsection.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2}Approximation objective $r=3$}{4}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Numerator and denominator coefficients}{4}{subsection.2.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{4}{table.caption.2}\protected@file@percent }
+\citation{Da75,Po81}
+\citation{Tr13,Is18}
+\citation{ajm07}
+\citation{nst18}
+\citation{nakatsukasa2020algorithm,trefethen2024computation}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction and contributions}{2}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{2}{Introduction and contributions}{section.1}{}}
+\newlabel{sec:intro@cref}{{[section][1][]1}{[1][2][]2}}
+\@writefile{toc}{\contentsline {paragraph}{About rational approximation.}{2}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Preliminaries on the Zoloratev 3rd and 4th problems.}{2}{section*.3}\protected@file@percent }
+\citation{trefethen2024computation}
+\citation{trefethen2024computation}
+\citation{trefethen2024computation}
+\citation{trefethen2024computation}
+\citation{nakatsukasa2016computing}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Contributions}{3}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Paper structure}{3}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}The Zolotarev problems}{3}{section.2}\protected@file@percent }
+\newlabel{sec:zolo}{{2}{3}{The Zolotarev problems}{section.2}{}}
+\newlabel{sec:zolo@cref}{{[section][2][]2}{[1][3][]3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Reminder and general procedure}{3}{subsection.2.1}\protected@file@percent }
+\newlabel{unscaled}{{1}{3}{Reminder and general procedure}{equation.2.1}{}}
+\newlabel{unscaled@cref}{{[equation][1][]1}{[1][3][]3}}
+\citation{trefethen2024computation}
+\citation{trefethen2024computation}
+\citation{akhiezer1990elements}
+\citation{istace1995third}
+\citation{trefethen2024computation}
+\citation{trefethen2024computation}
+\citation{trefethen2024computation}
+\citation{trefethen2024computation}
+\citation{nakatsukasa2020algorithm}
+\citation{trefethen2024computation}
+\newlabel{pb:z3}{{1}{4}{Zolotarev ratio problem - Z3}{problem.1}{}}
+\newlabel{pb:z3@cref}{{[problem][1][]1}{[1][4][]4}}
+\newlabel{Z3}{{2}{4}{Zolotarev ratio problem - Z3}{equation.2.2}{}}
+\newlabel{Z3@cref}{{[equation][2][]2}{[1][4][]4}}
+\newlabel{pb:z4}{{2}{4}{Zolotarev sign problem - Z4}{problem.2}{}}
+\newlabel{pb:z4@cref}{{[problem][2][]2}{[1][4][]4}}
+\newlabel{Z4}{{4}{4}{Zolotarev sign problem - Z4}{equation.2.4}{}}
+\newlabel{Z4@cref}{{[equation][4][]4}{[1][4][]4}}
+\newlabel{thm1}{{1}{4}{Reminder and general procedure}{theorem.1}{}}
+\newlabel{thm1@cref}{{[theorem][1][]1}{[1][4][]4}}
+\newlabel{relation}{{1}{4}{Reminder and general procedure}{theorem.1}{}}
+\newlabel{relation@cref}{{[theorem][1][]1}{[1][4][]4}}
+\newlabel{minvals}{{1}{4}{Reminder and general procedure}{theorem.1}{}}
+\newlabel{minvals@cref}{{[theorem][1][]1}{[1][4][]4}}
+\citation{ajm07}
+\citation{morKarGA19a,morGosPA22,ali17}
+\citation{morAntGP24}
+\citation{morIonA14,morAntGI16,morKarGGetal25}
+\citation{abg_book}
+\citation{morGosPA22}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Applications of the Z3 and Z4 problems}{5}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Zolotarev ration problems (Z3).}{5}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Zolotarev sign problems (Z4).}{5}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}The main approximation methods}{5}{section.3}\protected@file@percent }
+\newlabel{sec:ratapp}{{3}{5}{The main approximation methods}{section.3}{}}
+\newlabel{sec:ratapp@cref}{{[section][3][]3}{[1][5][]5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}The Loewner framework}{5}{subsection.3.1}\protected@file@percent }
+\newlabel{sec:Loew}{{3.1}{5}{The Loewner framework}{subsection.3.1}{}}
+\newlabel{sec:Loew@cref}{{[subsection][1][3]3.1}{[1][5][]5}}
+\newlabel{data_Loew}{{5}{5}{The Loewner framework}{equation.3.5}{}}
+\newlabel{data_Loew@cref}{{[equation][5][]5}{[1][5][]5}}
+\newlabel{interp_cond}{{6}{5}{The Loewner framework}{equation.3.6}{}}
+\newlabel{interp_cond@cref}{{[equation][6][]6}{[1][5][]5}}
+\newlabel{Loew_mat}{{7}{5}{The Loewner framework}{equation.3.7}{}}
+\newlabel{Loew_mat@cref}{{[equation][7][]7}{[1][5][]5}}
+\newlabel{VW_vec}{{8}{5}{The Loewner framework}{equation.3.8}{}}
+\newlabel{VW_vec@cref}{{[equation][8][]8}{[1][5][]5}}
+\citation{nst18}
+\citation{aa86}
+\citation{AAAreview}
+\citation{nst18}
+\citation{chebfun}
+\citation{fntb18}
+\citation{chebfun}
+\citation{nakatsukasa2020algorithm}
+\newlabel{Loew_red_mat}{{11}{6}{The Loewner framework}{equation.3.11}{}}
+\newlabel{Loew_red_mat@cref}{{[equation][11][]11}{[1][6][]6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}The AAA algorithm}{6}{subsection.3.2}\protected@file@percent }
+\newlabel{sec:AAA}{{3.2}{6}{The AAA algorithm}{subsection.3.2}{}}
+\newlabel{sec:AAA@cref}{{[subsection][2][3]3.2}{[1][6][]6}}
+\newlabel{AAA_approx}{{12}{6}{The AAA algorithm}{equation.3.12}{}}
+\newlabel{AAA_approx@cref}{{[equation][12][]12}{[1][6][]6}}
+\citation{trefethen2024computation}
+\citation{nakatsukasa2020algorithm}
+\citation{nst18}
+\citation{trefethen2024computation}
+\citation{aa86}
+\citation{ajm07}
+\citation{trefethen2024computation}
+\citation{starke1992near}
+\citation{trefethen2024computation}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Minimax algorithms and Lawson step extensions}{7}{subsubsection.3.2.1}\protected@file@percent }
+\newlabel{sec:minimax}{{3.2.1}{7}{Minimax algorithms and Lawson step extensions}{subsubsection.3.2.1}{}}
+\newlabel{sec:minimax@cref}{{[subsubsection][1][3,2]3.2.1}{[1][6][]7}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}The two symmetric circles case}{7}{section.4}\protected@file@percent }
+\newlabel{sec:1a}{{4}{7}{The two symmetric circles case}{section.4}{}}
+\newlabel{sec:1a@cref}{{[section][4][]4}{[1][7][]7}}
+\newlabel{eq:case_1b_opt}{{13}{7}{The two symmetric circles case}{equation.4.13}{}}
+\newlabel{eq:case_1b_opt@cref}{{[equation][13][]13}{[1][7][]7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Experimental setup and results}{7}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Comments}{7}{subsection.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{8}{table.caption.6}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{tab:sym-1a-r3}{{1}{4}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.2}{}}
-\newlabel{tab:sym-1a-r3@cref}{{[table][1][]1}{[1][4][]4}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{4}{table.caption.3}\protected@file@percent }
-\newlabel{tab:sym-1a-r3}{{2}{4}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.3}{}}
-\newlabel{tab:sym-1a-r3@cref}{{[table][2][]2}{[1][4][]4}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{4}{table.caption.4}\protected@file@percent }
-\newlabel{tab:sym-1a-r3}{{3}{4}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.4}{}}
-\newlabel{tab:sym-1a-r3@cref}{{[table][3][]3}{[1][4][]4}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{4}{table.caption.5}\protected@file@percent }
-\newlabel{tab:sym-1a-r3}{{4}{4}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.5}{}}
-\newlabel{tab:sym-1a-r3@cref}{{[table][4][]4}{[1][4][]4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Case \texttt  {1a}, $r=3$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{5}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:numden_3}{{1}{5}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.6}{}}
-\newlabel{fig:numden_3@cref}{{[figure][1][]1}{[1][4][]5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Poles}{5}{subsection.2.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=3$, Z4: poles.\relax }}{5}{table.caption.7}\protected@file@percent }
-\newlabel{tab:pol-1a-r3}{{5}{5}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=3$, Z4: poles.\relax }{table.caption.7}{}}
-\newlabel{tab:pol-1a-r3@cref}{{[table][5][]5}{[1][5][]5}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=3$, Z4: poles.\relax }}{5}{table.caption.8}\protected@file@percent }
-\newlabel{tab:pol-1a-r3}{{6}{5}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=3$, Z4: poles.\relax }{table.caption.8}{}}
-\newlabel{tab:pol-1a-r3@cref}{{[table][6][]6}{[1][5][]5}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=3$, Z4: poles.\relax }}{5}{table.caption.9}\protected@file@percent }
-\newlabel{tab:pol-1a-r3}{{7}{5}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=3$, Z4: poles.\relax }{table.caption.9}{}}
-\newlabel{tab:pol-1a-r3@cref}{{[table][7][]7}{[1][5][]5}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=3$, Z4: poles.\relax }}{5}{table.caption.10}\protected@file@percent }
-\newlabel{tab:pol-1a-r3}{{8}{5}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=3$, Z4: poles.\relax }{table.caption.10}{}}
-\newlabel{tab:pol-1a-r3@cref}{{[table][8][]8}{[1][5][]5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Zeros}{6}{subsection.2.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=3$, Z4: zeros.\relax }}{6}{table.caption.11}\protected@file@percent }
-\newlabel{tab:zer-1a-r3}{{9}{6}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=3$, Z4: zeros.\relax }{table.caption.11}{}}
-\newlabel{tab:zer-1a-r3@cref}{{[table][9][]9}{[1][5][]6}}
-\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=3$, Z4: zeros.\relax }}{6}{table.caption.12}\protected@file@percent }
-\newlabel{tab:zer-1a-r3}{{10}{6}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=3$, Z4: zeros.\relax }{table.caption.12}{}}
-\newlabel{tab:zer-1a-r3@cref}{{[table][10][]10}{[1][6][]6}}
-\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=3$, Z4: zeros.\relax }}{6}{table.caption.13}\protected@file@percent }
-\newlabel{tab:zer-1a-r3}{{11}{6}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=3$, Z4: zeros.\relax }{table.caption.13}{}}
-\newlabel{tab:zer-1a-r3@cref}{{[table][11][]11}{[1][6][]6}}
-\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=3$, Z4: zeros.\relax }}{6}{table.caption.14}\protected@file@percent }
-\newlabel{tab:zer-1a-r3}{{12}{6}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=3$, Z4: zeros.\relax }{table.caption.14}{}}
-\newlabel{tab:zer-1a-r3@cref}{{[table][12][]12}{[1][6][]6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Poles and zeros visualisation}{6}{subsection.2.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=3$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{6}{figure.caption.15}\protected@file@percent }
-\newlabel{fig:pz_3}{{2}{6}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.15}{}}
-\newlabel{fig:pz_3@cref}{{[figure][2][]2}{[1][6][]6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Approximation visualization}{7}{subsection.2.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=3$, Z4. $E$ and $F$ evaluations.\relax }}{7}{figure.caption.16}\protected@file@percent }
-\newlabel{fig:eval_3}{{3}{7}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.16}{}}
-\newlabel{fig:eval_3@cref}{{[figure][3][]3}{[1][6][]7}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Approximation objective $r=4$}{8}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Numerator and denominator coefficients}{8}{subsection.3.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{8}{table.caption.17}\protected@file@percent }
-\newlabel{tab:sym-1a-r4}{{13}{8}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.17}{}}
-\newlabel{tab:sym-1a-r4@cref}{{[table][13][]13}{[1][8][]8}}
-\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{8}{table.caption.18}\protected@file@percent }
-\newlabel{tab:sym-1a-r4}{{14}{8}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.18}{}}
-\newlabel{tab:sym-1a-r4@cref}{{[table][14][]14}{[1][8][]8}}
-\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{8}{table.caption.19}\protected@file@percent }
-\newlabel{tab:sym-1a-r4}{{15}{8}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.19}{}}
-\newlabel{tab:sym-1a-r4@cref}{{[table][15][]15}{[1][8][]8}}
-\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{9}{table.caption.20}\protected@file@percent }
-\newlabel{tab:sym-1a-r4}{{16}{9}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.20}{}}
-\newlabel{tab:sym-1a-r4@cref}{{[table][16][]16}{[1][8][]9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Case \texttt  {1a}, $r=4$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{9}{figure.caption.21}\protected@file@percent }
-\newlabel{fig:numden_4}{{4}{9}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.21}{}}
-\newlabel{fig:numden_4@cref}{{[figure][4][]4}{[1][9][]9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Poles}{9}{subsection.3.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=4$, Z4: poles.\relax }}{9}{table.caption.22}\protected@file@percent }
-\newlabel{tab:pol-1a-r4}{{17}{9}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=4$, Z4: poles.\relax }{table.caption.22}{}}
-\newlabel{tab:pol-1a-r4@cref}{{[table][17][]17}{[1][9][]9}}
-\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=4$, Z4: poles.\relax }}{10}{table.caption.23}\protected@file@percent }
-\newlabel{tab:pol-1a-r4}{{18}{10}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=4$, Z4: poles.\relax }{table.caption.23}{}}
-\newlabel{tab:pol-1a-r4@cref}{{[table][18][]18}{[1][9][]10}}
-\@writefile{lot}{\contentsline {table}{\numberline {19}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=4$, Z4: poles.\relax }}{10}{table.caption.24}\protected@file@percent }
-\newlabel{tab:pol-1a-r4}{{19}{10}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=4$, Z4: poles.\relax }{table.caption.24}{}}
-\newlabel{tab:pol-1a-r4@cref}{{[table][19][]19}{[1][9][]10}}
-\@writefile{lot}{\contentsline {table}{\numberline {20}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=4$, Z4: poles.\relax }}{10}{table.caption.25}\protected@file@percent }
-\newlabel{tab:pol-1a-r4}{{20}{10}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=4$, Z4: poles.\relax }{table.caption.25}{}}
-\newlabel{tab:pol-1a-r4@cref}{{[table][20][]20}{[1][10][]10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Zeros}{10}{subsection.3.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {21}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=4$, Z4: zeros.\relax }}{10}{table.caption.26}\protected@file@percent }
-\newlabel{tab:zer-1a-r4}{{21}{10}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=4$, Z4: zeros.\relax }{table.caption.26}{}}
-\newlabel{tab:zer-1a-r4@cref}{{[table][21][]21}{[1][10][]10}}
-\@writefile{lot}{\contentsline {table}{\numberline {22}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=4$, Z4: zeros.\relax }}{10}{table.caption.27}\protected@file@percent }
-\newlabel{tab:zer-1a-r4}{{22}{10}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=4$, Z4: zeros.\relax }{table.caption.27}{}}
-\newlabel{tab:zer-1a-r4@cref}{{[table][22][]22}{[1][10][]10}}
-\@writefile{lot}{\contentsline {table}{\numberline {23}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=4$, Z4: zeros.\relax }}{10}{table.caption.28}\protected@file@percent }
-\newlabel{tab:zer-1a-r4}{{23}{10}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=4$, Z4: zeros.\relax }{table.caption.28}{}}
-\newlabel{tab:zer-1a-r4@cref}{{[table][23][]23}{[1][10][]10}}
-\@writefile{lot}{\contentsline {table}{\numberline {24}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=4$, Z4: zeros.\relax }}{11}{table.caption.29}\protected@file@percent }
-\newlabel{tab:zer-1a-r4}{{24}{11}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=4$, Z4: zeros.\relax }{table.caption.29}{}}
-\newlabel{tab:zer-1a-r4@cref}{{[table][24][]24}{[1][10][]11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Poles and zeros visualisation}{11}{subsection.3.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=4$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{11}{figure.caption.30}\protected@file@percent }
-\newlabel{fig:pz_4}{{5}{11}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.30}{}}
-\newlabel{fig:pz_4@cref}{{[figure][5][]5}{[1][11][]11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Approximation visualization}{11}{subsection.3.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=4$, Z4. $E$ and $F$ evaluations.\relax }}{11}{figure.caption.31}\protected@file@percent }
-\newlabel{fig:eval_4}{{6}{11}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.31}{}}
-\newlabel{fig:eval_4@cref}{{[figure][6][]6}{[1][11][]11}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Approximation objective $r=5$}{12}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Numerator and denominator coefficients}{12}{subsection.4.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {25}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{12}{table.caption.32}\protected@file@percent }
-\newlabel{tab:sym-1a-r5}{{25}{12}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.32}{}}
-\newlabel{tab:sym-1a-r5@cref}{{[table][25][]25}{[1][12][]12}}
-\@writefile{lot}{\contentsline {table}{\numberline {26}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{12}{table.caption.33}\protected@file@percent }
-\newlabel{tab:sym-1a-r5}{{26}{12}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.33}{}}
-\newlabel{tab:sym-1a-r5@cref}{{[table][26][]26}{[1][12][]12}}
-\@writefile{lot}{\contentsline {table}{\numberline {27}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{12}{table.caption.34}\protected@file@percent }
-\newlabel{tab:sym-1a-r5}{{27}{12}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.34}{}}
-\newlabel{tab:sym-1a-r5@cref}{{[table][27][]27}{[1][12][]12}}
-\@writefile{lot}{\contentsline {table}{\numberline {28}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{13}{table.caption.35}\protected@file@percent }
-\newlabel{tab:sym-1a-r5}{{28}{13}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.35}{}}
-\newlabel{tab:sym-1a-r5@cref}{{[table][28][]28}{[1][12][]13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Case \texttt  {1a}, $r=5$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{13}{figure.caption.36}\protected@file@percent }
-\newlabel{fig:numden_5}{{7}{13}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.36}{}}
-\newlabel{fig:numden_5@cref}{{[figure][7][]7}{[1][13][]13}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Poles}{13}{subsection.4.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {29}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=5$, Z4: poles.\relax }}{13}{table.caption.37}\protected@file@percent }
-\newlabel{tab:pol-1a-r5}{{29}{13}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=5$, Z4: poles.\relax }{table.caption.37}{}}
-\newlabel{tab:pol-1a-r5@cref}{{[table][29][]29}{[1][13][]13}}
-\@writefile{lot}{\contentsline {table}{\numberline {30}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=5$, Z4: poles.\relax }}{14}{table.caption.38}\protected@file@percent }
-\newlabel{tab:pol-1a-r5}{{30}{14}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=5$, Z4: poles.\relax }{table.caption.38}{}}
-\newlabel{tab:pol-1a-r5@cref}{{[table][30][]30}{[1][13][]14}}
-\@writefile{lot}{\contentsline {table}{\numberline {31}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=5$, Z4: poles.\relax }}{14}{table.caption.39}\protected@file@percent }
-\newlabel{tab:pol-1a-r5}{{31}{14}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=5$, Z4: poles.\relax }{table.caption.39}{}}
-\newlabel{tab:pol-1a-r5@cref}{{[table][31][]31}{[1][13][]14}}
-\@writefile{lot}{\contentsline {table}{\numberline {32}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=5$, Z4: poles.\relax }}{14}{table.caption.40}\protected@file@percent }
-\newlabel{tab:pol-1a-r5}{{32}{14}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=5$, Z4: poles.\relax }{table.caption.40}{}}
-\newlabel{tab:pol-1a-r5@cref}{{[table][32][]32}{[1][14][]14}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Zeros}{14}{subsection.4.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {33}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=5$, Z4: zeros.\relax }}{14}{table.caption.41}\protected@file@percent }
-\newlabel{tab:zer-1a-r5}{{33}{14}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=5$, Z4: zeros.\relax }{table.caption.41}{}}
-\newlabel{tab:zer-1a-r5@cref}{{[table][33][]33}{[1][14][]14}}
-\@writefile{lot}{\contentsline {table}{\numberline {34}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=5$, Z4: zeros.\relax }}{14}{table.caption.42}\protected@file@percent }
-\newlabel{tab:zer-1a-r5}{{34}{14}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=5$, Z4: zeros.\relax }{table.caption.42}{}}
-\newlabel{tab:zer-1a-r5@cref}{{[table][34][]34}{[1][14][]14}}
-\@writefile{lot}{\contentsline {table}{\numberline {35}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=5$, Z4: zeros.\relax }}{15}{table.caption.43}\protected@file@percent }
-\newlabel{tab:zer-1a-r5}{{35}{15}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=5$, Z4: zeros.\relax }{table.caption.43}{}}
-\newlabel{tab:zer-1a-r5@cref}{{[table][35][]35}{[1][14][]15}}
-\@writefile{lot}{\contentsline {table}{\numberline {36}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=5$, Z4: zeros.\relax }}{15}{table.caption.44}\protected@file@percent }
-\newlabel{tab:zer-1a-r5}{{36}{15}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=5$, Z4: zeros.\relax }{table.caption.44}{}}
-\newlabel{tab:zer-1a-r5@cref}{{[table][36][]36}{[1][14][]15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Poles and zeros visualisation}{15}{subsection.4.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=5$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{15}{figure.caption.45}\protected@file@percent }
-\newlabel{fig:pz_5}{{8}{15}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.45}{}}
-\newlabel{fig:pz_5@cref}{{[figure][8][]8}{[1][15][]15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Approximation visualization}{16}{subsection.4.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=5$, Z4. $E$ and $F$ evaluations.\relax }}{16}{figure.caption.46}\protected@file@percent }
-\newlabel{fig:eval_5}{{9}{16}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.46}{}}
-\newlabel{fig:eval_5@cref}{{[figure][9][]9}{[1][15][]16}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Approximation objective $r=6$}{17}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Numerator and denominator coefficients}{17}{subsection.5.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {37}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{17}{table.caption.47}\protected@file@percent }
-\newlabel{tab:sym-1a-r6}{{37}{17}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.47}{}}
-\newlabel{tab:sym-1a-r6@cref}{{[table][37][]37}{[1][17][]17}}
-\@writefile{lot}{\contentsline {table}{\numberline {38}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{17}{table.caption.48}\protected@file@percent }
-\newlabel{tab:sym-1a-r6}{{38}{17}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.48}{}}
-\newlabel{tab:sym-1a-r6@cref}{{[table][38][]38}{[1][17][]17}}
-\@writefile{lot}{\contentsline {table}{\numberline {39}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{17}{table.caption.49}\protected@file@percent }
-\newlabel{tab:sym-1a-r6}{{39}{17}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.49}{}}
-\newlabel{tab:sym-1a-r6@cref}{{[table][39][]39}{[1][17][]17}}
-\@writefile{lot}{\contentsline {table}{\numberline {40}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{18}{table.caption.50}\protected@file@percent }
-\newlabel{tab:sym-1a-r6}{{40}{18}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.50}{}}
-\newlabel{tab:sym-1a-r6@cref}{{[table][40][]40}{[1][17][]18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Case \texttt  {1a}, $r=6$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{18}{figure.caption.51}\protected@file@percent }
-\newlabel{fig:numden_6}{{10}{18}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.51}{}}
-\newlabel{fig:numden_6@cref}{{[figure][10][]10}{[1][18][]18}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Poles}{18}{subsection.5.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {41}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=6$, Z4: poles.\relax }}{18}{table.caption.52}\protected@file@percent }
-\newlabel{tab:pol-1a-r6}{{41}{18}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=6$, Z4: poles.\relax }{table.caption.52}{}}
-\newlabel{tab:pol-1a-r6@cref}{{[table][41][]41}{[1][18][]18}}
-\@writefile{lot}{\contentsline {table}{\numberline {42}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=6$, Z4: poles.\relax }}{19}{table.caption.53}\protected@file@percent }
-\newlabel{tab:pol-1a-r6}{{42}{19}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=6$, Z4: poles.\relax }{table.caption.53}{}}
-\newlabel{tab:pol-1a-r6@cref}{{[table][42][]42}{[1][18][]19}}
-\@writefile{lot}{\contentsline {table}{\numberline {43}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=6$, Z4: poles.\relax }}{19}{table.caption.54}\protected@file@percent }
-\newlabel{tab:pol-1a-r6}{{43}{19}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=6$, Z4: poles.\relax }{table.caption.54}{}}
-\newlabel{tab:pol-1a-r6@cref}{{[table][43][]43}{[1][18][]19}}
-\@writefile{lot}{\contentsline {table}{\numberline {44}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=6$, Z4: poles.\relax }}{19}{table.caption.55}\protected@file@percent }
-\newlabel{tab:pol-1a-r6}{{44}{19}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=6$, Z4: poles.\relax }{table.caption.55}{}}
-\newlabel{tab:pol-1a-r6@cref}{{[table][44][]44}{[1][19][]19}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Zeros}{19}{subsection.5.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {45}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=6$, Z4: zeros.\relax }}{19}{table.caption.56}\protected@file@percent }
-\newlabel{tab:zer-1a-r6}{{45}{19}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=6$, Z4: zeros.\relax }{table.caption.56}{}}
-\newlabel{tab:zer-1a-r6@cref}{{[table][45][]45}{[1][19][]19}}
-\@writefile{lot}{\contentsline {table}{\numberline {46}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=6$, Z4: zeros.\relax }}{19}{table.caption.57}\protected@file@percent }
-\newlabel{tab:zer-1a-r6}{{46}{19}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=6$, Z4: zeros.\relax }{table.caption.57}{}}
-\newlabel{tab:zer-1a-r6@cref}{{[table][46][]46}{[1][19][]19}}
-\@writefile{lot}{\contentsline {table}{\numberline {47}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=6$, Z4: zeros.\relax }}{20}{table.caption.58}\protected@file@percent }
-\newlabel{tab:zer-1a-r6}{{47}{20}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=6$, Z4: zeros.\relax }{table.caption.58}{}}
-\newlabel{tab:zer-1a-r6@cref}{{[table][47][]47}{[1][19][]20}}
-\@writefile{lot}{\contentsline {table}{\numberline {48}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=6$, Z4: zeros.\relax }}{20}{table.caption.59}\protected@file@percent }
-\newlabel{tab:zer-1a-r6}{{48}{20}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=6$, Z4: zeros.\relax }{table.caption.59}{}}
-\newlabel{tab:zer-1a-r6@cref}{{[table][48][]48}{[1][19][]20}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Poles and zeros visualisation}{20}{subsection.5.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=6$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{20}{figure.caption.60}\protected@file@percent }
-\newlabel{fig:pz_6}{{11}{20}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.60}{}}
-\newlabel{fig:pz_6@cref}{{[figure][11][]11}{[1][20][]20}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Approximation visualization}{21}{subsection.5.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=6$, Z4. $E$ and $F$ evaluations.\relax }}{21}{figure.caption.61}\protected@file@percent }
-\newlabel{fig:eval_6}{{12}{21}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.61}{}}
-\newlabel{fig:eval_6@cref}{{[figure][12][]12}{[1][20][]21}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Approximation objective $r=7$}{22}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Numerator and denominator coefficients}{22}{subsection.6.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {49}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{22}{table.caption.62}\protected@file@percent }
-\newlabel{tab:sym-1a-r7}{{49}{22}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.62}{}}
-\newlabel{tab:sym-1a-r7@cref}{{[table][49][]49}{[1][22][]22}}
-\@writefile{lot}{\contentsline {table}{\numberline {50}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{22}{table.caption.63}\protected@file@percent }
-\newlabel{tab:sym-1a-r7}{{50}{22}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.63}{}}
-\newlabel{tab:sym-1a-r7@cref}{{[table][50][]50}{[1][22][]22}}
-\@writefile{lot}{\contentsline {table}{\numberline {51}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{23}{table.caption.64}\protected@file@percent }
-\newlabel{tab:sym-1a-r7}{{51}{23}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.64}{}}
-\newlabel{tab:sym-1a-r7@cref}{{[table][51][]51}{[1][22][]23}}
-\@writefile{lot}{\contentsline {table}{\numberline {52}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{23}{table.caption.65}\protected@file@percent }
-\newlabel{tab:sym-1a-r7}{{52}{23}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.65}{}}
-\newlabel{tab:sym-1a-r7@cref}{{[table][52][]52}{[1][22][]23}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Case \texttt  {1a}, $r=7$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{24}{figure.caption.66}\protected@file@percent }
-\newlabel{fig:numden_7}{{13}{24}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.66}{}}
-\newlabel{fig:numden_7@cref}{{[figure][13][]13}{[1][23][]24}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Poles}{24}{subsection.6.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {53}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=7$, Z4: poles.\relax }}{24}{table.caption.67}\protected@file@percent }
-\newlabel{tab:pol-1a-r7}{{53}{24}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=7$, Z4: poles.\relax }{table.caption.67}{}}
-\newlabel{tab:pol-1a-r7@cref}{{[table][53][]53}{[1][24][]24}}
-\@writefile{lot}{\contentsline {table}{\numberline {54}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=7$, Z4: poles.\relax }}{24}{table.caption.68}\protected@file@percent }
-\newlabel{tab:pol-1a-r7}{{54}{24}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=7$, Z4: poles.\relax }{table.caption.68}{}}
-\newlabel{tab:pol-1a-r7@cref}{{[table][54][]54}{[1][24][]24}}
-\@writefile{lot}{\contentsline {table}{\numberline {55}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=7$, Z4: poles.\relax }}{25}{table.caption.69}\protected@file@percent }
-\newlabel{tab:pol-1a-r7}{{55}{25}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=7$, Z4: poles.\relax }{table.caption.69}{}}
-\newlabel{tab:pol-1a-r7@cref}{{[table][55][]55}{[1][24][]25}}
-\@writefile{lot}{\contentsline {table}{\numberline {56}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=7$, Z4: poles.\relax }}{25}{table.caption.70}\protected@file@percent }
-\newlabel{tab:pol-1a-r7}{{56}{25}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=7$, Z4: poles.\relax }{table.caption.70}{}}
-\newlabel{tab:pol-1a-r7@cref}{{[table][56][]56}{[1][24][]25}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Zeros}{25}{subsection.6.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {57}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=7$, Z4: zeros.\relax }}{25}{table.caption.71}\protected@file@percent }
-\newlabel{tab:zer-1a-r7}{{57}{25}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=7$, Z4: zeros.\relax }{table.caption.71}{}}
-\newlabel{tab:zer-1a-r7@cref}{{[table][57][]57}{[1][25][]25}}
-\@writefile{lot}{\contentsline {table}{\numberline {58}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=7$, Z4: zeros.\relax }}{25}{table.caption.72}\protected@file@percent }
-\newlabel{tab:zer-1a-r7}{{58}{25}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=7$, Z4: zeros.\relax }{table.caption.72}{}}
-\newlabel{tab:zer-1a-r7@cref}{{[table][58][]58}{[1][25][]25}}
-\@writefile{lot}{\contentsline {table}{\numberline {59}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=7$, Z4: zeros.\relax }}{25}{table.caption.73}\protected@file@percent }
-\newlabel{tab:zer-1a-r7}{{59}{25}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=7$, Z4: zeros.\relax }{table.caption.73}{}}
-\newlabel{tab:zer-1a-r7@cref}{{[table][59][]59}{[1][25][]25}}
-\@writefile{lot}{\contentsline {table}{\numberline {60}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=7$, Z4: zeros.\relax }}{26}{table.caption.74}\protected@file@percent }
-\newlabel{tab:zer-1a-r7}{{60}{26}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=7$, Z4: zeros.\relax }{table.caption.74}{}}
-\newlabel{tab:zer-1a-r7@cref}{{[table][60][]60}{[1][25][]26}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Poles and zeros visualisation}{26}{subsection.6.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=7$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{26}{figure.caption.75}\protected@file@percent }
-\newlabel{fig:pz_7}{{14}{26}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.75}{}}
-\newlabel{fig:pz_7@cref}{{[figure][14][]14}{[1][26][]26}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Approximation visualization}{26}{subsection.6.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=7$, Z4. $E$ and $F$ evaluations.\relax }}{26}{figure.caption.76}\protected@file@percent }
-\newlabel{fig:eval_7}{{15}{26}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.76}{}}
-\newlabel{fig:eval_7@cref}{{[figure][15][]15}{[1][26][]26}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Approximation objective $r=8$}{27}{section.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Numerator and denominator coefficients}{27}{subsection.7.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {61}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{27}{table.caption.77}\protected@file@percent }
-\newlabel{tab:sym-1a-r8}{{61}{27}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.77}{}}
-\newlabel{tab:sym-1a-r8@cref}{{[table][61][]61}{[1][27][]27}}
-\@writefile{lot}{\contentsline {table}{\numberline {62}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{27}{table.caption.78}\protected@file@percent }
-\newlabel{tab:sym-1a-r8}{{62}{27}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.78}{}}
-\newlabel{tab:sym-1a-r8@cref}{{[table][62][]62}{[1][27][]27}}
-\@writefile{lot}{\contentsline {table}{\numberline {63}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{28}{table.caption.79}\protected@file@percent }
-\newlabel{tab:sym-1a-r8}{{63}{28}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.79}{}}
-\newlabel{tab:sym-1a-r8@cref}{{[table][63][]63}{[1][27][]28}}
-\@writefile{lot}{\contentsline {table}{\numberline {64}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{28}{table.caption.80}\protected@file@percent }
-\newlabel{tab:sym-1a-r8}{{64}{28}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.80}{}}
-\newlabel{tab:sym-1a-r8@cref}{{[table][64][]64}{[1][27][]28}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Case \texttt  {1a}, $r=8$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{29}{figure.caption.81}\protected@file@percent }
-\newlabel{fig:numden_8}{{16}{29}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.81}{}}
-\newlabel{fig:numden_8@cref}{{[figure][16][]16}{[1][28][]29}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Poles}{29}{subsection.7.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {65}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=8$, Z4: poles.\relax }}{29}{table.caption.82}\protected@file@percent }
-\newlabel{tab:pol-1a-r8}{{65}{29}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=8$, Z4: poles.\relax }{table.caption.82}{}}
-\newlabel{tab:pol-1a-r8@cref}{{[table][65][]65}{[1][29][]29}}
-\@writefile{lot}{\contentsline {table}{\numberline {66}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=8$, Z4: poles.\relax }}{29}{table.caption.83}\protected@file@percent }
-\newlabel{tab:pol-1a-r8}{{66}{29}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=8$, Z4: poles.\relax }{table.caption.83}{}}
-\newlabel{tab:pol-1a-r8@cref}{{[table][66][]66}{[1][29][]29}}
-\@writefile{lot}{\contentsline {table}{\numberline {67}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=8$, Z4: poles.\relax }}{30}{table.caption.84}\protected@file@percent }
-\newlabel{tab:pol-1a-r8}{{67}{30}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=8$, Z4: poles.\relax }{table.caption.84}{}}
-\newlabel{tab:pol-1a-r8@cref}{{[table][67][]67}{[1][29][]30}}
-\@writefile{lot}{\contentsline {table}{\numberline {68}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=8$, Z4: poles.\relax }}{30}{table.caption.85}\protected@file@percent }
-\newlabel{tab:pol-1a-r8}{{68}{30}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=8$, Z4: poles.\relax }{table.caption.85}{}}
-\newlabel{tab:pol-1a-r8@cref}{{[table][68][]68}{[1][29][]30}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Zeros}{30}{subsection.7.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {69}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=8$, Z4: zeros.\relax }}{30}{table.caption.86}\protected@file@percent }
-\newlabel{tab:zer-1a-r8}{{69}{30}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=8$, Z4: zeros.\relax }{table.caption.86}{}}
-\newlabel{tab:zer-1a-r8@cref}{{[table][69][]69}{[1][30][]30}}
-\@writefile{lot}{\contentsline {table}{\numberline {70}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=8$, Z4: zeros.\relax }}{30}{table.caption.87}\protected@file@percent }
-\newlabel{tab:zer-1a-r8}{{70}{30}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=8$, Z4: zeros.\relax }{table.caption.87}{}}
-\newlabel{tab:zer-1a-r8@cref}{{[table][70][]70}{[1][30][]30}}
-\@writefile{lot}{\contentsline {table}{\numberline {71}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=8$, Z4: zeros.\relax }}{31}{table.caption.88}\protected@file@percent }
-\newlabel{tab:zer-1a-r8}{{71}{31}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=8$, Z4: zeros.\relax }{table.caption.88}{}}
-\newlabel{tab:zer-1a-r8@cref}{{[table][71][]71}{[1][30][]31}}
-\@writefile{lot}{\contentsline {table}{\numberline {72}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=8$, Z4: zeros.\relax }}{31}{table.caption.89}\protected@file@percent }
-\newlabel{tab:zer-1a-r8}{{72}{31}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=8$, Z4: zeros.\relax }{table.caption.89}{}}
-\newlabel{tab:zer-1a-r8@cref}{{[table][72][]72}{[1][30][]31}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Poles and zeros visualisation}{31}{subsection.7.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=8$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{31}{figure.caption.90}\protected@file@percent }
-\newlabel{fig:pz_8}{{17}{31}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.90}{}}
-\newlabel{fig:pz_8@cref}{{[figure][17][]17}{[1][31][]31}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Approximation visualization}{32}{subsection.7.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=8$, Z4. $E$ and $F$ evaluations.\relax }}{32}{figure.caption.91}\protected@file@percent }
-\newlabel{fig:eval_8}{{18}{32}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.91}{}}
-\newlabel{fig:eval_8@cref}{{[figure][18][]18}{[1][31][]32}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Approximation objective $r=9$}{33}{section.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Numerator and denominator coefficients}{33}{subsection.8.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {73}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{33}{table.caption.92}\protected@file@percent }
-\newlabel{tab:sym-1a-r9}{{73}{33}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.92}{}}
-\newlabel{tab:sym-1a-r9@cref}{{[table][73][]73}{[1][33][]33}}
-\@writefile{lot}{\contentsline {table}{\numberline {74}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{33}{table.caption.93}\protected@file@percent }
-\newlabel{tab:sym-1a-r9}{{74}{33}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.93}{}}
-\newlabel{tab:sym-1a-r9@cref}{{[table][74][]74}{[1][33][]33}}
-\@writefile{lot}{\contentsline {table}{\numberline {75}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{34}{table.caption.94}\protected@file@percent }
-\newlabel{tab:sym-1a-r9}{{75}{34}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.94}{}}
-\newlabel{tab:sym-1a-r9@cref}{{[table][75][]75}{[1][33][]34}}
-\@writefile{lot}{\contentsline {table}{\numberline {76}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{34}{table.caption.95}\protected@file@percent }
-\newlabel{tab:sym-1a-r9}{{76}{34}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.95}{}}
-\newlabel{tab:sym-1a-r9@cref}{{[table][76][]76}{[1][33][]34}}
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Case \texttt  {1a}, $r=9$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{35}{figure.caption.96}\protected@file@percent }
-\newlabel{fig:numden_9}{{19}{35}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.96}{}}
-\newlabel{fig:numden_9@cref}{{[figure][19][]19}{[1][34][]35}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Poles}{35}{subsection.8.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {77}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=9$, Z4: poles.\relax }}{35}{table.caption.97}\protected@file@percent }
-\newlabel{tab:pol-1a-r9}{{77}{35}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=9$, Z4: poles.\relax }{table.caption.97}{}}
-\newlabel{tab:pol-1a-r9@cref}{{[table][77][]77}{[1][35][]35}}
-\@writefile{lot}{\contentsline {table}{\numberline {78}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=9$, Z4: poles.\relax }}{35}{table.caption.98}\protected@file@percent }
-\newlabel{tab:pol-1a-r9}{{78}{35}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=9$, Z4: poles.\relax }{table.caption.98}{}}
-\newlabel{tab:pol-1a-r9@cref}{{[table][78][]78}{[1][35][]35}}
-\@writefile{lot}{\contentsline {table}{\numberline {79}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=9$, Z4: poles.\relax }}{36}{table.caption.99}\protected@file@percent }
-\newlabel{tab:pol-1a-r9}{{79}{36}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=9$, Z4: poles.\relax }{table.caption.99}{}}
-\newlabel{tab:pol-1a-r9@cref}{{[table][79][]79}{[1][35][]36}}
-\@writefile{lot}{\contentsline {table}{\numberline {80}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=9$, Z4: poles.\relax }}{36}{table.caption.100}\protected@file@percent }
-\newlabel{tab:pol-1a-r9}{{80}{36}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=9$, Z4: poles.\relax }{table.caption.100}{}}
-\newlabel{tab:pol-1a-r9@cref}{{[table][80][]80}{[1][35][]36}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Zeros}{36}{subsection.8.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {81}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=9$, Z4: zeros.\relax }}{36}{table.caption.101}\protected@file@percent }
-\newlabel{tab:zer-1a-r9}{{81}{36}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=9$, Z4: zeros.\relax }{table.caption.101}{}}
-\newlabel{tab:zer-1a-r9@cref}{{[table][81][]81}{[1][36][]36}}
-\@writefile{lot}{\contentsline {table}{\numberline {82}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=9$, Z4: zeros.\relax }}{36}{table.caption.102}\protected@file@percent }
-\newlabel{tab:zer-1a-r9}{{82}{36}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=9$, Z4: zeros.\relax }{table.caption.102}{}}
-\newlabel{tab:zer-1a-r9@cref}{{[table][82][]82}{[1][36][]36}}
-\@writefile{lot}{\contentsline {table}{\numberline {83}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=9$, Z4: zeros.\relax }}{37}{table.caption.103}\protected@file@percent }
-\newlabel{tab:zer-1a-r9}{{83}{37}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=9$, Z4: zeros.\relax }{table.caption.103}{}}
-\newlabel{tab:zer-1a-r9@cref}{{[table][83][]83}{[1][36][]37}}
-\@writefile{lot}{\contentsline {table}{\numberline {84}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=9$, Z4: zeros.\relax }}{37}{table.caption.104}\protected@file@percent }
-\newlabel{tab:zer-1a-r9}{{84}{37}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=9$, Z4: zeros.\relax }{table.caption.104}{}}
-\newlabel{tab:zer-1a-r9@cref}{{[table][84][]84}{[1][36][]37}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Poles and zeros visualisation}{37}{subsection.8.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=9$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{37}{figure.caption.105}\protected@file@percent }
-\newlabel{fig:pz_9}{{20}{37}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.105}{}}
-\newlabel{fig:pz_9@cref}{{[figure][20][]20}{[1][37][]37}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}Approximation visualization}{38}{subsection.8.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=9$, Z4. $E$ and $F$ evaluations.\relax }}{38}{figure.caption.106}\protected@file@percent }
-\newlabel{fig:eval_9}{{21}{38}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.106}{}}
-\newlabel{fig:eval_9@cref}{{[figure][21][]21}{[1][37][]38}}
-\@writefile{toc}{\contentsline {section}{\numberline {9}Approximation objective $r=10$}{39}{section.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Numerator and denominator coefficients}{39}{subsection.9.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {85}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{39}{table.caption.107}\protected@file@percent }
-\newlabel{tab:sym-1a-r10}{{85}{39}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.107}{}}
-\newlabel{tab:sym-1a-r10@cref}{{[table][85][]85}{[1][39][]39}}
-\@writefile{lot}{\contentsline {table}{\numberline {86}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{39}{table.caption.108}\protected@file@percent }
-\newlabel{tab:sym-1a-r10}{{86}{39}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.108}{}}
-\newlabel{tab:sym-1a-r10@cref}{{[table][86][]86}{[1][39][]39}}
-\@writefile{lot}{\contentsline {table}{\numberline {87}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{40}{table.caption.109}\protected@file@percent }
-\newlabel{tab:sym-1a-r10}{{87}{40}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.109}{}}
-\newlabel{tab:sym-1a-r10@cref}{{[table][87][]87}{[1][39][]40}}
-\@writefile{lot}{\contentsline {table}{\numberline {88}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{40}{table.caption.110}\protected@file@percent }
-\newlabel{tab:sym-1a-r10}{{88}{40}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.110}{}}
-\newlabel{tab:sym-1a-r10@cref}{{[table][88][]88}{[1][39][]40}}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Case \texttt  {1a}, $r=10$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{41}{figure.caption.111}\protected@file@percent }
-\newlabel{fig:numden_10}{{22}{41}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.111}{}}
-\newlabel{fig:numden_10@cref}{{[figure][22][]22}{[1][40][]41}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Poles}{41}{subsection.9.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {89}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=10$, Z4: poles.\relax }}{41}{table.caption.112}\protected@file@percent }
-\newlabel{tab:pol-1a-r10}{{89}{41}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=10$, Z4: poles.\relax }{table.caption.112}{}}
-\newlabel{tab:pol-1a-r10@cref}{{[table][89][]89}{[1][41][]41}}
-\@writefile{lot}{\contentsline {table}{\numberline {90}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=10$, Z4: poles.\relax }}{41}{table.caption.113}\protected@file@percent }
-\newlabel{tab:pol-1a-r10}{{90}{41}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=10$, Z4: poles.\relax }{table.caption.113}{}}
-\newlabel{tab:pol-1a-r10@cref}{{[table][90][]90}{[1][41][]41}}
-\@writefile{lot}{\contentsline {table}{\numberline {91}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=10$, Z4: poles.\relax }}{42}{table.caption.114}\protected@file@percent }
-\newlabel{tab:pol-1a-r10}{{91}{42}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=10$, Z4: poles.\relax }{table.caption.114}{}}
-\newlabel{tab:pol-1a-r10@cref}{{[table][91][]91}{[1][41][]42}}
-\@writefile{lot}{\contentsline {table}{\numberline {92}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=10$, Z4: poles.\relax }}{42}{table.caption.115}\protected@file@percent }
-\newlabel{tab:pol-1a-r10}{{92}{42}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=10$, Z4: poles.\relax }{table.caption.115}{}}
-\newlabel{tab:pol-1a-r10@cref}{{[table][92][]92}{[1][41][]42}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}Zeros}{42}{subsection.9.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {93}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=10$, Z4: zeros.\relax }}{42}{table.caption.116}\protected@file@percent }
-\newlabel{tab:zer-1a-r10}{{93}{42}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=10$, Z4: zeros.\relax }{table.caption.116}{}}
-\newlabel{tab:zer-1a-r10@cref}{{[table][93][]93}{[1][42][]42}}
-\@writefile{lot}{\contentsline {table}{\numberline {94}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACI64 MR2022b}), $r=10$, Z4: zeros.\relax }}{42}{table.caption.117}\protected@file@percent }
-\newlabel{tab:zer-1a-r10}{{94}{42}{Case \texttt {1a} (\texttt {cpv MACI64 MR2022b}), $r=10$, Z4: zeros.\relax }{table.caption.117}{}}
-\newlabel{tab:zer-1a-r10@cref}{{[table][94][]94}{[1][42][]42}}
-\@writefile{lot}{\contentsline {table}{\numberline {95}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=10$, Z4: zeros.\relax }}{43}{table.caption.118}\protected@file@percent }
-\newlabel{tab:zer-1a-r10}{{95}{43}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=10$, Z4: zeros.\relax }{table.caption.118}{}}
-\newlabel{tab:zer-1a-r10@cref}{{[table][95][]95}{[1][42][]43}}
-\@writefile{lot}{\contentsline {table}{\numberline {96}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=10$, Z4: zeros.\relax }}{43}{table.caption.119}\protected@file@percent }
-\newlabel{tab:zer-1a-r10}{{96}{43}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=10$, Z4: zeros.\relax }{table.caption.119}{}}
-\newlabel{tab:zer-1a-r10@cref}{{[table][96][]96}{[1][42][]43}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.4}Poles and zeros visualisation}{43}{subsection.9.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=10$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{43}{figure.caption.120}\protected@file@percent }
-\newlabel{fig:pz_10}{{23}{43}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.120}{}}
-\newlabel{fig:pz_10@cref}{{[figure][23][]23}{[1][43][]43}}
+\newlabel{tab:sym-1a-r3}{{1}{8}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.6}{}}
+\newlabel{tab:sym-1a-r3@cref}{{[table][1][]1}{[1][8][]8}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{8}{table.caption.7}\protected@file@percent }
+\newlabel{tab:sym-1a-r6}{{2}{8}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.7}{}}
+\newlabel{tab:sym-1a-r6@cref}{{[table][2][]2}{[1][8][]8}}
+\citation{ali17}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{9}{table.caption.8}\protected@file@percent }
+\newlabel{tab:sym-1a-r8}{{3}{9}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.8}{}}
+\newlabel{tab:sym-1a-r8@cref}{{[table][3][]3}{[1][8][]9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Preliminary conclusions}{9}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Some (open) questions}{9}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}More complete and accurate approximations}{9}{subsection.4.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Case \texttt  {'1a'}, with $r=26$: different approximation methods: LF (top left), AAA (top right), AAA with damping (bottom left), and AAA-Lawson with damping and 200 iterations (bottom right). Each frame shows: the Zolotarev rational functions of degree $r$ for Z3 (${\mathbf  h}_3$) and Z4 (${\mathbf  h}_4$) defined by connected sets $E$ (on the left) and $F$ (on the right); the Z3 function approximate contours levels $\qopname  \relax o{log}_{10} |{\mathbf  h}_3(z)|= 0,-1,-2,\cdots  ,-30$ between the two domains; black circles and dots respectively mark zeros and poles of the sign function ${\mathbf  h}_4$; blue and red dots respectively denote the zeros and poles of ${\mathbf  h}_3$. The minimum values $\sigma _r$ and computation time are given in the title, as well as the options of each AAA method, and give the number of singularities targeted (and obtained).\relax }}{10}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:intro1}{{1}{10}{Case \texttt {'1a'}, with $r=26$: different approximation methods: LF (top left), AAA (top right), AAA with damping (bottom left), and AAA-Lawson with damping and 200 iterations (bottom right). Each frame shows: the Zolotarev rational functions of degree $r$ for Z3 ($\bh _3$) and Z4 ($\bh _4$) defined by connected sets $E$ (on the left) and $F$ (on the right); the Z3 function approximate contours levels $\log _{10} |\bh _3(\varIC )|= 0,-1,-2,\cdots ,-30$ between the two domains; black circles and dots respectively mark zeros and poles of the sign function $\bh _4$; blue and red dots respectively denote the zeros and poles of $\bh _3$. The minimum values $\sigma _r$ and computation time are given in the title, as well as the options of each AAA method, and give the number of singularities targeted (and obtained).\relax }{figure.caption.9}{}}
+\newlabel{fig:intro1@cref}{{[figure][1][]1}{[1][10][]10}}
+\citation{trefethen2024computation}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Case \texttt  {'1a'}: computation time and accuracy comparison for different approximation settings; we compare the standard LF with different AAA and AAA-Lawson settings.\relax }}{11}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:intro_time}{{2}{11}{Case \texttt {'1a'}: computation time and accuracy comparison for different approximation settings; we compare the standard LF with different AAA and AAA-Lawson settings.\relax }{figure.caption.10}{}}
+\newlabel{fig:intro_time@cref}{{[figure][2][]2}{[1][10][]11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}More experiments}{11}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Description of the report and overview of the results}{11}{section.5}\protected@file@percent }
+\newlabel{sec:ex_details}{{5}{11}{Description of the report and overview of the results}{section.5}{}}
+\newlabel{sec:ex_details@cref}{{[section][5][]5}{[1][11][]11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Methodology}{11}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Overview of the results}{11}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Preliminary conclusions}{11}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{11}{section.6}\protected@file@percent }
+\newlabel{sec:conclusion}{{6}{11}{Conclusion}{section.6}{}}
+\newlabel{sec:conclusion@cref}{{[section][6][]6}{[1][11][]11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Case \texttt  {1a}, $r=3$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{12}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:intro_numden}{{3}{12}{Case \texttt {1a}, $r=3$, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.11}{}}
+\newlabel{fig:intro_numden@cref}{{[figure][3][]3}{[1][11][]12}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Detailed results on the \texttt  {1a} case}{12}{appendix.A}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces .\relax }}{13}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:case_order}{{4}{13}{.\relax }{figure.caption.12}{}}
+\newlabel{fig:case_order@cref}{{[figure][4][]4}{[1][11][]13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Approximation objective $r=3$}{13}{subsection.A.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.1.1}Numerator and denominator coefficients}{13}{subsubsection.A.1.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{13}{table.caption.14}\protected@file@percent }
+\newlabel{tab:sym-1a-r3}{{4}{13}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.14}{}}
+\newlabel{tab:sym-1a-r3@cref}{{[table][4][2147483647]4}{[1][13][]13}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{14}{table.caption.15}\protected@file@percent }
+\newlabel{tab:sym-1a-r3}{{5}{14}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.15}{}}
+\newlabel{tab:sym-1a-r3@cref}{{[table][5][2147483647]5}{[1][13][]14}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{14}{table.caption.16}\protected@file@percent }
+\newlabel{tab:sym-1a-r3}{{6}{14}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.16}{}}
+\newlabel{tab:sym-1a-r3@cref}{{[table][6][2147483647]6}{[1][13][]14}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{14}{table.caption.17}\protected@file@percent }
+\newlabel{tab:sym-1a-r3}{{7}{14}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.17}{}}
+\newlabel{tab:sym-1a-r3@cref}{{[table][7][2147483647]7}{[1][14][]14}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{14}{table.caption.18}\protected@file@percent }
+\newlabel{tab:sym-1a-r3}{{8}{14}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=3$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.18}{}}
+\newlabel{tab:sym-1a-r3@cref}{{[table][8][2147483647]8}{[1][14][]14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Case \texttt  {1a}, $r=3$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{15}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:numden_3}{{5}{15}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.19}{}}
+\newlabel{fig:numden_3@cref}{{[figure][5][2147483647]5}{[1][14][]15}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.1.2}Poles}{15}{subsubsection.A.1.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=3$, Z4: poles.\relax }}{15}{table.caption.20}\protected@file@percent }
+\newlabel{tab:pol-1a-r3}{{9}{15}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=3$, Z4: poles.\relax }{table.caption.20}{}}
+\newlabel{tab:pol-1a-r3@cref}{{[table][9][2147483647]9}{[1][15][]15}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=3$, Z4: poles.\relax }}{15}{table.caption.21}\protected@file@percent }
+\newlabel{tab:pol-1a-r3}{{10}{15}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=3$, Z4: poles.\relax }{table.caption.21}{}}
+\newlabel{tab:pol-1a-r3@cref}{{[table][10][2147483647]10}{[1][15][]15}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=3$, Z4: poles.\relax }}{15}{table.caption.22}\protected@file@percent }
+\newlabel{tab:pol-1a-r3}{{11}{15}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=3$, Z4: poles.\relax }{table.caption.22}{}}
+\newlabel{tab:pol-1a-r3@cref}{{[table][11][2147483647]11}{[1][15][]15}}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=3$, Z4: poles.\relax }}{15}{table.caption.23}\protected@file@percent }
+\newlabel{tab:pol-1a-r3}{{12}{15}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=3$, Z4: poles.\relax }{table.caption.23}{}}
+\newlabel{tab:pol-1a-r3@cref}{{[table][12][2147483647]12}{[1][15][]15}}
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=3$, Z4: poles.\relax }}{16}{table.caption.24}\protected@file@percent }
+\newlabel{tab:pol-1a-r3}{{13}{16}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=3$, Z4: poles.\relax }{table.caption.24}{}}
+\newlabel{tab:pol-1a-r3@cref}{{[table][13][2147483647]13}{[1][15][]16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.1.3}Zeros}{16}{subsubsection.A.1.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=3$, Z4: zeros.\relax }}{16}{table.caption.25}\protected@file@percent }
+\newlabel{tab:zer-1a-r3}{{14}{16}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=3$, Z4: zeros.\relax }{table.caption.25}{}}
+\newlabel{tab:zer-1a-r3@cref}{{[table][14][2147483647]14}{[1][16][]16}}
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=3$, Z4: zeros.\relax }}{16}{table.caption.26}\protected@file@percent }
+\newlabel{tab:zer-1a-r3}{{15}{16}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=3$, Z4: zeros.\relax }{table.caption.26}{}}
+\newlabel{tab:zer-1a-r3@cref}{{[table][15][2147483647]15}{[1][16][]16}}
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=3$, Z4: zeros.\relax }}{16}{table.caption.27}\protected@file@percent }
+\newlabel{tab:zer-1a-r3}{{16}{16}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=3$, Z4: zeros.\relax }{table.caption.27}{}}
+\newlabel{tab:zer-1a-r3@cref}{{[table][16][2147483647]16}{[1][16][]16}}
+\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=3$, Z4: zeros.\relax }}{16}{table.caption.28}\protected@file@percent }
+\newlabel{tab:zer-1a-r3}{{17}{16}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=3$, Z4: zeros.\relax }{table.caption.28}{}}
+\newlabel{tab:zer-1a-r3@cref}{{[table][17][2147483647]17}{[1][16][]16}}
+\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=3$, Z4: zeros.\relax }}{16}{table.caption.29}\protected@file@percent }
+\newlabel{tab:zer-1a-r3}{{18}{16}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=3$, Z4: zeros.\relax }{table.caption.29}{}}
+\newlabel{tab:zer-1a-r3@cref}{{[table][18][2147483647]18}{[1][16][]16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.1.4}Poles and zeros visualisation (case \texttt  {cpv MACA64 MR2023b})}{17}{subsubsection.A.1.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=3$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{17}{figure.caption.30}\protected@file@percent }
+\newlabel{fig:pz_3}{{6}{17}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.30}{}}
+\newlabel{fig:pz_3@cref}{{[figure][6][2147483647]6}{[1][16][]17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.1.5}Approximation visualization}{17}{subsubsection.A.1.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=3$, Z4. $E$ and $F$ evaluations.\relax }}{17}{figure.caption.31}\protected@file@percent }
+\newlabel{fig:eval_3}{{7}{17}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.31}{}}
+\newlabel{fig:eval_3@cref}{{[figure][7][2147483647]7}{[1][17][]17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Approximation objective $r=4$}{18}{subsection.A.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.2.1}Numerator and denominator coefficients}{18}{subsubsection.A.2.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {19}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{18}{table.caption.32}\protected@file@percent }
+\newlabel{tab:sym-1a-r4}{{19}{18}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.32}{}}
+\newlabel{tab:sym-1a-r4@cref}{{[table][19][2147483647]19}{[1][18][]18}}
+\@writefile{lot}{\contentsline {table}{\numberline {20}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{18}{table.caption.33}\protected@file@percent }
+\newlabel{tab:sym-1a-r4}{{20}{18}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.33}{}}
+\newlabel{tab:sym-1a-r4@cref}{{[table][20][2147483647]20}{[1][18][]18}}
+\@writefile{lot}{\contentsline {table}{\numberline {21}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{18}{table.caption.34}\protected@file@percent }
+\newlabel{tab:sym-1a-r4}{{21}{18}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.34}{}}
+\newlabel{tab:sym-1a-r4@cref}{{[table][21][2147483647]21}{[1][18][]18}}
+\@writefile{lot}{\contentsline {table}{\numberline {22}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{19}{table.caption.35}\protected@file@percent }
+\newlabel{tab:sym-1a-r4}{{22}{19}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.35}{}}
+\newlabel{tab:sym-1a-r4@cref}{{[table][22][2147483647]22}{[1][18][]19}}
+\@writefile{lot}{\contentsline {table}{\numberline {23}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{19}{table.caption.36}\protected@file@percent }
+\newlabel{tab:sym-1a-r4}{{23}{19}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=4$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.36}{}}
+\newlabel{tab:sym-1a-r4@cref}{{[table][23][2147483647]23}{[1][18][]19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Case \texttt  {1a}, $r=4$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{19}{figure.caption.37}\protected@file@percent }
+\newlabel{fig:numden_4}{{8}{19}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.37}{}}
+\newlabel{fig:numden_4@cref}{{[figure][8][2147483647]8}{[1][19][]19}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.2.2}Poles}{20}{subsubsection.A.2.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {24}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=4$, Z4: poles.\relax }}{20}{table.caption.38}\protected@file@percent }
+\newlabel{tab:pol-1a-r4}{{24}{20}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=4$, Z4: poles.\relax }{table.caption.38}{}}
+\newlabel{tab:pol-1a-r4@cref}{{[table][24][2147483647]24}{[1][19][]20}}
+\@writefile{lot}{\contentsline {table}{\numberline {25}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=4$, Z4: poles.\relax }}{20}{table.caption.39}\protected@file@percent }
+\newlabel{tab:pol-1a-r4}{{25}{20}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=4$, Z4: poles.\relax }{table.caption.39}{}}
+\newlabel{tab:pol-1a-r4@cref}{{[table][25][2147483647]25}{[1][20][]20}}
+\@writefile{lot}{\contentsline {table}{\numberline {26}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=4$, Z4: poles.\relax }}{20}{table.caption.40}\protected@file@percent }
+\newlabel{tab:pol-1a-r4}{{26}{20}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=4$, Z4: poles.\relax }{table.caption.40}{}}
+\newlabel{tab:pol-1a-r4@cref}{{[table][26][2147483647]26}{[1][20][]20}}
+\@writefile{lot}{\contentsline {table}{\numberline {27}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=4$, Z4: poles.\relax }}{20}{table.caption.41}\protected@file@percent }
+\newlabel{tab:pol-1a-r4}{{27}{20}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=4$, Z4: poles.\relax }{table.caption.41}{}}
+\newlabel{tab:pol-1a-r4@cref}{{[table][27][2147483647]27}{[1][20][]20}}
+\@writefile{lot}{\contentsline {table}{\numberline {28}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=4$, Z4: poles.\relax }}{20}{table.caption.42}\protected@file@percent }
+\newlabel{tab:pol-1a-r4}{{28}{20}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=4$, Z4: poles.\relax }{table.caption.42}{}}
+\newlabel{tab:pol-1a-r4@cref}{{[table][28][2147483647]28}{[1][20][]20}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.2.3}Zeros}{20}{subsubsection.A.2.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {29}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=4$, Z4: zeros.\relax }}{21}{table.caption.43}\protected@file@percent }
+\newlabel{tab:zer-1a-r4}{{29}{21}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=4$, Z4: zeros.\relax }{table.caption.43}{}}
+\newlabel{tab:zer-1a-r4@cref}{{[table][29][2147483647]29}{[1][20][]21}}
+\@writefile{lot}{\contentsline {table}{\numberline {30}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=4$, Z4: zeros.\relax }}{21}{table.caption.44}\protected@file@percent }
+\newlabel{tab:zer-1a-r4}{{30}{21}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=4$, Z4: zeros.\relax }{table.caption.44}{}}
+\newlabel{tab:zer-1a-r4@cref}{{[table][30][2147483647]30}{[1][20][]21}}
+\@writefile{lot}{\contentsline {table}{\numberline {31}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=4$, Z4: zeros.\relax }}{21}{table.caption.45}\protected@file@percent }
+\newlabel{tab:zer-1a-r4}{{31}{21}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=4$, Z4: zeros.\relax }{table.caption.45}{}}
+\newlabel{tab:zer-1a-r4@cref}{{[table][31][2147483647]31}{[1][21][]21}}
+\@writefile{lot}{\contentsline {table}{\numberline {32}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=4$, Z4: zeros.\relax }}{21}{table.caption.46}\protected@file@percent }
+\newlabel{tab:zer-1a-r4}{{32}{21}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=4$, Z4: zeros.\relax }{table.caption.46}{}}
+\newlabel{tab:zer-1a-r4@cref}{{[table][32][2147483647]32}{[1][21][]21}}
+\@writefile{lot}{\contentsline {table}{\numberline {33}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=4$, Z4: zeros.\relax }}{21}{table.caption.47}\protected@file@percent }
+\newlabel{tab:zer-1a-r4}{{33}{21}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=4$, Z4: zeros.\relax }{table.caption.47}{}}
+\newlabel{tab:zer-1a-r4@cref}{{[table][33][2147483647]33}{[1][21][]21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.2.4}Poles and zeros visualisation (case \texttt  {cpv MACA64 MR2023b})}{22}{subsubsection.A.2.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=4$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{22}{figure.caption.48}\protected@file@percent }
+\newlabel{fig:pz_4}{{9}{22}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.48}{}}
+\newlabel{fig:pz_4@cref}{{[figure][9][2147483647]9}{[1][21][]22}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.2.5}Approximation visualization}{22}{subsubsection.A.2.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=4$, Z4. $E$ and $F$ evaluations.\relax }}{22}{figure.caption.49}\protected@file@percent }
+\newlabel{fig:eval_4}{{10}{22}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.49}{}}
+\newlabel{fig:eval_4@cref}{{[figure][10][2147483647]10}{[1][22][]22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.3}Approximation objective $r=5$}{23}{subsection.A.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.3.1}Numerator and denominator coefficients}{23}{subsubsection.A.3.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {34}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{23}{table.caption.50}\protected@file@percent }
+\newlabel{tab:sym-1a-r5}{{34}{23}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.50}{}}
+\newlabel{tab:sym-1a-r5@cref}{{[table][34][2147483647]34}{[1][23][]23}}
+\@writefile{lot}{\contentsline {table}{\numberline {35}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{23}{table.caption.51}\protected@file@percent }
+\newlabel{tab:sym-1a-r5}{{35}{23}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.51}{}}
+\newlabel{tab:sym-1a-r5@cref}{{[table][35][2147483647]35}{[1][23][]23}}
+\@writefile{lot}{\contentsline {table}{\numberline {36}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{23}{table.caption.52}\protected@file@percent }
+\newlabel{tab:sym-1a-r5}{{36}{23}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.52}{}}
+\newlabel{tab:sym-1a-r5@cref}{{[table][36][2147483647]36}{[1][23][]23}}
+\@writefile{lot}{\contentsline {table}{\numberline {37}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{24}{table.caption.53}\protected@file@percent }
+\newlabel{tab:sym-1a-r5}{{37}{24}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.53}{}}
+\newlabel{tab:sym-1a-r5@cref}{{[table][37][2147483647]37}{[1][23][]24}}
+\@writefile{lot}{\contentsline {table}{\numberline {38}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{24}{table.caption.54}\protected@file@percent }
+\newlabel{tab:sym-1a-r5}{{38}{24}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=5$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.54}{}}
+\newlabel{tab:sym-1a-r5@cref}{{[table][38][2147483647]38}{[1][23][]24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Case \texttt  {1a}, $r=5$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{24}{figure.caption.55}\protected@file@percent }
+\newlabel{fig:numden_5}{{11}{24}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.55}{}}
+\newlabel{fig:numden_5@cref}{{[figure][11][2147483647]11}{[1][24][]24}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.3.2}Poles}{25}{subsubsection.A.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {39}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=5$, Z4: poles.\relax }}{25}{table.caption.56}\protected@file@percent }
+\newlabel{tab:pol-1a-r5}{{39}{25}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=5$, Z4: poles.\relax }{table.caption.56}{}}
+\newlabel{tab:pol-1a-r5@cref}{{[table][39][2147483647]39}{[1][24][]25}}
+\@writefile{lot}{\contentsline {table}{\numberline {40}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=5$, Z4: poles.\relax }}{25}{table.caption.57}\protected@file@percent }
+\newlabel{tab:pol-1a-r5}{{40}{25}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=5$, Z4: poles.\relax }{table.caption.57}{}}
+\newlabel{tab:pol-1a-r5@cref}{{[table][40][2147483647]40}{[1][25][]25}}
+\@writefile{lot}{\contentsline {table}{\numberline {41}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=5$, Z4: poles.\relax }}{25}{table.caption.58}\protected@file@percent }
+\newlabel{tab:pol-1a-r5}{{41}{25}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=5$, Z4: poles.\relax }{table.caption.58}{}}
+\newlabel{tab:pol-1a-r5@cref}{{[table][41][2147483647]41}{[1][25][]25}}
+\@writefile{lot}{\contentsline {table}{\numberline {42}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=5$, Z4: poles.\relax }}{25}{table.caption.59}\protected@file@percent }
+\newlabel{tab:pol-1a-r5}{{42}{25}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=5$, Z4: poles.\relax }{table.caption.59}{}}
+\newlabel{tab:pol-1a-r5@cref}{{[table][42][2147483647]42}{[1][25][]25}}
+\@writefile{lot}{\contentsline {table}{\numberline {43}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=5$, Z4: poles.\relax }}{25}{table.caption.60}\protected@file@percent }
+\newlabel{tab:pol-1a-r5}{{43}{25}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=5$, Z4: poles.\relax }{table.caption.60}{}}
+\newlabel{tab:pol-1a-r5@cref}{{[table][43][2147483647]43}{[1][25][]25}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.3.3}Zeros}{25}{subsubsection.A.3.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {44}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=5$, Z4: zeros.\relax }}{26}{table.caption.61}\protected@file@percent }
+\newlabel{tab:zer-1a-r5}{{44}{26}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=5$, Z4: zeros.\relax }{table.caption.61}{}}
+\newlabel{tab:zer-1a-r5@cref}{{[table][44][2147483647]44}{[1][25][]26}}
+\@writefile{lot}{\contentsline {table}{\numberline {45}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=5$, Z4: zeros.\relax }}{26}{table.caption.62}\protected@file@percent }
+\newlabel{tab:zer-1a-r5}{{45}{26}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=5$, Z4: zeros.\relax }{table.caption.62}{}}
+\newlabel{tab:zer-1a-r5@cref}{{[table][45][2147483647]45}{[1][25][]26}}
+\@writefile{lot}{\contentsline {table}{\numberline {46}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=5$, Z4: zeros.\relax }}{26}{table.caption.63}\protected@file@percent }
+\newlabel{tab:zer-1a-r5}{{46}{26}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=5$, Z4: zeros.\relax }{table.caption.63}{}}
+\newlabel{tab:zer-1a-r5@cref}{{[table][46][2147483647]46}{[1][26][]26}}
+\@writefile{lot}{\contentsline {table}{\numberline {47}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=5$, Z4: zeros.\relax }}{26}{table.caption.64}\protected@file@percent }
+\newlabel{tab:zer-1a-r5}{{47}{26}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=5$, Z4: zeros.\relax }{table.caption.64}{}}
+\newlabel{tab:zer-1a-r5@cref}{{[table][47][2147483647]47}{[1][26][]26}}
+\@writefile{lot}{\contentsline {table}{\numberline {48}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=5$, Z4: zeros.\relax }}{26}{table.caption.65}\protected@file@percent }
+\newlabel{tab:zer-1a-r5}{{48}{26}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=5$, Z4: zeros.\relax }{table.caption.65}{}}
+\newlabel{tab:zer-1a-r5@cref}{{[table][48][2147483647]48}{[1][26][]26}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.3.4}Poles and zeros visualisation (case \texttt  {cpv MACA64 MR2023b})}{27}{subsubsection.A.3.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=5$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{27}{figure.caption.66}\protected@file@percent }
+\newlabel{fig:pz_5}{{12}{27}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.66}{}}
+\newlabel{fig:pz_5@cref}{{[figure][12][2147483647]12}{[1][26][]27}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.3.5}Approximation visualization}{27}{subsubsection.A.3.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=5$, Z4. $E$ and $F$ evaluations.\relax }}{27}{figure.caption.67}\protected@file@percent }
+\newlabel{fig:eval_5}{{13}{27}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.67}{}}
+\newlabel{fig:eval_5@cref}{{[figure][13][2147483647]13}{[1][27][]27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.4}Approximation objective $r=6$}{28}{subsection.A.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.4.1}Numerator and denominator coefficients}{28}{subsubsection.A.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {49}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{28}{table.caption.68}\protected@file@percent }
+\newlabel{tab:sym-1a-r6}{{49}{28}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.68}{}}
+\newlabel{tab:sym-1a-r6@cref}{{[table][49][2147483647]49}{[1][28][]28}}
+\@writefile{lot}{\contentsline {table}{\numberline {50}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{28}{table.caption.69}\protected@file@percent }
+\newlabel{tab:sym-1a-r6}{{50}{28}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.69}{}}
+\newlabel{tab:sym-1a-r6@cref}{{[table][50][2147483647]50}{[1][28][]28}}
+\@writefile{lot}{\contentsline {table}{\numberline {51}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{28}{table.caption.70}\protected@file@percent }
+\newlabel{tab:sym-1a-r6}{{51}{28}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.70}{}}
+\newlabel{tab:sym-1a-r6@cref}{{[table][51][2147483647]51}{[1][28][]28}}
+\@writefile{lot}{\contentsline {table}{\numberline {52}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{29}{table.caption.71}\protected@file@percent }
+\newlabel{tab:sym-1a-r6}{{52}{29}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.71}{}}
+\newlabel{tab:sym-1a-r6@cref}{{[table][52][2147483647]52}{[1][28][]29}}
+\@writefile{lot}{\contentsline {table}{\numberline {53}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{29}{table.caption.72}\protected@file@percent }
+\newlabel{tab:sym-1a-r6}{{53}{29}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=6$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.72}{}}
+\newlabel{tab:sym-1a-r6@cref}{{[table][53][2147483647]53}{[1][28][]29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Case \texttt  {1a}, $r=6$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{30}{figure.caption.73}\protected@file@percent }
+\newlabel{fig:numden_6}{{14}{30}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.73}{}}
+\newlabel{fig:numden_6@cref}{{[figure][14][2147483647]14}{[1][29][]30}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.4.2}Poles}{30}{subsubsection.A.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {54}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=6$, Z4: poles.\relax }}{30}{table.caption.74}\protected@file@percent }
+\newlabel{tab:pol-1a-r6}{{54}{30}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=6$, Z4: poles.\relax }{table.caption.74}{}}
+\newlabel{tab:pol-1a-r6@cref}{{[table][54][2147483647]54}{[1][30][]30}}
+\@writefile{lot}{\contentsline {table}{\numberline {55}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=6$, Z4: poles.\relax }}{30}{table.caption.75}\protected@file@percent }
+\newlabel{tab:pol-1a-r6}{{55}{30}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=6$, Z4: poles.\relax }{table.caption.75}{}}
+\newlabel{tab:pol-1a-r6@cref}{{[table][55][2147483647]55}{[1][30][]30}}
+\@writefile{lot}{\contentsline {table}{\numberline {56}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=6$, Z4: poles.\relax }}{31}{table.caption.76}\protected@file@percent }
+\newlabel{tab:pol-1a-r6}{{56}{31}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=6$, Z4: poles.\relax }{table.caption.76}{}}
+\newlabel{tab:pol-1a-r6@cref}{{[table][56][2147483647]56}{[1][30][]31}}
+\@writefile{lot}{\contentsline {table}{\numberline {57}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=6$, Z4: poles.\relax }}{31}{table.caption.77}\protected@file@percent }
+\newlabel{tab:pol-1a-r6}{{57}{31}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=6$, Z4: poles.\relax }{table.caption.77}{}}
+\newlabel{tab:pol-1a-r6@cref}{{[table][57][2147483647]57}{[1][30][]31}}
+\@writefile{lot}{\contentsline {table}{\numberline {58}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=6$, Z4: poles.\relax }}{31}{table.caption.78}\protected@file@percent }
+\newlabel{tab:pol-1a-r6}{{58}{31}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=6$, Z4: poles.\relax }{table.caption.78}{}}
+\newlabel{tab:pol-1a-r6@cref}{{[table][58][2147483647]58}{[1][31][]31}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.4.3}Zeros}{31}{subsubsection.A.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {59}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=6$, Z4: zeros.\relax }}{31}{table.caption.79}\protected@file@percent }
+\newlabel{tab:zer-1a-r6}{{59}{31}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=6$, Z4: zeros.\relax }{table.caption.79}{}}
+\newlabel{tab:zer-1a-r6@cref}{{[table][59][2147483647]59}{[1][31][]31}}
+\@writefile{lot}{\contentsline {table}{\numberline {60}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=6$, Z4: zeros.\relax }}{31}{table.caption.80}\protected@file@percent }
+\newlabel{tab:zer-1a-r6}{{60}{31}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=6$, Z4: zeros.\relax }{table.caption.80}{}}
+\newlabel{tab:zer-1a-r6@cref}{{[table][60][2147483647]60}{[1][31][]31}}
+\@writefile{lot}{\contentsline {table}{\numberline {61}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=6$, Z4: zeros.\relax }}{32}{table.caption.81}\protected@file@percent }
+\newlabel{tab:zer-1a-r6}{{61}{32}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=6$, Z4: zeros.\relax }{table.caption.81}{}}
+\newlabel{tab:zer-1a-r6@cref}{{[table][61][2147483647]61}{[1][31][]32}}
+\@writefile{lot}{\contentsline {table}{\numberline {62}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=6$, Z4: zeros.\relax }}{32}{table.caption.82}\protected@file@percent }
+\newlabel{tab:zer-1a-r6}{{62}{32}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=6$, Z4: zeros.\relax }{table.caption.82}{}}
+\newlabel{tab:zer-1a-r6@cref}{{[table][62][2147483647]62}{[1][31][]32}}
+\@writefile{lot}{\contentsline {table}{\numberline {63}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=6$, Z4: zeros.\relax }}{32}{table.caption.83}\protected@file@percent }
+\newlabel{tab:zer-1a-r6}{{63}{32}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=6$, Z4: zeros.\relax }{table.caption.83}{}}
+\newlabel{tab:zer-1a-r6@cref}{{[table][63][2147483647]63}{[1][32][]32}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.4.4}Poles and zeros visualisation (case \texttt  {cpv MACA64 MR2023b})}{32}{subsubsection.A.4.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=6$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{32}{figure.caption.84}\protected@file@percent }
+\newlabel{fig:pz_6}{{15}{32}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.84}{}}
+\newlabel{fig:pz_6@cref}{{[figure][15][2147483647]15}{[1][32][]32}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.4.5}Approximation visualization}{33}{subsubsection.A.4.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=6$, Z4. $E$ and $F$ evaluations.\relax }}{33}{figure.caption.85}\protected@file@percent }
+\newlabel{fig:eval_6}{{16}{33}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.85}{}}
+\newlabel{fig:eval_6@cref}{{[figure][16][2147483647]16}{[1][32][]33}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.5}Approximation objective $r=7$}{34}{subsection.A.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.5.1}Numerator and denominator coefficients}{34}{subsubsection.A.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {64}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{34}{table.caption.86}\protected@file@percent }
+\newlabel{tab:sym-1a-r7}{{64}{34}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.86}{}}
+\newlabel{tab:sym-1a-r7@cref}{{[table][64][2147483647]64}{[1][34][]34}}
+\@writefile{lot}{\contentsline {table}{\numberline {65}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{34}{table.caption.87}\protected@file@percent }
+\newlabel{tab:sym-1a-r7}{{65}{34}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.87}{}}
+\newlabel{tab:sym-1a-r7@cref}{{[table][65][2147483647]65}{[1][34][]34}}
+\@writefile{lot}{\contentsline {table}{\numberline {66}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{35}{table.caption.88}\protected@file@percent }
+\newlabel{tab:sym-1a-r7}{{66}{35}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.88}{}}
+\newlabel{tab:sym-1a-r7@cref}{{[table][66][2147483647]66}{[1][34][]35}}
+\@writefile{lot}{\contentsline {table}{\numberline {67}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{35}{table.caption.89}\protected@file@percent }
+\newlabel{tab:sym-1a-r7}{{67}{35}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.89}{}}
+\newlabel{tab:sym-1a-r7@cref}{{[table][67][2147483647]67}{[1][34][]35}}
+\@writefile{lot}{\contentsline {table}{\numberline {68}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{35}{table.caption.90}\protected@file@percent }
+\newlabel{tab:sym-1a-r7}{{68}{35}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=7$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.90}{}}
+\newlabel{tab:sym-1a-r7@cref}{{[table][68][2147483647]68}{[1][35][]35}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Case \texttt  {1a}, $r=7$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{36}{figure.caption.91}\protected@file@percent }
+\newlabel{fig:numden_7}{{17}{36}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.91}{}}
+\newlabel{fig:numden_7@cref}{{[figure][17][2147483647]17}{[1][35][]36}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.5.2}Poles}{36}{subsubsection.A.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {69}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=7$, Z4: poles.\relax }}{36}{table.caption.92}\protected@file@percent }
+\newlabel{tab:pol-1a-r7}{{69}{36}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=7$, Z4: poles.\relax }{table.caption.92}{}}
+\newlabel{tab:pol-1a-r7@cref}{{[table][69][2147483647]69}{[1][36][]36}}
+\@writefile{lot}{\contentsline {table}{\numberline {70}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=7$, Z4: poles.\relax }}{36}{table.caption.93}\protected@file@percent }
+\newlabel{tab:pol-1a-r7}{{70}{36}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=7$, Z4: poles.\relax }{table.caption.93}{}}
+\newlabel{tab:pol-1a-r7@cref}{{[table][70][2147483647]70}{[1][36][]36}}
+\@writefile{lot}{\contentsline {table}{\numberline {71}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=7$, Z4: poles.\relax }}{37}{table.caption.94}\protected@file@percent }
+\newlabel{tab:pol-1a-r7}{{71}{37}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=7$, Z4: poles.\relax }{table.caption.94}{}}
+\newlabel{tab:pol-1a-r7@cref}{{[table][71][2147483647]71}{[1][36][]37}}
+\@writefile{lot}{\contentsline {table}{\numberline {72}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=7$, Z4: poles.\relax }}{37}{table.caption.95}\protected@file@percent }
+\newlabel{tab:pol-1a-r7}{{72}{37}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=7$, Z4: poles.\relax }{table.caption.95}{}}
+\newlabel{tab:pol-1a-r7@cref}{{[table][72][2147483647]72}{[1][36][]37}}
+\@writefile{lot}{\contentsline {table}{\numberline {73}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=7$, Z4: poles.\relax }}{37}{table.caption.96}\protected@file@percent }
+\newlabel{tab:pol-1a-r7}{{73}{37}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=7$, Z4: poles.\relax }{table.caption.96}{}}
+\newlabel{tab:pol-1a-r7@cref}{{[table][73][2147483647]73}{[1][37][]37}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.5.3}Zeros}{37}{subsubsection.A.5.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {74}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=7$, Z4: zeros.\relax }}{37}{table.caption.97}\protected@file@percent }
+\newlabel{tab:zer-1a-r7}{{74}{37}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=7$, Z4: zeros.\relax }{table.caption.97}{}}
+\newlabel{tab:zer-1a-r7@cref}{{[table][74][2147483647]74}{[1][37][]37}}
+\@writefile{lot}{\contentsline {table}{\numberline {75}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=7$, Z4: zeros.\relax }}{37}{table.caption.98}\protected@file@percent }
+\newlabel{tab:zer-1a-r7}{{75}{37}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=7$, Z4: zeros.\relax }{table.caption.98}{}}
+\newlabel{tab:zer-1a-r7@cref}{{[table][75][2147483647]75}{[1][37][]37}}
+\@writefile{lot}{\contentsline {table}{\numberline {76}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=7$, Z4: zeros.\relax }}{38}{table.caption.99}\protected@file@percent }
+\newlabel{tab:zer-1a-r7}{{76}{38}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=7$, Z4: zeros.\relax }{table.caption.99}{}}
+\newlabel{tab:zer-1a-r7@cref}{{[table][76][2147483647]76}{[1][37][]38}}
+\@writefile{lot}{\contentsline {table}{\numberline {77}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=7$, Z4: zeros.\relax }}{38}{table.caption.100}\protected@file@percent }
+\newlabel{tab:zer-1a-r7}{{77}{38}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=7$, Z4: zeros.\relax }{table.caption.100}{}}
+\newlabel{tab:zer-1a-r7@cref}{{[table][77][2147483647]77}{[1][37][]38}}
+\@writefile{lot}{\contentsline {table}{\numberline {78}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=7$, Z4: zeros.\relax }}{38}{table.caption.101}\protected@file@percent }
+\newlabel{tab:zer-1a-r7}{{78}{38}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=7$, Z4: zeros.\relax }{table.caption.101}{}}
+\newlabel{tab:zer-1a-r7@cref}{{[table][78][2147483647]78}{[1][38][]38}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.5.4}Poles and zeros visualisation (case \texttt  {cpv MACA64 MR2023b})}{38}{subsubsection.A.5.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=7$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{38}{figure.caption.102}\protected@file@percent }
+\newlabel{fig:pz_7}{{18}{38}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.102}{}}
+\newlabel{fig:pz_7@cref}{{[figure][18][2147483647]18}{[1][38][]38}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.5.5}Approximation visualization}{39}{subsubsection.A.5.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=7$, Z4. $E$ and $F$ evaluations.\relax }}{39}{figure.caption.103}\protected@file@percent }
+\newlabel{fig:eval_7}{{19}{39}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.103}{}}
+\newlabel{fig:eval_7@cref}{{[figure][19][2147483647]19}{[1][38][]39}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.6}Approximation objective $r=8$}{40}{subsection.A.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.6.1}Numerator and denominator coefficients}{40}{subsubsection.A.6.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {79}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{40}{table.caption.104}\protected@file@percent }
+\newlabel{tab:sym-1a-r8}{{79}{40}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.104}{}}
+\newlabel{tab:sym-1a-r8@cref}{{[table][79][2147483647]79}{[1][40][]40}}
+\@writefile{lot}{\contentsline {table}{\numberline {80}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{40}{table.caption.105}\protected@file@percent }
+\newlabel{tab:sym-1a-r8}{{80}{40}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.105}{}}
+\newlabel{tab:sym-1a-r8@cref}{{[table][80][2147483647]80}{[1][40][]40}}
+\@writefile{lot}{\contentsline {table}{\numberline {81}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{41}{table.caption.106}\protected@file@percent }
+\newlabel{tab:sym-1a-r8}{{81}{41}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.106}{}}
+\newlabel{tab:sym-1a-r8@cref}{{[table][81][2147483647]81}{[1][40][]41}}
+\@writefile{lot}{\contentsline {table}{\numberline {82}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{41}{table.caption.107}\protected@file@percent }
+\newlabel{tab:sym-1a-r8}{{82}{41}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.107}{}}
+\newlabel{tab:sym-1a-r8@cref}{{[table][82][2147483647]82}{[1][40][]41}}
+\@writefile{lot}{\contentsline {table}{\numberline {83}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{42}{table.caption.108}\protected@file@percent }
+\newlabel{tab:sym-1a-r8}{{83}{42}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=8$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.108}{}}
+\newlabel{tab:sym-1a-r8@cref}{{[table][83][2147483647]83}{[1][41][]42}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Case \texttt  {1a}, $r=8$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{42}{figure.caption.109}\protected@file@percent }
+\newlabel{fig:numden_8}{{20}{42}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.109}{}}
+\newlabel{fig:numden_8@cref}{{[figure][20][2147483647]20}{[1][42][]42}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.6.2}Poles}{42}{subsubsection.A.6.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {84}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=8$, Z4: poles.\relax }}{43}{table.caption.110}\protected@file@percent }
+\newlabel{tab:pol-1a-r8}{{84}{43}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=8$, Z4: poles.\relax }{table.caption.110}{}}
+\newlabel{tab:pol-1a-r8@cref}{{[table][84][2147483647]84}{[1][42][]43}}
+\@writefile{lot}{\contentsline {table}{\numberline {85}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=8$, Z4: poles.\relax }}{43}{table.caption.111}\protected@file@percent }
+\newlabel{tab:pol-1a-r8}{{85}{43}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=8$, Z4: poles.\relax }{table.caption.111}{}}
+\newlabel{tab:pol-1a-r8@cref}{{[table][85][2147483647]85}{[1][42][]43}}
+\@writefile{lot}{\contentsline {table}{\numberline {86}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=8$, Z4: poles.\relax }}{43}{table.caption.112}\protected@file@percent }
+\newlabel{tab:pol-1a-r8}{{86}{43}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=8$, Z4: poles.\relax }{table.caption.112}{}}
+\newlabel{tab:pol-1a-r8@cref}{{[table][86][2147483647]86}{[1][43][]43}}
+\@writefile{lot}{\contentsline {table}{\numberline {87}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=8$, Z4: poles.\relax }}{43}{table.caption.113}\protected@file@percent }
+\newlabel{tab:pol-1a-r8}{{87}{43}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=8$, Z4: poles.\relax }{table.caption.113}{}}
+\newlabel{tab:pol-1a-r8@cref}{{[table][87][2147483647]87}{[1][43][]43}}
+\@writefile{lot}{\contentsline {table}{\numberline {88}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=8$, Z4: poles.\relax }}{43}{table.caption.114}\protected@file@percent }
+\newlabel{tab:pol-1a-r8}{{88}{43}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=8$, Z4: poles.\relax }{table.caption.114}{}}
+\newlabel{tab:pol-1a-r8@cref}{{[table][88][2147483647]88}{[1][43][]43}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.6.3}Zeros}{44}{subsubsection.A.6.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {89}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=8$, Z4: zeros.\relax }}{44}{table.caption.115}\protected@file@percent }
+\newlabel{tab:zer-1a-r8}{{89}{44}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=8$, Z4: zeros.\relax }{table.caption.115}{}}
+\newlabel{tab:zer-1a-r8@cref}{{[table][89][2147483647]89}{[1][43][]44}}
+\@writefile{lot}{\contentsline {table}{\numberline {90}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=8$, Z4: zeros.\relax }}{44}{table.caption.116}\protected@file@percent }
+\newlabel{tab:zer-1a-r8}{{90}{44}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=8$, Z4: zeros.\relax }{table.caption.116}{}}
+\newlabel{tab:zer-1a-r8@cref}{{[table][90][2147483647]90}{[1][44][]44}}
+\@writefile{lot}{\contentsline {table}{\numberline {91}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=8$, Z4: zeros.\relax }}{44}{table.caption.117}\protected@file@percent }
+\newlabel{tab:zer-1a-r8}{{91}{44}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=8$, Z4: zeros.\relax }{table.caption.117}{}}
+\newlabel{tab:zer-1a-r8@cref}{{[table][91][2147483647]91}{[1][44][]44}}
+\@writefile{lot}{\contentsline {table}{\numberline {92}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=8$, Z4: zeros.\relax }}{44}{table.caption.118}\protected@file@percent }
+\newlabel{tab:zer-1a-r8}{{92}{44}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=8$, Z4: zeros.\relax }{table.caption.118}{}}
+\newlabel{tab:zer-1a-r8@cref}{{[table][92][2147483647]92}{[1][44][]44}}
+\@writefile{lot}{\contentsline {table}{\numberline {93}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=8$, Z4: zeros.\relax }}{45}{table.caption.119}\protected@file@percent }
+\newlabel{tab:zer-1a-r8}{{93}{45}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=8$, Z4: zeros.\relax }{table.caption.119}{}}
+\newlabel{tab:zer-1a-r8@cref}{{[table][93][2147483647]93}{[1][44][]45}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.6.4}Poles and zeros visualisation (case \texttt  {cpv MACA64 MR2023b})}{45}{subsubsection.A.6.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=8$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{45}{figure.caption.120}\protected@file@percent }
+\newlabel{fig:pz_8}{{21}{45}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.120}{}}
+\newlabel{fig:pz_8@cref}{{[figure][21][2147483647]21}{[1][45][]45}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.6.5}Approximation visualization}{45}{subsubsection.A.6.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=8$, Z4. $E$ and $F$ evaluations.\relax }}{45}{figure.caption.121}\protected@file@percent }
+\newlabel{fig:eval_8}{{22}{45}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.121}{}}
+\newlabel{fig:eval_8@cref}{{[figure][22][2147483647]22}{[1][45][]45}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.7}Approximation objective $r=9$}{46}{subsection.A.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.7.1}Numerator and denominator coefficients}{46}{subsubsection.A.7.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {94}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{46}{table.caption.122}\protected@file@percent }
+\newlabel{tab:sym-1a-r9}{{94}{46}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.122}{}}
+\newlabel{tab:sym-1a-r9@cref}{{[table][94][2147483647]94}{[1][46][]46}}
+\@writefile{lot}{\contentsline {table}{\numberline {95}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{46}{table.caption.123}\protected@file@percent }
+\newlabel{tab:sym-1a-r9}{{95}{46}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.123}{}}
+\newlabel{tab:sym-1a-r9@cref}{{[table][95][2147483647]95}{[1][46][]46}}
+\@writefile{lot}{\contentsline {table}{\numberline {96}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{47}{table.caption.124}\protected@file@percent }
+\newlabel{tab:sym-1a-r9}{{96}{47}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.124}{}}
+\newlabel{tab:sym-1a-r9@cref}{{[table][96][2147483647]96}{[1][46][]47}}
+\@writefile{lot}{\contentsline {table}{\numberline {97}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{47}{table.caption.125}\protected@file@percent }
+\newlabel{tab:sym-1a-r9}{{97}{47}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.125}{}}
+\newlabel{tab:sym-1a-r9@cref}{{[table][97][2147483647]97}{[1][46][]47}}
+\@writefile{lot}{\contentsline {table}{\numberline {98}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{48}{table.caption.126}\protected@file@percent }
+\newlabel{tab:sym-1a-r9}{{98}{48}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=9$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.126}{}}
+\newlabel{tab:sym-1a-r9@cref}{{[table][98][2147483647]98}{[1][47][]48}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Case \texttt  {1a}, $r=9$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{48}{figure.caption.127}\protected@file@percent }
+\newlabel{fig:numden_9}{{23}{48}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.127}{}}
+\newlabel{fig:numden_9@cref}{{[figure][23][2147483647]23}{[1][48][]48}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.7.2}Poles}{48}{subsubsection.A.7.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {99}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=9$, Z4: poles.\relax }}{49}{table.caption.128}\protected@file@percent }
+\newlabel{tab:pol-1a-r9}{{99}{49}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=9$, Z4: poles.\relax }{table.caption.128}{}}
+\newlabel{tab:pol-1a-r9@cref}{{[table][99][2147483647]99}{[1][48][]49}}
+\@writefile{lot}{\contentsline {table}{\numberline {100}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=9$, Z4: poles.\relax }}{49}{table.caption.129}\protected@file@percent }
+\newlabel{tab:pol-1a-r9}{{100}{49}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=9$, Z4: poles.\relax }{table.caption.129}{}}
+\newlabel{tab:pol-1a-r9@cref}{{[table][100][2147483647]100}{[1][48][]49}}
+\@writefile{lot}{\contentsline {table}{\numberline {101}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=9$, Z4: poles.\relax }}{49}{table.caption.130}\protected@file@percent }
+\newlabel{tab:pol-1a-r9}{{101}{49}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=9$, Z4: poles.\relax }{table.caption.130}{}}
+\newlabel{tab:pol-1a-r9@cref}{{[table][101][2147483647]101}{[1][49][]49}}
+\@writefile{lot}{\contentsline {table}{\numberline {102}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=9$, Z4: poles.\relax }}{49}{table.caption.131}\protected@file@percent }
+\newlabel{tab:pol-1a-r9}{{102}{49}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=9$, Z4: poles.\relax }{table.caption.131}{}}
+\newlabel{tab:pol-1a-r9@cref}{{[table][102][2147483647]102}{[1][49][]49}}
+\@writefile{lot}{\contentsline {table}{\numberline {103}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=9$, Z4: poles.\relax }}{50}{table.caption.132}\protected@file@percent }
+\newlabel{tab:pol-1a-r9}{{103}{50}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=9$, Z4: poles.\relax }{table.caption.132}{}}
+\newlabel{tab:pol-1a-r9@cref}{{[table][103][2147483647]103}{[1][49][]50}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.7.3}Zeros}{50}{subsubsection.A.7.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {104}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=9$, Z4: zeros.\relax }}{50}{table.caption.133}\protected@file@percent }
+\newlabel{tab:zer-1a-r9}{{104}{50}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=9$, Z4: zeros.\relax }{table.caption.133}{}}
+\newlabel{tab:zer-1a-r9@cref}{{[table][104][2147483647]104}{[1][50][]50}}
+\@writefile{lot}{\contentsline {table}{\numberline {105}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=9$, Z4: zeros.\relax }}{50}{table.caption.134}\protected@file@percent }
+\newlabel{tab:zer-1a-r9}{{105}{50}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=9$, Z4: zeros.\relax }{table.caption.134}{}}
+\newlabel{tab:zer-1a-r9@cref}{{[table][105][2147483647]105}{[1][50][]50}}
+\@writefile{lot}{\contentsline {table}{\numberline {106}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=9$, Z4: zeros.\relax }}{50}{table.caption.135}\protected@file@percent }
+\newlabel{tab:zer-1a-r9}{{106}{50}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=9$, Z4: zeros.\relax }{table.caption.135}{}}
+\newlabel{tab:zer-1a-r9@cref}{{[table][106][2147483647]106}{[1][50][]50}}
+\@writefile{lot}{\contentsline {table}{\numberline {107}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=9$, Z4: zeros.\relax }}{51}{table.caption.136}\protected@file@percent }
+\newlabel{tab:zer-1a-r9}{{107}{51}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=9$, Z4: zeros.\relax }{table.caption.136}{}}
+\newlabel{tab:zer-1a-r9@cref}{{[table][107][2147483647]107}{[1][50][]51}}
+\@writefile{lot}{\contentsline {table}{\numberline {108}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=9$, Z4: zeros.\relax }}{51}{table.caption.137}\protected@file@percent }
+\newlabel{tab:zer-1a-r9}{{108}{51}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=9$, Z4: zeros.\relax }{table.caption.137}{}}
+\newlabel{tab:zer-1a-r9@cref}{{[table][108][2147483647]108}{[1][50][]51}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.7.4}Poles and zeros visualisation (case \texttt  {cpv MACA64 MR2023b})}{51}{subsubsection.A.7.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=9$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{51}{figure.caption.138}\protected@file@percent }
+\newlabel{fig:pz_9}{{24}{51}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.138}{}}
+\newlabel{fig:pz_9@cref}{{[figure][24][2147483647]24}{[1][51][]51}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.7.5}Approximation visualization}{52}{subsubsection.A.7.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=9$, Z4. $E$ and $F$ evaluations.\relax }}{52}{figure.caption.139}\protected@file@percent }
+\newlabel{fig:eval_9}{{25}{52}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.139}{}}
+\newlabel{fig:eval_9@cref}{{[figure][25][2147483647]25}{[1][51][]52}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.8}Approximation objective $r=10$}{53}{subsection.A.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.8.1}Numerator and denominator coefficients}{53}{subsubsection.A.8.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {109}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{53}{table.caption.140}\protected@file@percent }
+\newlabel{tab:sym-1a-r10}{{109}{53}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.140}{}}
+\newlabel{tab:sym-1a-r10@cref}{{[table][109][2147483647]109}{[1][53][]53}}
+\@writefile{lot}{\contentsline {table}{\numberline {110}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{53}{table.caption.141}\protected@file@percent }
+\newlabel{tab:sym-1a-r10}{{110}{53}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.141}{}}
+\newlabel{tab:sym-1a-r10@cref}{{[table][110][2147483647]110}{[1][53][]53}}
+\@writefile{lot}{\contentsline {table}{\numberline {111}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{54}{table.caption.142}\protected@file@percent }
+\newlabel{tab:sym-1a-r10}{{111}{54}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.142}{}}
+\newlabel{tab:sym-1a-r10@cref}{{[table][111][2147483647]111}{[1][53][]54}}
+\@writefile{lot}{\contentsline {table}{\numberline {112}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{54}{table.caption.143}\protected@file@percent }
+\newlabel{tab:sym-1a-r10}{{112}{54}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.143}{}}
+\newlabel{tab:sym-1a-r10@cref}{{[table][112][2147483647]112}{[1][53][]54}}
+\@writefile{lot}{\contentsline {table}{\numberline {113}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }}{55}{table.caption.144}\protected@file@percent }
+\newlabel{tab:sym-1a-r10}{{113}{55}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=10$, Z4: numerator (first lines) and denominator (last lines) coefficients.\relax }{table.caption.144}{}}
+\newlabel{tab:sym-1a-r10@cref}{{[table][113][2147483647]113}{[1][54][]55}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Case \texttt  {1a}, $r=10$, Z4. Numerator and denominator dispersion over the different platforms.\relax }}{55}{figure.caption.145}\protected@file@percent }
+\newlabel{fig:numden_10}{{26}{55}{Case \texttt {1a}, $r=\n $, Z4. Numerator and denominator dispersion over the different platforms.\relax }{figure.caption.145}{}}
+\newlabel{fig:numden_10@cref}{{[figure][26][2147483647]26}{[1][55][]55}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.8.2}Poles}{55}{subsubsection.A.8.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {114}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=10$, Z4: poles.\relax }}{56}{table.caption.146}\protected@file@percent }
+\newlabel{tab:pol-1a-r10}{{114}{56}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=10$, Z4: poles.\relax }{table.caption.146}{}}
+\newlabel{tab:pol-1a-r10@cref}{{[table][114][2147483647]114}{[1][55][]56}}
+\@writefile{lot}{\contentsline {table}{\numberline {115}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=10$, Z4: poles.\relax }}{56}{table.caption.147}\protected@file@percent }
+\newlabel{tab:pol-1a-r10}{{115}{56}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=10$, Z4: poles.\relax }{table.caption.147}{}}
+\newlabel{tab:pol-1a-r10@cref}{{[table][115][2147483647]115}{[1][55][]56}}
+\@writefile{lot}{\contentsline {table}{\numberline {116}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=10$, Z4: poles.\relax }}{56}{table.caption.148}\protected@file@percent }
+\newlabel{tab:pol-1a-r10}{{116}{56}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=10$, Z4: poles.\relax }{table.caption.148}{}}
+\newlabel{tab:pol-1a-r10@cref}{{[table][116][2147483647]116}{[1][56][]56}}
+\@writefile{lot}{\contentsline {table}{\numberline {117}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=10$, Z4: poles.\relax }}{56}{table.caption.149}\protected@file@percent }
+\newlabel{tab:pol-1a-r10}{{117}{56}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=10$, Z4: poles.\relax }{table.caption.149}{}}
+\newlabel{tab:pol-1a-r10@cref}{{[table][117][2147483647]117}{[1][56][]56}}
+\@writefile{lot}{\contentsline {table}{\numberline {118}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=10$, Z4: poles.\relax }}{57}{table.caption.150}\protected@file@percent }
+\newlabel{tab:pol-1a-r10}{{118}{57}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=10$, Z4: poles.\relax }{table.caption.150}{}}
+\newlabel{tab:pol-1a-r10@cref}{{[table][118][2147483647]118}{[1][56][]57}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.8.3}Zeros}{57}{subsubsection.A.8.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {119}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=10$, Z4: zeros.\relax }}{57}{table.caption.151}\protected@file@percent }
+\newlabel{tab:zer-1a-r10}{{119}{57}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=10$, Z4: zeros.\relax }{table.caption.151}{}}
+\newlabel{tab:zer-1a-r10@cref}{{[table][119][2147483647]119}{[1][57][]57}}
+\@writefile{lot}{\contentsline {table}{\numberline {120}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2022b}), $r=10$, Z4: zeros.\relax }}{57}{table.caption.152}\protected@file@percent }
+\newlabel{tab:zer-1a-r10}{{120}{57}{Case \texttt {1a} (\texttt {cpv MACA64 MR2022b}), $r=10$, Z4: zeros.\relax }{table.caption.152}{}}
+\newlabel{tab:zer-1a-r10@cref}{{[table][120][2147483647]120}{[1][57][]57}}
+\@writefile{lot}{\contentsline {table}{\numberline {121}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv PCWIN64 MR2025b}), $r=10$, Z4: zeros.\relax }}{57}{table.caption.153}\protected@file@percent }
+\newlabel{tab:zer-1a-r10}{{121}{57}{Case \texttt {1a} (\texttt {cpv PCWIN64 MR2025b}), $r=10$, Z4: zeros.\relax }{table.caption.153}{}}
+\newlabel{tab:zer-1a-r10@cref}{{[table][121][2147483647]121}{[1][57][]57}}
+\@writefile{lot}{\contentsline {table}{\numberline {122}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64 MR2025b}), $r=10$, Z4: zeros.\relax }}{58}{table.caption.154}\protected@file@percent }
+\newlabel{tab:zer-1a-r10}{{122}{58}{Case \texttt {1a} (\texttt {AlexReis PCWIN64 MR2025b}), $r=10$, Z4: zeros.\relax }{table.caption.154}{}}
+\newlabel{tab:zer-1a-r10@cref}{{[table][122][2147483647]122}{[1][57][]58}}
+\@writefile{lot}{\contentsline {table}{\numberline {123}{\ignorespaces Case \texttt  {1a} (\texttt  {AlexReis PCWIN64perso MR2017a}), $r=10$, Z4: zeros.\relax }}{58}{table.caption.155}\protected@file@percent }
+\newlabel{tab:zer-1a-r10}{{123}{58}{Case \texttt {1a} (\texttt {AlexReis PCWIN64perso MR2017a}), $r=10$, Z4: zeros.\relax }{table.caption.155}{}}
+\newlabel{tab:zer-1a-r10@cref}{{[table][123][2147483647]123}{[1][57][]58}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.8.4}Poles and zeros visualisation (case \texttt  {cpv MACA64 MR2023b})}{58}{subsubsection.A.8.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=10$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }}{58}{figure.caption.156}\protected@file@percent }
+\newlabel{fig:pz_10}{{27}{58}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.\relax }{figure.caption.156}{}}
+\newlabel{fig:pz_10@cref}{{[figure][27][2147483647]27}{[1][58][]58}}
 \bibstyle{plain}
 \bibdata{references}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.5}Approximation visualization}{44}{subsection.9.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=10$, Z4. $E$ and $F$ evaluations.\relax }}{44}{figure.caption.121}\protected@file@percent }
-\newlabel{fig:eval_10}{{24}{44}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.121}{}}
-\newlabel{fig:eval_10@cref}{{[figure][24][]24}{[1][43][]44}}
-\gdef \@abspage@last{44}
+\bibcite{akhiezer1990elements}{{1}{}{{}}{{}}}
+\bibcite{aa86}{{2}{}{{}}{{}}}
+\bibcite{abg_book}{{3}{}{{}}{{}}}
+\bibcite{morAntGI16}{{4}{}{{}}{{}}}
+\bibcite{morAntGP24}{{5}{}{{}}{{}}}
+\bibcite{ali17}{{6}{}{{}}{{}}}
+\bibcite{Da75}{{7}{}{{}}{{}}}
+\bibcite{chebfun}{{8}{}{{}}{{}}}
+\bibcite{fntb18}{{9}{}{{}}{{}}}
+\bibcite{morGosPA22}{{10}{}{{}}{{}}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.8.5}Approximation visualization}{59}{subsubsection.A.8.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Case \texttt  {1a} (\texttt  {cpv MACA64 MR2023b}), $r=10$, Z4. $E$ and $F$ evaluations.\relax }}{59}{figure.caption.157}\protected@file@percent }
+\newlabel{fig:eval_10}{{28}{59}{Case \texttt {1a} (\texttt {cpv MACA64 MR2023b}), $r=\n $, Z4. $E$ and $F$ evaluations.\relax }{figure.caption.157}{}}
+\newlabel{fig:eval_10@cref}{{[figure][28][2147483647]28}{[1][58][]59}}
+\bibcite{morIonA14}{{11}{}{{}}{{}}}
+\bibcite{Is18}{{12}{}{{}}{{}}}
+\bibcite{istace1995third}{{13}{}{{}}{{}}}
+\bibcite{morKarGA19a}{{14}{}{{}}{{}}}
+\bibcite{morKarGGetal25}{{15}{}{{}}{{}}}
+\bibcite{ajm07}{{16}{}{{}}{{}}}
+\bibcite{nakatsukasa2016computing}{{17}{}{{}}{{}}}
+\bibcite{nst18}{{18}{}{{}}{{}}}
+\bibcite{nakatsukasa2020algorithm}{{19}{}{{}}{{}}}
+\bibcite{AAAreview}{{20}{}{{}}{{}}}
+\bibcite{Po81}{{21}{}{{}}{{}}}
+\bibcite{starke1992near}{{22}{}{{}}{{}}}
+\bibcite{Tr13}{{23}{}{{}}{{}}}
+\bibcite{trefethen2024computation}{{24}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\gdef \@abspage@last{60}
