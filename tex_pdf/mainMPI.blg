@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: mainMPI.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Illegal, another \bibstyle command---line 770 of file mainMPI.aux
+ : \bibstyle
+ :          {plain}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 771 of file mainMPI.aux
+ : \bibdata
+ :         {references}
+I'm skipping whatever remains of this command
+Database file #1: references.bib
+You've used 24 entries,
+            2118 wiz_defined-function locations,
+            653 strings with 7703 characters,
+and the built_in function-call counts, 8030 in all, are:
+= -- 802
+> -- 344
+< -- 7
++ -- 140
+- -- 110
+* -- 561
+:= -- 1331
+add.period$ -- 77
+call.type$ -- 24
+change.case$ -- 120
+chr.to.int$ -- 0
+cite$ -- 24
+duplicate$ -- 300
+empty$ -- 651
+format.name$ -- 110
+if$ -- 1686
+int.to.chr$ -- 0
+int.to.str$ -- 24
+missing$ -- 28
+newline$ -- 124
+num.names$ -- 50
+pop$ -- 132
+preamble$ -- 1
+purify$ -- 102
+quote$ -- 0
+skip$ -- 200
+stack$ -- 0
+substring$ -- 567
+swap$ -- 54
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 82
+warning$ -- 0
+while$ -- 79
+width$ -- 26
+write$ -- 267
+(There were 2 error messages)

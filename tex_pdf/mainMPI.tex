@@ -1,0 +1,59 @@
+\documentclass[
+ %twocolumn, 
+ %hidelinks, 
+ hidempi, 
+ %linenumbers
+]{mpi2015-cscpreprint}
+
+% title, abstract, authors & stuff
+\input{mpi_shared}
+
+%%%Author macros
+\input{ex_math}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{remark}{Remark}
+\newtheorem{corr}{Corollary}
+\newtheorem{problem}{Problem}
+
+%%%%%%
+\definecolor{blue}{RGB}{16,97,169} % bleu onera
+\definecolor{grey}{RGB}{88, 102, 110} % gris onera 
+\definecolor{green}{RGB}{65,209,204} % turquoise
+\definecolor{orange}{RGB}{224, 131, 0} % corail
+\definecolor{pink}{RGB}{255,105,180} % rose
+\definecolor{colhl}{RGB}{152,251,152}
+\definecolor{colhl}{RGB}{211,211,211}
+
+\def\CAS{10}
+\def\NARCH{5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{body_paper}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{plain}
+\bibliography{references}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Detailed results on the two symmetric circles case}\label{app:1a}
+\input{appendix_1a}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Detailed results on multiple cases}\label{app:all}
+\input{appendix_all}
+
+
+%\bibliographystyle{plainurl}
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

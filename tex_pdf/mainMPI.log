@@ -1,226 +1,280 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.6.11)  7 AUG 2026 15:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.6.11)  7 AUG 2026 16:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**./main.tex
-(main.tex
+**./mainMPI.tex
+(mainMPI.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-05-04>
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size10.clo
-File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
-)
-\c@part=\count185
-\c@section=\count186
-\c@subsection=\count187
-\c@subsubsection=\count188
-\c@paragraph=\count189
-\c@subparagraph=\count190
-\c@figure=\count191
-\c@table=\count192
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
-)
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx
-.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+L3 programming layer <2022-05-04> (mpi2015-cscpreprint.cls
+Document Class: mpi2015-cscpreprint 2020/10/13 MPI-DCTS CSC Preprint Style
 
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kom
+a-script/scrartcl.cls
+Document Class: scrartcl 2023/07/07 v3.41 KOMA-Script document class (article)
+
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kom
+a-script/scrkbase.sty
+Package: scrkbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kom
+a-script/scrbase.sty
+Package: scrbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kom
+a-script/scrlfile.sty
+Package: scrlfile 2023/07/07 v3.41 KOMA-Script package (file load hooks)
+
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kom
+a-script/scrlfile-hook.sty
+Package: scrlfile-hook 2023/07/07 v3.41 KOMA-Script package (using LaTeX hooks)
+
+
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kom
+a-script/scrlogo.sty
+Package: scrlogo 2023/07/07 v3.41 KOMA-Script package (logo)
+)))
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.s
 ty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics
-.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
-
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/grap
-hics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 107.
-
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdft
-ex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line
+ 368.
 ))
-\Gin@req@height=\dimen139
-\Gin@req@width=\dimen140
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kom
+a-script/tocbasic.sty
+Package: tocbasic 2023/07/07 v3.41 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip47
+\scr@dte@tocline@numbox=\box50
 )
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/longtable.s
-ty
-Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip49
-\LTright=\skip50
-\LTpre=\skip51
-\LTpost=\skip52
-\LTchunksize=\count193
-\LTcapwidth=\dimen141
-\LT@head=\box50
-\LT@firsthead=\box51
-\LT@foot=\box52
-\LT@lastfoot=\box53
-\LT@gbox=\box54
-\LT@cols=\count194
-\LT@rows=\count195
-\c@LT@tables=\count196
-\c@LT@chunks=\count197
-\LT@p@ftn=\toks17
-)
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/lscape.s
-ty
-Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
-)
-(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/a4w
-ide/a4wide.sty
-Package: a4wide 1994/08/30
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 133.
+Package scrartcl Info: You've used standard option `10pt'.
+(scrartcl)             This is correct!
+(scrartcl)             Internally I'm using `fontsize=10pt'.
+(scrartcl)             If you'd like to set the option with \KOMAoptions,
+(scrartcl)             you'd have to use `fontsize=10pt' there
+(scrartcl)             instead of `10pt', too.
+Class scrartcl Info: You've used standard option `oneside'.
+(scrartcl)           This is correct!
+(scrartcl)           Internally I'm using `twoside=false'.
+(scrartcl)           If you'd like to set the option with \KOMAoptions,
+(scrartcl)           you'd have to use `twoside=false' there
+(scrartcl)           instead of `oneside', too.
+Class scrartcl Info: File `scrsize10pt.clo' used to setup font sizes on input l
+ine 2441.
 
-(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ntg
-class/a4.sty
-Package: a4 2020/02/18 v1.2g A4 based page layout
-))
-(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tab
-ularray/tabularray.sty
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3kernel/expl3.st
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kom
+a-script/scrsize10pt.clo
+File: scrsize10pt.clo 2023/07/07 v3.41 KOMA-Script font size class option (10pt
+)
+)
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kom
+a-script/typearea.sty
+Package: typearea 2023/07/07 v3.41 KOMA-Script package (type area)
+\ta@bcor=\skip48
+\ta@div=\count185
+\ta@hblk=\skip49
+\ta@vblk=\skip50
+\ta@temp=\skip51
+\footheight=\skip52
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 8
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 373.44246pt
+(typearea)              DIV departure   = -4%
+(typearea)              \evensidemargin = 39.76274pt
+(typearea)              \oddsidemargin  = 39.76274pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 538.0pt
+(typearea)              \topmargin      = 0.36087pt
+(typearea)              \headheight     = 15.0pt
+(typearea)              \headsep        = 18.0pt
+(typearea)              \topskip        = 10.0pt
+(typearea)              \footskip       = 42.0pt
+(typearea)              \baselineskip   = 12.0pt
+(typearea)              on input line 1799.
+)
+\c@part=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\scr@dte@section@maxnumwidth=\skip53
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\section on input line 5082.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\section on input line 5082.
+\scr@dte@part@maxnumwidth=\skip54
+Class scrartcl Info: using compatibility default `afterindent=false'
+(scrartcl)           for `\part on input line 5090.
+\scr@dte@subsection@maxnumwidth=\skip55
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsection on input line 5100.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsection on input line 5100.
+\scr@dte@subsubsection@maxnumwidth=\skip56
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsubsection on input line 5110.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsubsection on input line 5110.
+\scr@dte@paragraph@maxnumwidth=\skip57
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\paragraph on input line 5121.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\paragraph on input line 5121.
+\scr@dte@subparagraph@maxnumwidth=\skip58
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subparagraph on input line 5131.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subparagraph on input line 5131.
+\abovecaptionskip=\skip59
+\belowcaptionskip=\skip60
+\c@pti@nb@sid@b@x=\box51
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 6309.
+\scr@dte@figure@maxnumwidth=\skip61
+\c@figure=\count192
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 6325.
+\scr@dte@table@maxnumwidth=\skip62
+\c@table=\count193
+Class scrartcl Info: Redefining `\numberline' on input line 6495.
+\bibindent=\dimen138
+)
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pre
+print/authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip63
+\@affilsep=\skip64
+\c@Maxaffil=\count194
+\c@authors=\count195
+\c@affil=\count196
+)
+\authorsep=\skip65
+
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kom
+a-script/scrlayer-scrpage.sty
+Package: scrlayer-scrpage 2023/07/07 v3.41 KOMA-Script package (end user interf
+ace for scrlayer)
+
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kom
+a-script/scrlayer.sty
+Package: scrlayer 2023/07/07 v3.41 KOMA-Script package (defining layers and pag
+e styles)
+Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 218
+3.
+)
+Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
+(scrlayer-scrpage)             alias to `pageheadfoot' on input line 1106.
+)
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kom
+a-script/scrdate.sty
+Package: scrdate 2023/07/07 v3.41 KOMA-Script package (day of the week)
+Package scrdate Info: Language german not defined.
+(scrdate)             \dayname@german skipped.
+Package scrdate Info: Language ngerman not defined.
+(scrdate)             \dayname@ngerman skipped.
+Package scrdate Info: Language naustrian not defined.
+(scrdate)             \dayname@naustrian skipped.
+Package scrdate Info: Language austrian not defined.
+(scrdate)             \dayname@austrian skipped.
+Package scrdate Info: Language swissgerman not defined.
+(scrdate)             \dayname@swissgerman skipped.
+Package scrdate Info: Language nswissgerman not defined.
+(scrdate)             \dayname@nswissgerman skipped.
+Package scrdate Info: Language american not defined.
+(scrdate)             \dayname@american skipped.
+Package scrdate Info: Language australian not defined.
+(scrdate)             \dayname@australian skipped.
+Package scrdate Info: Language british not defined.
+(scrdate)             \dayname@british skipped.
+Package scrdate Info: Language canadian not defined.
+(scrdate)             \dayname@canadian skipped.
+Package scrdate Info: Language english not defined.
+(scrdate)             \dayname@english skipped.
+Package scrdate Info: Language newzealand not defined.
+(scrdate)             \dayname@newzealand skipped.
+Package scrdate Info: Language UKenglish not defined.
+(scrdate)             \dayname@UKenglish skipped.
+Package scrdate Info: Language ukenglish not defined.
+(scrdate)             \dayname@ukenglish skipped.
+Package scrdate Info: Language USenglish not defined.
+(scrdate)             \dayname@USenglish skipped.
+Package scrdate Info: Language usenglish not defined.
+(scrdate)             \dayname@usenglish skipped.
+Package scrdate Info: Language acadian not defined.
+(scrdate)             \dayname@acadian skipped.
+Package scrdate Info: Language canadien not defined.
+(scrdate)             \dayname@canadien skipped.
+Package scrdate Info: Language francais not defined.
+(scrdate)             \dayname@francais skipped.
+Package scrdate Info: Language french not defined.
+(scrdate)             \dayname@french skipped.
+Package scrdate Info: Language italian not defined.
+(scrdate)             \dayname@italian skipped.
+Package scrdate Info: Language spanish not defined.
+(scrdate)             \dayname@spanish skipped.
+Package scrdate Info: Language croatian not defined.
+(scrdate)             \dayname@croatian skipped.
+Package scrdate Info: Language dutch not defined.
+(scrdate)             \dayname@dutch skipped.
+Package scrdate Info: Language finnish not defined.
+(scrdate)             \dayname@finnish skipped.
+Package scrdate Info: Language norsk not defined.
+(scrdate)             \dayname@norsk skipped.
+Package scrdate Info: Language danish not defined.
+(scrdate)             \dayname@danish skipped.
+Package scrdate Info: Language swedish not defined.
+(scrdate)             \dayname@swedish skipped.
+Package scrdate Info: Language polish not defined.
+(scrdate)             \dayname@polish skipped.
+Package scrdate Info: Language czech not defined.
+(scrdate)             \dayname@czech skipped.
+Package scrdate Info: Language slovak not defined.
+(scrdate)             \dayname@slovak skipped.
+)
+\noveltyboxwidth=\skip66
+
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geo
+metry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifvtex.st
 y
-Package: expl3 2022-05-04 L3 programming layer (loader) 
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backe
-nd-pdftex.def
-File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count198
-\l__pdf_internal_box=\box55
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-Package: tabularray 2024-02-16 v2024A Typeset tabulars and arrays with LaTeX3
-\l__tblr_a_int=\count199
-\l__tblr_c_int=\count266
-\l__tblr_r_int=\count267
-\l__tblr_d_dim=\dimen142
-\l__tblr_h_dim=\dimen143
-\l__tblr_o_dim=\dimen144
-\l__tblr_p_dim=\dimen145
-\l__tblr_q_dim=\dimen146
-\l__tblr_r_dim=\dimen147
-\l__tblr_s_dim=\dimen148
-\l__tblr_t_dim=\dimen149
-\l__tblr_v_dim=\dimen150
-\l__tblr_w_dim=\dimen151
-\l__tblr_a_box=\box56
-\l__tblr_b_box=\box57
-\l__tblr_c_box=\box58
-\l__tblr_d_box=\box59
-\g__tblr_table_count_int=\count268
-\c@rownum=\count269
-\c@colnum=\count270
-\c@rowcount=\count271
-\c@colcount=\count272
-\abovesep=\dimen152
-\belowsep=\dimen153
-\leftsep=\dimen154
-\rightsep=\dimen155
-\g_tblr_level_int=\count273
-\g__tblr_data_row_key_count_int=\count274
-\g__tblr_data_column_key_count_int=\count275
-\g__tblr_data_cell_key_count_int=\count276
-\g__tblr_array_int=\count277
-\l__tblr_key_count_int=\count278
-\l__tblr_key_quotient_int=\count279
-\l__tblr_key_quotient_two_int=\count280
-\l__tblr_key_remainder_int=\count281
-\g__tblr_data_str_value_count_int=\count282
-\rulewidth=\dimen156
-\l__tblr_strut_dp_dim=\dimen157
-\l__tblr_strut_ht_dim=\dimen158
-\g__tblr_cell_wd_dim=\dimen159
-\g__tblr_cell_ht_dim=\dimen160
-\g__tblr_cell_head_dim=\dimen161
-\g__tblr_cell_foot_dim=\dimen162
-\l__column_target_dim=\dimen163
-\l__tblr_caption_box=\box60
-\l__tblr_caption_left_box=\box61
-\l__tblr_row_head_box=\box62
-\l__tblr_row_foot_box=\box63
-\l__tblr_row_head_foot_dim=\dimen164
-\tablewidth=\dimen165
-\l__tblr_table_firsthead_box=\box64
-\l__tblr_table_middlehead_box=\box65
-\l__tblr_table_lasthead_box=\box66
-\l__tblr_table_firstfoot_box=\box67
-\l__tblr_table_middlefoot_box=\box68
-\l__tblr_table_lastfoot_box=\box69
-\l__tblr_remain_height_dim=\dimen166
-\l__tblr_long_from_int=\count283
-\l__tblr_long_to_int=\count284
-\l__tblr_curr_i_int=\count285
-\l__tblr_prev_i_int=\count286
-\l__tblr_table_page_int=\count287
-\l__tblr_table_head_box=\box70
-\l__tblr_table_foot_box=\box71
-\l__tblr_table_head_foot_dim=\dimen167
-\l__tblr_table_head_body_foot_dim=\dimen168
-\l__tblr_table_box=\box72
-\l__tblr_table_hlines_box=\box73
-\l__tblr_hline_box=\box74
-\l__tblr_row_box=\box75
-\l__tblr_col_o_wd_dim=\dimen169
-\l__tblr_col_b_wd_dim=\dimen170
-\l__tblr_hline_leftskip_dim=\dimen171
-\l__tblr_hline_rightskip_dim=\dimen172
-\l__tblr_row_ht_dim=\dimen173
-\l__tblr_row_dp_dim=\dimen174
-\l__tblr_row_abovesep_dim=\dimen175
-\l__tblr_row_belowsep_dim=\dimen176
-\l__tblr_row_vlines_box=\box76
-\l__tblr_vline_box=\box77
-\l__tblr_cell_box=\box78
-\l__row_upper_dim=\dimen177
-\l__row_lower_dim=\dimen178
-\l__row_vpace_dim=\dimen179
-\l__tblr_vline_aboveskip_dim=\dimen180
-\l__tblr_vline_belowskip_dim=\dimen181
-\l__tblr_cell_wd_dim=\dimen182
-\l__tblr_cell_ht_dim=\dimen183
-\l__tblr_diag_box=\box79
-)
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+\Gm@cnth=\count197
+\Gm@cntv=\count198
+\c@Gm@tempcnt=\count199
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks17
 
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/colo
-r.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 227.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
-Package xcolor Info: Model `RGB' extended on input line 1368.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
-)
-(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/her
-e/here.sty)
-(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/flo
-at/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count288
-\float@exts=\toks18
-\float@box=\box80
-\@float@everytoks=\toks19
-\@floatcapt=\box81
-)
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geo
+metry/geometry.cfg))
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.s
 ty
 Package: amsmath 2021/10/15 v2.17l AMS math features
-\@mathmargin=\skip53
+\@mathmargin=\skip67
 
 For additional information on amsmath, use the `?' option.
 
@@ -231,184 +285,121 @@ Package: amstext 2021/08/26 v2.01 AMS text
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.st
 y
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks20
-\ex@=\dimen184
+\@emptytoks=\toks18
+\ex@=\dimen147
 ))
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.st
 y
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen185
+\pmbraise@=\dimen148
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.st
 y
 Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count289
+\inf@bad=\count266
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count290
-\leftroot@=\count291
+\uproot@=\count267
+\leftroot@=\count268
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count292
-\DOTSCASE@=\count293
+\classnum@=\count269
+\DOTSCASE@=\count270
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box82
-\strutbox@=\box83
-\big@size=\dimen186
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+\big@size=\dimen149
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count294
-\c@MaxMatrixCols=\count295
+\macc@depth=\count271
+\c@MaxMatrixCols=\count272
 \dotsspace@=\muskip16
-\c@parentequation=\count296
-\dspbrk@lvl=\count297
-\tag@help=\toks21
-\row@=\count298
-\column@=\count299
-\maxfields@=\count300
-\andhelp@=\toks22
-\eqnshift@=\dimen187
-\alignsep@=\dimen188
-\tagshift@=\dimen189
-\tagwidth@=\dimen190
-\totwidth@=\dimen191
-\lineht@=\dimen192
-\@envbody=\toks23
-\multlinegap=\skip54
-\multlinetaggap=\skip55
-\mathdisplay@stack=\toks24
+\c@parentequation=\count273
+\dspbrk@lvl=\count274
+\tag@help=\toks19
+\row@=\count275
+\column@=\count276
+\maxfields@=\count277
+\andhelp@=\toks20
+\eqnshift@=\dimen150
+\alignsep@=\dimen151
+\tagshift@=\dimen152
+\tagwidth@=\dimen153
+\totwidth@=\dimen154
+\lineht@=\dimen155
+\@envbody=\toks21
+\multlinegap=\skip68
+\multlinetaggap=\skip69
+\mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
 )
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amssymb.
-sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lin
+eno/lineno.sty
+Package: lineno 2023/05/20 line numbers on paragraphs v5.3
 
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amsfonts
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox
 .sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/nat
-bib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip56
-\bibsep=\skip57
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count301
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count278
 )
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/utilities/pgf
-for.sty
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/utilities/pgf
-rcs.sty
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
-gfutil-common.tex
-\pgfutil@everybye=\toks25
-\pgfutil@tempdima=\dimen193
-\pgfutil@tempdimb=\dimen194
-
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
-gfutil-common-lists.tex))
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
-gfutil-latex.def
-\pgfutil@abb=\box84
-)
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
-gfrcs.code.tex
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/pgf.revisio
-n.tex)
-Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
-))
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/utilities/pgf
-keys.sty
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
-gfkeys.code.tex
-\pgfkeys@pathtoks=\toks26
-\pgfkeys@temptoks=\toks27
-
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
-gfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks28
-)))
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/math/pgfmath.
-sty
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-h.code.tex
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-hcalc.code.tex
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-hutil.code.tex
-\pgf@x=\dimen195
-\pgf@xa=\dimen196
-\pgf@xb=\dimen197
-\pgf@xc=\dimen198
-\pgf@y=\dimen199
-\pgf@ya=\dimen256
-\pgf@yb=\dimen257
-\pgf@yc=\dimen258
-\c@pgf@counta=\count302
-\c@pgf@countb=\count303
-\c@pgf@countc=\count304
-\c@pgf@countd=\count305
-)
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-hparser.code.tex
-\pgfmath@dimen=\dimen259
-\pgfmath@count=\count306
-\pgfmath@box=\box85
-\pgfmath@toks=\toks29
-\pgfmath@stack@operand=\toks30
-\pgfmath@stack@operation=\toks31
-)
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-hfunctions.code.tex
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-hfunctions.basic.code.tex)
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-hfunctions.trigonometric.code.tex)
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-hfunctions.random.code.tex)
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-hfunctions.comparison.code.tex)
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-hfunctions.base.code.tex)
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-hfunctions.round.code.tex)
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-hfunctions.misc.code.tex)
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-hfunctions.integerarithmetics.code.tex)))
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-hfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count307
-)))
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
-gffor.code.tex
-Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
-
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
-h.code.tex)
-\pgffor@iter=\dimen260
-\pgffor@skip=\dimen261
-\pgffor@stack=\toks32
-\pgffor@toks=\toks33
-))
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref
-.sty
-Package: hyperref 2022-05-17 v7.00q Hypertext links for LaTeX
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvo
+ptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/generic/l
 txcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/generic/k
+vsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+\linenopenalty=\count279
+\output=\toks23
+\linenoprevgraf=\count280
+\linenumbersep=\dimen156
+\linenumberwidth=\dimen157
+\c@linenumber=\count281
+\c@pagewiselinenumber=\count282
+\c@LN@truepage=\count283
+\c@internallinenumber=\count284
+\c@internallinenumbers=\count285
+\quotelinenumbersep=\dimen158
+\bframerule=\dimen159
+\bframesep=\dimen160
+\bframebox=\box54
+\linenoamsmath@ams@eqpen=\count286
+LaTeX Info: Redefining \\ on input line 3180.
 )
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/colo
+r.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdft
+ex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref
+.sty
+Package: hyperref 2022-05-17 v7.00q Hypertext links for LaTeX
+
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdft
 excmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
@@ -421,10 +412,6 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/generic/k
-vsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/generic/k
 vdefinekeys/kvdefinekeys.sty
@@ -457,16 +444,12 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/generic/g
 ettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-
-(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvo
-ptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-))
-\c@section@level=\count308
 )
-\@linkdim=\dimen262
-\Hy@linkcounter=\count309
-\Hy@pagecounter=\count310
+\c@section@level=\count287
+)
+\@linkdim=\dimen161
+\Hy@linkcounter=\count288
+\Hy@pagecounter=\count289
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/pd1enc.d
 ef
@@ -482,7 +465,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 texcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count311
+\Hy@SavedSpaceFactor=\count290
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/puenc.de
 f
@@ -498,13 +481,13 @@ Package hyperref Info: Plain pages OFF on input line 4154.
 Package hyperref Info: Backreferencing OFF on input line 4159.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4385.
-\c@Hy@tempcnt=\count312
+\c@Hy@tempcnt=\count291
  (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4723.
-\XeTeXLinkMargin=\dimen263
+\XeTeXLinkMargin=\dimen162
 
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/generic/b
 itset/bitset.sty
@@ -515,9 +498,9 @@ igintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count313
-\Field@Width=\dimen264
-\Fld@charsize=\dimen265
+\Fld@menulength=\count292
+\Field@Width=\dimen163
+\Fld@charsize=\dimen164
 Package hyperref Info: Hyper figures OFF on input line 6001.
 Package hyperref Info: Link nesting OFF on input line 6006.
 Package hyperref Info: Hyper index ON on input line 6009.
@@ -533,11 +516,11 @@ LaTeX Info: Redefining \pageref on input line 6078.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count314
-\c@Item=\count315
-\c@Hfootnote=\count316
+\Hy@abspage=\count293
+\c@Item=\count294
+\c@Hfootnote=\count295
 )
-Package hyperref Info: Driver: hpdftex.
+Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hpdftex.
 def
@@ -549,8 +532,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count317
-\c@bookmark@seq@number=\count318
+\Fld@listcount=\count296
+\c@bookmark@seq@number=\count297
 
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rer
 unfilecheck/rerunfilecheck.sty
@@ -563,7 +546,11 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip58
+\Hy@SectionHShift=\skip70
+)
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/doi
+/doi.sty
+Package: doi 2018/09/09 handle doi numbers
 )
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cle
 veref/cleveref.sty
@@ -579,16 +566,296 @@ LaTeX Info: Redefining \cpagerefrange on input line 2370.
 LaTeX Info: Redefining \Cpagerefrange on input line 2370.
 LaTeX Info: Redefining \labelcref on input line 2370.
 LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: include cross-reference names in hyperlinks on input lin
+e 7836.
+Package cleveref Info: include cross-reference names in hyperlinks on input lin
+e 7852.
+)) (mpi_shared.tex
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx
+.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics
+.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pre
-print/authblk.sty
-Package: authblk 2001/02/27 1.3 (PWD)
-\affilsep=\skip59
-\@affilsep=\skip60
-\c@Maxaffil=\count319
-\c@authors=\count320
-\c@affil=\count321
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/grap
+hics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen165
+\Gin@req@width=\dimen166
+)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/longtable.s
+ty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip71
+\LTright=\skip72
+\LTpre=\skip73
+\LTpost=\skip74
+\LTchunksize=\count298
+\LTcapwidth=\dimen167
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@gbox=\box59
+\LT@cols=\count299
+\LT@rows=\count300
+\c@LT@tables=\count301
+\c@LT@chunks=\count302
+\LT@p@ftn=\toks24
+)
+Class scrartcl Info: longtable captions redefined on input line 3.
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/lscape.s
+ty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/a4w
+ide/a4wide.sty
+Package: a4wide 1994/08/30
+
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ntg
+class/a4.sty
+Package: a4 2020/02/18 v1.2g A4 based page layout
+))
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tab
+ularray/tabularray.sty
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3kernel/expl3.st
+y
+Package: expl3 2022-05-04 L3 programming layer (loader) 
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backe
+nd-pdftex.def
+File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count303
+\l__pdf_internal_box=\box60
+))
+Package: tabularray 2024-02-16 v2024A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count304
+\l__tblr_c_int=\count305
+\l__tblr_r_int=\count306
+\l__tblr_d_dim=\dimen168
+\l__tblr_h_dim=\dimen169
+\l__tblr_o_dim=\dimen170
+\l__tblr_p_dim=\dimen171
+\l__tblr_q_dim=\dimen172
+\l__tblr_r_dim=\dimen173
+\l__tblr_s_dim=\dimen174
+\l__tblr_t_dim=\dimen175
+\l__tblr_v_dim=\dimen176
+\l__tblr_w_dim=\dimen177
+\l__tblr_a_box=\box61
+\l__tblr_b_box=\box62
+\l__tblr_c_box=\box63
+\l__tblr_d_box=\box64
+\g__tblr_table_count_int=\count307
+\c@rownum=\count308
+\c@colnum=\count309
+\c@rowcount=\count310
+\c@colcount=\count311
+\abovesep=\dimen178
+\belowsep=\dimen179
+\leftsep=\dimen180
+\rightsep=\dimen181
+\g_tblr_level_int=\count312
+\g__tblr_data_row_key_count_int=\count313
+\g__tblr_data_column_key_count_int=\count314
+\g__tblr_data_cell_key_count_int=\count315
+\g__tblr_array_int=\count316
+\l__tblr_key_count_int=\count317
+\l__tblr_key_quotient_int=\count318
+\l__tblr_key_quotient_two_int=\count319
+\l__tblr_key_remainder_int=\count320
+\g__tblr_data_str_value_count_int=\count321
+\rulewidth=\dimen182
+\l__tblr_strut_dp_dim=\dimen183
+\l__tblr_strut_ht_dim=\dimen184
+\g__tblr_cell_wd_dim=\dimen185
+\g__tblr_cell_ht_dim=\dimen186
+\g__tblr_cell_head_dim=\dimen187
+\g__tblr_cell_foot_dim=\dimen188
+\l__column_target_dim=\dimen189
+\l__tblr_caption_box=\box65
+\l__tblr_caption_left_box=\box66
+\l__tblr_row_head_box=\box67
+\l__tblr_row_foot_box=\box68
+\l__tblr_row_head_foot_dim=\dimen190
+\tablewidth=\dimen191
+\l__tblr_table_firsthead_box=\box69
+\l__tblr_table_middlehead_box=\box70
+\l__tblr_table_lasthead_box=\box71
+\l__tblr_table_firstfoot_box=\box72
+\l__tblr_table_middlefoot_box=\box73
+\l__tblr_table_lastfoot_box=\box74
+\l__tblr_remain_height_dim=\dimen192
+\l__tblr_long_from_int=\count322
+\l__tblr_long_to_int=\count323
+\l__tblr_curr_i_int=\count324
+\l__tblr_prev_i_int=\count325
+\l__tblr_table_page_int=\count326
+\l__tblr_table_head_box=\box75
+\l__tblr_table_foot_box=\box76
+\l__tblr_table_head_foot_dim=\dimen193
+\l__tblr_table_head_body_foot_dim=\dimen194
+\l__tblr_table_box=\box77
+\l__tblr_table_hlines_box=\box78
+\l__tblr_hline_box=\box79
+\l__tblr_row_box=\box80
+\l__tblr_col_o_wd_dim=\dimen195
+\l__tblr_col_b_wd_dim=\dimen196
+\l__tblr_hline_leftskip_dim=\dimen197
+\l__tblr_hline_rightskip_dim=\dimen198
+\l__tblr_row_ht_dim=\dimen199
+\l__tblr_row_dp_dim=\dimen256
+\l__tblr_row_abovesep_dim=\dimen257
+\l__tblr_row_belowsep_dim=\dimen258
+\l__tblr_row_vlines_box=\box81
+\l__tblr_vline_box=\box82
+\l__tblr_cell_box=\box83
+\l__row_upper_dim=\dimen259
+\l__row_lower_dim=\dimen260
+\l__row_vpace_dim=\dimen261
+\l__tblr_vline_aboveskip_dim=\dimen262
+\l__tblr_vline_belowskip_dim=\dimen263
+\l__tblr_cell_wd_dim=\dimen264
+\l__tblr_cell_ht_dim=\dimen265
+\l__tblr_diag_box=\box84
+)
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/her
+e/here.sty)
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/flo
+at/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count327
+\float@exts=\toks25
+\float@box=\box85
+\@float@everytoks=\toks26
+\@floatcapt=\box86
+)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amssymb.
+sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amsfonts
+.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/nat
+bib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip75
+\bibsep=\skip76
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count328
+)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/utilities/pgf
+for.sty
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/utilities/pgf
+rcs.sty
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
+gfutil-common.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen266
+\pgfutil@tempdimb=\dimen267
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
+gfutil-common-lists.tex))
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
+gfutil-latex.def
+\pgfutil@abb=\box87
+)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
+gfrcs.code.tex
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/pgf.revisio
+n.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/utilities/pgf
+keys.sty
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
+gfkeys.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
+gfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks30
+)))
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/math/pgfmath.
+sty
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+h.code.tex
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+hcalc.code.tex
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+hutil.code.tex
+\pgf@x=\dimen268
+\pgf@xa=\dimen269
+\pgf@xb=\dimen270
+\pgf@xc=\dimen271
+\pgf@y=\dimen272
+\pgf@ya=\dimen273
+\pgf@yb=\dimen274
+\pgf@yc=\dimen275
+\c@pgf@counta=\count329
+\c@pgf@countb=\count330
+\c@pgf@countc=\count331
+\c@pgf@countd=\count332
+)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+hparser.code.tex
+\pgfmath@dimen=\dimen276
+\pgfmath@count=\count333
+\pgfmath@box=\box88
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
+)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+hfunctions.code.tex
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+hfunctions.basic.code.tex)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+hfunctions.trigonometric.code.tex)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+hfunctions.random.code.tex)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+hfunctions.comparison.code.tex)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+hfunctions.base.code.tex)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+hfunctions.round.code.tex)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+hfunctions.misc.code.tex)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+hfunctions.integerarithmetics.code.tex)))
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+hfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count334
+)))
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
+gffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmat
+h.code.tex)
+\pgffor@iter=\dimen277
+\pgffor@skip=\dimen278
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
+))
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cap
 tion/subcaption.sty
 Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
@@ -600,18 +867,23 @@ Package: caption 2022/03/01 v3.6b Customizing captions (AR)
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cap
 tion/caption3.sty
 Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen266
-\captionmargin=\dimen267
-\caption@leftmargin=\dimen268
-\caption@rightmargin=\dimen269
-\caption@width=\dimen270
-\caption@indent=\dimen271
-\caption@parindent=\dimen272
-\caption@hangindent=\dimen273
-Package caption Info: Standard document class detected.
-)
-\c@caption@flags=\count322
-\c@continuedfloat=\count323
+\caption@tempdima=\dimen279
+\captionmargin=\dimen280
+\caption@leftmargin=\dimen281
+\caption@rightmargin=\dimen282
+\caption@width=\dimen283
+\caption@indent=\dimen284
+\caption@parindent=\dimen285
+\caption@hangindent=\dimen286
+Package caption Info: KOMA-Script document class detected.
+
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cap
+tion/caption-koma.sto
+File: caption-koma.sto 2020/09/21 v2.0b Adaption of the caption package to the 
+KOMA-Script document classes (AR)
+))
+\c@caption@flags=\count335
+\c@continuedfloat=\count336
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -620,52 +892,52 @@ Package caption Info: longtable package is loaded.
 tion/ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 ))
-\c@subfigure=\count324
-\c@subtable=\count325
+\c@subfigure=\count337
+\c@subtable=\count338
 )
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mul
 tirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip61
-\multirow@cntb=\count326
-\multirow@dima=\skip62
-\bigstrutjot=\dimen274
+\multirow@colwidth=\skip77
+\multirow@cntb=\count339
+\multirow@dima=\skip78
+\bigstrutjot=\dimen287
 )
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ary
 dshln/arydshln.sty
 Package: arydshln 2019/02/21 v1.76 
-\dashlinedash=\dimen275
-\dashlinegap=\dimen276
-\adl@box=\box86
-\adl@height=\dimen277
-\adl@heightsave=\dimen278
-\adl@depth=\dimen279
-\adl@depthsave=\dimen280
-\adl@finaldepth=\dimen281
-\adl@columns=\count327
-\adl@ncol=\count328
-\adl@currentcolumn=\count329
-\adl@currentcolumnsave=\count330
-\adl@totalheight=\count331
-\adl@totalheightsave=\count332
-\adl@dash=\count333
-\adl@gap=\count334
-\adl@cla=\count335
-\adl@clb=\count336
-\adl@everyvbox=\toks34
-\adl@LTpagetotal=\dimen282
+\dashlinedash=\dimen288
+\dashlinegap=\dimen289
+\adl@box=\box89
+\adl@height=\dimen290
+\adl@heightsave=\dimen291
+\adl@depth=\dimen292
+\adl@depthsave=\dimen293
+\adl@finaldepth=\dimen294
+\adl@columns=\count340
+\adl@ncol=\count341
+\adl@currentcolumn=\count342
+\adl@currentcolumnsave=\count343
+\adl@totalheight=\count344
+\adl@totalheightsave=\count345
+\adl@dash=\count346
+\adl@gap=\count347
+\adl@cla=\count348
+\adl@clb=\count349
+\adl@everyvbox=\toks36
+\adl@LTpagetotal=\dimen295
 )
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/gra
 phbox/graphbox.sty
 Package: graphbox 2018/01/17 v1.1 extension for graphicx to adjust containing b
 ox
-\Gin@box@box=\box87
-\Gin@box@width=\skip63
-\Gin@box@height=\skip64
-\Gin@box@raise=\skip65
-\Gin@box@hspace=\skip66
-\Gin@box@bwidth=\skip67
-\Gin@box@bheight=\skip68
+\Gin@box@box=\box90
+\Gin@box@width=\skip79
+\Gin@box@height=\skip80
+\Gin@box@raise=\skip81
+\Gin@box@hspace=\skip82
+\Gin@box@bwidth=\skip83
+\Gin@box@bheight=\skip84
 )
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/col
 ortbl/colortbl.sty
@@ -673,22 +945,22 @@ Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen283
-\ar@mcellbox=\box88
-\extrarowheight=\dimen284
-\NC@list=\toks35
-\extratabsurround=\skip69
-\backup@length=\skip70
-\ar@cellbox=\box89
+\col@sep=\dimen296
+\ar@mcellbox=\box91
+\extrarowheight=\dimen297
+\NC@list=\toks37
+\extratabsurround=\skip85
+\backup@length=\skip86
+\ar@cellbox=\box92
 )
-\everycr=\toks36
-\minrowclearance=\skip71
+\everycr=\toks38
+\minrowclearance=\skip87
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/epsfig.s
 ty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen285
-\epsfysize=\dimen286
+\epsfxsize=\dimen298
+\epsfysize=\dimen299
 )
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/com
 ment/comment.sty
@@ -698,8 +970,8 @@ ment/comment.sty
 athdots/mathdots.sty
 Package: mathdots 2014/06/11 v0.9 Improve and add various macros for dots in ma
 th.
-\MDo@unit=\dimen287
-\MDo@dotsbox=\box90
+\MDo@unit=\dimen300
+\MDo@dotsbox=\box93
 \MDoprekern=\muskip18
 \MDopostkern=\muskip19
 \MDodotkern=\muskip20
@@ -753,26 +1025,26 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/p
 gfkeys.code.tex)
-\pgf@x=\dimen288
-\pgf@y=\dimen289
-\pgf@xa=\dimen290
-\pgf@ya=\dimen291
-\pgf@xb=\dimen292
-\pgf@yb=\dimen293
-\pgf@xc=\dimen294
-\pgf@yc=\dimen295
-\pgf@xd=\dimen296
-\pgf@yd=\dimen297
+\pgf@x=\dimen301
+\pgf@y=\dimen302
+\pgf@xa=\dimen303
+\pgf@ya=\dimen304
+\pgf@xb=\dimen305
+\pgf@yb=\dimen306
+\pgf@xc=\dimen307
+\pgf@yc=\dimen308
+\pgf@xd=\dimen309
+\pgf@yd=\dimen310
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count337
-\c@pgf@countb=\count338
-\c@pgf@countc=\count339
-\c@pgf@countd=\count340
-\t@pgf@toka=\toks37
-\t@pgf@tokb=\toks38
-\t@pgf@tokc=\toks39
-\pgf@sys@id@count=\count341
+\c@pgf@counta=\count350
+\c@pgf@countb=\count351
+\c@pgf@countc=\count352
+\c@pgf@countd=\count353
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
+\pgf@sys@id@count=\count354
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer
 /pgf.cfg
@@ -791,8 +1063,8 @@ File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer
 /pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count342
-\pgfsyssoftpath@bigbuffer@items=\count343
+\pgfsyssoftpath@smallbuffer@items=\count355
+\pgfsyssoftpath@bigbuffer@items=\count356
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer
 /pgfsysprotocol.code.tex
@@ -809,52 +1081,52 @@ h.code.tex)
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/
 pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen298
-\pgf@picmaxx=\dimen299
-\pgf@picminy=\dimen300
-\pgf@picmaxy=\dimen301
-\pgf@pathminx=\dimen302
-\pgf@pathmaxx=\dimen303
-\pgf@pathminy=\dimen304
-\pgf@pathmaxy=\dimen305
-\pgf@xx=\dimen306
-\pgf@xy=\dimen307
-\pgf@yx=\dimen308
-\pgf@yy=\dimen309
-\pgf@zx=\dimen310
-\pgf@zy=\dimen311
+\pgf@picminx=\dimen311
+\pgf@picmaxx=\dimen312
+\pgf@picminy=\dimen313
+\pgf@picmaxy=\dimen314
+\pgf@pathminx=\dimen315
+\pgf@pathmaxx=\dimen316
+\pgf@pathminy=\dimen317
+\pgf@pathmaxy=\dimen318
+\pgf@xx=\dimen319
+\pgf@xy=\dimen320
+\pgf@yx=\dimen321
+\pgf@yy=\dimen322
+\pgf@zx=\dimen323
+\pgf@zy=\dimen324
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/
 pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen312
-\pgf@path@lasty=\dimen313
+\pgf@path@lastx=\dimen325
+\pgf@path@lasty=\dimen326
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/
 pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen314
-\pgf@shorten@start@additional=\dimen315
+\pgf@shorten@end@additional=\dimen327
+\pgf@shorten@start@additional=\dimen328
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/
 pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box91
-\pgf@hbox=\box92
-\pgf@layerbox@main=\box93
-\pgf@picture@serial@count=\count344
+\pgfpic=\box94
+\pgf@hbox=\box95
+\pgf@layerbox@main=\box96
+\pgf@picture@serial@count=\count357
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/
 pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen316
+\pgflinewidth=\dimen329
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/
 pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen317
-\pgf@pt@y=\dimen318
-\pgf@pt@temp=\dimen319
+\pgf@pt@x=\dimen330
+\pgf@pt@y=\dimen331
+\pgf@pt@temp=\dimen332
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/
 pgfcorequick.code.tex
@@ -871,14 +1143,14 @@ File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/
 pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen320
+\pgfarrowsep=\dimen333
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/
 pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen321
-\pgf@sys@shading@range@num=\count345
-\pgf@shadingcount=\count346
+\pgf@max=\dimen334
+\pgf@sys@shading@range@num=\count358
+\pgf@shadingcount=\count359
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/
 pgfcoreimage.code.tex
@@ -887,7 +1159,7 @@ File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/
 pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box94
+\pgfexternal@startupbox=\box97
 ))
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/
 pgfcorelayers.code.tex
@@ -908,7 +1180,7 @@ File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/modules/pgf
 moduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box95
+\pgfnodeparttextbox=\box98
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/modules/pgf
 moduleplot.code.tex
@@ -917,8 +1189,8 @@ File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/compatibility
 /pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen322
-\pgf@nodesepend=\dimen323
+\pgf@nodesepstart=\dimen335
+\pgf@nodesepend=\dimen336
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/compatibility
 /pgfcomp-version-1-18.sty
@@ -931,34 +1203,34 @@ Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/p
 gflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count347
-\pgfplotmarksize=\dimen324
+\pgf@plot@mark@count=\count360
+\pgfplotmarksize=\dimen337
 )
-\tikz@lastx=\dimen325
-\tikz@lasty=\dimen326
-\tikz@lastxsaved=\dimen327
-\tikz@lastysaved=\dimen328
-\tikz@lastmovetox=\dimen329
-\tikz@lastmovetoy=\dimen330
-\tikzleveldistance=\dimen331
-\tikzsiblingdistance=\dimen332
-\tikz@figbox=\box96
-\tikz@figbox@bg=\box97
-\tikz@tempbox=\box98
-\tikz@tempbox@bg=\box99
-\tikztreelevel=\count348
-\tikznumberofchildren=\count349
-\tikznumberofcurrentchild=\count350
-\tikz@fig@count=\count351
+\tikz@lastx=\dimen338
+\tikz@lasty=\dimen339
+\tikz@lastxsaved=\dimen340
+\tikz@lastysaved=\dimen341
+\tikz@lastmovetox=\dimen342
+\tikz@lastmovetoy=\dimen343
+\tikzleveldistance=\dimen344
+\tikzsiblingdistance=\dimen345
+\tikz@figbox=\box99
+\tikz@figbox@bg=\box100
+\tikz@tempbox=\box101
+\tikz@tempbox@bg=\box102
+\tikztreelevel=\count361
+\tikznumberofchildren=\count362
+\tikznumberofcurrentchild=\count363
+\tikz@fig@count=\count364
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/modules/pgf
 modulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count352
-\pgfmatrixcurrentcolumn=\count353
-\pgf@matrix@numberofcolumns=\count354
+\pgfmatrixcurrentrow=\count365
+\pgfmatrixcurrentcolumn=\count366
+\pgf@matrix@numberofcolumns=\count367
 )
-\tikz@expandcount=\count355
+\tikz@expandcount=\count368
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlay
 er/tikz/libraries/tikzlibrarytopaths.code.tex
@@ -984,7 +1256,7 @@ File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/p
 gflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen333
+\arrowsize=\dimen346
 )))
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlay
 er/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex
@@ -992,24 +1264,24 @@ er/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex
 er/tikz/libraries/tikzlibrarydecorations.code.tex
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/modules/pgf
 moduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen334
-\pgfdecoratedremainingdistance=\dimen335
-\pgfdecoratedinputsegmentcompleteddistance=\dimen336
-\pgfdecoratedinputsegmentremainingdistance=\dimen337
-\pgf@decorate@distancetomove=\dimen338
-\pgf@decorate@repeatstate=\count356
-\pgfdecorationsegmentamplitude=\dimen339
-\pgfdecorationsegmentlength=\dimen340
+\pgfdecoratedcompleteddistance=\dimen347
+\pgfdecoratedremainingdistance=\dimen348
+\pgfdecoratedinputsegmentcompleteddistance=\dimen349
+\pgfdecoratedinputsegmentremainingdistance=\dimen350
+\pgf@decorate@distancetomove=\dimen351
+\pgf@decorate@repeatstate=\count369
+\pgfdecorationsegmentamplitude=\dimen352
+\pgfdecorationsegmentlength=\dimen353
 )
-\tikz@lib@dec@box=\box100
+\tikz@lib@dec@box=\box103
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/d
 ecorations/pgflibrarydecorations.pathmorphing.code.tex))
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlay
 er/tikz/libraries/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@layerbox@background=\box101
-\pgf@layerboxsaved@background=\box102
+\pgf@layerbox@background=\box104
+\pgf@layerboxsaved@background=\box105
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlay
 er/tikz/libraries/tikzlibraryfit.code.tex
@@ -1042,13 +1314,13 @@ File: tikzlibrarytrees.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3packages/xfp/xf
 p.sty
 Package: xfp 2022-01-12 L3 Floating point unit
-) (ex_math.tex)
-\c@theorem=\count357
-\c@lemma=\count358
-\c@remark=\count359
-\c@corr=\count360
-\c@problem=\count361
- (main.aux
+)) (ex_math.tex)
+\c@theorem=\count370
+\c@lemma=\count371
+\c@remark=\count372
+\c@corr=\count373
+\c@problem=\count374
+ (mainMPI.aux
 
 LaTeX Warning: Label `tab:sym-1a-r4-cpv_MACA64_MR2023b' multiply defined.
 
@@ -1067,43 +1339,182 @@ LaTeX Warning: Label `tab:zer-1a-r4-cpv_MACA64_MR2023b' multiply defined.
 
 LaTeX Warning: Label `tab:zer-1a-r4-cpv_MACA64_MR2023b@cref' multiply defined.
 
-)
-\openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+Package natbib Warning: Citation `akhiezer1990elements' multiply defined.
+
+
+Package natbib Warning: Citation `aa86' multiply defined.
+
+
+Package natbib Warning: Citation `abg_book' multiply defined.
+
+
+Package natbib Warning: Citation `morAntGI16' multiply defined.
+
+
+Package natbib Warning: Citation `morAntGP24' multiply defined.
+
+
+Package natbib Warning: Citation `ali17' multiply defined.
+
+
+Package natbib Warning: Citation `Da75' multiply defined.
+
+
+Package natbib Warning: Citation `chebfun' multiply defined.
+
+
+Package natbib Warning: Citation `fntb18' multiply defined.
+
+
+Package natbib Warning: Citation `morGosPA22' multiply defined.
+
+
+Package natbib Warning: Citation `morIonA14' multiply defined.
+
+
+Package natbib Warning: Citation `Is18' multiply defined.
+
+
+Package natbib Warning: Citation `istace1995third' multiply defined.
+
+
+Package natbib Warning: Citation `morKarGA19a' multiply defined.
+
+
+Package natbib Warning: Citation `morKarGGetal25' multiply defined.
+
+
+Package natbib Warning: Citation `ajm07' multiply defined.
+
+
+Package natbib Warning: Citation `nakatsukasa2016computing' multiply defined.
+
+
+Package natbib Warning: Citation `nst18' multiply defined.
+
+
+Package natbib Warning: Citation `nakatsukasa2020algorithm' multiply defined.
+
+
+Package natbib Warning: Citation `AAAreview' multiply defined.
+
+
+Package natbib Warning: Citation `Po81' multiply defined.
+
+
+Package natbib Warning: Citation `starke1992near' multiply defined.
+
+
+Package natbib Warning: Citation `Tr13' multiply defined.
+
+
+Package natbib Warning: Citation `trefethen2024computation' multiply defined.
+
+)
+\openout1 = `mainMPI.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+Package scrbase Info: activating english \abstractname on input line 32.
+Package scrbase Info: activating english \partname on input line 32.
+Package scrbase Info: activating english \figurename on input line 32.
+Package scrbase Info: activating english \tablename on input line 32.
+Package scrbase Info: activating english \contentsname on input line 32.
+Package scrbase Info: activating english \listfigurename on input line 32.
+Package scrbase Info: activating english \listtablename on input line 32.
+Package scrbase Info: activating english \refname on input line 32.
+Package scrbase Info: activating english \indexname on input line 32.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79141pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33041pt, 85.35826pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=424.58624pt
+* \textheight=646.0pt
+* \oddsidemargin=18.06749pt
+* \evensidemargin=18.06749pt
+* \topmargin=0.0pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=54.2025pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-
 pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count362
-\scratchdimen=\dimen341
-\scratchbox=\box103
-\nofMPsegments=\count363
-\nofMParguments=\count364
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count365
-\MPscratchDim=\dimen342
-\MPnumerator=\count366
-\makeMPintoPDFobject=\count367
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count375
+\scratchdimen=\dimen354
+\scratchbox=\box106
+\nofMPsegments=\count376
+\nofMParguments=\count377
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count378
+\MPscratchDim=\dimen355
+\MPnumerator=\count379
+\makeMPintoPDFobject=\count380
+\everyMPtoPDFconversion=\toks43
 )
+Package hyperref Info: Link coloring ON on input line 32.
+ (mainMPI.out) (mainMPI.out)
+\@outlinefile=\write5
+\openout5 = `mainMPI.out'.
+
+Class scrartcl Info: loading recommended package `bookmark'.
+(scrartcl)           Using `bookmark' together with `hyperref' is recommended,
+(scrartcl)           because of handling of possible bookmark level gaps.
+(scrartcl)           You can avoid loading `bookmark' with KOMA-Script option
+(scrartcl)           `bookmarkpackage=false' before \begin{document} and
+(scrartcl)           you can avoid this message adding:
+(scrartcl)             \usepackage{bookmark}
+(scrartcl)           before \begin{document} on input line 32.
+
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/boo
+kmark/bookmark.sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+
+(/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/boo
+kmark/bkm-pdftex.def
+File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
+\BKM@id=\count381
+))
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/nin
 ecolors/ninecolors.sty
 Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
@@ -1113,42 +1524,70 @@ Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
 /xparse.sty
 Package: xparse 2022-01-12 L3 Experimental document command parser
 ))
-Package hyperref Info: Link coloring ON on input line 72.
- (main.out) (main.out)
-\@outlinefile=\write5
-\openout5 = `main.out'.
-
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
+ (body_title.tex)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
 
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 74
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 35
 .
 
 (/Users/charles/Library/Application Support/MiKTeX/texmfs/install/tex/latex/jkn
 appen/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) (body_abstract.tex) (main.toc [1
+) (body_abstract.tex)
+Overfull \hbox (28.8046pt too wide) in paragraph at lines 35--35
+[]\OT1/cmr/bx/n/10 Abstract: \OT1/cmr/m/n/10 We study algorithms for Zolotarev 
+(3rd and 4th) problems rational approximation.
+ []
+
+
+Overfull \hbox (21.31274pt too wide) in paragraph at lines 35--35
+\OT1/cmr/m/n/10 interpolation conditions. Second, we compare the approximation 
+properties (e.g. coefficients
+ []
+
+(body_keywords.tex)
+Overfull \hbox (8.74898pt too wide) in paragraph at lines 35--35
+\OT1/cmr/bx/n/10 Keywords: \OT1/cmr/m/n/10 Rational approximation, Loewner fram
+ework, Numerical analysis, Zolotarev
+ []
+
+(body_novelty.tex) (body_paper.tex
+Overfull \hbox (27.23438pt too wide) in paragraph at lines 6--7
+[] []\OT1/cmss/bx/n/10 About rational approximation.[][] \OT1/cmr/m/n/10 Approx
+imation theory is a classic, well-established field of mathematics,
+ []
+
+
+Overfull \hbox (5.66469pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/10 examples include computational fluid dynamics, solution and con
+trol of partial differential equations,
+ []
+
+[1
+
 
 {/Users/charles/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex
-/pdftex.map}])
-\tf@toc=\write6
-\openout6 = `main.toc'.
+/pdftex.map}]
+Overfull \hbox (0.30345pt too wide) in paragraph at lines 16--18
+[]\OT1/cmr/m/n/10 In this work, we apply two established data-driven rational a
+pproximation methods: the Loewner
+ []
 
- (body_paper.tex
-[2]
-Overfull \hbox (5.63464pt too wide) in paragraph at lines 16--18
-\OT1/cmr/m/n/10 Loewner Framework (LF) introduced in [[]], and the Adaptive Ant
-oulas-Anderson (AAA) algorithm
+
+Overfull \hbox (15.21802pt too wide) in paragraph at lines 16--18
+\OT1/cmr/m/n/10 Framework (LF) introduced in [[]], and the Adaptive Antoulas-An
+derson (AAA) algorithm introduced
  []
 
 
@@ -1157,7 +1596,7 @@ Overfull \hbox (2.18304pt too wide) in paragraph at lines 22--23
 terations nor user intervention,
  []
 
-[3]
+[2]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
@@ -1177,6 +1616,7 @@ Overfull \hbox (6.31155pt too wide) in paragraph at lines 70--71
 /it/10 that attains the minimum (where
  []
 
+[3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\begingroup' on input line 114.
@@ -1205,21 +1645,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\new@ifnextchar' on input line 114.
 
-[4]
 LaTeX Font Info:    Trying to load font information for U+euf on input line 141
 .
-
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
-Overfull \hbox (1.08748pt too wide) in paragraph at lines 141--143
-[]\OT1/cmr/m/n/10 Given $\OML/cmm/m/it/10 N > \OT1/cmr/m/n/10 0$ distinct sampl
-ing points $\OMS/cmsy/m/n/10 T \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OML/cmm/m/i
-t/10 []; []; [] ; []\OMS/cmsy/m/n/10 g$ \OT1/cmr/m/n/10 together with $\OML/
-cmm/m/it/10 N$ \OT1/cmr/m/n/10 function evaluations
- []
-
-[5]
+) [4]
 Overfull \hbox (10.3648pt too wide) in paragraph at lines 201--202
 []\OT1/cmr/m/it/10 If $\OML/cmm/m/it/10 k \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 q$
  \OT1/cmr/m/it/10 the matrix pencil $\OT1/cmr/m/n/10 (\U/msb/m/n/10 S\OML/cmm/m
@@ -1233,51 +1663,55 @@ Overfull \hbox (8.66347pt too wide) in paragraph at lines 234--235
  represents an adaptive extension
  []
 
-
-Overfull \hbox (4.76639pt too wide) in paragraph at lines 262--263
-\OT1/cmr/m/n/10 representations. One key feature is that the support points are
- chosen adaptively as the approximant
+[5]
+Overfull \hbox (29.97017pt too wide) in paragraph at lines 262--263
+\OT1/cmr/m/n/10 propose different combinations of robust algorithms that are ba
+sed on rational barycentric representations.
  []
 
-[6]
-Overfull \hbox (14.74786pt too wide) in paragraph at lines 266--267
+
+Overfull \hbox (9.74788pt too wide) in paragraph at lines 266--267
 []\OT1/cmr/m/n/10 In the recent note [[]], the authors present an algorithm bas
 ed on AAA-Lawson approximation [[]],
  []
 
-
-Underfull \hbox (badness 3386) in paragraph at lines 291--291
-[][][]\OT1/cmr/m/n/8 The AAA-Lawson is obtained with optional arguments \OT1/cm
-tt/m/n/8 'sign',1,'damping',.95,'lawson',200 \OT1/cmr/m/n/8 and
+[6]
+Underfull \hbox (badness 5637) in paragraph at lines 291--291
+  [][][]\OT1/cmr/m/n/8 The AAA-Lawson is obtained with optional arguments \OT1/
+cmtt/m/n/8 'sign',1,'damping',.95,'lawson',200 \OT1/cmr/m/n/8 and
  []
 
-[7]
-<figures/all/cas_1a_r4.pdf, id=402, 1015.795pt x 761.84625pt>
+<figures/all/cas_1a_r4.pdf, id=212, 1015.795pt x 761.84625pt>
 File: figures/all/cas_1a_r4.pdf Graphic file (type pdf)
 <use figures/all/cas_1a_r4.pdf>
 Package pdftex.def Info: figures/all/cas_1a_r4.pdf  used on input line 301.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- (data/cpv_MACA64_MR2023b/tables/1a_nd_r4.tex
+(data/cpv_MACA64_MR2023b/tables/1a_nd_r4.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) [8 <./figures/all/cas_1a_r4.pdf>]
-(data/cpv_MACA64_MR2023b/tables/1a_zer_r4.tex)
-(data/cpv_MACA64_MR2023b/tables/1a_pol_r4.tex) [9]
+) [7] (data/cpv_MACA64_MR2023b/tables/1a_zer_r4.tex)
+(data/cpv_MACA64_MR2023b/tables/1a_pol_r4.tex) [8 <./figures/all/cas_1a_r4.pdf>
+]
 Overfull \hbox (16.76648pt too wide) in paragraph at lines 325--326
 \OT1/cmr/m/n/10 Let now continue with approximation for varying rational degree
 s. First we compare the approximation
  []
 
-<figures/all/cas_1a_r1e-14.pdf, id=475, 1015.795pt x 761.84625pt>
+<figures/all/cas_1a_r1e-14.pdf, id=290, 1015.795pt x 761.84625pt>
 File: figures/all/cas_1a_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_1a_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_1a_r1e-14.pdf  used on input line 329.
 
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-[10 <./figures/all/cas_1a_r1e-14.pdf>]
-<figures/time_accuracy/cas_1a_zol_time.pdf, id=539, 1015.795pt x 761.84625pt>
+[9 <./figures/all/cas_1a_r1e-14.pdf>]
+Overfull \hbox (5.46622pt too wide) in paragraph at lines 338--340
+[]\OT1/cmr/m/it/10 Accelerating LF As the LF consists in (i) building the Loewn
+er pencil [][]\OT1/cmr/m/n/10 (7)[][]\OT1/cmr/m/it/10 , (ii) computing
+ []
+
+<figures/time_accuracy/cas_1a_zol_time.pdf, id=354, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_1a_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_1a_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_1a_zol_time.pdf  used on inp
@@ -1289,12 +1723,12 @@ Overfull \hbox (21.25609pt too wide) in paragraph at lines 353--354
 ically, the code named \OT1/cmtt/m/n/10 report[]1a[]step1[][][][][]
  []
 
-<figures/1a/num_den_r4.pdf, id=543, 1015.795pt x 761.84625pt>
+<figures/1a/num_den_r4.pdf, id=358, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r4.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r4.pdf>
 Package pdftex.def Info: figures/1a/num_den_r4.pdf  used on input line 357.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-[11 <./figures/time_accuracy/cas_1a_zol_time.pdf>] [12 <./figures/1a/num_den_r4
+[10 <./figures/time_accuracy/cas_1a_zol_time.pdf>] [11 <./figures/1a/num_den_r4
 .pdf>]
 LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
 390.
@@ -1305,13 +1739,13 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbraceleft' on input line 390.
 
-[13]
-<figures/all/case_oder.pdf, id=700, 1015.795pt x 761.84625pt>
+[12]
+<figures/all/case_oder.pdf, id=519, 1015.795pt x 761.84625pt>
 File: figures/all/case_oder.pdf Graphic file (type pdf)
 <use figures/all/case_oder.pdf>
 Package pdftex.def Info: figures/all/case_oder.pdf  used on input line 438.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-
+ [13 <./figures/all/case_oder.pdf>]
 Overfull \hbox (8.91318pt too wide) in paragraph at lines 448--449
 []\OT1/cmr/m/n/10 Inspecting the \OT1/cmtt/m/n/10 '2b' \OT1/cmr/m/n/10 case lea
 ds to a similar comment, but here, LF leads to better approximation
@@ -1323,7 +1757,7 @@ Overfull \hbox (20.58012pt too wide) in paragraph at lines 449--450
  LF gets better (not monotonically)
  []
 
-[14 <./figures/all/case_oder.pdf>]) (main.bbl [15]) (appendix_1a.tex
+) (mainMPI.bbl [14] [15]) (appendix_1a.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 68.
@@ -1332,50 +1766,50 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 68.
 
-(data/cpv_MACA64_MR2023b/tables/1a_nd_r3.tex [16])
+(data/cpv_MACA64_MR2023b/tables/1a_nd_r3.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_nd_r3.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_nd_r3.tex)
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_nd_r3.tex)
-(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r3.tex [17])
-<figures/1a/num_den_r3.pdf, id=784, 1015.795pt x 761.84625pt>
+(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r3.tex [16])
+<figures/1a/num_den_r3.pdf, id=605, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r3.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r3.pdf>
 Package pdftex.def Info: figures/1a/num_den_r3.pdf  used on input line 68.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
 
 (data/cpv_MACA64_MR2023b/tables/1a_pol_r3.tex)
-(data/cpv_MACA64_MR2022b/tables/1a_pol_r3.tex [18 <./figures/1a/num_den_r3.pdf>
+(data/cpv_MACA64_MR2022b/tables/1a_pol_r3.tex [17 <./figures/1a/num_den_r3.pdf>
 ]) (data/cpv_PCWIN64_MR2025b/tables/1a_pol_r3.tex)
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r3.tex)
 (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r3.tex)
 (data/cpv_MACA64_MR2023b/tables/1a_zer_r3.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_zer_r3.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_zer_r3.tex)
-(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r3.tex [19])
+(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r3.tex [18])
 (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r3.tex)
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 68.
-<data/cpv_MACA64_MR2023b/figures/pz_r3.pdf, id=817, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r3.pdf, id=637, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r3.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r3.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r3.pdf  used on inp
 ut line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf, id=818, 1015.795pt x 761.84625
+<data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf, id=638, 1015.795pt x 761.84625
 pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf  used o
 n input line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r3.pdf, id=819, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/eval_r3.pdf, id=639, 1015.795pt x 761.84625pt>
 
 File: data/cpv_MACA64_MR2023b/figures/eval_r3.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r3.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/eval_r3.pdf  used on i
 nput line 68.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [20 <./data/cpv_MACA64_MR2023b/figures/pz_r3.pdf> <./data/cpv_MACA64_MR2023b/f
+ [19 <./data/cpv_MACA64_MR2023b/figures/pz_r3.pdf> <./data/cpv_MACA64_MR2023b/f
 igures/pz_r3_zoom.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1400,7 +1834,7 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-[21 <./data/cpv_MACA64_MR2023b/figures/eval_r3.pdf>])
+[20 <./data/cpv_MACA64_MR2023b/figures/eval_r3.pdf>])
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_nd_r4.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
@@ -1411,42 +1845,42 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) [22]
+) [21]
 File: figures/1a/num_den_r4.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r4.pdf>
 Package pdftex.def Info: figures/1a/num_den_r4.pdf  used on input line 68.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
  (data/cpv_MACA64_MR2023b/tables/1a_pol_r4.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_pol_r4.tex)
-(data/cpv_PCWIN64_MR2025b/tables/1a_pol_r4.tex [23])
+(data/cpv_PCWIN64_MR2025b/tables/1a_pol_r4.tex [22])
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r4.tex)
 (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r4.tex)
 (data/cpv_MACA64_MR2023b/tables/1a_zer_r4.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_zer_r4.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_zer_r4.tex)
-(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r4.tex [24])
+(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r4.tex [23])
 (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r4.tex)
-<data/cpv_MACA64_MR2023b/figures/pz_r4.pdf, id=944, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r4.pdf, id=766, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r4.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r4.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r4.pdf  used on inp
 ut line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf, id=945, 1015.795pt x 761.84625
+<data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf, id=767, 1015.795pt x 761.84625
 pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf  used o
 n input line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r4.pdf, id=946, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/eval_r4.pdf, id=768, 1015.795pt x 761.84625pt>
 
 File: data/cpv_MACA64_MR2023b/figures/eval_r4.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r4.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/eval_r4.pdf  used on i
 nput line 68.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [25 <./data/cpv_MACA64_MR2023b/figures/pz_r4.pdf> <./data/cpv_MACA64_MR2023b/f
+ [24 <./data/cpv_MACA64_MR2023b/figures/pz_r4.pdf> <./data/cpv_MACA64_MR2023b/f
 igures/pz_r4_zoom.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1471,7 +1905,7 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-[26 <./data/cpv_MACA64_MR2023b/figures/eval_r4.pdf>])
+[25 <./data/cpv_MACA64_MR2023b/figures/eval_r4.pdf>])
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_nd_r5.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
@@ -1482,8 +1916,8 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) [27]
-<figures/1a/num_den_r5.pdf, id=1044, 1015.795pt x 761.84625pt>
+) [26]
+<figures/1a/num_den_r5.pdf, id=867, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r5.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r5.pdf>
 Package pdftex.def Info: figures/1a/num_den_r5.pdf  used on input line 68.
@@ -1503,7 +1937,7 @@ Overfull \hbox (1.26672pt too wide) detected at line 3
 []
  []
 
-[28 <./figures/1a/num_den_r5.pdf>])
+[27 <./figures/1a/num_den_r5.pdf>])
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r5.tex
 Overfull \hbox (1.26672pt too wide) detected at line 3
 []
@@ -1516,30 +1950,30 @@ Overfull \hbox (0.98897pt too wide) detected at line 3
 
 ) (data/cpv_MACA64_MR2023b/tables/1a_zer_r5.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_zer_r5.tex)
-(data/cpv_PCWIN64_MR2025b/tables/1a_zer_r5.tex [29])
+(data/cpv_PCWIN64_MR2025b/tables/1a_zer_r5.tex [28])
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r5.tex)
 (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r5.tex)
-<data/cpv_MACA64_MR2023b/figures/pz_r5.pdf, id=1160, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r5.pdf, id=983, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r5.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r5.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r5.pdf  used on inp
 ut line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf, id=1161, 1015.795pt x 761.8462
-5pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf, id=984, 1015.795pt x 761.84625
+pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf  used o
 n input line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r5.pdf, id=1162, 1015.795pt x 761.84625pt
->
+<data/cpv_MACA64_MR2023b/figures/eval_r5.pdf, id=985, 1015.795pt x 761.84625pt>
+
 File: data/cpv_MACA64_MR2023b/figures/eval_r5.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r5.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/eval_r5.pdf  used on i
 nput line 68.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [30 <./data/cpv_MACA64_MR2023b/figures/pz_r5.pdf> <./data/cpv_MACA64_MR2023b/f
+ [29 <./data/cpv_MACA64_MR2023b/figures/pz_r5.pdf> <./data/cpv_MACA64_MR2023b/f
 igures/pz_r5_zoom.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1564,7 +1998,7 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-[31 <./data/cpv_MACA64_MR2023b/figures/eval_r5.pdf>])
+[30 <./data/cpv_MACA64_MR2023b/figures/eval_r5.pdf>])
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_nd_r6.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
@@ -1575,20 +2009,20 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) [32]
-<figures/1a/num_den_r6.pdf, id=1267, 1015.795pt x 761.84625pt>
+) [31]
+<figures/1a/num_den_r6.pdf, id=1091, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r6.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r6.pdf>
 Package pdftex.def Info: figures/1a/num_den_r6.pdf  used on input line 68.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
  (data/cpv_MACA64_MR2023b/tables/1a_pol_r6.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_pol_r6.tex)
-(data/cpv_PCWIN64_MR2025b/tables/1a_pol_r6.tex [33 <./figures/1a/num_den_r6.pdf
+(data/cpv_PCWIN64_MR2025b/tables/1a_pol_r6.tex [32 <./figures/1a/num_den_r6.pdf
 >]) (data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r6.tex)
 (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r6.tex)
 (data/cpv_MACA64_MR2023b/tables/1a_zer_r6.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_zer_r6.tex)
-(data/cpv_PCWIN64_MR2025b/tables/1a_zer_r6.tex [34])
+(data/cpv_PCWIN64_MR2025b/tables/1a_zer_r6.tex [33])
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r6.tex)
 (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r6.tex
 Overfull \hbox (1.9954pt too wide) detected at line 3
@@ -1596,21 +2030,21 @@ Overfull \hbox (1.9954pt too wide) detected at line 3
  []
 
 )
-<data/cpv_MACA64_MR2023b/figures/pz_r6.pdf, id=1389, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r6.pdf, id=1213, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r6.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r6.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r6.pdf  used on inp
 ut line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf, id=1390, 1015.795pt x 761.8462
+<data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf, id=1214, 1015.795pt x 761.8462
 5pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf  used o
 n input line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
- [35]
-<data/cpv_MACA64_MR2023b/figures/eval_r6.pdf, id=1399, 1015.795pt x 761.84625pt
+ [34]
+<data/cpv_MACA64_MR2023b/figures/eval_r6.pdf, id=1223, 1015.795pt x 761.84625pt
 >
 File: data/cpv_MACA64_MR2023b/figures/eval_r6.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r6.pdf>
@@ -1636,7 +2070,7 @@ Overfull \hbox (3.71565pt too wide) detected at line 3
 []
  []
 
-[36 <./data/cpv_MACA64_MR2023b/figures/pz_r6.pdf> <./data/cpv_MACA64_MR2023b/fi
+[35 <./data/cpv_MACA64_MR2023b/figures/pz_r6.pdf> <./data/cpv_MACA64_MR2023b/fi
 gures/pz_r6_zoom.pdf> <./data/cpv_MACA64_MR2023b/figures/eval_r6.pdf>])
 (data/cpv_PCWIN64_MR2025b/tables/1a_nd_r7.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
@@ -1653,13 +2087,13 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-[37])
-<figures/1a/num_den_r7.pdf, id=1496, 1015.795pt x 761.84625pt>
+[36])
+<figures/1a/num_den_r7.pdf, id=1320, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r7.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r7.pdf>
 Package pdftex.def Info: figures/1a/num_den_r7.pdf  used on input line 68.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [38] (data/cpv_MACA64_MR2023b/tables/1a_pol_r7.tex)
+ [37] (data/cpv_MACA64_MR2023b/tables/1a_pol_r7.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_pol_r7.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_pol_r7.tex
 Overfull \hbox (5.39824pt too wide) detected at line 3
@@ -1671,34 +2105,34 @@ Overfull \hbox (5.39824pt too wide) detected at line 3
 []
  []
 
-[39 <./figures/1a/num_den_r7.pdf>])
+[38 <./figures/1a/num_den_r7.pdf>])
 (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r7.tex)
 (data/cpv_MACA64_MR2023b/tables/1a_zer_r7.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_zer_r7.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_zer_r7.tex)
-(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r7.tex [40])
+(data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r7.tex [39])
 (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r7.tex)
-<data/cpv_MACA64_MR2023b/figures/pz_r7.pdf, id=1634, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r7.pdf, id=1459, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r7.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r7.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r7.pdf  used on inp
 ut line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf, id=1635, 1015.795pt x 761.8462
+<data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf, id=1460, 1015.795pt x 761.8462
 5pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf  used o
 n input line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r7.pdf, id=1636, 1015.795pt x 761.84625pt
+<data/cpv_MACA64_MR2023b/figures/eval_r7.pdf, id=1461, 1015.795pt x 761.84625pt
 >
 File: data/cpv_MACA64_MR2023b/figures/eval_r7.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r7.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/eval_r7.pdf  used on i
 nput line 68.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [41 <./data/cpv_MACA64_MR2023b/figures/pz_r7.pdf> <./data/cpv_MACA64_MR2023b/f
+ [40 <./data/cpv_MACA64_MR2023b/figures/pz_r7.pdf> <./data/cpv_MACA64_MR2023b/f
 igures/pz_r7_zoom.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1723,7 +2157,7 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-[42 <./data/cpv_MACA64_MR2023b/figures/eval_r7.pdf>])
+[41 <./data/cpv_MACA64_MR2023b/figures/eval_r7.pdf>])
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_nd_r8.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
@@ -1734,16 +2168,16 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-[43])
-<figures/1a/num_den_r8.pdf, id=1746, 1015.795pt x 761.84625pt>
+[42])
+<figures/1a/num_den_r8.pdf, id=1571, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r8.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r8.pdf>
 Package pdftex.def Info: figures/1a/num_den_r8.pdf  used on input line 68.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [44] (data/cpv_MACA64_MR2023b/tables/1a_pol_r8.tex)
+ [43] (data/cpv_MACA64_MR2023b/tables/1a_pol_r8.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_pol_r8.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_pol_r8.tex)
-(data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r8.tex [45 <./figures/1a/num_den_r
+(data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r8.tex [44 <./figures/1a/num_den_r
 8.pdf>]) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r8.tex)
 (data/cpv_MACA64_MR2023b/tables/1a_zer_r8.tex
 Overfull \hbox (6.68346pt too wide) detected at line 3
@@ -1760,7 +2194,7 @@ Overfull \hbox (1.26672pt too wide) detected at line 3
 []
  []
 
-[46]) (data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r8.tex
+[45]) (data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r8.tex
 Overfull \hbox (1.26672pt too wide) detected at line 3
 []
  []
@@ -1771,21 +2205,21 @@ Overfull \hbox (6.4057pt too wide) detected at line 3
  []
 
 )
-<data/cpv_MACA64_MR2023b/figures/pz_r8.pdf, id=1781, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r8.pdf, id=1607, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r8.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r8.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r8.pdf  used on inp
 ut line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf, id=1782, 1015.795pt x 761.8462
+<data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf, id=1608, 1015.795pt x 761.8462
 5pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf  used o
 n input line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
- [47]
-<data/cpv_MACA64_MR2023b/figures/eval_r8.pdf, id=1791, 1015.795pt x 761.84625pt
+ [46]
+<data/cpv_MACA64_MR2023b/figures/eval_r8.pdf, id=1617, 1015.795pt x 761.84625pt
 >
 File: data/cpv_MACA64_MR2023b/figures/eval_r8.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r8.pdf>
@@ -1811,7 +2245,7 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-[48 <./data/cpv_MACA64_MR2023b/figures/pz_r8.pdf> <./data/cpv_MACA64_MR2023b/fi
+[47 <./data/cpv_MACA64_MR2023b/figures/pz_r8.pdf> <./data/cpv_MACA64_MR2023b/fi
 gures/pz_r8_zoom.pdf> <./data/cpv_MACA64_MR2023b/figures/eval_r8.pdf>])
 (data/cpv_PCWIN64_MR2025b/tables/1a_nd_r9.tex
 Overfull \hbox (3.71565pt too wide) detected at line 3
@@ -1823,13 +2257,13 @@ Overfull \hbox (3.71565pt too wide) detected at line 3
 []
  []
 
-[49]) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r9.tex
+[48]) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r9.tex
 Overfull \hbox (9.13239pt too wide) detected at line 3
 []
  []
 
-) [50]
-<figures/1a/num_den_r9.pdf, id=1882, 1015.795pt x 761.84625pt>
+) [49]
+<figures/1a/num_den_r9.pdf, id=1709, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r9.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r9.pdf>
 Package pdftex.def Info: figures/1a/num_den_r9.pdf  used on input line 68.
@@ -1844,7 +2278,7 @@ Overfull \hbox (5.39824pt too wide) detected at line 3
 []
  []
 
-[51 <./figures/1a/num_den_r9.pdf>])
+[50 <./figures/1a/num_den_r9.pdf>])
 (data/cpv_PCWIN64_MR2025b/tables/1a_pol_r9.tex
 Overfull \hbox (6.68346pt too wide) detected at line 3
 []
@@ -1855,33 +2289,33 @@ Overfull \hbox (6.68346pt too wide) detected at line 3
 []
  []
 
-) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r9.tex) [52]
+) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r9.tex) [51]
 (data/cpv_MACA64_MR2023b/tables/1a_zer_r9.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_zer_r9.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_zer_r9.tex)
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r9.tex)
-(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r9.tex [53])
-<data/cpv_MACA64_MR2023b/figures/pz_r9.pdf, id=1918, 1015.795pt x 761.84625pt>
+(data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r9.tex [52])
+<data/cpv_MACA64_MR2023b/figures/pz_r9.pdf, id=1745, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r9.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r9.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r9.pdf  used on inp
 ut line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf, id=1919, 1015.795pt x 761.8462
+<data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf, id=1746, 1015.795pt x 761.8462
 5pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf  used o
 n input line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r9.pdf, id=1920, 1015.795pt x 761.84625pt
+<data/cpv_MACA64_MR2023b/figures/eval_r9.pdf, id=1747, 1015.795pt x 761.84625pt
 >
 File: data/cpv_MACA64_MR2023b/figures/eval_r9.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r9.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/eval_r9.pdf  used on i
 nput line 68.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [54 <./data/cpv_MACA64_MR2023b/figures/pz_r9.pdf> <./data/cpv_MACA64_MR2023b/f
+ [53 <./data/cpv_MACA64_MR2023b/figures/pz_r9.pdf> <./data/cpv_MACA64_MR2023b/f
 igures/pz_r9_zoom.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1906,7 +2340,7 @@ Overfull \hbox (13.92415pt too wide) detected at line 3
 []
  []
 
-[55 <./data/cpv_MACA64_MR2023b/figures/eval_r9.pdf>])
+[54 <./data/cpv_MACA64_MR2023b/figures/eval_r9.pdf>])
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_nd_r10.tex
 Overfull \hbox (13.92415pt too wide) detected at line 3
 []
@@ -1917,16 +2351,16 @@ Overfull \hbox (13.92415pt too wide) detected at line 3
 []
  []
 
-[56])
-<figures/1a/num_den_r10.pdf, id=2023, 1015.795pt x 761.84625pt>
+[55])
+<figures/1a/num_den_r10.pdf, id=1851, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r10.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r10.pdf>
 Package pdftex.def Info: figures/1a/num_den_r10.pdf  used on input line 68.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [57] (data/cpv_MACA64_MR2023b/tables/1a_pol_r10.tex)
+ [56] (data/cpv_MACA64_MR2023b/tables/1a_pol_r10.tex)
 (data/cpv_MACA64_MR2022b/tables/1a_pol_r10.tex)
 (data/cpv_PCWIN64_MR2025b/tables/1a_pol_r10.tex)
-(data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r10.tex [58 <./figures/1a/num_den_
+(data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r10.tex [57 <./figures/1a/num_den_
 r10.pdf>]) (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r10.tex)
 (data/cpv_MACA64_MR2023b/tables/1a_zer_r10.tex
 Overfull \hbox (13.59283pt too wide) detected at line 3
@@ -1943,7 +2377,7 @@ Overfull \hbox (19.00957pt too wide) detected at line 3
 []
  []
 
-[59]) (data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r10.tex
+[58]) (data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r10.tex
 Overfull \hbox (19.00957pt too wide) detected at line 3
 []
  []
@@ -1954,22 +2388,22 @@ Overfull \hbox (18.73181pt too wide) detected at line 3
  []
 
 )
-<data/cpv_MACA64_MR2023b/figures/pz_r10.pdf, id=2058, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r10.pdf, id=1886, 1015.795pt x 761.84625pt>
 
 File: data/cpv_MACA64_MR2023b/figures/pz_r10.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r10.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r10.pdf  used on in
 put line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf, id=2059, 1015.795pt x 761.846
+<data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf, id=1887, 1015.795pt x 761.846
 25pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf  used 
 on input line 68.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
- [60]
-<data/cpv_MACA64_MR2023b/figures/eval_r10.pdf, id=2068, 1015.795pt x 761.84625p
+ [59]
+<data/cpv_MACA64_MR2023b/figures/eval_r10.pdf, id=1896, 1015.795pt x 761.84625p
 t>
 File: data/cpv_MACA64_MR2023b/figures/eval_r10.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r10.pdf>
@@ -1981,192 +2415,192 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 5.
 
 Overfull \hbox (11.39603pt too wide) in paragraph at lines 7--8
-\OT1/cmr/m/n/10 Figure [][]30[][] involves the classical sign function; it illu
+[][]\OT1/cmr/m/n/10 Figure 30[][] involves the classical sign function; it illu
 strates another symmetric case, i.e., a configuration
  []
 
-[61 <./data/cpv_MACA64_MR2023b/figures/pz_r10.pdf> <./data/cpv_MACA64_MR2023b/f
+[60 <./data/cpv_MACA64_MR2023b/figures/pz_r10.pdf> <./data/cpv_MACA64_MR2023b/f
 igures/pz_r10_zoom.pdf> <./data/cpv_MACA64_MR2023b/figures/eval_r10.pdf>]
-<figures/all/cas_1b_r1e-14.pdf, id=2163, 1015.795pt x 761.84625pt>
+<figures/all/cas_1b_r1e-14.pdf, id=1990, 1015.795pt x 761.84625pt>
 File: figures/all/cas_1b_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_1b_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_1b_r1e-14.pdf  used on input line 11.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_1b_zol_time.pdf, id=2164, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_1b_zol_time.pdf, id=1991, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_1b_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_1b_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_1b_zol_time.pdf  used on inp
 ut line 12.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
 
-[62 <./figures/all/cas_1b_r1e-14.pdf> <./figures/time_accuracy/cas_1b_zol_time.
+[61 <./figures/all/cas_1b_r1e-14.pdf> <./figures/time_accuracy/cas_1b_zol_time.
 pdf>]
-<figures/all/cas_1c_r1e-14.pdf, id=2276, 1015.795pt x 761.84625pt>
+<figures/all/cas_1c_r1e-14.pdf, id=2106, 1015.795pt x 761.84625pt>
 File: figures/all/cas_1c_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_1c_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_1c_r1e-14.pdf  used on input line 26.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_1c_zol_time.pdf, id=2277, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_1c_zol_time.pdf, id=2107, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_1c_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_1c_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_1c_zol_time.pdf  used on inp
 ut line 27.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [63 <./figures/all/cas_1c_r1e-14.pdf> <./figures/time_accuracy/cas_1c_zol_time
+ [62 <./figures/all/cas_1c_r1e-14.pdf> <./figures/time_accuracy/cas_1c_zol_time
 .pdf>]
-<figures/all/cas_1d_r1e-14.pdf, id=2379, 1015.795pt x 761.84625pt>
+<figures/all/cas_1d_r1e-14.pdf, id=2210, 1015.795pt x 761.84625pt>
 File: figures/all/cas_1d_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_1d_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_1d_r1e-14.pdf  used on input line 40.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_1d_zol_time.pdf, id=2380, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_1d_zol_time.pdf, id=2211, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_1d_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_1d_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_1d_zol_time.pdf  used on inp
 ut line 41.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [64 <./figures/all/cas_1d_r1e-14.pdf> <./figures/time_accuracy/cas_1d_zol_time
+ [63 <./figures/all/cas_1d_r1e-14.pdf> <./figures/time_accuracy/cas_1d_zol_time
 .pdf>]
-<figures/all/cas_2a_r1e-14.pdf, id=2491, 1015.795pt x 761.84625pt>
+<figures/all/cas_2a_r1e-14.pdf, id=2323, 1015.795pt x 761.84625pt>
 File: figures/all/cas_2a_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_2a_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_2a_r1e-14.pdf  used on input line 55.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_2a_zol_time.pdf, id=2492, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_2a_zol_time.pdf, id=2324, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_2a_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_2a_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_2a_zol_time.pdf  used on inp
 ut line 56.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [65 <./figures/all/cas_2a_r1e-14.pdf> <./figures/time_accuracy/cas_2a_zol_time
+ [64 <./figures/all/cas_2a_r1e-14.pdf> <./figures/time_accuracy/cas_2a_zol_time
 .pdf>]
-<figures/all/cas_2b_r1e-14.pdf, id=2594, 1015.795pt x 761.84625pt>
+<figures/all/cas_2b_r1e-14.pdf, id=2427, 1015.795pt x 761.84625pt>
 File: figures/all/cas_2b_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_2b_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_2b_r1e-14.pdf  used on input line 70.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_2b_zol_time.pdf, id=2595, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_2b_zol_time.pdf, id=2428, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_2b_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_2b_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_2b_zol_time.pdf  used on inp
 ut line 71.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [66 <./figures/all/cas_2b_r1e-14.pdf> <./figures/time_accuracy/cas_2b_zol_time
+ [65 <./figures/all/cas_2b_r1e-14.pdf> <./figures/time_accuracy/cas_2b_zol_time
 .pdf>]
-<figures/all/cas_2c_r1e-14.pdf, id=2695, 1015.795pt x 761.84625pt>
+<figures/all/cas_2c_r1e-14.pdf, id=2529, 1015.795pt x 761.84625pt>
 File: figures/all/cas_2c_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_2c_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_2c_r1e-14.pdf  used on input line 84.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_2c_zol_time.pdf, id=2696, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_2c_zol_time.pdf, id=2530, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_2c_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_2c_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_2c_zol_time.pdf  used on inp
 ut line 85.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [67 <./figures/all/cas_2c_r1e-14.pdf> <./figures/time_accuracy/cas_2c_zol_time
+ [66 <./figures/all/cas_2c_r1e-14.pdf> <./figures/time_accuracy/cas_2c_zol_time
 .pdf>]
-<figures/all/cas_2d_r1e-14.pdf, id=2801, 1015.795pt x 761.84625pt>
+<figures/all/cas_2d_r1e-14.pdf, id=2635, 1015.795pt x 761.84625pt>
 File: figures/all/cas_2d_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_2d_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_2d_r1e-14.pdf  used on input line 98.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_2d_zol_time.pdf, id=2802, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_2d_zol_time.pdf, id=2636, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_2d_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_2d_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_2d_zol_time.pdf  used on inp
 ut line 99.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [68 <./figures/all/cas_2d_r1e-14.pdf> <./figures/time_accuracy/cas_2d_zol_time
+ [67 <./figures/all/cas_2d_r1e-14.pdf> <./figures/time_accuracy/cas_2d_zol_time
 .pdf>]
-<figures/all/cas_3a_r1e-14.pdf, id=2907, 1015.795pt x 761.84625pt>
+<figures/all/cas_3a_r1e-14.pdf, id=2743, 1015.795pt x 761.84625pt>
 File: figures/all/cas_3a_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_3a_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_3a_r1e-14.pdf  used on input line 112.
 
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<figures/all/cas_3b_r1e-14.pdf, id=2908, 1015.795pt x 761.84625pt>
+<figures/all/cas_3b_r1e-14.pdf, id=2744, 1015.795pt x 761.84625pt>
 File: figures/all/cas_3b_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_3b_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_3b_r1e-14.pdf  used on input line 113.
 
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<figures/all/cas_3c_r1e-14.pdf, id=2909, 1015.795pt x 761.84625pt>
+<figures/all/cas_3c_r1e-14.pdf, id=2745, 1015.795pt x 761.84625pt>
 File: figures/all/cas_3c_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_3c_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_3c_r1e-14.pdf  used on input line 114.
 
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<figures/all/cas_3d_r1e-14.pdf, id=2910, 1015.795pt x 761.84625pt>
+<figures/all/cas_3d_r1e-14.pdf, id=2746, 1015.795pt x 761.84625pt>
 File: figures/all/cas_3d_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_3d_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_3d_r1e-14.pdf  used on input line 115.
 
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<figures/time_accuracy/cas_3a_zol_time.pdf, id=2913, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_3a_zol_time.pdf, id=2749, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_3a_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_3a_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_3a_zol_time.pdf  used on inp
 ut line 122.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<figures/time_accuracy/cas_3b_zol_time.pdf, id=2914, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_3b_zol_time.pdf, id=2750, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_3b_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_3b_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_3b_zol_time.pdf  used on inp
 ut line 123.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<figures/time_accuracy/cas_3c_zol_time.pdf, id=2915, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_3c_zol_time.pdf, id=2751, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_3c_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_3c_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_3c_zol_time.pdf  used on inp
 ut line 124.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<figures/time_accuracy/cas_3d_zol_time.pdf, id=2916, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_3d_zol_time.pdf, id=2752, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_3d_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_3d_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_3d_zol_time.pdf  used on inp
 ut line 125.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
- [69 <./figures/all/cas_3a_r1e-14.pdf> <./figures/all/cas_3b_r1e-14.pdf> <./fig
-ures/all/cas_3c_r1e-14.pdf> <./figures/all/cas_3d_r1e-14.pdf>] [70 <./figures/t
+ [68 <./figures/all/cas_3a_r1e-14.pdf> <./figures/all/cas_3b_r1e-14.pdf> <./fig
+ures/all/cas_3c_r1e-14.pdf> <./figures/all/cas_3d_r1e-14.pdf>] [69 <./figures/t
 ime_accuracy/cas_3a_zol_time.pdf> <./figures/time_accuracy/cas_3b_zol_time.pdf>
  <./figures/time_accuracy/cas_3c_zol_time.pdf> <./figures/time_accuracy/cas_3d_
 zol_time.pdf>]
-<figures/all/cas_7_r1e-14.pdf, id=3352, 1015.795pt x 761.84625pt>
+<figures/all/cas_7_r1e-14.pdf, id=3189, 1015.795pt x 761.84625pt>
 File: figures/all/cas_7_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_7_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_7_r1e-14.pdf  used on input line 139.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_7_zol_time.pdf, id=3353, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_7_zol_time.pdf, id=3190, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_7_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_7_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_7_zol_time.pdf  used on inpu
 t line 140.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [71 <./figures/all/cas_7_r1e-14.pdf> <./figures/time_accuracy/cas_7_zol_time.p
+ [70 <./figures/all/cas_7_r1e-14.pdf> <./figures/time_accuracy/cas_7_zol_time.p
 df>]
-<figures/all/cas_spiral1_r1e-12.pdf, id=3464, 1015.795pt x 761.84625pt>
+<figures/all/cas_spiral1_r1e-12.pdf, id=3302, 1015.795pt x 761.84625pt>
 File: figures/all/cas_spiral1_r1e-12.pdf Graphic file (type pdf)
 <use figures/all/cas_spiral1_r1e-12.pdf>
 Package pdftex.def Info: figures/all/cas_spiral1_r1e-12.pdf  used on input line
  153.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_spiral1_zol_time.pdf, id=3465, 1015.795pt x 761.8462
+<figures/time_accuracy/cas_spiral1_zol_time.pdf, id=3303, 1015.795pt x 761.8462
 5pt>
 File: figures/time_accuracy/cas_spiral1_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_spiral1_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_spiral1_zol_time.pdf  used o
 n input line 154.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
- [72 <./figures/all/cas_spiral1_r1e-12.pdf> <./figures/time_accuracy/cas_spiral
+ [71 <./figures/all/cas_spiral1_r1e-12.pdf> <./figures/time_accuracy/cas_spiral
 1_zol_time.pdf>]
-<figures/all/cas_pm2_r1e-14.pdf, id=3569, 1015.795pt x 761.84625pt>
+<figures/all/cas_pm2_r1e-14.pdf, id=3408, 1015.795pt x 761.84625pt>
 File: figures/all/cas_pm2_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_pm2_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_pm2_r1e-14.pdf  used on input line 167
 .
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_pm2_zol_time.pdf, id=3570, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_pm2_zol_time.pdf, id=3409, 1015.795pt x 761.84625pt>
 
 File: figures/time_accuracy/cas_pm2_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_pm2_zol_time.pdf>
@@ -2174,68 +2608,215 @@ Package pdftex.def Info: figures/time_accuracy/cas_pm2_zol_time.pdf  used on in
 put line 168.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
 )
-[73 <./figures/all/cas_pm2_r1e-14.pdf> <./figures/time_accuracy/cas_pm2_zol_tim
-e.pdf>] (main.aux)
+(mainMPI.bbl
+pdfTeX warning (ext4): destination with the same identifier (name{cite.akhiezer
+1990elements}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 \bibitem{akhiezer1990elements}
+                                   [72 <./figures/all/cas_pm2_r1e-14.pdf> <./fi
+gures/time_accuracy/cas_pm2_zol_time.pdf>]
+pdfTeX warning (ext4): destination with the same identifier (name{cite.aa86}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.8 \bibitem{aa86}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.abg_book
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14 \bibitem{abg_book}
+                       
+pdfTeX warning (ext4): destination with the same identifier (name{cite.morAntGI
+16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \bibitem{morAntGI16}
+                         
+pdfTeX warning (ext4): destination with the same identifier (name{cite.morAntGP
+24}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.25 \bibitem{morAntGP24}
+                         
+pdfTeX warning (ext4): destination with the same identifier (name{cite.ali17}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.32 \bibitem{ali17}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Da75}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.39 \bibitem{Da75}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{cite.chebfun}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.44 \bibitem{chebfun}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{cite.fntb18})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 \bibitem{fntb18}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{cite.morGosPA
+22}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.55 \bibitem{morGosPA22}
+                         
+pdfTeX warning (ext4): destination with the same identifier (name{cite.morIonA1
+4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.63 \bibitem{morIonA14}
+                        
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Is18}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68 \bibitem{Is18}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{cite.istace19
+95third}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73 \bibitem{istace1995third}
+                              
+pdfTeX warning (ext4): destination with the same identifier (name{cite.morKarGA
+19a}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 \bibitem{morKarGA19a}
+                          
+pdfTeX warning (ext4): destination with the same identifier (name{cite.morKarGG
+etal25}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.84 \bibitem{morKarGGetal25}
+                             
+pdfTeX warning (ext4): destination with the same identifier (name{cite.ajm07}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.91 \bibitem{ajm07}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{cite.nakatsuk
+asa2016computing}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.96 \bibitem{nakatsukasa2016computing}
+                                       
+pdfTeX warning (ext4): destination with the same identifier (name{cite.nst18}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.102 \bibitem{nst18}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{cite.nakatsuk
+asa2020algorithm}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.107 \bibitem{nakatsukasa2020algorithm}
+                                         [73]
+pdfTeX warning (ext4): destination with the same identifier (name{cite.AAArevie
+w}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.112 \bibitem{AAAreview}
+                         
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Po81}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.117 \bibitem{Po81}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{cite.starke19
+92near}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.122 \bibitem{starke1992near}
+                              
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Tr13}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.128 \bibitem{Tr13}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{cite.trefethe
+n2024computation}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.133 \bibitem{trefethen2024computation}
+                                        )
+
+Package natbib Warning: There were multiply defined citations.
+
+[74] (mainMPI.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A73A0033C570E5DF9D3DBF3F5B2343A4;7354.
+Package rerunfilecheck Info: File `mainMPI.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30967 strings out of 480549
- 663112 string characters out of 2893596
- 980275 words of memory out of 3000000
- 47612 multiletter control sequences out of 15000+600000
- 483404 words of font info for 85 fonts, out of 8000000 for 9000
+ 36827 strings out of 480549
+ 810787 string characters out of 2893596
+ 1281866 words of memory out of 3000000
+ 53386 multiletter control sequences out of 15000+600000
+ 488200 words of font info for 103 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 79i,14n,80p,3245b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 122i,20n,120p,10905b,682s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/charles/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfo
-ur/jknappen/ec/dpi600/tcrm1000.pk> </Users/charles/Library/Application Support/
-MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk> </Users/char
-les/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/
-dpi600/tcrm0800.pk></Library/Application Support/MiKTeX/texmfs/install/fonts/ty
-pe1/public/amsfonts/cm/cmbx10.pfb></Library/Application Support/MiKTeX/texmfs/i
-nstall/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Library/Application Support/
-MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Library/Applic
-ation Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+ur/jknappen/ec/dpi600/tcrm0800.pk> </Users/charles/Library/Application Support/
+MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></Library/App
+lication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb></Library/Application Support/MiKTeX/texmfs/ins
+tall/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Library/Application Support/Mi
+KTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></Library/Applicat
+ion Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Li
+brary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publi
+c/amsfonts/cm/cmmi8.pfb></Library/Application Support/MiKTeX/texmfs/install/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></Library/Application Support/MiKTeX/texm
+fs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Library/Application Suppo
+rt/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></Library/Appl
+ication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb><
 /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/p
-ublic/amsfonts/cm/cmmi12.pfb></Library/Application Support/MiKTeX/texmfs/instal
-l/fonts/type1/public/amsfonts/cm/cmmi5.pfb></Library/Application Support/MiKTeX
-/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Library/Application 
-Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Librar
-y/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb></Library/Application Support/MiKTeX/texmfs/i
-nstall/fonts/type1/public/amsfonts/cm/cmr17.pfb></Library/Application Support/M
-iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></Library/Applicat
-ion Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Lib
-rary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/c
-mr7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/
-amsfonts/cm/cmr8.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/
-type1/public/amsfonts/cm/cmr9.pfb></Library/Application Support/MiKTeX/texmfs/i
-nstall/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Library/Application Support/
-MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></Library/Applic
-ation Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></
-Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/c
-m/cmsy7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pub
-lic/amsfonts/cm/cmti10.pfb></Library/Application Support/MiKTeX/texmfs/install/
-fonts/type1/public/amsfonts/cm/cmtt10.pfb></Library/Application Support/MiKTeX/
-texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb></Library/Application 
-Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt8.pfb></Librar
-y/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt
-9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/am
-sfonts/euler/eufm10.pfb></Library/Application Support/MiKTeX/texmfs/install/fon
-ts/type1/public/amsfonts/symbols/msam10.pfb></Library/Application Support/MiKTe
-X/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (73 pages, 12914539 bytes).
+cm/cmr7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb></Library/Application Support/MiKTeX/texmfs/install/fo
+nts/type1/public/amsfonts/cm/cmr9.pfb></Library/Application Support/MiKTeX/texm
+fs/install/fonts/type1/public/amsfonts/cm/cmsl9.pfb></Library/Application Suppo
+rt/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></Library/
+Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ams
+fonts/cm/cmsy5.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/ty
+pe1/public/amsfonts/cm/cmsy6.pfb></Library/Application Support/MiKTeX/texmfs/in
+stall/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Library/Application Support/Mi
+KTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Library/Applica
+tion Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></L
+ibrary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm
+/cmtt10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pub
+lic/amsfonts/cm/cmtt12.pfb></Library/Application Support/MiKTeX/texmfs/install/
+fonts/type1/public/amsfonts/cm/cmtt8.pfb></Library/Application Support/MiKTeX/t
+exmfs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb></Library/Application Su
+pport/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></Libr
+ary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbo
+ls/msam10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/p
+ublic/amsfonts/symbols/msbm10.pfb>
+Output written on mainMPI.pdf (74 pages, 12931319 bytes).
 PDF statistics:
- 3902 PDF objects out of 4296 (max. 8388607)
- 384 named destinations out of 1000 (max. 500000)
- 653 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3989 PDF objects out of 4296 (max. 8388607)
+ 387 named destinations out of 1000 (max. 500000)
+ 973 words of extra memory for PDF output out of 10000 (max. 10000000)
 

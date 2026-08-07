@@ -1,0 +1,68 @@
+\foreach \n in {3,...,\CAS}{
+\subsection{Approximation objective $r=\n$}
+\subsubsection{Numerator and denominator coefficients}
+
+The numerator and denominator coefficients (both real and complex parts) are given in the following tables. Each table gives the results obtained on different platform.
+\tiny
+\input{data/cpv_MACA64_MR2023b/tables/1a_nd_r\n}
+\input{data/cpv_MACA64_MR2022b/tables/1a_nd_r\n}
+\input{data/cpv_PCWIN64_MR2025b/tables/1a_nd_r\n}
+\input{data/AlexReis_PCWIN64_MR2025b/tables/1a_nd_r\n}
+\input{data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r\n}
+\normalsize
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=.75\textwidth]{figures/1a/num_den_r\n.pdf}
+    \caption{Case \texttt{1a}, $r=\n$, Z4. Numerator and denominator dispersion over  the different platforms.}
+    \label{fig:numden_\n}
+\end{figure}
+
+\subsubsection{Poles}
+
+The poles are given in the following tables. Each table gives the results obtained on different platform.
+\tiny
+\input{data/cpv_MACA64_MR2023b/tables/1a_pol_r\n}
+\input{data/cpv_MACA64_MR2022b/tables/1a_pol_r\n}
+\input{data/cpv_PCWIN64_MR2025b/tables/1a_pol_r\n}
+\input{data/AlexReis_PCWIN64_MR2025b/tables/1a_pol_r\n}
+\input{data/AlexReis_PCWIN64perso_MR2017a/tables/1a_pol_r\n}
+\normalsize
+
+\subsubsection{Zeros}
+The zeros are given in the following tables. Each table gives the results obtained on different platform.
+
+\tiny
+\input{data/cpv_MACA64_MR2023b/tables/1a_zer_r\n}
+\input{data/cpv_MACA64_MR2022b/tables/1a_zer_r\n}
+\input{data/cpv_PCWIN64_MR2025b/tables/1a_zer_r\n}
+\input{data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r\n}
+\input{data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r\n}
+\normalsize
+
+%\subsection{AAA data: (\texttt{[zj,fj,wj,errvec]})}
+%\foreach \j in {1,...,2}{
+%\input{tables/1a_aaa_r\n_\j}
+%}
+
+
+\subsubsection{Poles and zeros visualization (case \texttt{cpv MACA64 MR2023b})}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=.45\textwidth]{data/cpv_MACA64_MR2023b/figures/pz_r\n.pdf}
+    \includegraphics[width=.45\textwidth]{data/cpv_MACA64_MR2023b/figures/pz_r\n_zoom.pdf}
+    \caption{Case \texttt{1a} (\texttt{cpv MACA64 MR2023b}), $r=\n$, Z4. Left frame: zeros (left) and poles (right). Right frame: same but discarding the largest real entry.}
+    \label{fig:pz_\n}
+\end{figure}
+
+\subsubsection{Approximation visualization}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=.75\textwidth]{data/cpv_MACA64_MR2023b/figures/eval_r\n.pdf}
+    \caption{Case \texttt{1a} (\texttt{cpv MACA64 MR2023b}), $r=\n$, Z4. $E$ and $F$ error evaluations.}
+    \label{fig:eval_\n}
+\end{figure}
+%\newpage
+}
