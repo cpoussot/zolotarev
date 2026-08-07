@@ -1,9 +1,9 @@
 \global \c@tocdepth 2\relax 
 \contentsline {section}{\numberline {1}Introduction and contributions}{2}{section.1}%
 \contentsline {paragraph}{About rational approximation.}{2}{section*.2}%
-\contentsline {paragraph}{Preliminaries on the Zoloratev 3rd and 4th problems and the data-driven framework.}{2}{section*.3}%
+\contentsline {paragraph}{Preliminaries on the Zoloratev 3rd and 4th problems and the data-driven framework.}{3}{section*.3}%
 \contentsline {subsection}{\numberline {1.1}Contributions}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Paper structure}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2}Paper structure}{4}{subsection.1.2}%
 \contentsline {section}{\numberline {2}The Zolotarev problems}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Reminder and general procedure}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Approach paved in \cite {trefethen2024computation} and discussions}{5}{subsection.2.2}%
@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {4.2}Structure analysis of the rational solutions}{8}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Accuracy and computational effort}{10}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Numerical robustness}{11}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Preliminary conclusions and open questions}{11}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.5}Preliminary conclusions and open questions}{12}{subsection.4.5}%
 \contentsline {section}{\numberline {5}Numerical experiments}{13}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Matlab code package, functions and code sample}{13}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Numerical test cases}{14}{subsection.5.2}%
@@ -23,9 +23,9 @@
 \contentsline {section}{\numberline {A}Detailed results on the two symmetric circles case}{17}{appendix.A}%
 \contentsline {subsection}{\numberline {A.1}Approximation objective $r=3$}{17}{subsection.A.1}%
 \contentsline {subsubsection}{\numberline {A.1.1}Numerator and denominator coefficients}{17}{subsubsection.A.1.1}%
-\contentsline {subsubsection}{\numberline {A.1.2}Poles}{18}{subsubsection.A.1.2}%
-\contentsline {subsubsection}{\numberline {A.1.3}Zeros}{19}{subsubsection.A.1.3}%
-\contentsline {subsubsection}{\numberline {A.1.4}Poles and zeros visualization (case \texttt {cpv MACA64 MR2023b})}{20}{subsubsection.A.1.4}%
+\contentsline {subsubsection}{\numberline {A.1.2}Poles}{19}{subsubsection.A.1.2}%
+\contentsline {subsubsection}{\numberline {A.1.3}Zeros}{20}{subsubsection.A.1.3}%
+\contentsline {subsubsection}{\numberline {A.1.4}Poles and zeros visualization (case \texttt {cpv MACA64 MR2023b})}{21}{subsubsection.A.1.4}%
 \contentsline {subsubsection}{\numberline {A.1.5}Approximation visualization}{21}{subsubsection.A.1.5}%
 \contentsline {subsection}{\numberline {A.2}Approximation objective $r=4$}{21}{subsection.A.2}%
 \contentsline {subsubsection}{\numberline {A.2.1}Numerator and denominator coefficients}{21}{subsubsection.A.2.1}%
