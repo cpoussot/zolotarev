@@ -93,7 +93,26 @@ if ~norm(D) == 0
     SS  = (SS - L*D*R);
     V   = V - L*D;
     W   = W - D*R;
-end    
+end
+% %%% Go real
+% if isCC
+%     J0  = (1/sqrt(2))*[1 1i; 1 -1i];
+%     J   = [];
+%     kk  = 1;
+%     while length(J) < length(la_)
+%         if imag(la_(kk)) == 0
+%             J   = blkdiag(J,1);
+%             kk  = kk + 1;
+%         else
+%             J   = blkdiag(J,J0);
+%             kk  = kk + 2;
+%         end
+%     end
+%     LL  = real(J'*LL*J);
+%     SS  = real(J'*SS*J);
+%     V   = real(J'*V);
+%     W   = real(W*J);
+% end
 % Truncate
 [L1,S1,~]   = svd([LL,SS],'econ');
 [~,~,R2]    = svd([SS',LL']','econ');

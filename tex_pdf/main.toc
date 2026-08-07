@@ -1,76 +1,83 @@
 \global \c@tocdepth 2\relax 
 \contentsline {section}{\numberline {1}Introduction and contributions}{2}{section.1}%
 \contentsline {paragraph}{About rational approximation.}{2}{section*.2}%
-\contentsline {paragraph}{Preliminaries on the Zoloratev 3rd and 4th problems.}{2}{section*.3}%
+\contentsline {paragraph}{Preliminaries on the Zoloratev 3rd and 4th problems and the data-driven framework.}{2}{section*.3}%
 \contentsline {subsection}{\numberline {1.1}Contributions}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Paper structure}{3}{subsection.1.2}%
-\contentsline {section}{\numberline {2}The Zolotarev problems}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Reminder and general procedure}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Applications of the Z3 and Z4 problems}{5}{subsection.2.2}%
-\contentsline {paragraph}{Zolotarev ration problems (Z3).}{5}{section*.4}%
-\contentsline {paragraph}{Zolotarev sign problems (Z4).}{5}{section*.5}%
+\contentsline {section}{\numberline {2}The Zolotarev problems}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Reminder and general procedure}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Approach paved in \cite {trefethen2024computation} and discussions}{5}{subsection.2.2}%
 \contentsline {section}{\numberline {3}The main approximation methods}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}The Loewner framework}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}The AAA algorithm}{6}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Minimax algorithms and Lawson step extensions}{7}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2}The AAA algorithm (and variants)}{6}{subsection.3.2}%
 \contentsline {section}{\numberline {4}The two symmetric circles case}{7}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Experimental setup and results}{7}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Comments}{7}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Preliminary conclusions}{9}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Some (open) questions}{9}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}More complete and accurate approximations}{9}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}More experiments}{11}{subsection.4.6}%
-\contentsline {section}{\numberline {5}Description of the report and overview of the results}{11}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Methodology}{11}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Overview of the results}{11}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Preliminary conclusions}{11}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Conclusion}{11}{section.6}%
-\contentsline {section}{\numberline {A}Detailed results on the \texttt {1a} case}{12}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Approximation objective $r=3$}{13}{subsection.A.1}%
-\contentsline {subsubsection}{\numberline {A.1.1}Numerator and denominator coefficients}{13}{subsubsection.A.1.1}%
-\contentsline {subsubsection}{\numberline {A.1.2}Poles}{15}{subsubsection.A.1.2}%
-\contentsline {subsubsection}{\numberline {A.1.3}Zeros}{16}{subsubsection.A.1.3}%
-\contentsline {subsubsection}{\numberline {A.1.4}Poles and zeros visualisation (case \texttt {cpv MACA64 MR2023b})}{17}{subsubsection.A.1.4}%
-\contentsline {subsubsection}{\numberline {A.1.5}Approximation visualization}{17}{subsubsection.A.1.5}%
-\contentsline {subsection}{\numberline {A.2}Approximation objective $r=4$}{18}{subsection.A.2}%
-\contentsline {subsubsection}{\numberline {A.2.1}Numerator and denominator coefficients}{18}{subsubsection.A.2.1}%
-\contentsline {subsubsection}{\numberline {A.2.2}Poles}{20}{subsubsection.A.2.2}%
-\contentsline {subsubsection}{\numberline {A.2.3}Zeros}{20}{subsubsection.A.2.3}%
-\contentsline {subsubsection}{\numberline {A.2.4}Poles and zeros visualisation (case \texttt {cpv MACA64 MR2023b})}{22}{subsubsection.A.2.4}%
-\contentsline {subsubsection}{\numberline {A.2.5}Approximation visualization}{22}{subsubsection.A.2.5}%
-\contentsline {subsection}{\numberline {A.3}Approximation objective $r=5$}{23}{subsection.A.3}%
-\contentsline {subsubsection}{\numberline {A.3.1}Numerator and denominator coefficients}{23}{subsubsection.A.3.1}%
-\contentsline {subsubsection}{\numberline {A.3.2}Poles}{25}{subsubsection.A.3.2}%
-\contentsline {subsubsection}{\numberline {A.3.3}Zeros}{25}{subsubsection.A.3.3}%
-\contentsline {subsubsection}{\numberline {A.3.4}Poles and zeros visualisation (case \texttt {cpv MACA64 MR2023b})}{27}{subsubsection.A.3.4}%
-\contentsline {subsubsection}{\numberline {A.3.5}Approximation visualization}{27}{subsubsection.A.3.5}%
-\contentsline {subsection}{\numberline {A.4}Approximation objective $r=6$}{28}{subsection.A.4}%
-\contentsline {subsubsection}{\numberline {A.4.1}Numerator and denominator coefficients}{28}{subsubsection.A.4.1}%
-\contentsline {subsubsection}{\numberline {A.4.2}Poles}{30}{subsubsection.A.4.2}%
-\contentsline {subsubsection}{\numberline {A.4.3}Zeros}{31}{subsubsection.A.4.3}%
-\contentsline {subsubsection}{\numberline {A.4.4}Poles and zeros visualisation (case \texttt {cpv MACA64 MR2023b})}{32}{subsubsection.A.4.4}%
-\contentsline {subsubsection}{\numberline {A.4.5}Approximation visualization}{33}{subsubsection.A.4.5}%
-\contentsline {subsection}{\numberline {A.5}Approximation objective $r=7$}{34}{subsection.A.5}%
-\contentsline {subsubsection}{\numberline {A.5.1}Numerator and denominator coefficients}{34}{subsubsection.A.5.1}%
-\contentsline {subsubsection}{\numberline {A.5.2}Poles}{36}{subsubsection.A.5.2}%
-\contentsline {subsubsection}{\numberline {A.5.3}Zeros}{37}{subsubsection.A.5.3}%
-\contentsline {subsubsection}{\numberline {A.5.4}Poles and zeros visualisation (case \texttt {cpv MACA64 MR2023b})}{38}{subsubsection.A.5.4}%
-\contentsline {subsubsection}{\numberline {A.5.5}Approximation visualization}{39}{subsubsection.A.5.5}%
-\contentsline {subsection}{\numberline {A.6}Approximation objective $r=8$}{40}{subsection.A.6}%
-\contentsline {subsubsection}{\numberline {A.6.1}Numerator and denominator coefficients}{40}{subsubsection.A.6.1}%
-\contentsline {subsubsection}{\numberline {A.6.2}Poles}{42}{subsubsection.A.6.2}%
-\contentsline {subsubsection}{\numberline {A.6.3}Zeros}{44}{subsubsection.A.6.3}%
-\contentsline {subsubsection}{\numberline {A.6.4}Poles and zeros visualisation (case \texttt {cpv MACA64 MR2023b})}{45}{subsubsection.A.6.4}%
-\contentsline {subsubsection}{\numberline {A.6.5}Approximation visualization}{45}{subsubsection.A.6.5}%
-\contentsline {subsection}{\numberline {A.7}Approximation objective $r=9$}{46}{subsection.A.7}%
-\contentsline {subsubsection}{\numberline {A.7.1}Numerator and denominator coefficients}{46}{subsubsection.A.7.1}%
-\contentsline {subsubsection}{\numberline {A.7.2}Poles}{48}{subsubsection.A.7.2}%
-\contentsline {subsubsection}{\numberline {A.7.3}Zeros}{50}{subsubsection.A.7.3}%
-\contentsline {subsubsection}{\numberline {A.7.4}Poles and zeros visualisation (case \texttt {cpv MACA64 MR2023b})}{51}{subsubsection.A.7.4}%
-\contentsline {subsubsection}{\numberline {A.7.5}Approximation visualization}{52}{subsubsection.A.7.5}%
-\contentsline {subsection}{\numberline {A.8}Approximation objective $r=10$}{53}{subsection.A.8}%
-\contentsline {subsubsection}{\numberline {A.8.1}Numerator and denominator coefficients}{53}{subsubsection.A.8.1}%
-\contentsline {subsubsection}{\numberline {A.8.2}Poles}{55}{subsubsection.A.8.2}%
-\contentsline {subsubsection}{\numberline {A.8.3}Zeros}{57}{subsubsection.A.8.3}%
-\contentsline {subsubsection}{\numberline {A.8.4}Poles and zeros visualisation (case \texttt {cpv MACA64 MR2023b})}{58}{subsubsection.A.8.4}%
-\contentsline {subsubsection}{\numberline {A.8.5}Approximation visualization}{59}{subsubsection.A.8.5}%
+\contentsline {subsection}{\numberline {4.2}Structure analysis of the rational solutions}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Accuracy and computational effort}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Numerical robustness}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Preliminary conclusions and open questions}{11}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Numerical experiments}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Matlab code package, functions and code sample}{13}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Numerical test cases}{14}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Conclusion}{15}{section.6}%
+\contentsline {section}{\numberline {A}Detailed results on the two symmetric circles case}{17}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Approximation objective $r=3$}{17}{subsection.A.1}%
+\contentsline {subsubsection}{\numberline {A.1.1}Numerator and denominator coefficients}{17}{subsubsection.A.1.1}%
+\contentsline {subsubsection}{\numberline {A.1.2}Poles}{18}{subsubsection.A.1.2}%
+\contentsline {subsubsection}{\numberline {A.1.3}Zeros}{19}{subsubsection.A.1.3}%
+\contentsline {subsubsection}{\numberline {A.1.4}Poles and zeros visualization (case \texttt {cpv MACA64 MR2023b})}{20}{subsubsection.A.1.4}%
+\contentsline {subsubsection}{\numberline {A.1.5}Approximation visualization}{21}{subsubsection.A.1.5}%
+\contentsline {subsection}{\numberline {A.2}Approximation objective $r=4$}{21}{subsection.A.2}%
+\contentsline {subsubsection}{\numberline {A.2.1}Numerator and denominator coefficients}{21}{subsubsection.A.2.1}%
+\contentsline {subsubsection}{\numberline {A.2.2}Poles}{23}{subsubsection.A.2.2}%
+\contentsline {subsubsection}{\numberline {A.2.3}Zeros}{24}{subsubsection.A.2.3}%
+\contentsline {subsubsection}{\numberline {A.2.4}Poles and zeros visualization (case \texttt {cpv MACA64 MR2023b})}{25}{subsubsection.A.2.4}%
+\contentsline {subsubsection}{\numberline {A.2.5}Approximation visualization}{26}{subsubsection.A.2.5}%
+\contentsline {subsection}{\numberline {A.3}Approximation objective $r=5$}{26}{subsection.A.3}%
+\contentsline {subsubsection}{\numberline {A.3.1}Numerator and denominator coefficients}{26}{subsubsection.A.3.1}%
+\contentsline {subsubsection}{\numberline {A.3.2}Poles}{28}{subsubsection.A.3.2}%
+\contentsline {subsubsection}{\numberline {A.3.3}Zeros}{29}{subsubsection.A.3.3}%
+\contentsline {subsubsection}{\numberline {A.3.4}Poles and zeros visualization (case \texttt {cpv MACA64 MR2023b})}{30}{subsubsection.A.3.4}%
+\contentsline {subsubsection}{\numberline {A.3.5}Approximation visualization}{31}{subsubsection.A.3.5}%
+\contentsline {subsection}{\numberline {A.4}Approximation objective $r=6$}{31}{subsection.A.4}%
+\contentsline {subsubsection}{\numberline {A.4.1}Numerator and denominator coefficients}{31}{subsubsection.A.4.1}%
+\contentsline {subsubsection}{\numberline {A.4.2}Poles}{33}{subsubsection.A.4.2}%
+\contentsline {subsubsection}{\numberline {A.4.3}Zeros}{34}{subsubsection.A.4.3}%
+\contentsline {subsubsection}{\numberline {A.4.4}Poles and zeros visualization (case \texttt {cpv MACA64 MR2023b})}{36}{subsubsection.A.4.4}%
+\contentsline {subsubsection}{\numberline {A.4.5}Approximation visualization}{36}{subsubsection.A.4.5}%
+\contentsline {subsection}{\numberline {A.5}Approximation objective $r=7$}{36}{subsection.A.5}%
+\contentsline {subsubsection}{\numberline {A.5.1}Numerator and denominator coefficients}{36}{subsubsection.A.5.1}%
+\contentsline {subsubsection}{\numberline {A.5.2}Poles}{39}{subsubsection.A.5.2}%
+\contentsline {subsubsection}{\numberline {A.5.3}Zeros}{40}{subsubsection.A.5.3}%
+\contentsline {subsubsection}{\numberline {A.5.4}Poles and zeros visualization (case \texttt {cpv MACA64 MR2023b})}{41}{subsubsection.A.5.4}%
+\contentsline {subsubsection}{\numberline {A.5.5}Approximation visualization}{42}{subsubsection.A.5.5}%
+\contentsline {subsection}{\numberline {A.6}Approximation objective $r=8$}{42}{subsection.A.6}%
+\contentsline {subsubsection}{\numberline {A.6.1}Numerator and denominator coefficients}{42}{subsubsection.A.6.1}%
+\contentsline {subsubsection}{\numberline {A.6.2}Poles}{45}{subsubsection.A.6.2}%
+\contentsline {subsubsection}{\numberline {A.6.3}Zeros}{46}{subsubsection.A.6.3}%
+\contentsline {subsubsection}{\numberline {A.6.4}Poles and zeros visualization (case \texttt {cpv MACA64 MR2023b})}{48}{subsubsection.A.6.4}%
+\contentsline {subsubsection}{\numberline {A.6.5}Approximation visualization}{48}{subsubsection.A.6.5}%
+\contentsline {subsection}{\numberline {A.7}Approximation objective $r=9$}{48}{subsection.A.7}%
+\contentsline {subsubsection}{\numberline {A.7.1}Numerator and denominator coefficients}{48}{subsubsection.A.7.1}%
+\contentsline {subsubsection}{\numberline {A.7.2}Poles}{51}{subsubsection.A.7.2}%
+\contentsline {subsubsection}{\numberline {A.7.3}Zeros}{53}{subsubsection.A.7.3}%
+\contentsline {subsubsection}{\numberline {A.7.4}Poles and zeros visualization (case \texttt {cpv MACA64 MR2023b})}{54}{subsubsection.A.7.4}%
+\contentsline {subsubsection}{\numberline {A.7.5}Approximation visualization}{55}{subsubsection.A.7.5}%
+\contentsline {subsection}{\numberline {A.8}Approximation objective $r=10$}{55}{subsection.A.8}%
+\contentsline {subsubsection}{\numberline {A.8.1}Numerator and denominator coefficients}{55}{subsubsection.A.8.1}%
+\contentsline {subsubsection}{\numberline {A.8.2}Poles}{58}{subsubsection.A.8.2}%
+\contentsline {subsubsection}{\numberline {A.8.3}Zeros}{59}{subsubsection.A.8.3}%
+\contentsline {subsubsection}{\numberline {A.8.4}Poles and zeros visualization (case \texttt {cpv MACA64 MR2023b})}{61}{subsubsection.A.8.4}%
+\contentsline {subsubsection}{\numberline {A.8.5}Approximation visualization}{61}{subsubsection.A.8.5}%
+\contentsline {section}{\numberline {B}Detailed results on multiple cases}{61}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Case \texttt {'1b'}}{62}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Case \texttt {'1c'}}{63}{subsection.B.2}%
+\contentsline {subsection}{\numberline {B.3}Case \texttt {'1d'}}{64}{subsection.B.3}%
+\contentsline {subsection}{\numberline {B.4}Case \texttt {'2a'}}{65}{subsection.B.4}%
+\contentsline {subsection}{\numberline {B.5}Case \texttt {'2b'}}{66}{subsection.B.5}%
+\contentsline {subsection}{\numberline {B.6}Case \texttt {'2c'}}{67}{subsection.B.6}%
+\contentsline {subsection}{\numberline {B.7}Case \texttt {'2d'}}{68}{subsection.B.7}%
+\contentsline {subsection}{\numberline {B.8}Case \texttt {'3a'}, \texttt {'3b'}, \texttt {'3c'}, \texttt {'3d'}}{69}{subsection.B.8}%
+\contentsline {subsection}{\numberline {B.9}Case \texttt {'7'}}{71}{subsection.B.9}%
+\contentsline {subsection}{\numberline {B.10}Case \texttt {'spiral1'}}{72}{subsection.B.10}%
+\contentsline {subsection}{\numberline {B.11}Case \texttt {'pm2'}}{73}{subsection.B.11}%

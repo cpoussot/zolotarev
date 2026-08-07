@@ -6,13 +6,13 @@ N.~I. Akhiezer.
 \newblock American Mathematical Society, 1990.
 
 \bibitem{aa86}
-A.~C. Antoulas and B.~D.~0. Anderson.
+A.~C. Antoulas and B.~D.~O. Anderson.
 \newblock On the scalar rational interpolation problem.
 \newblock {\em IMA Journal of Mathematical Control and Information},
   3(2-3):61--88, 1986.
 
 \bibitem{abg_book}
-A~C. Antoulas, C~A. Beattie, and S.~Gugercin.
+A.~C. Antoulas, C.~A. Beattie, and S.~Gugercin.
 \newblock {\em Interpolatory Methods for Model Reduction}.
 \newblock Series in Computational Science and Engineering, SIAM, Philadelphia,
   2020.
@@ -30,7 +30,7 @@ A.~C. Antoulas, I.~V. Gosea, and C.~Poussot-Vassal.
 \newblock To appear in {SIAM} Review.
 
 \bibitem{ali17}
-A~C. Antoulas, S.~Lefteriu, and A~C. Ionita.
+A.~C. Antoulas, S.~Lefteriu, and A.~C. Ionita.
 \newblock {\em A Tutorial Introduction to the {Loewner} Framework for Model
   Reduction}, pages 335--376.
 \newblock Model Reduction and Approximation for Complex Systems, Computational
@@ -47,7 +47,7 @@ T.~A. Driscoll, N.~Hale, and L.~N. Trefethen.
 \newblock \url{https://www.chebfun.org/docs/guide/}, 2014.
 
 \bibitem{fntb18}
-S~I. Filip, Y.~Nakatsukasa, L.~Trefethen, and B.~Beckermann.
+S.~I. Filip, Y.~Nakatsukasa, L.~N. Trefethen, and B.~Beckermann.
 \newblock Rational minimax approximation via adaptive barycentric
   interpolation.
 \newblock {\em SIAM Journal on Scientific Computing}, 40(4):A2427--A2455, 2018.
@@ -71,7 +71,7 @@ A.~Iske.
 \newblock Texts in Applied Mathematics. Springer, 2018.
 
 \bibitem{istace1995third}
-M-P Istace and J-P Thiran.
+M-P. Istace and J-P. Thiran.
 \newblock On the third and fourth {Z}olotarev problems in the complex plane.
 \newblock {\em SIAM Journal on Numerical Analysis}, 32(1):249--259, 1995.
 
@@ -89,7 +89,7 @@ D.~S. Karachalios, I.~V. Gosea, L.~Gkimisis, and A.~C. Antoulas.
   2025.
 
 \bibitem{ajm07}
-A~J. Mayo and A~C. Antoulas.
+A.~J. Mayo and A.~C. Antoulas.
 \newblock A framework for the generalized realization problem.
 \newblock {\em Linear Algebra and Its Applications}, 426:634--662, 2007.
 
@@ -100,7 +100,7 @@ Y.~Nakatsukasa and R.~W. Freund.
 \newblock {\em {SIAM} Review}, 58(3):461--493, 2016.
 
 \bibitem{nst18}
-Y.~Nakatsukasa, O.~S\'ete, and L~N. Trefethen.
+Y.~Nakatsukasa, O.~S\`ete, and L.~N. Trefethen.
 \newblock The {AAA} algorithm for rational approximation.
 \newblock {\em SIAM Journal on Scientific Computing}, 40(3):A1494--A1522, 2018.
 
@@ -120,13 +120,13 @@ M.~J.~D. Powell.
 \newblock Cambridge University Press, 1981.
 
 \bibitem{starke1992near}
-Gerhard Starke.
+G.~Starke.
 \newblock Near-circularity for the rational {Z}olotarev problem in the complex
   plane.
 \newblock {\em Journal of Approximation Theory}, 70(1):115--130, 1992.
 
 \bibitem{Tr13}
-L~N. Trefethen.
+L.~N. Trefethen.
 \newblock {\em Approximation Theory and Approximation Practice}.
 \newblock SIAM, 2013.
 

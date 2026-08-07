@@ -87,7 +87,7 @@ for i = 1:numel(dataFiles)
         end
     end
     legend(name)
-    zol.figSavePDF(['tex_pdf/figures/num_den_r' num2str(r)])
+    zol.figSavePDF(['tex_pdf/figures/1a/num_den_r' num2str(r)])
     drawnow
 
     % %

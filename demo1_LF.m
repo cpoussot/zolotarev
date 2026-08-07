@@ -6,7 +6,11 @@ addpath('/Users/charles/Documents/GIT/zolotarev')
 % Add AAA package
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
 %%% Choose case, order
-CAS     = '1a';    % /!\ '1a' and '1b' may use "Symbolic Toolbox" if available
+% e.g. '1a', '1b', '1c', '1d', '1e', '1f', 
+%      '2a', '2b', '2c', '2d', 
+%      '3a', '3b', '3c', '3d', 
+%      '7', 'spiral1', 'pm2'
+CAS     = '1a';   % /!\ '1a' and '1b' may use "Symbolic Toolbox" if available
 robj0   = 1e-14;   % objective order (either integer > 1 or sigma threshold)
 %%% END: TO ADAPT BY USER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -27,9 +31,6 @@ col2        = col(9,:);   % Z4 zeros
 
 %%% Define Zolotarev topology
 [pts,val,data]  = zol.example(CAS);
-xx              = linspace(data.Xlim(1),data.Xlim(2),101);
-yy              = linspace(data.Ylim(1),data.Ylim(2),103);
-[X,Y]           = meshgrid(xx,yy);
 
 %%% Loewner approximation
 % >> (Z4) rational approximation
@@ -50,6 +51,9 @@ robj            = info.r;
 h3poles         = eig([info.Ar info.Br;-info.Cr (hp)],blkdiag(info.Er,0));
 h3zeros         = eig([info.Ar info.Br; info.Cr (hp)],blkdiag(info.Er,0));
 % >> (Z3) evaluate
+xx              = linspace(data.Xlim(1),data.Xlim(2),101);
+yy              = linspace(data.Ylim(1),data.Ylim(2),103);
+[X,Y]           = meshgrid(xx,yy);
 Zr3_loe         = zeros(numel(yy),numel(xx));
 for i = 1:numel(xx)
     for j = 1:numel(yy)
@@ -71,6 +75,8 @@ ylabel('Imag(.)'), xlabel('Real(.)')
 title({methodName; ['$r=' num2str(robj) '$, $\sigma_r=$ ' num2str(abs(hsig)) ' in ' num2str(timeLOE) 's' ]})
 Lgnd = legend('show');
 drawnow
-zol.figSavePDF(['tex_pdf/figures/cas_1a_r' num2str(robj0)])
 
 license('inuse')
+
+%cplxpair(h3zeros,1e-1)
+%cplxpair(h3poles,1e-1)

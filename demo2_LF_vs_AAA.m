@@ -6,8 +6,8 @@ addpath('/Users/charles/Documents/GIT/zolotarev')
 % Add AAA package
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
 %%% Choose case, order
-CAS         = '1b';    % /!\ '1a' and '1b' use "Symbolic Toolbox" if available
-robj0       = 1e-14;   % objective order (either integer > 1 or sigma threshold)
+CAS         = 'spiral1';    % /!\ '1a' and '1b' use "Symbolic Toolbox" if available
+robj0       = 1e-12;   % objective order (either integer > 1 or sigma threshold)
 %%% Chose options for chefun AAA
 AAAparam    = {",'sign',0,'lawson',0"; ... 
                ",'sign',1,'damping',.95"; ...
@@ -117,4 +117,5 @@ for ii = 1:numel(AAAparam)
            ['$r=' num2str(robj) '$ ($' num2str(length(h3poles)) '$), $\sigma_r=$ ' num2str(abs(rsig)) ' in ' num2str(timeAAA) 's' ]})
     drawnow
 end
+zol.figSavePDF(['tex_pdf/figures/all/cas_' CAS '_r' num2str(robj0)])
 license('inuse')

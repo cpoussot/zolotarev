@@ -21,13 +21,14 @@ set(groot,'defaultaxesfontsize',18)
 set(groot,'defaultAxesTickLabelInterpreter','latex');  
 list_facto  = fieldnames(get(groot,'factory'));index_interpreter = find(contains(list_facto,'Interpreter'));for i = 1:length(index_interpreter); set(groot, strrep(list_facto{index_interpreter(i)},'factory','default'),'latex'); end
 mw          = 15; % marker width
-lgn         = {'Loewner', ... 
+lgn         = {'LF', ... 
                'AAA', ...
-               'AAA  \texttt{"sign",1}', ...
-               'AAA  \texttt{"sign",1,"damping",.95,"lawson",200}'};
+               'AAA \texttt{"sign",1}', ...
+               'AAA \texttt{"sign",1,"damping",.95,"lawson",200}'};
 
 %%% Loop over all cases
 for j = 1:numel(spaceCAS)
+    close all
     clear hsig_ rsig1_ rsig2_ rsig3_ 
     clear timeLOE_ timeAAA1_ timeAAA2_ timeAAA3_ 
     CAS = spaceCAS{j}
@@ -119,7 +120,7 @@ for j = 1:numel(spaceCAS)
         legend(lgn,'Interpreter','latex','Location','South','FontSize',12)
         drawnow
     end
-    zol.figSavePDF(['tex_pdf/figures/cas_' spaceCAS{j} '_zol_time'])
+    zol.figSavePDF(['tex_pdf/figures/time_accuracy/cas_' spaceCAS{j} '_zol_time'])
 end
 
 license('inuse')
