@@ -22,12 +22,12 @@ A.~C. Antoulas, I.~V. Gosea, and A.~C. Ionita.
 \newblock Model reduction of bilinear systems in the {L}oewner framework.
 \newblock {\em SIAM Journal on Scientific Computing}, 38(5):B889--B916, 2016.
 
-\bibitem{morAntGP24}
-A.~C. Antoulas, I.~V. Gosea, and C.~Poussot-Vassal.
-\newblock The {L}oewner framework for parametric systems: Taming the curse of
-  dimensionality.
-\newblock e-print 2405.00495, arXiv, 2024.
-\newblock To appear in {SIAM} Review.
+\bibitem{AGPV:2025}
+A.~C. Antoulas, I~V. Gosea, and C.~Poussot-Vassal.
+\newblock {The Loewner framework for parametric systems: Taming the curse of
+  dimensionality}.
+\newblock {\em SIAM Review}, 67(4):737--770, 2025.
+\newblock \url{https://doi.org/10.1137/24M1656657}.
 
 \bibitem{ali17}
 A.~C. Antoulas, S.~Lefteriu, and A.~C. Ionita.

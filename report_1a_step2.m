@@ -6,7 +6,7 @@ addpath('/Users/charles/Documents/GIT/zolotarev')
 % Add AAA package
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
 % Directory name
-fileDir = 'AlexReis_PCWIN64perso_MR2017a';
+fileDir = 'ivg_GLNXA64_MR2024a';
 %%% END: TO ADAPT BY USER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -46,26 +46,6 @@ switch CAS
             info.num_opt{i} = n4_opt{1}.'/normalize;
             info.den_opt{i} = d4_opt{1}.'/normalize;
         end
-    case '1a2'
-        Xlim    = 2.5*[-1 1];
-        Ylim    = 1.5*[-1 1];
-        S       = exp(2i*pi*(1:80)'/80);
-        E       = -1.25+S;
-        F       = 1.25+S;
-        % Optimal Zolotarev
-        % Optimal Zolotarev
-        for i = 1:30
-            [Z4,z4,sigma]   = zol.ZolOpt_1a(1,1/2,i);
-            info.sig_opt{i} = sigma;
-            info.Z4_opt{i}  = Z4;
-            info.z4_opt{i}  = @(x) evalfr(z4,x);
-            [n4_opt,d4_opt] = tfdata(z4);
-            info.zer_opt{i} = roots(n4_opt{1});
-            info.pol_opt{i} = roots(d4_opt{1});
-            normalize       = d4_opt{1}(1);
-            info.num_opt{i} = n4_opt{1}.'/normalize;
-            info.den_opt{i} = d4_opt{1}.'/normalize;
-        end
     case '1b'
         Xlim    = 2.5*[-1 1];
         Ylim    = 1.5*[-1 1];
@@ -246,15 +226,15 @@ switch CAS
     case 'spiral2'
         Xlim    = 55*[-1 1];
         Ylim    = 55*[-1 1];
-        t = 1:200; u = .0265; r0 = .1;
-        r = r0 + u*10*t;
-        omega = .005;
-        phi0 = 3*pi/2;
-        phi = -omega*10*t+phi0;
-        x = r .* cos(1.2*phi);
-        y = r .* sin(1.2*phi);
-        E = x + 1i*y;
-        F = -x - 1i*y;% n = 2000;
+        t       = 1:200; u = .0265; r0 = .1;
+        r       = r0 + u*10*t;
+        omega   = .005;
+        phi0    = 3*pi/2;
+        phi     = -omega*10*t+phi0;
+        x       = r .* cos(1.2*phi);
+        y       = r .* sin(1.2*phi);
+        E       = x + 1i*y;
+        F       = -x - 1i*y;% n = 2000;
 end
 %E = unique(E,'legacy');
 %F = unique(F,'legacy');
