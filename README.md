@@ -85,16 +85,16 @@ Notice also that pathological cases may appear. A more advanced and professional
 
 # Zolot'art
 
-![Pac Mac](doc/pm2_2D.png "Z3 for Pac Man.")
+![Pac Mac](tex_pdf/figures/art/pm2_2D.png "Z3 for Pac Man.")
 *Z3 for Pac Man.*
 
-![Spiral](doc/spiral2_3D.png "Z3 for spiral.")
+![Spiral](tex_pdf/figures/art/spiral2_3D.png "Z3 for spiral.")
 *Z3 for spiral.*
 
-![YY](doc/1d_2D.png "Z3 for Ying and Yang.")
+![YY](tex_pdf/figures/art/1d_2D.png "Z3 for Ying and Yang.")
 *Z3 for Ying and Yang.*
 
-![oIo](doc/1a_2D.png "Z3 two circles.")
+![oIo](tex_pdf/figures/art/1a_2D.png "Z3 two circles.")
 *Z3 two circles.*
 
 

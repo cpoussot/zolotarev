@@ -53,6 +53,8 @@
 \newtheorem{remark}{Remark}
 \newtheorem{corr}{Corollary}
 \newtheorem{problem}{Problem}
+\def\keywords{\par\noindent\textbf{Keywords.\ }}
+\def\novelty{\par\noindent\textbf{Novelty statement.\ }}
 
 \def\CAS{10}
 \def\NARCH{5}
@@ -76,6 +78,14 @@
 \begin{abstract}
 \input{body_abstract}
 \end{abstract}
+
+\begin{keywords} 
+\input{body_keywords}
+\end{keywords} 
+
+\begin{novelty} 
+\input{body_novelty}
+\end{novelty} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \addtocontents{toc}{\setcounter{tocdepth}{2}} 
