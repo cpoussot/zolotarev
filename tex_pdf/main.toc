@@ -81,3 +81,5 @@
 \contentsline {subsection}{\numberline {B.9}Case \texttt {'7'}}{77}{subsection.B.9}%
 \contentsline {subsection}{\numberline {B.10}Case \texttt {'spiral1'}}{78}{subsection.B.10}%
 \contentsline {subsection}{\numberline {B.11}Case \texttt {'pm2'}}{79}{subsection.B.11}%
+\contentsline {section}{\numberline {C}Applications}{80}{appendix.C}%
+\contentsline {subsection}{\numberline {C.1}IIR digital filter design (Z4)}{80}{subsection.C.1}%

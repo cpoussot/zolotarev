@@ -6,7 +6,7 @@ addpath('/Users/charles/Documents/GIT/zolotarev')
 % Add AAA package
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
 %%% Choose case, order
-CAS         = 'spiral1';    % /!\ '1a' and '1b' use "Symbolic Toolbox" if available
+CAS         = 'pm2';    % /!\ '1a' and '1b' use "Symbolic Toolbox" if available
 robj0       = 1e-12;   % objective order (either integer > 1 or sigma threshold)
 %%% Chose options for chefun AAA
 AAAparam    = {",'sign',0,'lawson',0"; ... 

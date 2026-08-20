@@ -235,6 +235,21 @@ switch CAS
         y       = r .* sin(1.2*phi);
         E       = x + 1i*y;
         F       = -x - 1i*y;% n = 2000;
+    case 'iir'
+        bnd     = [1e-4 1];
+        Xlim    = [-1 1]*1.5;
+        Ylim    = [-1 1]*1.5;
+        E       = [exp(1i*linspace(1e-3,.1,50)*pi) ...
+                   exp(1i*linspace(.6,.9,50)*pi)];
+        %E       = [exp(1i*linspace(.1,.2,51)*pi) ...
+        %           exp(1i*linspace(.8,.9,51)*pi)];
+        %E       = [exp(1i*linspace(.6,.9,50)*pi)];
+        F       = exp(1i*linspace(.3,.4,100)*pi);
+        %E = .5*E;F = .5*F;
+        E       = [E conj(E)];
+        F       = [F conj(F)];
+        %E       = cplxpair(E);
+        %F       = cplxpair(F);
 end
 %E = unique(E,'legacy');
 %F = unique(F,'legacy');

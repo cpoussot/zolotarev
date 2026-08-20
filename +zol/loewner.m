@@ -67,6 +67,11 @@ elseif isa(opt,'struct')
     else
         D = 0;
     end
+    if isfield(opt,'real')
+        MAKE_REAL = opt.real;
+    else
+        MAKE_REAL = false;
+    end
 end
 info = [];
 % LL and SS
@@ -94,25 +99,36 @@ if ~norm(D) == 0
     V   = V - L*D;
     W   = W - D*R;
 end
-% %%% Go real
-% if isCC
-%     J0  = (1/sqrt(2))*[1 1i; 1 -1i];
-%     J   = [];
-%     kk  = 1;
-%     while length(J) < length(la_)
-%         if imag(la_(kk)) == 0
-%             J   = blkdiag(J,1);
-%             kk  = kk + 1;
-%         else
-%             J   = blkdiag(J,J0);
-%             kk  = kk + 2;
-%         end
-%     end
-%     LL  = real(J'*LL*J);
-%     SS  = real(J'*SS*J);
-%     V   = real(J'*V);
-%     W   = real(W*J);
-% end
+%%% Go real
+TOL_CC  = 1e-12;
+%%% Complex conjugation
+isCC = false;
+if (abs(sum(imag(la)))/max(abs(la))    <TOL_CC) && ...
+   (abs(sum(imag(mu)))/max(abs(mu))    <TOL_CC) && ...
+   (abs(sum(imag(W(:))))/max(abs(W(:)))<TOL_CC) && ...
+   (abs(sum(imag(V(:))))/max(abs(V(:)))<TOL_CC) && ...
+   (q==k) && ...
+   MAKE_REAL
+    isCC = true;
+end
+if isCC
+    J0  = (1/sqrt(2))*[1 1i; 1 -1i];
+    J   = [];
+    kk  = 1;
+    while length(J) < length(la)
+        if imag(la(kk)) == 0
+            J   = blkdiag(J,1);
+            kk  = kk + 1;
+        else
+            J   = blkdiag(J,J0);
+            kk  = kk + 2;
+        end
+    end
+    LL  = real(J'*LL*J);
+    SS  = real(J'*SS*J);
+    V   = real(J'*V);
+    W   = real(W*J);
+end
 % Truncate
 [L1,S1,~]   = svd([LL,SS],'econ');
 [~,~,R2]    = svd([SS',LL']','econ');

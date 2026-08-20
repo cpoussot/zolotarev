@@ -9,6 +9,7 @@
 %  - val       : data evaluated at points "pts" (+/- 1 vector)
 %  - data      : structure of the topology (see zol.example)
 %  - interlace : interlace data (boolean, default true)
+%  - CC        : complex conjugate IP (boolean, default false)
 % 
 % Output arguments
 %  - la : interpolation points (k x 1, complex)
@@ -20,10 +21,14 @@
 % Convert example data to LF
 %
 
-function [la,mu,W,V] = example2data(pts,val,data,interlace)
+function [la,mu,W,V] = example2data(pts,val,data,interlace,CC)
 
 if nargin < 4
-    interlace = true;
+    interlace   = true;
+    CC          = false;
+end
+if nargin < 5
+    CC  = false;
 end
 
 %%% Keep as many points in E and F 
@@ -64,6 +69,39 @@ if interlace
         W_(1,i+1) = V(i,1);
         V_(i,1)   = W(1,i+1);
         V_(i+1,1) = V(i+1,1);
+    end
+    la  = la_;
+    mu  = mu_;
+    V   = V_;
+    W   = W_;
+end
+
+%%% Complex conjugate 
+% /!\ if you wanna have real realization in LF
+if CC
+    ila = find(imag(la)>0);
+    imu = find(imag(mu)>0);
+    la  = la(ila);
+    mu  = mu(imu);
+    W   = W(ila);
+    V   = V(imu);
+    k   = length(la);
+    q   = length(mu);
+    %R   = ones(1,2*k);
+    %L   = ones(2*q,1);
+    kk  = 1;
+    for ii = 1:k
+        la_(kk)     = la(ii); 
+        W_(1,kk)    = W(ii); kk = kk +1;
+        la_(kk)     = conj(la(ii));
+        W_(1,kk)    = W(ii); kk = kk +1;
+    end
+    kk  = 1;
+    for ii = 1:q
+        mu_(kk)     = mu(ii); 
+        V_(kk,1)    = V(ii); kk = kk +1;
+        mu_(kk)     = conj(mu(ii));
+        V_(kk,1)    = V(ii); kk = kk +1;
     end
     la  = la_;
     mu  = mu_;
