@@ -8,7 +8,6 @@ addpath('/Users/charles/Documents/MDS/mdspack/MDSPACK/osx/v1.1.0/API/matlab/')
 addpath('/Users/charles/Documents/MDS/mdspack/MDSPACK/osx/v1.1.0/bin')
 % Add Zolotarev Loewner package
 addpath('/Users/charles/Documents/GIT/zolotarev')
-%addpath('/Users/charles/Documents/GIT/lf')
 % Add AAA package
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
 %%% Choose case, order
@@ -182,7 +181,7 @@ ylabel('Phase [rad]'), xlabel('Frequency'),
 %
 sgtitle([methodName ' filter design'],'FontSize',20)
 drawnow
-if SAVEIT, zol.figSavePDF('tex_pdf/figures/filter/iir_filter'), end
+if SAVEIT, zol.figSavePDF('tex_pdf/figures/filter/iir_filter-pH'), end
 %%
 %%% Time-domain signal filtering
 % >> generate signal and filter
@@ -209,5 +208,5 @@ legend('show')
 xlabel('Frequency [Hz]'), ylabel('Amplitude')
 %plot(f,abs(U-Y))
 sgtitle([methodName ' filter applied to chirp signal'],'FontSize',20)
-if SAVEIT, zol.figSavePDF('tex_pdf/figures/filter/iir_filter_td'), end
+if SAVEIT, zol.figSavePDF('tex_pdf/figures/filter/iir_filter-pH_td'), end
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2026.8.16)  18 AUG 2026 16:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2026.8.16)  20 AUG 2026 10:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1694,7 +1694,7 @@ Underfull \hbox (badness 5637) in paragraph at lines 297--297
 cmtt/m/n/8 'sign',1,'damping',.95,'lawson',200 \OT1/cmr/m/n/8 and
  []
 
-<figures/all/cas_1a_r4.pdf, id=213, 1015.795pt x 761.84625pt>
+<figures/all/cas_1a_r4.pdf, id=215, 1015.795pt x 761.84625pt>
 File: figures/all/cas_1a_r4.pdf Graphic file (type pdf)
 <use figures/all/cas_1a_r4.pdf>
 Package pdftex.def Info: figures/all/cas_1a_r4.pdf  used on input line 307.
@@ -1712,14 +1712,14 @@ Overfull \hbox (16.76648pt too wide) in paragraph at lines 331--332
 s. First we compare the approximation
  []
 
-<figures/all/cas_1a_r1e-14.pdf, id=292, 1015.795pt x 761.84625pt>
+<figures/all/cas_1a_r1e-14.pdf, id=294, 1015.795pt x 761.84625pt>
 File: figures/all/cas_1a_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_1a_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_1a_r1e-14.pdf  used on input line 335.
 
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
 [9]
-<figures/time_accuracy/cas_1a_zol_time.pdf, id=310, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_1a_zol_time.pdf, id=312, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_1a_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_1a_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_1a_zol_time.pdf  used on inp
@@ -1731,7 +1731,7 @@ Overfull \hbox (21.25609pt too wide) in paragraph at lines 359--360
 ically, the code named \OT1/cmtt/m/n/10 report[]1a[]step1[][][][][]
  []
 
-<figures/1a/num_den_r4.pdf, id=314, 1015.795pt x 761.84625pt>
+<figures/1a/num_den_r4.pdf, id=316, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r4.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r4.pdf>
 Package pdftex.def Info: figures/1a/num_den_r4.pdf  used on input line 363.
@@ -1752,7 +1752,7 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              for symbol `textbraceleft' on input line 396.
 
 [12]
-<figures/all/case_oder.pdf, id=545, 1015.795pt x 761.84625pt>
+<figures/all/case_oder.pdf, id=547, 1015.795pt x 761.84625pt>
 File: figures/all/case_oder.pdf Graphic file (type pdf)
 <use figures/all/case_oder.pdf>
 Package pdftex.def Info: figures/all/case_oder.pdf  used on input line 444.
@@ -1784,7 +1784,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_nd_r3.tex)
 (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_nd_r3.tex)
 (data/ivg_GLNXA64_MR2024a/tables/1a_nd_r3.tex) [17]
-<figures/1a/num_den_r3.pdf, id=640, 1015.795pt x 761.84625pt>
+<figures/1a/num_den_r3.pdf, id=642, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r3.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r3.pdf>
 Package pdftex.def Info: figures/1a/num_den_r3.pdf  used on input line 71.
@@ -1804,20 +1804,20 @@ Package pdftex.def Info: figures/1a/num_den_r3.pdf  used on input line 71.
 (data/ivg_GLNXA64_MR2024a/tables/1a_zer_r3.tex)
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 71.
-<data/cpv_MACA64_MR2023b/figures/pz_r3.pdf, id=738, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r3.pdf, id=740, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r3.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r3.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r3.pdf  used on inp
 ut line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf, id=739, 1015.795pt x 761.84625
+<data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf, id=741, 1015.795pt x 761.84625
 pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r3_zoom.pdf  used o
 n input line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r3.pdf, id=740, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/eval_r3.pdf, id=742, 1015.795pt x 761.84625pt>
 
 File: data/cpv_MACA64_MR2023b/figures/eval_r3.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r3.pdf>
@@ -1882,13 +1882,13 @@ Package pdftex.def Info: figures/1a/num_den_r4.pdf  used on input line 71.
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r4.tex)
 (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r4.tex)
 (data/ivg_GLNXA64_MR2024a/tables/1a_zer_r4.tex)
-<data/cpv_MACA64_MR2023b/figures/pz_r4.pdf, id=866, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r4.pdf, id=868, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r4.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r4.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r4.pdf  used on inp
 ut line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf, id=867, 1015.795pt x 761.84625
+<data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf, id=869, 1015.795pt x 761.84625
 pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf>
@@ -1896,7 +1896,7 @@ Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r4_zoom.pdf  used o
 n input line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
  [25]
-<data/cpv_MACA64_MR2023b/figures/eval_r4.pdf, id=879, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/eval_r4.pdf, id=881, 1015.795pt x 761.84625pt>
 
 File: data/cpv_MACA64_MR2023b/figures/eval_r4.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r4.pdf>
@@ -1945,7 +1945,7 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
  []
 
 )
-<figures/1a/num_den_r5.pdf, id=969, 1015.795pt x 761.84625pt>
+<figures/1a/num_den_r5.pdf, id=971, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r5.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r5.pdf>
 Package pdftex.def Info: figures/1a/num_den_r5.pdf  used on input line 71.
@@ -1987,20 +1987,20 @@ Overfull \hbox (0.98897pt too wide) detected at line 3
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r5.tex [30])
 (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r5.tex)
 (data/ivg_GLNXA64_MR2024a/tables/1a_zer_r5.tex)
-<data/cpv_MACA64_MR2023b/figures/pz_r5.pdf, id=1107, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r5.pdf, id=1109, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r5.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r5.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r5.pdf  used on inp
 ut line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf, id=1108, 1015.795pt x 761.8462
+<data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf, id=1110, 1015.795pt x 761.8462
 5pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r5_zoom.pdf  used o
 n input line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r5.pdf, id=1109, 1015.795pt x 761.84625pt
+<data/cpv_MACA64_MR2023b/figures/eval_r5.pdf, id=1111, 1015.795pt x 761.84625pt
 >
 File: data/cpv_MACA64_MR2023b/figures/eval_r5.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r5.pdf>
@@ -2049,7 +2049,7 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
  []
 
 [33])
-<figures/1a/num_den_r6.pdf, id=1215, 1015.795pt x 761.84625pt>
+<figures/1a/num_den_r6.pdf, id=1217, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r6.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r6.pdf>
 Package pdftex.def Info: figures/1a/num_den_r6.pdf  used on input line 71.
@@ -2070,13 +2070,13 @@ Overfull \hbox (1.9954pt too wide) detected at line 3
  []
 
 ) (data/ivg_GLNXA64_MR2024a/tables/1a_zer_r6.tex)
-<data/cpv_MACA64_MR2023b/figures/pz_r6.pdf, id=1355, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r6.pdf, id=1357, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r6.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r6.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r6.pdf  used on inp
 ut line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf, id=1356, 1015.795pt x 761.8462
+<data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf, id=1358, 1015.795pt x 761.8462
 5pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf>
@@ -2084,7 +2084,7 @@ Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r6_zoom.pdf  used o
 n input line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
  [37]
-<data/cpv_MACA64_MR2023b/figures/eval_r6.pdf, id=1367, 1015.795pt x 761.84625pt
+<data/cpv_MACA64_MR2023b/figures/eval_r6.pdf, id=1369, 1015.795pt x 761.84625pt
 >
 File: data/cpv_MACA64_MR2023b/figures/eval_r6.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r6.pdf>
@@ -2133,7 +2133,7 @@ Overfull \hbox (9.13239pt too wide) detected at line 3
  []
 
 )
-<figures/1a/num_den_r7.pdf, id=1464, 1015.795pt x 761.84625pt>
+<figures/1a/num_den_r7.pdf, id=1466, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r7.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r7.pdf>
 Package pdftex.def Info: figures/1a/num_den_r7.pdf  used on input line 71.
@@ -2159,13 +2159,13 @@ Overfull \hbox (5.39824pt too wide) detected at line 3
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r7.tex)
 (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r7.tex)
 (data/ivg_GLNXA64_MR2024a/tables/1a_zer_r7.tex)
-<data/cpv_MACA64_MR2023b/figures/pz_r7.pdf, id=1501, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r7.pdf, id=1503, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r7.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r7.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r7.pdf  used on inp
 ut line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf, id=1502, 1015.795pt x 761.8462
+<data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf, id=1504, 1015.795pt x 761.8462
 5pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf>
@@ -2173,7 +2173,7 @@ Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r7_zoom.pdf  used o
 n input line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
  [43]
-<data/cpv_MACA64_MR2023b/figures/eval_r7.pdf, id=1513, 1015.795pt x 761.84625pt
+<data/cpv_MACA64_MR2023b/figures/eval_r7.pdf, id=1515, 1015.795pt x 761.84625pt
 >
 File: data/cpv_MACA64_MR2023b/figures/eval_r7.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r7.pdf>
@@ -2222,7 +2222,7 @@ Overfull \hbox (3.71565pt too wide) detected at line 3
  []
 
 [46])
-<figures/1a/num_den_r8.pdf, id=1621, 1015.795pt x 761.84625pt>
+<figures/1a/num_den_r8.pdf, id=1623, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r8.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r8.pdf>
 Package pdftex.def Info: figures/1a/num_den_r8.pdf  used on input line 71.
@@ -2264,20 +2264,20 @@ Overfull \hbox (6.4057pt too wide) detected at line 3
  []
 
 ) [50]
-<data/cpv_MACA64_MR2023b/figures/pz_r8.pdf, id=1666, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r8.pdf, id=1668, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r8.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r8.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r8.pdf  used on inp
 ut line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf, id=1667, 1015.795pt x 761.8462
+<data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf, id=1669, 1015.795pt x 761.8462
 5pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r8_zoom.pdf  used o
 n input line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r8.pdf, id=1668, 1015.795pt x 761.84625pt
+<data/cpv_MACA64_MR2023b/figures/eval_r8.pdf, id=1670, 1015.795pt x 761.84625pt
 >
 File: data/cpv_MACA64_MR2023b/figures/eval_r8.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r8.pdf>
@@ -2326,7 +2326,7 @@ Overfull \hbox (3.71565pt too wide) detected at line 3
  []
 
 [53])
-<figures/1a/num_den_r9.pdf, id=1760, 1015.795pt x 761.84625pt>
+<figures/1a/num_den_r9.pdf, id=1762, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r9.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r9.pdf>
 Package pdftex.def Info: figures/1a/num_den_r9.pdf  used on input line 71.
@@ -2364,20 +2364,20 @@ Overfull \hbox (6.68346pt too wide) detected at line 3
 (data/AlexReis_PCWIN64_MR2025b/tables/1a_zer_r9.tex)
 (data/AlexReis_PCWIN64perso_MR2017a/tables/1a_zer_r9.tex)
 (data/ivg_GLNXA64_MR2024a/tables/1a_zer_r9.tex [57])
-<data/cpv_MACA64_MR2023b/figures/pz_r9.pdf, id=1804, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r9.pdf, id=1806, 1015.795pt x 761.84625pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r9.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r9.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r9.pdf  used on inp
 ut line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf, id=1805, 1015.795pt x 761.8462
+<data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf, id=1807, 1015.795pt x 761.8462
 5pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r9_zoom.pdf  used o
 n input line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/eval_r9.pdf, id=1806, 1015.795pt x 761.84625pt
+<data/cpv_MACA64_MR2023b/figures/eval_r9.pdf, id=1808, 1015.795pt x 761.84625pt
 >
 File: data/cpv_MACA64_MR2023b/figures/eval_r9.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r9.pdf>
@@ -2426,7 +2426,7 @@ Overfull \hbox (13.64636pt too wide) detected at line 3
  []
 
 ) [61]
-<figures/1a/num_den_r10.pdf, id=1916, 1015.795pt x 761.84625pt>
+<figures/1a/num_den_r10.pdf, id=1918, 1015.795pt x 761.84625pt>
 File: figures/1a/num_den_r10.pdf Graphic file (type pdf)
 <use figures/1a/num_den_r10.pdf>
 Package pdftex.def Info: figures/1a/num_den_r10.pdf  used on input line 71.
@@ -2468,14 +2468,14 @@ Overfull \hbox (7.62056pt too wide) detected at line 3
  []
 
 )
-<data/cpv_MACA64_MR2023b/figures/pz_r10.pdf, id=1952, 1015.795pt x 761.84625pt>
+<data/cpv_MACA64_MR2023b/figures/pz_r10.pdf, id=1954, 1015.795pt x 761.84625pt>
 
 File: data/cpv_MACA64_MR2023b/figures/pz_r10.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r10.pdf>
 Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r10.pdf  used on in
 put line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf, id=1953, 1015.795pt x 761.846
+<data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf, id=1955, 1015.795pt x 761.846
 25pt>
 File: data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf>
@@ -2483,7 +2483,7 @@ Package pdftex.def Info: data/cpv_MACA64_MR2023b/figures/pz_r10_zoom.pdf  used
 on input line 71.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
  [65]
-<data/cpv_MACA64_MR2023b/figures/eval_r10.pdf, id=1962, 1015.795pt x 761.84625p
+<data/cpv_MACA64_MR2023b/figures/eval_r10.pdf, id=1964, 1015.795pt x 761.84625p
 t>
 File: data/cpv_MACA64_MR2023b/figures/eval_r10.pdf Graphic file (type pdf)
 <use data/cpv_MACA64_MR2023b/figures/eval_r10.pdf>
@@ -2501,12 +2501,12 @@ strates another symmetric case, i.e., a configuration
 
 [66 <./data/cpv_MACA64_MR2023b/figures/pz_r10.pdf> <./data/cpv_MACA64_MR2023b/f
 igures/pz_r10_zoom.pdf> <./data/cpv_MACA64_MR2023b/figures/eval_r10.pdf>]
-<figures/all/cas_1b_r1e-14.pdf, id=2056, 1015.795pt x 761.84625pt>
+<figures/all/cas_1b_r1e-14.pdf, id=2058, 1015.795pt x 761.84625pt>
 File: figures/all/cas_1b_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_1b_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_1b_r1e-14.pdf  used on input line 11.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_1b_zol_time.pdf, id=2057, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_1b_zol_time.pdf, id=2059, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_1b_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_1b_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_1b_zol_time.pdf  used on inp
@@ -2515,12 +2515,12 @@ ut line 12.
 
 [67 <./figures/all/cas_1b_r1e-14.pdf> <./figures/time_accuracy/cas_1b_zol_time.
 pdf>]
-<figures/all/cas_1c_r1e-14.pdf, id=2172, 1015.795pt x 761.84625pt>
+<figures/all/cas_1c_r1e-14.pdf, id=2174, 1015.795pt x 761.84625pt>
 File: figures/all/cas_1c_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_1c_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_1c_r1e-14.pdf  used on input line 26.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_1c_zol_time.pdf, id=2173, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_1c_zol_time.pdf, id=2175, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_1c_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_1c_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_1c_zol_time.pdf  used on inp
@@ -2528,12 +2528,12 @@ ut line 27.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
  [68 <./figures/all/cas_1c_r1e-14.pdf> <./figures/time_accuracy/cas_1c_zol_time
 .pdf>]
-<figures/all/cas_1d_r1e-14.pdf, id=2276, 1015.795pt x 761.84625pt>
+<figures/all/cas_1d_r1e-14.pdf, id=2278, 1015.795pt x 761.84625pt>
 File: figures/all/cas_1d_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_1d_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_1d_r1e-14.pdf  used on input line 40.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_1d_zol_time.pdf, id=2277, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_1d_zol_time.pdf, id=2279, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_1d_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_1d_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_1d_zol_time.pdf  used on inp
@@ -2541,12 +2541,12 @@ ut line 41.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
  [69 <./figures/all/cas_1d_r1e-14.pdf> <./figures/time_accuracy/cas_1d_zol_time
 .pdf>]
-<figures/all/cas_2a_r1e-14.pdf, id=2389, 1015.795pt x 761.84625pt>
+<figures/all/cas_2a_r1e-14.pdf, id=2391, 1015.795pt x 761.84625pt>
 File: figures/all/cas_2a_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_2a_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_2a_r1e-14.pdf  used on input line 55.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_2a_zol_time.pdf, id=2390, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_2a_zol_time.pdf, id=2392, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_2a_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_2a_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_2a_zol_time.pdf  used on inp
@@ -2554,12 +2554,12 @@ ut line 56.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
  [70 <./figures/all/cas_2a_r1e-14.pdf> <./figures/time_accuracy/cas_2a_zol_time
 .pdf>]
-<figures/all/cas_2b_r1e-14.pdf, id=2493, 1015.795pt x 761.84625pt>
+<figures/all/cas_2b_r1e-14.pdf, id=2495, 1015.795pt x 761.84625pt>
 File: figures/all/cas_2b_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_2b_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_2b_r1e-14.pdf  used on input line 70.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_2b_zol_time.pdf, id=2494, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_2b_zol_time.pdf, id=2496, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_2b_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_2b_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_2b_zol_time.pdf  used on inp
@@ -2567,12 +2567,12 @@ ut line 71.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
  [71 <./figures/all/cas_2b_r1e-14.pdf> <./figures/time_accuracy/cas_2b_zol_time
 .pdf>]
-<figures/all/cas_2c_r1e-14.pdf, id=2595, 1015.795pt x 761.84625pt>
+<figures/all/cas_2c_r1e-14.pdf, id=2597, 1015.795pt x 761.84625pt>
 File: figures/all/cas_2c_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_2c_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_2c_r1e-14.pdf  used on input line 84.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_2c_zol_time.pdf, id=2596, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_2c_zol_time.pdf, id=2598, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_2c_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_2c_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_2c_zol_time.pdf  used on inp
@@ -2580,12 +2580,12 @@ ut line 85.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
  [72 <./figures/all/cas_2c_r1e-14.pdf> <./figures/time_accuracy/cas_2c_zol_time
 .pdf>]
-<figures/all/cas_2d_r1e-14.pdf, id=2701, 1015.795pt x 761.84625pt>
+<figures/all/cas_2d_r1e-14.pdf, id=2703, 1015.795pt x 761.84625pt>
 File: figures/all/cas_2d_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_2d_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_2d_r1e-14.pdf  used on input line 98.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_2d_zol_time.pdf, id=2702, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_2d_zol_time.pdf, id=2704, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_2d_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_2d_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_2d_zol_time.pdf  used on inp
@@ -2593,49 +2593,49 @@ ut line 99.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
  [73 <./figures/all/cas_2d_r1e-14.pdf> <./figures/time_accuracy/cas_2d_zol_time
 .pdf>]
-<figures/all/cas_3a_r1e-14.pdf, id=2809, 1015.795pt x 761.84625pt>
+<figures/all/cas_3a_r1e-14.pdf, id=2811, 1015.795pt x 761.84625pt>
 File: figures/all/cas_3a_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_3a_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_3a_r1e-14.pdf  used on input line 112.
 
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<figures/all/cas_3b_r1e-14.pdf, id=2810, 1015.795pt x 761.84625pt>
+<figures/all/cas_3b_r1e-14.pdf, id=2812, 1015.795pt x 761.84625pt>
 File: figures/all/cas_3b_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_3b_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_3b_r1e-14.pdf  used on input line 113.
 
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<figures/all/cas_3c_r1e-14.pdf, id=2811, 1015.795pt x 761.84625pt>
+<figures/all/cas_3c_r1e-14.pdf, id=2813, 1015.795pt x 761.84625pt>
 File: figures/all/cas_3c_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_3c_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_3c_r1e-14.pdf  used on input line 114.
 
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<figures/all/cas_3d_r1e-14.pdf, id=2812, 1015.795pt x 761.84625pt>
+<figures/all/cas_3d_r1e-14.pdf, id=2814, 1015.795pt x 761.84625pt>
 File: figures/all/cas_3d_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_3d_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_3d_r1e-14.pdf  used on input line 115.
 
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<figures/time_accuracy/cas_3a_zol_time.pdf, id=2815, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_3a_zol_time.pdf, id=2817, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_3a_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_3a_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_3a_zol_time.pdf  used on inp
 ut line 122.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<figures/time_accuracy/cas_3b_zol_time.pdf, id=2816, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_3b_zol_time.pdf, id=2818, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_3b_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_3b_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_3b_zol_time.pdf  used on inp
 ut line 123.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<figures/time_accuracy/cas_3c_zol_time.pdf, id=2817, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_3c_zol_time.pdf, id=2819, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_3c_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_3c_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_3c_zol_time.pdf  used on inp
 ut line 124.
 (pdftex.def)             Requested size: 191.0625pt x 143.28755pt.
-<figures/time_accuracy/cas_3d_zol_time.pdf, id=2818, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_3d_zol_time.pdf, id=2820, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_3d_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_3d_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_3d_zol_time.pdf  used on inp
@@ -2646,12 +2646,12 @@ ures/all/cas_3c_r1e-14.pdf> <./figures/all/cas_3d_r1e-14.pdf>] [75 <./figures/t
 ime_accuracy/cas_3a_zol_time.pdf> <./figures/time_accuracy/cas_3b_zol_time.pdf>
  <./figures/time_accuracy/cas_3c_zol_time.pdf> <./figures/time_accuracy/cas_3d_
 zol_time.pdf>]
-<figures/all/cas_7_r1e-14.pdf, id=3255, 1015.795pt x 761.84625pt>
+<figures/all/cas_7_r1e-14.pdf, id=3257, 1015.795pt x 761.84625pt>
 File: figures/all/cas_7_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_7_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_7_r1e-14.pdf  used on input line 139.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_7_zol_time.pdf, id=3256, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_7_zol_time.pdf, id=3258, 1015.795pt x 761.84625pt>
 File: figures/time_accuracy/cas_7_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_7_zol_time.pdf>
 Package pdftex.def Info: figures/time_accuracy/cas_7_zol_time.pdf  used on inpu
@@ -2659,13 +2659,13 @@ t line 140.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
  [76 <./figures/all/cas_7_r1e-14.pdf> <./figures/time_accuracy/cas_7_zol_time.p
 df>]
-<figures/all/cas_spiral1_r1e-12.pdf, id=3368, 1015.795pt x 761.84625pt>
+<figures/all/cas_spiral1_r1e-12.pdf, id=3370, 1015.795pt x 761.84625pt>
 File: figures/all/cas_spiral1_r1e-12.pdf Graphic file (type pdf)
 <use figures/all/cas_spiral1_r1e-12.pdf>
 Package pdftex.def Info: figures/all/cas_spiral1_r1e-12.pdf  used on input line
  153.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_spiral1_zol_time.pdf, id=3369, 1015.795pt x 761.8462
+<figures/time_accuracy/cas_spiral1_zol_time.pdf, id=3371, 1015.795pt x 761.8462
 5pt>
 File: figures/time_accuracy/cas_spiral1_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_spiral1_zol_time.pdf>
@@ -2674,13 +2674,13 @@ n input line 154.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
  [77 <./figures/all/cas_spiral1_r1e-12.pdf> <./figures/time_accuracy/cas_spiral
 1_zol_time.pdf>]
-<figures/all/cas_pm2_r1e-14.pdf, id=3474, 1015.795pt x 761.84625pt>
+<figures/all/cas_pm2_r1e-14.pdf, id=3476, 1015.795pt x 761.84625pt>
 File: figures/all/cas_pm2_r1e-14.pdf Graphic file (type pdf)
 <use figures/all/cas_pm2_r1e-14.pdf>
 Package pdftex.def Info: figures/all/cas_pm2_r1e-14.pdf  used on input line 167
 .
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
-<figures/time_accuracy/cas_pm2_zol_time.pdf, id=3475, 1015.795pt x 761.84625pt>
+<figures/time_accuracy/cas_pm2_zol_time.pdf, id=3477, 1015.795pt x 761.84625pt>
 
 File: figures/time_accuracy/cas_pm2_zol_time.pdf Graphic file (type pdf)
 <use figures/time_accuracy/cas_pm2_zol_time.pdf>
@@ -2688,14 +2688,39 @@ Package pdftex.def Info: figures/time_accuracy/cas_pm2_zol_time.pdf  used on in
 put line 168.
 (pdftex.def)             Requested size: 318.43968pt x 238.83199pt.
 )
-(mainMPI.bbl
+(appendix_applications.tex [78 <./figures/all/cas_pm2_r1e-14.pdf> <./figures/ti
+me_accuracy/cas_pm2_zol_time.pdf>]
+<figures/filter/iir_filter.pdf, id=3600, 1015.795pt x 761.84625pt>
+File: figures/filter/iir_filter.pdf Graphic file (type pdf)
+<use figures/filter/iir_filter.pdf>
+Package pdftex.def Info: figures/filter/iir_filter.pdf  used on input line 24.
+(pdftex.def)             Requested size: 424.58624pt x 318.43877pt.
+
+Overfull \hbox (0.63681pt too wide) in paragraph at lines 29--30
+[]\OT1/cmr/m/n/10 To convince of the applicability and interest of this methodo
+logy, [][]fig. 43[][] illustrates the application
+ []
+
+
+Overfull \hbox (1.91116pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/it/10 Avoiding these spikes in the non-interpolated data is importan
+t and methods should be thought,
+ []
+
+[79]
+<figures/filter/iir_filter_td.pdf, id=3615, 1015.795pt x 761.84625pt>
+File: figures/filter/iir_filter_td.pdf Graphic file (type pdf)
+<use figures/filter/iir_filter_td.pdf>
+Package pdftex.def Info: figures/filter/iir_filter_td.pdf  used on input line 4
+1.
+(pdftex.def)             Requested size: 424.58624pt x 318.43877pt.
+) (mainMPI.bbl
 pdfTeX warning (ext4): destination with the same identifier (name{cite.akhiezer
 1990elements}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.3 \bibitem{akhiezer1990elements}
-                                   [78 <./figures/all/cas_pm2_r1e-14.pdf> <./fi
-gures/time_accuracy/cas_pm2_zol_time.pdf>]
+                                  
 pdfTeX warning (ext4): destination with the same identifier (name{cite.aa86}) h
 as been already used, duplicate ignored
 <to be read again> 
@@ -2725,7 +2750,7 @@ has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.32 \bibitem{ali17}
-                    
+                     [80 <./figures/filter/iir_filter.pdf>]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Da75}) h
 as been already used, duplicate ignored
 <to be read again> 
@@ -2773,7 +2798,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.morKarGA
 <to be read again> 
                    \relax 
 l.78 \bibitem{morKarGA19a}
-                          
+                           [81 <./figures/filter/iir_filter_td.pdf>]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.morKarGG
 etal25}) has been already used, duplicate ignored
 <to be read again> 
@@ -2803,7 +2828,7 @@ asa2020algorithm}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.107 \bibitem{nakatsukasa2020algorithm}
-                                         [79]
+                                        
 pdfTeX warning (ext4): destination with the same identifier (name{cite.AAArevie
 w}) has been already used, duplicate ignored
 <to be read again> 
@@ -2837,7 +2862,7 @@ l.133 \bibitem{trefethen2024computation}
 
 Package natbib Warning: There were multiply defined citations.
 
-[80] (mainMPI.aux)
+[82] (mainMPI.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2848,10 +2873,10 @@ Package rerunfilecheck Info: File `mainMPI.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 37053 strings out of 480549
- 820718 string characters out of 2893596
- 1285554 words of memory out of 3000000
- 53526 multiletter control sequences out of 15000+600000
+ 37092 strings out of 480549
+ 821703 string characters out of 2893596
+ 1286221 words of memory out of 3000000
+ 53551 multiletter control sequences out of 15000+600000
  488200 words of font info for 103 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  122i,20n,120p,10905b,688s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2894,9 +2919,9 @@ pport/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></Libr
 ary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbo
 ls/msam10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb>
-Output written on mainMPI.pdf (80 pages, 13419569 bytes).
+Output written on mainMPI.pdf (82 pages, 14323874 bytes).
 PDF statistics:
- 4063 PDF objects out of 4296 (max. 8388607)
- 419 named destinations out of 1000 (max. 500000)
- 983 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4136 PDF objects out of 4296 (max. 8388607)
+ 427 named destinations out of 1000 (max. 500000)
+ 1009 words of extra memory for PDF output out of 10000 (max. 10000000)
 

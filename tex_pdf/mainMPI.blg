@@ -4,11 +4,11 @@ The top-level auxiliary file: mainMPI.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
-Illegal, another \bibstyle command---line 865 of file mainMPI.aux
+Illegal, another \bibstyle command---line 878 of file mainMPI.aux
  : \bibstyle
  :          {plain}
 I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 866 of file mainMPI.aux
+Illegal, another \bibdata command---line 879 of file mainMPI.aux
  : \bibdata
  :         {references}
 I'm skipping whatever remains of this command
