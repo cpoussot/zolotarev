@@ -45,7 +45,7 @@ In \cite{trefethen2024computation}, a detailed historical account is presented, 
 For integers $m,n\ge 0$, let $R_{m,n}$ (or simply $R_n$ if $m=n$) be the set of rational functions with numerator of degree $m$ and denominator of degree $n$, which means that any rational function $r\in R_{m,n}$ can be written as $p(\varIC)/q(\varIC)$ for some polynomials $p(\varIC)$ and $q(\varIC)$ of degrees at most $m$ and $n$, respectively. The problem  studied here is to find $r_{m,n}^*\in R_{m,n}$ such that
 \begin{equation}
 r_{m,n}^* := \arg \min_{r\in R_{m,n}} {\max_{\varIC\in E} |r(\varIC)| \over \min_{\varIC\in F} |r(\varIC)|}.
-\label{unscaled}
+\label{eq:unscaled}
 \end{equation}
 %Since multiplying $r$ by a constant does not change the ratio, we may normalize the problem by fixing
 Through normalization, i.e., assuming that $\min_{\varIC\in F} |r(\varIC)| = 1$, we end up with the problem of minimizing $|r(\varIC)|$ solely over set $E$. This is known in the literature as the third Zolotarev problem, or sometimes, also the {\em Zolotarev ratio problem}.
@@ -54,12 +54,11 @@ Through normalization, i.e., assuming that $\min_{\varIC\in F} |r(\varIC)| = 1$,
 Find $r_{m,n}^*\in R_{m,n}$, satisfying condition $\min_{\varIC\in F} |r_{m,n}^*(\varIC)| = 1$, and that attains the minimum (where $\|\cdot\|_E^{}$ denotes the supremum norm over $E$)
 \begin{equation}
 \sigma_n = \min_{r \in R_{m,n}} \|r\|_E^{}.
-\label{Z3}
+\label{eq:Z3}
 \end{equation}
 \end{problem}
 
-As mentioned in \cite{trefethen2024computation}, it is known that a solution $r_{m,n}^*$ to (\ref{Z3}) exists, though it need
-not be unique, and that $\sigma_n$ satisfies $0 < \sigma_n \le 1$.
+As mentioned in \cite{trefethen2024computation}, it is known that a solution $r_{m,n}^*$ to \cref{eq:Z3} exists, though it need not be unique, and that $\sigma_n$ satisfies $0 < \sigma_n \le 1$.
 
 Then, the {\em sign function} relative to $E$ and $F$ is of relevance in what follows, and is defined as follows:
 \begin{equation}
@@ -76,14 +75,14 @@ Next, we introduce the problem of rational minimax approximation of $\signEF$ ov
 Find $\hat r_{m,n}\in R_{m,n}$ that attains the minimum (where $\|\cdot\|_{E\cup F}$ denotes the supremum norm over $E\cup F$)
 \begin{equation}
 \tau_n = \min_{r\in R_{m,n}} \|r-\signEF\|_{E\cup F}^{}.
-\label{Z4}
+\label{eq:Z4}
 \end{equation}
 \end{problem}
 
 As mentioned in \cite{trefethen2024computation}, the proof showing that the problems Z3 and Z4 are equivalent in the case for which $E$ and $F$ are real intervals is due to the work of \cite{akhiezer1990elements}. Then, in \cite{istace1995third}, it was shown that the equivalence generalizes to the complex case.  We reproduce (with appropriate notation changes) in what follows their theorem.
 
 \begin{theorem}
-\label{thm1}
+\label{thm:thm1}
 Every solution $r_{m,n}^*$ of Problem Z3 is related to a solution 
 $\hat r_{m,n}$ of Problem Z4 by
 \vspace{-2mm}
@@ -93,46 +92,27 @@ $\hat r_{m,n}$ of Problem Z4 by
 r_{m,n}^*(\varIC) = \sqrt{\sigma_n} \,
 {(1-\sigma_n)/(1+\sigma_n) + \hat r_{m,n}(\varIC) \over
 (1-\sigma_n)/(1+\sigma_n) - \hat r_{m,n}(\varIC)}.
-\label{relation}
+\label{eq:relation}
 \end{equation}
 The minimal values of the two problems satisfy
 \vspace{-2mm}
 \begin{equation}
 \tau_n = {2\sqrt\sigma_n\over 1 + \sigma_n}, \quad
 \sigma_n = \left({\tau_n\over 1 + \sqrt{1-\tau_n^2}\kern .7pt} \right)^2,
-\label{minvals}
+\label{eq:minvals}
 \end{equation}
 and the set of extremal points $M = \{z\in E\cup F, ~|\hat r_{m,n}(\varIC) - \signEF(\varIC)| = \tau_n\}$ is the union of  $M_1 = \{z\in E, ~|r_{m,n}^*(\varIC)| = \sigma_n\}$ and $M_2 = \{z\in F, ~|r_{m,n}^*(\varIC)| = 1\}$.
 \end{theorem}
 
-% \charles{USEFULL?
-% In the standard case for which $\tau_n, \sigma_n\ll 1$, \eqref{relation} and \eqref{minvals}, it follows that the approximate values below hold true:
-% \begin{equation}
-% \hat r_n^{} (\varIC) \approx {r_n^*(\varIC) - \sqrt{\sigma_n}
-% \over r_n^*(\varIC) + \sqrt{\sigma_n}}, \quad
-% r_n^*(\varIC) \approx {\tau_n\over 2} \,
-% {1+ \hat r_n^{}(\varIC) \over 1- \hat r_n^{}(\varIC)}
-% \label{relation2}
-% \end{equation}
-% and also that $\tau_n \approx 2\sqrt\sigma_n$, $\sigma_n \approx {\tau_n^2\over 4}$.
-% }
 
 \subsection{Approach paved in  \cite{trefethen2024computation} and discussions}
 
-The proposed algorithms for solving \cref{pb:z3} (Z3) actually consist of solving \cref{pb:z4} (Z4) first, and then transforming from $\hat r_{m,n}$ and $\tau_n$ to $r_{m,n}^*$ and $\sigma_n$. Following \cref{thm1}, the authors of \cite{trefethen2024computation} approach Problem Z3 in the following two-step procedure: (i) solve Problem Z4 using a rational approximation method; then (ii) convert to a solution of Problem Z3 using \cref{relation} and \cref{minvals}.
+The proposed algorithms for solving \cref{pb:z3} (Z3) actually consist of solving \cref{pb:z4} (Z4) first, and then transforming from $\hat r_{m,n}$ and $\tau_n$ to $r_{m,n}^*$ and $\sigma_n$. Following \cref{thm:thm1}, the authors of \cite{trefethen2024computation} approach Problem Z3 in the following two-step procedure: (i) solve Problem Z4 using a rational approximation method; then (ii) convert to a solution of Problem Z3 using \cref{eq:relation} and \cref{eq:minvals}.
 
 The main challenge of the algorithm proposed in \cite{trefethen2024computation} is given by step (i), i.e., the computation of the degrees $(m,n)$ rational best approximation $\hat r_{m,n}$ to the sign function $\signEF$ defined by the sets $E$ and $F$.  In \cite{trefethen2024computation}, the proposed procedure is to find $\hat r_{m,n}$ by means of the AAA approximation technique.  However, this has proven quite challenging. The first difficulty reported in \cite{trefethen2024computation} is that AAA encounters particular challenges when applied to sign functions. The second is the importance of having not just good rational approximations but nearly optimal ones, requiring the use of the AAA-sign and AAA-Lawson algorithm \cite{nakatsukasa2020algorithm}, which had a known problem of non-convergence in certain cases. These difficulties and their proposed solutions are discussed in \cite[\S 3.1 and \S 3.2]{trefethen2024computation}. Basically, the Lawson iteration "drives" the standard AAA approximant close to the optimal approximation value by performing several least squares steps involving  the weights. Although seemingly effective, this approach has proven to be quite costly, mostly in terms of running time, but also in terms of the structure of the resulting polynomials, as will become evident in the next sections. This is particularly relevant when choosing a high degree $(m,n)$ for the approximant. In addition, as highlighted in the coming sections, AAA (and its extensions) results vary according to the computer platform used.
 
-%\subsection{Applications of the Z3 and Z4 problems}
-%
-%\paragraph{Zolotarev ration problems (Z3).}
-%
-%\paragraph{Zolotarev sign problems (Z4).}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The main approximation methods}\label{sec:ratapp}
-
 
 
 \subsection{The Loewner framework}\label{sec:Loew}
@@ -145,8 +125,8 @@ The Loewner Framework (LF) is a data-driven model identification, approximation,
 
 
 Given $N>0$ distinct sampling points $\cT = \{\tau_1, \tau_2, \ldots,\tau_N\}$ together with $N$ function evaluations at these points denoted with $\{f_1, f_2, \ldots,f_N\}$, let $\mathfrak{D} = \{(\tau_\ell; \  f_\ell) \vert \ell =1,\cdots,N\}$ to be the problem data. Assume that $N=k+q$, where $k$ and $q$ are positive integers. The given data $\mathfrak{D}$ is first partitioned into the following two disjoint subsets,
-\vspace{-2mm}
-\begin{equation}\label{data_Loew}
+%\vspace{-2mm}
+\begin{equation}\label{eq:data_Loew}
 \mathfrak{D} = \mathfrak{L} \cup \mathfrak{R}, \ \text{where} \ \begin{cases} {\text{right data}}: \mathfrak{R} = \{(\lambda_i; \  w_i) \vert i=1,\cdots,q
 \}, \\
  {\text{left data}}: \ \ \mathfrak{L} =
@@ -159,7 +139,7 @@ The elements of the subsets $\mathfrak{L}$ and $\mathfrak{R}$ are as follows (fo
 	\item  $w_i$, $v_j$ $\in\IC$ are the right, and, respectively, left \emph{sample values}.
 \end{enumerate}
 The problem can be formulated as follows: find a rational function $\rloe(\varIC)$ of order $r \ll k$, such that the following interpolation conditions are (approximately) fulfilled:
-\begin{equation} \label{interp_cond}
+\begin{equation} \label{eq:interp_cond}
 \rloe(\lambda_i)=w_i,~~~\rloe(\mu_j)=v_j.
 \end{equation}
 %The first step is to partition the data in two disjoint categories, i.e the \textit{right data}
@@ -181,8 +161,8 @@ The problem can be formulated as follows: find a rational function $\rloe(\varIC
 %\end{remark}
 %}
 
-The next step is to arrange data (\ref{data_Loew}) into matrix format. The \textbf{Loewner matrix} $\IL \in\IC^{k\times q}$ and the \textbf{shifted Loewner matrix} $\sIL \in\IC^{k\times q}$ are defined as
-\begin{equation} \label{Loew_mat}
+The next step is to arrange data \cref{eq:data_Loew} into matrix format. The \textbf{Loewner matrix} $\IL \in\IC^{k\times q}$ and the \textbf{shifted Loewner matrix} $\sIL \in\IC^{k\times q}$ are defined as
+\begin{equation} \label{eq:Loew_mat}
 \IL=\left[\begin{array}{ccc}
 \frac{v_1-w_1}{\mu_1-\lambda_1} & \cdots &
 \frac{v_1-w_q}{\mu_1-\lambda_q} \\
@@ -199,7 +179,7 @@ The next step is to arrange data (\ref{data_Loew}) into matrix format. The \text
 \end{array}\right],
 \end{equation}
 while the data vectors $\bV\in \IR^k, \bW^\top \in \IR^q$ are introduced as
-\begin{equation} \label{VW_vec}
+\begin{equation} \label{eq:VW_vec}
 \bV=\left[\!\begin{array}{cccc} v_1 \  \ v_2 \  \ \ldots \  \ v_k \end{array}\!\right]^\top \in \IC^k, \ \ \ \bW=[w_1~~w_2~~\cdots~~w_q] \in \IC^q.
 \end{equation}
 
@@ -219,15 +199,12 @@ In applications (see, e.g., \cite{morGosPA22}), the pencil $(\sIL,\,\IL)$ is oft
 \end{equation}	
 \begin{lemma}			
 	The rational function corresponding to the reduced-order Loewner model is derived as:
-	%\begin{align}\label{loew_fct}
-	%\begin{array}{rcl}
     \begin{align*}
 	\rloe(\varIC) = \hat{\bC}_{\mathrm{Loew}} (\varIC \hat{\bE}_{\mathrm{Loew}}-\hat{\bA}_{\mathrm{Loew}})^{-1} \hat{\bB}_{\mathrm{Loew}} 
     =  \bW \bY_r \Big{(} \bX_r^* (\sIL- \varIC \IL) \bY_r \Big{)}^{-1} \bX_r^* \bV,
-    %\end{array}
 	\end{align*}
     where the system matrices corresponding to a reduced Loewner model are:
-    	\begin{equation} \label{Loew_red_mat}
+    	\begin{equation} \label{eq:Loew_red_mat}
 	\hat{\bE}_{\mathrm{Loew}} = -\bX_r^*\IL \bY_r, \ \  \hat{\bA}_{\mathrm{Loew}} = -\bX_r^*\sIL \bY_r, \ \
 	\hat{\bB}_{\mathrm{Loew}} = \bX_r^*\bV, \ \  \hat{\bC}_{\mathrm{Loew}} = \bW \bY_r.
 	\end{equation}
@@ -239,31 +216,17 @@ In applications (see, e.g., \cite{morGosPA22}), the pencil $(\sIL,\,\IL)$ is oft
 
 The AAA (Adaptive Antoulas-Anderson) algorithm proposed in \cite{nst18} represents an adaptive extension of the method originally introduced by A.C. Antoulas and B.D.O. Anderson in \cite{aa86}. The AAA algorithm is a rational approximation data-based method that makes use of the barycentric form of rational functions and uses an iteration to add more interpolation points (in a greedy fashion) until a certain level of approximation is attained. As exposed in \cref{sec:Loew}, it only requires as input evaluations of the function on a set of points denoted with $\cT$. We refer to \cite{AAAreview} for a recent review paper on applications of AAA.
 
-%\subsubsection{Original version}\label{sec:aaa_original}
 
 Consider $N>0$ distinct sampling points in the set $\cT = \{\tau_1, \tau_2, \ldots,\tau_N\}$ together with $N$ function evaluations at these points, denoted with $\{f_1, f_2, \ldots,f_N\}$.
 The AAA algorithm is based on an iteration. 
 Let the order of the rational approximant $\raaa(\varIC)$ that is constructed through the algorithm in \cite{nst18} at step $\ell \geq 1$ be $(\ell,\ell)$ (degree of numerator and denominator), which is written in the following barycentric format: 
-\begin{equation}\label{AAA_approx}
+\begin{equation}\label{eq:AAA_approx}
 \raaa(\varIC) = \frac{ \sum_{k=0}^\ell \frac{ \alpha_k w_k }{\varIC - \lambda_k }}{ \sum_{k=0}^\ell \frac{\alpha_k }{\varIC- \lambda_k}},
 \end{equation}
 where $\{\lambda_0,\ldots,\lambda_\ell\}$ are the interpolation points (selected from the set $\cT$), $\{w_0,\ldots,w_\ell\}$ are the corresponding function evaluations, and $\{\alpha_0,\ldots,\alpha_\ell\}$ are the weights. The method enforces interpolation at the $\ell$ points $\{\lambda_0,\ldots,\lambda_\ell\}$, i.e. $\raaa(\lambda_k) = w_k = F(\lambda_k), \, \forall \, 0 \leqslant k \leqslant \ell$. Then, at each step, one needs to determine suitable weights $\alpha_0,\alpha_2,\ldots,\alpha_\ell$ by formulating an approximation problem. Instead of solving the more general problem above (which is nonlinear in variables $\alpha_1, \alpha_2, \ldots, \alpha_\ell$), one solves a relaxed problem by means of linearization. This procedure leads to a least squares minimization problem that involves a (rectangular) Loewner matrix of dimension $(N-\ell) \times \ell$. The solution relies on computing the SVD of the latter, and selecting the weights as the entries of the (normalized) last right singular vector.
 At the end of the iteration, the rational approximant is of order $(r,r)$; one can also explicitly write the AAA function as $\raaa(\varIC) = \hat{\bC}_{\mathrm{AAA}} (\varIC \hat{\bE}_{\mathrm{AAA}}-\hat{\bA}_{\mathrm{AAA}})^{-1} \hat{\bB}_{\mathrm{AAA}}$,
 where the matrices are of dimension $r=\ell+1$, given explicitly in terms of the selected support points  $\{\lambda_0,\ldots,\lambda_r\}$, the function evaluations $\{w_0,\ldots,w_r\}$ and the weights $\{\alpha_0,\ldots,\alpha_r\}$. Note that for the numerical examples presented in what follows, we will be using the AAA implementation available in the \chebfun~ tool \cite{chebfun}\footnote{Also available at \url{https://github.com/chebfun/chebfun}.}.
 
-%\subsubsection{Minimax algorithms and Lawson step extensions}\label{sec:minimax}
-
-
-% The problem that is addressed in the contribution \cite{fntb18} is to approximate functions $f \in \cC([a,b])$ using type $(m,n)$ rational approximations with real coefficients from the set $\cR_{m,n}$.
-
-
-% Given the function $f$ and integers $m,n$, the problem is formulated as follows: find $r \in \cR_{m,n}$ so that the infinity norm $\Vert f - r \Vert_\infty = \max_{x \in [a,b]} \vert f(\varIC) - r(\varIC) \vert$ is minimized.
-% It is known that such a minimizer exists and is unique (Chapter 24 in  \cite{Tr13}).
-
-% Denote with $\overline{r} \in \cR_{m,n}$ the best (minimax) approximation of the function $f$ (the solution to the above problem). It follows that there exists a sequence of ordered nodes where the function $f-r^*$ takes its global extreme value over the interval $[a,b]$ (with alternating signs). This sequence is denoted with $(x_0,x_1,\ldots,x_{m+n+1})$ with  $a \leqslant x_0 < x_1 < \cdots < x_{m+n+1} \leqslant b$, hence
-% \begin{equation}
-% f(x_k)-\overline{r}(x_k) = (-1)^{k+1} \Vert f - \overline{r} \Vert_{\infty}, \ \ \ k \in \{0,1,\ldots,m+n+1\}.
-% \end{equation}
 
 Computing rational minimax approximations is a challenging task, especially when there are singularities on or near the interval of approximation. In the recent contribution \cite{fntb18}, the authors propose different combinations of robust algorithms that are based on rational barycentric representations. One key feature is that the support points are chosen adaptively as the approximant is computed. The \chebfun~ minimax implementation is available in  \cite{chebfun}. The  AAA-Lawson algorithm in \cite{nakatsukasa2020algorithm} uses an iteratively re-weighted least-squares method followed by a classical Remez algorithm to enforce  quadratic convergence. Minimax approximants can be recognized by their equioscillatory error curves in real cases and nearly circular error curves in complex problems.
 
@@ -342,7 +305,7 @@ What is remarkable in \cref{fig:intro:1a_1e14}, for the LF case, is the neat dis
 This computational time is indeed an important point from practical considerations. By now evaluating the Zolotarev ratio and computation time for different  rational approximation orders $r$, the \cref{fig:intro:1a_time} is obtained. One observes that the LF requires a constant computation time while the AAA variants are dependent on the approximation order $r$. Indeed, LF benefits from the fact that it is not iterative. 
 
 \begin{remark}[Accelerating LF]
-As the LF consists in (i) building the Loewner pencil \cref{Loew_mat}, (ii) computing two SVDs \cref{eq:loew-rank}, and then (iii) truncating / projecting accordingly \cref{Loew_red_mat}, in practice, steps (i) and (ii) may be computed once; then step (iii) must be computed for each truncation order. A direct consequence is the computational effort is limited to the first computation and the rest will be simply projections with a marginal cost. This procedure may not be applied to the AAA.
+As the LF consists in (i) building the Loewner pencil \cref{eq:Loew_mat}, (ii) computing two SVDs \cref{eq:loew-rank}, and then (iii) truncating / projecting accordingly \cref{eq:Loew_red_mat}, in practice, steps (i) and (ii) may be computed once; then step (iii) must be computed for each truncation order. A direct consequence is the computational effort is limited to the first computation and the rest will be simply projections with a marginal cost. This procedure may not be applied to the AAA.
 \end{remark}
 
 Considering the accuracy, AAA-sign-Lawson generally provides a slightly better ratio number $\sigma_r$ for almost all $r$. However, it reaches a plateau for higher orders ($r>25$), which is anyway hard to distinguish with rounding numerical accuracy.
