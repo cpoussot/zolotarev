@@ -4,14 +4,6 @@ The top-level auxiliary file: mainMPI.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
-Illegal, another \bibstyle command---line 878 of file mainMPI.aux
- : \bibstyle
- :          {plain}
-I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 879 of file mainMPI.aux
- : \bibdata
- :         {references}
-I'm skipping whatever remains of this command
 Database file #1: references.bib
 You've used 24 entries,
             2118 wiz_defined-function locations,
@@ -54,4 +46,3 @@ warning$ -- 0
 while$ -- 80
 width$ -- 26
 write$ -- 267
-(There were 2 error messages)
