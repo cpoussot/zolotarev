@@ -2,7 +2,7 @@
 
 ## Overview
 
-This page accompany a the paper entitled "Rational approximation for Zolotarev sign and ratio problems", by C. Poussot-Vassal, I. V. Gosea and A. C. Antoulas. 
+This page accompany a the paper entitled "Rational approximation for Zolotarev sign and ratio problems", by C. Poussot-Vassal, I. V. Gosea and A. C. Antoulas [arXiv extended version](https://arxiv.org/abs/2511.04404). 
 We study algorithms for Zolotarev (3rd and 4th) problems rational approximation. First, we show that the Loewner framework (LF) is appropriate to rapidly and with no iterations, approximate the Zolotarev problems by compressing the (numerous) interpolation conditions. Second, we compare the approximation properties (e.g. coefficients and poles) of LF with the standard AAA, AAA-sign and its AAA-Lawson variants. We concentrate the study on a canonical example, namely the symmetric two-circles one, for which the optimal solution is well documented. For this case, we highlight the numerical robustness of LF and its ability to recover the structure of the optimal solution. Additional non-trivial geometries are also reported, emphasizing that LF is fast, reliable, and yields accurate approximants with no user intervention.
 
 This page provides the necessary numerical tools allowing to reproduce the results of the paper.
