@@ -31,7 +31,7 @@ advantage of LF.
 	Volume 	= {},
   	Month   = {},
 	Year 	= {},
-	Note    = {}, 
+	Note    = {\url{https://arxiv.org/abs/2511.04404}}, 
 }
 ```
 
