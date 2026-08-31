@@ -2,30 +2,32 @@
 
 ## Overview
 
-This page accompany a the paper entitled "The Loewner Framework applied to Zolotarev sign and ratio problems", by A.C. Antoulas, I.V. Gosea and C. Poussot-Vassal. In this work, we propose a numerical study concerning the (rational) approximation of functions connected to the 3rd and 4th Zolotarev problems. We compare numerical results for various methods, including the Loewner framework (LF), but also the standard AAA algorithm and a recently proposed extensions of AAA (namely sign and Lawson). We show that the Loewner framework is fast and reliable, and provides approximants with a high level of accuracy, sometimes even more accurate than near-optimal ones for higher degrees. Last but not least, the Loewner framework is a direct method, for which the running time is significantly lower than that of the iterative AAA-Lawson method. Moreover, for the latter, the running time increases substantially with the degree of the approximant, whereas for the Loewner method, it does not. We also show that on specific topologies, the LF allows to recover the poles/zeros distriubution with a machine precision.
+This page accompany a the paper entitled "Rational approximation for Zolotarev sign and ratio problems", by C. Poussot-Vassal, I. V. Gosea and A. C. Antoulas. 
+We study algorithms for Zolotarev (3rd and 4th) problems rational approximation. First, we show that the Loewner framework (LF) is appropriate to rapidly and with no iterations, approximate the Zolotarev problems by compressing the (numerous) interpolation conditions. Second, we compare the approximation properties (e.g. coefficients and poles) of LF with the standard AAA, AAA-sign and its AAA-Lawson variants. We concentrate the study on a canonical example, namely the symmetric two-circles one, for which the optimal solution is well documented. For this case, we highlight the numerical robustness of LF and its ability to recover the structure of the optimal solution. Additional non-trivial geometries are also reported, emphasizing that LF is fast, reliable, and yields accurate approximants with no user intervention.
 
 This page provides the necessary numerical tools allowing to reproduce the results of the paper.
 
 ## Contribution claim
 
-The contributions and highlights of this paper, discovered through a comprehensive numerical comparison performed here, are listed below:
-- we show that the LF solves Zolotarev problems by compressing the number of interpolation points. This approach does not need any iterations and yields solutions quite close to the optimal ones;
-- we conduct an extensive numerical study and comparison of the performance of different methods (w.r.t. to computing time, accuracy of fit and interpretability of the polynomials), for approximating several sign functions defined on various domains showing, among others, the computational advantage of LF;
-- we emphasize the LF, and demonstrate that this method yields, in most cases, very accurate results in a fast and reliable way, with no user intervention and no iteration. As a matter of fact, we highlight the LF as a valid alternative to these methods;
-- we show that the rational functions computed with LF come very close to optimal approximants and, in some specific cases (notably the symmetric ones), recovers the structure of the optimal solution as well as the symmetry property, i.e., the eigenvalues and zeros distributions, whereas the other methods tend to add spurious and badly distributed poles and zeros. Such a feature is indeed decisive to discover the property of the topology when only data values are available;
-- we point out that in simplified cases for which the exact solution is known, the LF recovers the polynomial structure (i.e., realness, alternation of coefficients in polynomial representation), whereas AAA adds complex, non-trivial artifacts that can’t be easily explained.
+We summarize below the main contributions of this paper, which were confirmed through a series of comprehensive numerical experiments:
+- we show that the LF solves Zolotarev problems by compressing the (many) number of interpolation points. This approach does not need neither any iterations nor user intervention, and yields solutions quite close to the optimal ones in a very low computational time. Consequently, the LF constitutes a valid alternative for addressing these problems;
+- we show that, in some specific cases (notably the symmetric two circles one), LF recovers the structure of the optimal solution as well as its symmetry property (e.g., the distribution of eigenvalues and zeros, the alternance of polynomials coefficients, realness, etc.), whereas the other methods tend to add spurious and oddly distributed poles and zeros, and non trivial artifacts that can’t be easily explained. In addition, thanks to an extensive numerical experimentation, we demonstrate the numerical robustness in the results obtained with LF compared to AAA; 
+- we conduct an extensive numerical study2 and comparison of the performance of different
+methods3 w.r.t. to computing time, accuracy of fit and interpretability, for approximating
+several sign functions defined on various domains showing, among others, the computational
+advantage of LF.
 
 
 ## Main reference
 
 ```
-@article{AGPV:2025,
-	Author	= {A.C. Antoulas and I.V. Gosea and C. Poussot-Vassal},
+@article{PVGA:2026,
+	Author	= {C. Poussot-Vassal and I.V. Gosea and A.C. Antoulas},
 	Doi 	= {},
 	Journal = {submitted},
 	Number 	= {},
 	Pages 	= {},
-	Title 	= {{The Loewner Framework applied to Zolotarev sign and ratio problems}},
+	Title 	= {{Rational approximation for Zolotarev sign and ratio problems}},
 	Volume 	= {},
   	Month   = {},
 	Year 	= {},
@@ -35,7 +37,7 @@ The contributions and highlights of this paper, discovered through a comprehensi
 
 # The "zol" MATLAB package 
 
-The code (`+zol` folder)  provided in this GitHub page is given for open science purpose. Its principal objective is to accompany the readers, and thus aims at being as educative as possible rather than industry-oriented. Evolutions (numerical improvements) may come with time. Please, cite the reference above if used in your work and do not hesitate to contact us in case of bug of problem when using it. Below we present an example of use, then functions list are given.
+The code (`+zol` folder) provided in this GitHub page is given for open science purpose. Its principal objective is to accompany the readers, and thus aims at being as educative as possible rather than industry-oriented. Evolutions (numerical improvements) may come with time. Please, cite the reference above if used in your work and do not hesitate to contact us in case of bug of problem when using it. Below we present an example of use, then functions list are given.
 It is also meant to allow reproduction of the results in the paper.
 
 
@@ -47,19 +49,37 @@ It is also meant to allow reproduction of the results in the paper.
 
 ## Simple MATLAB code examples
 
-We provide a series of simple codes that describe how to deploy the LF and how to compare with some AAA approaches. These demo files are meant to reproduce some results contained in the above mentionned paper. More specifically, we include
-- `demo1_LF.m`: runs the LF to solve Z3 and Z4 problems. This stript is to start using LF for Z3 and Z4.
-- `demo2_LF_vs_AAA.m`: compares performances and poles/zeros the LF and AAA to solve Z3 and Z4 the collection of proposed problems. Here attention is given to the accuracy, poles and zeros and computational time. 
-- `demo2_LF_vs_AAA_time.m`: compares performances and poles/zeros the LF and AAA to solve Z3 and Z4 the collection of proposed problems. Here, attention is given to the ratio number and computational time for each methods. 
-- `demo3_art.m`: plots fancy Z3 figures.
+We provide a series of simple codes that describe how to deploy the LF and how to compare with some AAA approaches. These demo files are meant to reproduce some results contained in the above mentionned paper. More specifically, we include:
+- `demo1_LF.m`: runs the LF to solve Z3 and Z4 problems. This stript is a good starting point to appreciate LF for Z3 and Z4.
+- `demo2_LF_vs_AAA.m`: compares the rational approximations obtained by the LF and the AAA, for the Z3 and Z4 problems. Here, attention is given to the accuracy, and obtained poles and zeros for a given topology. 
+- `demo2_LF_vs_AAA_time.m`: compares the rational approximations obtained by the LF and the AAA, for the Z3 and Z4 problems. Here, attention is given to the ratio number and computational time for each methods, over all topologies. 
+- `demo3_art.m`: plots fancy Z3 figures (see some examples at the end of this page).
 - `demo3_LNT.m`: for multiple topology, compares LF and AAA accuracy and computational time.
 
 
-## MATLAB code for analyzing the numerical robustness on case 1a (two symmetric circles)
+## MATLAB code for analyzing the numerical robustness on case '1a' (two symmetric circles)
 
-- `report_1a_step1.m`: 
-- `report_1a_step2.m`: 
-- `report_1a_step3.m`: 
+During our numerical experimentations, we also put attention on the canonical "two symmetric circles" case. This case is well known in the litterature and the optimal solution is analytically known. Sequentially running the three steps code below allows to compare LF with different shade of AAA (with different options) and report on the results accuracy and robustness wrt. the machine used. More specifically 
+- `report_1a_step1.m`: computes the approximation with different configurations
+	- lines 5 and 7, add the path for this package and the AAA code
+	- line 9, `nameUsr = 'YOUR-NAME';`, put your name or accronym
+	- run the code
+	- it will create a folder in `tex_pdf\data\YOUR-NAME_YOUR-MACHINE-NAME`
+	- if possible, can you send me a ZIP file of `YOUR-NAME_YOUR-MACHINE-NAME`
+- `report_1a_step2.m`: computes the LaTeX tables and figures for each approximation
+	- line 9, `fileDir = 'YOUR-NAME_YOUR-MACHINE-NAME';`, put the name of the folder created in `report_1a_step1.m`
+	- run the code
+	- it will create the folders in `tex_pdf\data\YOUR-NAME_YOUR-MACHINE-NAME\figures` and `tex_pdf\data\YOUR-NAME_YOUR-MACHINE-NAME\tables` 
+- `report_1a_step3.m`: exvaluate the numerator and denominator monomial dispersion
+	- line 9, `fileDir = {... 'YOUR-NAME_YOUR-MACHINE-NAME'};`, add the name of the folder created in `report_1a_step1.m` to the list of already existing folders
+	- run the code
+	- it will create the figures in `tex_pdf/figures/1a/`
+- Go in `tex_pdf` and open `appendix_1a.tex`:
+	- after line 12: add `\input{data/YOUR-NAME_YOUR-MACHINE-NAME/tables/1a_nd_r\n}`
+	- after line 31: add `\input{data/YOUR-NAME_YOUR-MACHINE-NAME/tables/1a_pol_r\n}`
+	- after line 43: add `\input{data/YOUR-NAME_YOUR-MACHINE-NAME/tables/1a_zer_r\n}`
+- Go in `tex_pdf` and open `main_1a.tex` and compile it, now you have the implementation robustness report!
+
 
 ## Functions description
 
