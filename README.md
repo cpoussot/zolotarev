@@ -2,8 +2,9 @@
 
 ## Overview
 
-This page accompany a the paper entitled "Rational approximation for Zolotarev sign and ratio problems", by C. Poussot-Vassal, I. V. Gosea and A. C. Antoulas [arXiv extended version](https://arxiv.org/abs/2511.04404). 
-We study algorithms for Zolotarev (3rd and 4th) problems rational approximation. First, we show that the Loewner framework (LF) is appropriate to rapidly and with no iterations, approximate the Zolotarev problems by compressing the (numerous) interpolation conditions. Second, we compare the approximation properties (e.g. coefficients and poles) of LF with the standard AAA, AAA-sign and its AAA-Lawson variants. We concentrate the study on a canonical example, namely the symmetric two-circles one, for which the optimal solution is well documented. For this case, we highlight the numerical robustness of LF and its ability to recover the structure of the optimal solution. Additional non-trivial geometries are also reported, emphasizing that LF is fast, reliable, and yields accurate approximants with no user intervention.
+This page accompany a the paper entitled "Rational approximation for Zolotarev sign and ratio problems", by C. Poussot-Vassal, I. V. Gosea and A. C. Antoulas ([arXiv extended version](https://arxiv.org/abs/2511.04404)). 
+
+In this paper (and the extentended note), we study algorithms for Zolotarev (3rd and 4th) problems rational approximation. First, we show that the Loewner framework (LF) is appropriate to rapidly and with no iterations, approximate the Zolotarev problems by compressing the (numerous) interpolation conditions. Second, we compare the approximation properties (e.g. coefficients and poles) of LF with the standard AAA, AAA-sign and its AAA-Lawson variants. We concentrate the study on a canonical example, namely the symmetric two-circles one, for which the optimal solution is well documented. For this case, we highlight the numerical robustness of LF and its ability to recover the structure of the optimal solution. Additional non-trivial geometries are also reported, emphasizing that LF is fast, reliable, and yields accurate approximants with no user intervention.
 
 This page provides the necessary numerical tools allowing to reproduce the results of the paper.
 
@@ -11,7 +12,7 @@ This page provides the necessary numerical tools allowing to reproduce the resul
 
 We summarize below the main contributions of this paper, which were confirmed through a series of comprehensive numerical experiments:
 - we show that the LF solves Zolotarev problems by compressing the (many) number of interpolation points. This approach does not need neither any iterations nor user intervention, and yields solutions quite close to the optimal ones in a very low computational time. Consequently, the LF constitutes a valid alternative for addressing these problems;
-- we show that, in some specific cases (notably the symmetric two circles one), LF recovers the structure of the optimal solution as well as its symmetry property (e.g., the distribution of eigenvalues and zeros, the alternance of polynomials coefficients, realness, etc.), whereas the other methods tend to add spurious and oddly distributed poles and zeros, and non trivial artifacts that can’t be easily explained. In addition, thanks to an extensive numerical experimentation, we demonstrate the numerical robustness in the results obtained with LF compared to AAA; 
+- we show that, in some specific cases (notably the symmetric two-circles one), LF recovers the structure of the optimal solution as well as its symmetry property (e.g., the distribution of eigenvalues and zeros, the alternance of polynomials coefficients, realness, etc.), whereas the other methods tend to add spurious and oddly distributed poles and zeros, and non trivial artifacts that can’t be easily explained. In addition, thanks to an extensive numerical experimentation, we demonstrate the numerical robustness in the results obtained with LF compared to AAA; 
 - we conduct an extensive numerical study2 and comparison of the performance of different
 methods3 w.r.t. to computing time, accuracy of fit and interpretability, for approximating
 several sign functions defined on various domains showing, among others, the computational
@@ -57,9 +58,9 @@ We provide a series of simple codes that describe how to deploy the LF and how t
 - `demo3_LNT.m`: for multiple topology, compares LF and AAA accuracy and computational time.
 
 
-## MATLAB code for analyzing the numerical robustness on case '1a' (two symmetric circles)
+## MATLAB code for analyzing the numerical robustness on case '1a' (symmetric two-circles)
 
-During our numerical experimentations, we also put attention on the canonical "two symmetric circles" case. This case is well known in the litterature and the optimal solution is analytically known. Sequentially running the three steps code below allows to compare LF with different shade of AAA (with different options) and report on the results accuracy and robustness wrt. the machine used. More specifically 
+During our numerical experimentations, we also put attention on the canonical "symmetric two-circles" case. This case is well known in the litterature and the optimal solution is analytically known. Sequentially running the three steps code below allows to compare LF with different shade of AAA (with different options) and report on the results accuracy and robustness wrt. the machine used. More specifically 
 - `report_1a_step1.m`: computes the approximation with different configurations
 	- lines 5 and 7, add the path for this package and the AAA code
 	- line 9, `nameUsr = 'YOUR-NAME';`, put your name or accronym
