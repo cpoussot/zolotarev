@@ -205,16 +205,16 @@ Y   = fft(y)/nt;
 % 
 figure, 
 subplot(211),hold on, axis tight
-plot(t,u,'DisplayName','Original signal')
-plot(t,y,'DisplayName','Filtered signal')
+plot(t,u,'-','DisplayName','Original signal')
+plot(t,y,':','DisplayName','Filtered signal')
 xlabel('Time [s]'),
 %plot(t,u-y)
 subplot(212),hold on, axis tight
-plot(f,abs(U),'DisplayName','Original signal')
-plot(f,abs(Y),'DisplayName','Filtered signal')
+plot(f,abs(U),'-','DisplayName','Original signal')
+plot(f,abs(Y),':','DisplayName','Filtered signal')
 legend('show')
 xlabel('Frequency [Hz]'), ylabel('Amplitude')
 %plot(f,abs(U-Y))
-sgtitle([methodName ' filter applied to chirp signal'],'FontSize',20)
+sgtitle([methodName ' filter applied to chirp signal ($f_s=' num2str(1/Ts) '$)'],'FontSize',20)
 if SAVEIT, zol.figSavePDF('tex_pdf/figures/filter/iir_filter-pH_td'), end
 
