@@ -2,10 +2,12 @@
 % Author: C. Poussot-Vassal [MOR Digital Systems & ONERA]
 % 
 % Syntax
-% [pts,val,data] = zol.example_filter(name)
+% [pts,val,data] = zol.example_filter(wn,amp,Nw)
 %  
 % Input arguments
-%  - name : 
+%  - wn : normalized frequency band
+%  - amp: amplitude values min/max
+%  - Nw : number of points within each band
 % 
 % Output arguments
 %  - pts  : interpolation points (complex vector)
@@ -16,20 +18,24 @@
 % List of exmaples where E = -1 (left) and F = +1 (right)
 % 
 
-function [pts,val,info] = example_filter(wn,amp)
+function [pts,val,info] = example_filter(wn,amp,Nw)
 
+Nw      = 2*ceil(Nw/2);
 Xlim    = [-1 1]*1.5;
 Ylim    = [-1 1]*1.5;
 E       = [];
 F       = [];
 maxAmp  = max(amp);
 minAmp  = min(amp);
+maxNum  = sum(amp==maxAmp);
+minNum  = sum(amp==minAmp);
+Nmult   = maxNum/minNum;
 k       = 1;
 while k < length(wn)
     if amp(k) == minAmp
-        E = [E exp(1i*linspace(wn(k),wn(k+1),50)*pi)];
+        E = [E exp(1i*linspace(wn(k),wn(k+1),Nmult*Nw)*pi)];
     elseif amp(k) == maxAmp
-        F = [F exp(1i*linspace(wn(k),wn(k+1),100)*pi)];
+        F = [F exp(1i*linspace(wn(k),wn(k+1),Nw)*pi)];
     end
     k = k + 2;
 end

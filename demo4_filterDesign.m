@@ -6,12 +6,12 @@ addpath('/Users/charles/Documents/GIT/zolotarev')
 % Add AAA package
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
 %%% Choose case, order
-robj0   = 1e-12; % objective order (either integer > 1 or sigma threshold)
+robj0   = 30%1e-12; % objective order (either integer > 1 or sigma threshold)
 REALTF  = true;
 SAVEIT  = false;
 Fs      = 10;
 Ts      = 1/Fs;
-FILTER  = 'BP';
+FILTER  = '1cos_con';
 %%% END: TO ADAPT BY USER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -34,28 +34,42 @@ high    = 1;
 switch FILTER
     case 'LP'
         wn  = [1e-3 .4, .6 .99];
-        amp = [high high low low ];
+        amp = [high high low low];
+        Nw  = 100;
+    case 'HP'
+        wn  = [1e-3 .4, .6 .99];
+        amp = [low low high high];
+        Nw  = 100;
     case 'BP'
         wn  = [1e-3 .2, .3 .4, .6 .99];
-        amp = [low low high high low low ];
-    case 'BPm'
+        amp = [low low high high low low];
+        Nw  = 50;
+    case 'BPm1'
         wn  = [1e-9 .1, .2 .25 .3 .4, .5 .7, .85 .9, .95 .99];
         amp = [high high low low high high low low high high low low];
+        Nw  = 20;
+    case 'BPm2'
+        wn  = [1e-9 .1, .2 .25 .3 .4, .5 .7, .85 .9];
+        amp = [high high low low high high low low high high];
+        Nw  = 20;
     case '1cos'
         Ts      = 0.0105;
         Fs      = 1/Ts;
         wmax    = pi/Ts;
         wn      = [1e-9 4/wmax 6/wmax .9];
         amp     = [high high low low];
+        Nw      = 100;
     case '1cos_con'
-        Ts  = 0.0105;
-        Fs = 1/Ts;
-        wmax = pi/Ts;
-        wn  = [1e-9 4/wmax 5/wmax .9];
-        amp = [low low high high];
+        Ts      = 0.0105;
+        Fs      = 1/Ts;
+        wmax    = pi/Ts;
+        wn      = [1e-9 4/wmax 5/wmax .9];
+        amp     = [low low high high];
+        Nw      = 100;
 end
-[pts,val,data]  = zol.example_filter(wn,amp);
-
+%[pts,val,data]  = zol.example_filter(wn,amp,Nw);
+[pts,val,data]  = zol.example_filter_smooth(wn,amp,Nw);
+data
 %%% Loewner approximation
 % >> (Z4) rational approximation
 tic
@@ -212,7 +226,7 @@ if SAVEIT, zol.figSavePDF(['tex_pdf/figures/filter/' FILTER '_iir']), end
 %%
 %%% Time-domain signal filtering
 % >> generate signal and filter
-Ns      = 2^16;
+Ns      = 2^12;
 FBND    = [0 .9*Fs/2];
 [u,t]   = zol.chirp(Ns,Ts,FBND);
 y       = lsim(Fz,u);
