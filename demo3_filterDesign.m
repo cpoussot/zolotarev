@@ -1,13 +1,8 @@
 clearvars; close all; clc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% BEGIN: TO ADAPT BY USER
-% Add MDSPACK
-setenv('MDSHOME','/Users/charles/Documents/MDS')
-addpath('/Users/charles/Documents/MDS/mdspack/MDSPACK/osx/v1.1.0/API/matlab/')
-addpath('/Users/charles/Documents/MDS/mdspack/MDSPACK/osx/v1.1.0/bin')
 % Add Zolotarev Loewner package
 addpath('/Users/charles/Documents/GIT/zolotarev')
-%addpath('/Users/charles/Documents/GIT/lf')
 % Add AAA package
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
 %%% Choose case, order
@@ -111,12 +106,12 @@ ylabel('Phase [rad]'), xlabel('Frequency'),
 sgtitle([methodName ' filter design'],'FontSize',20)
 drawnow
 if SAVEIT, zol.figSavePDF('tex_pdf/figures/filter/iir_filter'), end
-
+%%
 %%% Time-domain signal filtering
 % >> generate signal and filter
-Ns      = 2^14;
-opt     = struct('f_band',[0 .9*Fs/2]);
-[u,t]   = mdspack.signals('CHRP',Ns,Ts,opt);
+Ns      = 2^13;
+FBND    = [0 .9*Fs/2];
+[u,t]   = zol.chirp(Ns,Ts,FBND);
 y       = lsim(Fz,u);
 % >> FFT
 nt  = length(t);
@@ -126,14 +121,15 @@ Y   = fft(y)/nt;
 % 
 figure, 
 subplot(211),hold on, axis tight
-plot(t,u,'DisplayName','Original signal')
-plot(t,y,'DisplayName','Filtered signal')
+plot(t,u,'-' ,'DisplayName','Original signal')
+plot(t,y,'--','DisplayName','Filtered signal')
 xlabel('Time [s]'),
+xlim([400 900])
 %plot(t,u-y)
 subplot(212),hold on, axis tight
-plot(f,abs(U),'DisplayName','Original signal')
-plot(f,abs(Y),'DisplayName','Filtered signal')
-legend('show')
+plot(f,abs(U),'-' ,'DisplayName','Original signal')
+plot(f,abs(Y),'--','DisplayName','Filtered signal')
+legend('show','Location','East')
 xlabel('Frequency [Hz]'), ylabel('Amplitude')
 %plot(f,abs(U-Y))
 sgtitle([methodName ' filter applied to chirp signal'],'FontSize',20)

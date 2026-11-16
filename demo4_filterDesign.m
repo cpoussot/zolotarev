@@ -1,23 +1,17 @@
 clearvars; close all; clc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% BEGIN: TO ADAPT BY USER
-% Add MDSPACK
-%%% MDSPACK
-setenv('MDSHOME','/Users/charles/Documents/MDS')
-addpath('/Users/charles/Documents/MDS/mdspack/MDSPACK/osx/v1.1.0/API/matlab/')
-addpath('/Users/charles/Documents/MDS/mdspack/MDSPACK/osx/v1.1.0/bin')
 % Add Zolotarev Loewner package
 addpath('/Users/charles/Documents/GIT/zolotarev')
-addpath('/Users/charles/Documents/GIT/lf')
 % Add AAA package
 addpath('/Users/charles/Documents/GIT/_others/chebfun')
 %%% Choose case, order
-CAS     = 'iir';
 robj0   = 1e-12; % objective order (either integer > 1 or sigma threshold)
 REALTF  = true;
 SAVEIT  = false;
-Fs      = 5;
+Fs      = 10;
 Ts      = 1/Fs;
+FILTER  = 'BP';
 %%% END: TO ADAPT BY USER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -35,7 +29,32 @@ col1        = col(5,:);   % Z4 poles
 col2        = col(9,:);   % Z4 zeros
 
 %%% Define Zolotarev topology
-[pts,val,data]  = zol.example(CAS);
+low     = 1e-2;
+high    = 1;
+switch FILTER
+    case 'LP'
+        wn  = [1e-3 .4, .6 .99];
+        amp = [high high low low ];
+    case 'BP'
+        wn  = [1e-3 .2, .3 .4, .6 .99];
+        amp = [low low high high low low ];
+    case 'BPm'
+        wn  = [1e-9 .1, .2 .25 .3 .4, .5 .7, .85 .9, .95 .99];
+        amp = [high high low low high high low low high high low low];
+    case '1cos'
+        Ts      = 0.0105;
+        Fs      = 1/Ts;
+        wmax    = pi/Ts;
+        wn      = [1e-9 4/wmax 6/wmax .9];
+        amp     = [high high low low];
+    case '1cos_con'
+        Ts  = 0.0105;
+        Fs = 1/Ts;
+        wmax = pi/Ts;
+        wn  = [1e-9 4/wmax 5/wmax .9];
+        amp = [low low high high];
+end
+[pts,val,data]  = zol.example_filter(wn,amp);
 
 %%% Loewner approximation
 % >> (Z4) rational approximation
@@ -74,58 +93,58 @@ Fz      = zol.mirror(Fz);
 h4      = @(z) Fz.c*((Fz.e*z-Fz.a)\Fz.b) + Fz.d;
 eigF    = eig(Fz);
 
-% figure
-% nyquist(        Fz), hold on
-% nyquist(    d2c(Fz,'tustin'))
-% nyquist(c2d(d2c(Fz,'tustin'),1/Fs,'tustin'))
-
-%
-%%% pH (continuous time)
-Fc      = d2c(Fz,'tustin');
-h4c     = @(s) Fc.c*((Fc.e*s-Fc.a)\Fc.b) + Fc.d;
-Ds      = norm(Fc,inf)*1.1;
-D       = Fc.d;
-Fcd     = Fc-D+Ds;
-puls1   = logspace(-2,log10(pi*Fs),1e4);
-[hloeph,info_loeph] = lf.passive2ph(Fcd);
-hloeph = info_loeph.Hr;
-hloeph.E = eye(length(hloeph.A));
-hloeph.D = info_loeph.Hr.D+D-Ds;
-hloeph = c2d(hloeph,Ts,'tustin');
-hloeph = @(z) hloeph.c*((hloeph.e*z-hloeph.a)\hloeph.b) + hloeph.d;
-%info_loeph.S = info_loeph.S +D-Ds;
-% figure, hold on
-% mdspack.nyquist(Fc,puls1)
-% mdspack.nyquist(Fcd,puls1)
-% mdspack.nyquist(hloeph,puls1,'--')
-% %xlim([-1 1]), ylim([-1 1])
-
+% % figure
+% % nyquist(        Fz), hold on
+% % nyquist(    d2c(Fz,'tustin'))
+% % nyquist(c2d(d2c(Fz,'tustin'),1/Fs,'tustin'))
+% 
 % %
-% nip     = 100;
-% puls    = logspace(-2,log10(pi*Fs),nip);
-% for ii = 1:length(puls); DATA(1,1,ii) = h4c(1i*puls(ii))-D; end
-% [Hloe,info] = mdspack.loewner(puls, DATA, struct('stable',true));
-% Hloe.D      = D;
-% mdspack.nyquist(Fc,puls1,'-')
-
-% step 2: spectral zeros
-tol_sz          = 1e-10;
-[sz_R,sz_la]    = lf.spectral_zeros(Fcd);
-sz_la_pos       = sz_la(real(sz_la)>tol_sz);
-sz_R_pos        = sz_R(:,real(sz_la)>tol_sz);
-h_fcd           = @(s) Fcd.c*((Fcd.e*s-Fcd.a)\Fcd.b) + Fcd.d;
-%figure, plot(real(sz_la),imag(sz_la),'*')
-
-% step 3: spectral zeros Loewner interpolation
-clear la R W
-for ii = 1:numel(sz_la_pos)
-    la(ii)      = sz_la_pos(ii);
-    R(:,ii)     = sz_R_pos(end-1+1:end,ii)/norm(sz_R_pos(end-1+1:end,ii));
-    W(1,1,ii)   = h_fcd(sz_la_pos(ii));
-end
-%opt.D           = D;
-opt.target      = [];
-[~,info2]       = lf.loewner_tng(la,-conj(la),W,-conj(W),R,R',opt);
+% %%% pH (continuous time)
+% Fc      = d2c(Fz,'tustin');
+% h4c     = @(s) Fc.c*((Fc.e*s-Fc.a)\Fc.b) + Fc.d;
+% Ds      = norm(Fc,inf)*1.1;
+% D       = Fc.d;
+% Fcd     = Fc-D+Ds;
+% puls1   = logspace(-2,log10(pi*Fs),1e4);
+% [hloeph,info_loeph] = lf.passive2ph(Fcd);
+% hloeph = info_loeph.Hr;
+% hloeph.E = eye(length(hloeph.A));
+% hloeph.D = info_loeph.Hr.D+D-Ds;
+% hloeph = c2d(hloeph,Ts,'tustin');
+% hloeph = @(z) hloeph.c*((hloeph.e*z-hloeph.a)\hloeph.b) + hloeph.d;
+% %info_loeph.S = info_loeph.S +D-Ds;
+% % figure, hold on
+% % mdspack.nyquist(Fc,puls1)
+% % mdspack.nyquist(Fcd,puls1)
+% % mdspack.nyquist(hloeph,puls1,'--')
+% % %xlim([-1 1]), ylim([-1 1])
+% 
+% % %
+% % nip     = 100;
+% % puls    = logspace(-2,log10(pi*Fs),nip);
+% % for ii = 1:length(puls); DATA(1,1,ii) = h4c(1i*puls(ii))-D; end
+% % [Hloe,info] = mdspack.loewner(puls, DATA, struct('stable',true));
+% % Hloe.D      = D;
+% % mdspack.nyquist(Fc,puls1,'-')
+% 
+% % step 2: spectral zeros
+% tol_sz          = 1e-10;
+% [sz_R,sz_la]    = lf.spectral_zeros(Fcd);
+% sz_la_pos       = sz_la(real(sz_la)>tol_sz);
+% sz_R_pos        = sz_R(:,real(sz_la)>tol_sz);
+% h_fcd           = @(s) Fcd.c*((Fcd.e*s-Fcd.a)\Fcd.b) + Fcd.d;
+% %figure, plot(real(sz_la),imag(sz_la),'*')
+% 
+% % step 3: spectral zeros Loewner interpolation
+% clear la R W
+% for ii = 1:numel(sz_la_pos)
+%     la(ii)      = sz_la_pos(ii);
+%     R(:,ii)     = sz_R_pos(end-1+1:end,ii)/norm(sz_R_pos(end-1+1:end,ii));
+%     W(1,1,ii)   = h_fcd(sz_la_pos(ii));
+% end
+% %opt.D           = D;
+% opt.target      = [];
+% [~,info2]       = lf.loewner_tng(la,-conj(la),W,-conj(W),R,R',opt);
 % Hloe     = info2.Hr;
 % %Hloe        = c2d(info2.Hr,Ts,'tustin');
 % h_loe       = @(z) Hloe.c*((Hloe.e*z-Hloe.a)\Hloe.b) + Hloe.d;
@@ -172,11 +191,11 @@ w_val   = angle(pts);
 w_chk   = linspace(-pi,pi,1e3);
 z_chk   = exp(1i*w_chk);
 for i = 1:numel(z_chk); G(i) = h4(z_chk(i)); end
-for i = 1:numel(z_chk); Gloe(i) = hloeph(z_chk(i)); end
+%for i = 1:numel(z_chk); Gloe(i) = hloeph(z_chk(i)); end
 subplot(2,3,3), hold on, grid on
 plot(w_val,20*log10(abs(val.')),'.','MarkerSize',20,'DisplayName','Data ($E \cup F$)'), hold on
 plot(w_chk,20*log10(abs(G.'))  ,'-','LineWidth',2,'DisplayName','Filter (stable)')
-plot(w_chk,20*log10(abs(Gloe.')),'--','LineWidth',2,'DisplayName','pH')
+%plot(w_chk,20*log10(abs(Gloe.')),'--','LineWidth',2,'DisplayName','pH')
 legend('show','Location','best')
 ylabel('Gain [dB]'), xlabel('Frequency'), 
 title(['Filter $\mathbf F$ gain $r=' num2str(robj) '$' ])
@@ -189,13 +208,13 @@ ylabel('Phase [rad]'), xlabel('Frequency'),
 %
 sgtitle([methodName ' filter design'],'FontSize',20)
 drawnow
-if SAVEIT, zol.figSavePDF('tex_pdf/figures/filter/iir_filter-pH'), end
+if SAVEIT, zol.figSavePDF(['tex_pdf/figures/filter/' FILTER '_iir']), end
 %%
 %%% Time-domain signal filtering
 % >> generate signal and filter
-Ns      = 2^14;
-opt     = struct('f_band',[0 .9*Fs/2]);
-[u,t]   = mdspack.signals('CHRP',Ns,Ts,opt);
+Ns      = 2^16;
+FBND    = [0 .9*Fs/2];
+[u,t]   = zol.chirp(Ns,Ts,FBND);
 y       = lsim(Fz,u);
 % >> FFT
 nt  = length(t);
@@ -212,9 +231,9 @@ xlabel('Time [s]'),
 subplot(212),hold on, axis tight
 plot(f,abs(U),'-','DisplayName','Original signal')
 plot(f,abs(Y),':','DisplayName','Filtered signal')
-legend('show')
+legend('show','location','east')
 xlabel('Frequency [Hz]'), ylabel('Amplitude')
 %plot(f,abs(U-Y))
 sgtitle([methodName ' filter applied to chirp signal ($f_s=' num2str(1/Ts) '$)'],'FontSize',20)
-if SAVEIT, zol.figSavePDF('tex_pdf/figures/filter/iir_filter-pH_td'), end
+if SAVEIT, zol.figSavePDF(['tex_pdf/figures/filter/' FILTER '_iir_filter_td']), end
 
